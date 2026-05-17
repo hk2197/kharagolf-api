@@ -29,7 +29,8 @@ async function build() {
       'cors',
       'express',
       'nodemailer',
-      'ws'
+      'ws',
+      '@resvg/resvg-js'
     ]
   };
 
