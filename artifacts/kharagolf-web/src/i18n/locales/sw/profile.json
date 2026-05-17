@@ -1,0 +1,249 @@
+{
+  "myProfile": "Wasifu Wangu",
+  "editProfile": "Hariri Wasifu",
+  "cancel": "Ghairi",
+  "comingSoon": "Coming Soon",
+  "editProfileSoon": "Profile editing will be available soon.",
+  "changePasswordSoon": "Password change will be available soon.",
+  "displayName": "Jina la Kuonyeshwa",
+  "email": "Barua pepe",
+  "phone": "Simu",
+  "handicapIndex": "Kielezo cha Punguzo",
+  "memberSince": "Mwanachama Tangu",
+  "languagePreference": "Lugha",
+  "selectLanguage": "Chagua lugha",
+  "changePhoto": "Badilisha Picha",
+  "notifications": "Arifa",
+  "security": "Security & Privacy",
+  "changePassword": "Badilisha Nywila",
+  "tournamentsPlayed": "Mashindano Yaliyochezwa",
+  "bestRound": "Raundi Bora",
+  "averageScore": "Alama ya Wastani",
+  "logOut": "Ondoka",
+  "confirmLogout": "Una uhakika unataka kutoka?",
+  "myTournaments": "Mashindano Yangu",
+  "myLeagues": "Ligi Zangu",
+  "myScores": "Alama Zangu",
+  "profileUpdated": "Wasifu umesasishwa",
+  "emailNotVerified": "Email not verified",
+  "worldHandicap": "Kielezo cha Punguzo cha Dunia",
+  "fromLastRecord": "from last record",
+  "fullHistory": "Full History",
+  "statsLabels": {
+    "tournaments": "Mashindano",
+    "avgStrokes": "Avg Strokes",
+    "bestRound": "Raundi Bora",
+    "holesPlayed": "Holes Played"
+  },
+  "loyalty": {
+    "section": "Loyalty & Rewards",
+    "pointsBalance": "Points Balance",
+    "lifetimeEarned": "Lifetime Earned",
+    "thisYear": "This Year",
+    "availableRewards": "Available Rewards",
+    "pts": "pts",
+    "needMore": "Need {{count}} more"
+  },
+  "myGolf": {
+    "section": "My Golf",
+    "generalPlay": "Mchezo wa Kawaida",
+    "generalPlaySub": "Post casual rounds & build handicap",
+    "teeBookings": "Uhifadhi wa Tee",
+    "teeBookingsSub": "Book a tee time at your club",
+    "handicapProfile": "Handicap Profile",
+    "handicapProfileSub": "View your WHS Handicap Index history"
+  },
+  "locker": {
+    "section": "My Locker",
+    "renewalDate": "Renewal Date",
+    "annualFee": "Annual Fee",
+    "paymentComplete": "Payment complete",
+    "paymentPending": "Payment pending",
+    "expired": "Expired",
+    "daysLeft": "{{count}}d left",
+    "payRenewal": "Pay Renewal Fee",
+    "onWaitlist": "On Waitlist",
+    "notified": "Notified",
+    "joinWaitlist": "Join Waitlist",
+    "joining": "Joining…",
+    "noAssigned": "No locker assigned.",
+    "bay": "Bay {{number}}",
+    "lockerTitle": "Locker {{number}}",
+    "waitlistJoinedOn": "You joined the waitlist on {{date}}.",
+    "lockerAvailable": "A locker is available — contact the club.",
+    "willBeNotified": "You will be notified when a locker becomes available."
+  },
+  "invoices": {
+    "section": "My Invoices",
+    "payNow": "Pay Now",
+    "overdueSince": "Overdue since: ",
+    "due": "Due: ",
+    "paid": "Paid {{date}}",
+    "statuses": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled",
+      "void": "Void"
+    }
+  },
+  "repairs": {
+    "section": "My Club Repairs",
+    "readyForPickup": "Your clubs are ready!",
+    "technician": "Technician: {{name}}",
+    "expected": "Expected: {{date}}",
+    "status": {
+      "received": "Received",
+      "in_progress": "In Progress",
+      "ready_for_pickup": "Ready for Pickup",
+      "collected": "Collected"
+    },
+    "type": {
+      "regrip": "Regrip",
+      "reshaft": "Reshaft",
+      "loft_lie_adjustment": "Loft/Lie Adj.",
+      "cleaning": "Cleaning",
+      "other": "Other"
+    }
+  },
+  "fittingSessions": {
+    "section": "My Fitting Sessions",
+    "recommendedSpecs": "Recommended Specs",
+    "statuses": {
+      "booked": "Booked",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "notificationPreferences": "Notification Preferences",
+  "alwaysOn": "Always on",
+  "notifLabels": {
+    "email": "Email Notifications",
+    "emailDesc": "Receive tournament updates via email",
+    "push": "Push Notifications",
+    "pushDesc": "Receive real-time alerts",
+    "pushNeedApp": "Install app to enable push notifications",
+    "sms": "SMS Notifications",
+    "smsDesc": "Receive text reminders",
+    "whatsapp": "WhatsApp Notifications",
+    "whatsappDesc": "Receive updates via WhatsApp",
+    "noPhone": "No phone number on file"
+  },
+  "languageModal": {
+    "title": "Lugha",
+    "description": "Choose your preferred display language.",
+    "rtlNote": "Right-to-left layout"
+  },
+  "scoringHistory": {
+    "section": "Scoring History",
+    "noHistory": "No tournament history yet",
+    "noHistoryDesc": "Register for a tournament and post scores",
+    "loadError": "Failed to load scoring history",
+    "retry": "Retry",
+    "format": "Format",
+    "handicap": "Punguzo",
+    "tee": "Tee",
+    "rounds": "Raundi",
+    "noScores": "No scores posted yet",
+    "withdraw": "Withdraw from Tournament"
+  },
+  "withdraw": {
+    "title": "Withdraw from Tournament",
+    "cancel": "Ghairi",
+    "confirm": "Thibitisha",
+    "successWithRefund": "You have been withdrawn. A refund request has been raised.",
+    "success": "Successfully withdrawn.",
+    "message": "Are you sure you want to withdraw from \"{{name}}\"?"
+  },
+  "rankings": {
+    "section": "Rankings & Points",
+    "rankingSeries": "Ranking Series",
+    "ranked": "Ranked",
+    "pts": "pts",
+    "events": "Events",
+    "wins": "Wins",
+    "top3": "Top 3",
+    "eventHistory": "Event History",
+    "tournament": "Mashindano"
+  },
+  "activeClub": {
+    "section": "Active Club"
+  },
+  "eventRoles": {
+    "section": "Event Roles",
+    "volunteering": "My Volunteering Assignments"
+  },
+  "account": {
+    "section": "Account",
+    "editProfile": "Hariri Wasifu",
+    "languagePreference": "Lugha",
+    "changePassword": "Badilisha Nywila",
+    "signOut": "Ondoka"
+  },
+  "roundCard": {
+    "round": "Round {{n}}",
+    "holes_one": "{{count}} hole",
+    "holes_other": "{{count}} holes",
+    "strokes": "Mapigo"
+  },
+  "roundTable": {
+    "hole": "Tundu",
+    "strokes": "Mapigo",
+    "putts": "Putti",
+    "fir": "FIR",
+    "gir": "GIR",
+    "total": "Jumla"
+  },
+  "photoOptions": {
+    "chooseLibrary": "Choose from Library",
+    "takePhoto": "Take Photo",
+    "chooseAvatar": "Choose Avatar",
+    "removePhoto": "Remove Photo",
+    "changeProfilePhoto": "Change Profile Photo",
+    "cancel": "Ghairi"
+  },
+  "tournaments": {
+    "statuses": {
+      "upcoming": "UPCOMING",
+      "active": "ACTIVE",
+      "completed": "COMPLETED",
+      "cancelled": "CANCELLED"
+    }
+  },
+  "errors": {
+    "failedLanguageSave": "Failed to save language preference",
+    "failedWithdraw": "Failed to withdraw from tournament",
+    "networkError": "Network error. Please try again.",
+    "photoUpdated": "Profile photo updated.",
+    "photoUploadFailed": "Failed to upload profile photo.",
+    "avatarSelectFailed": "Failed to select avatar.",
+    "avatarPickerDesc": "Pick a golf-themed avatar.",
+    "switchClubTitle": "Switch Club",
+    "photoRemoveFailed": "Failed to remove photo.",
+    "permissionDenied": "Permission denied",
+    "permissionLibrary": "Allow photo library access in Settings.",
+    "permissionCamera": "Allow camera access in Settings.",
+    "waitlistFailed": "Failed to join waitlist",
+    "success": "Mafanikio",
+    "error": "Hitilafu"
+  },
+  "username": "Username",
+  "profilePicture": "Profile Picture",
+  "removePhoto": "Remove Photo",
+  "role": "Role",
+  "organization": "Organization",
+  "saveLanguage": "Hifadhi Lugha",
+  "currentPassword": "Current Password",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "passwordUpdated": "Password updated successfully",
+  "myStats": "My Statistics",
+  "walletPayoutNeedsReverify": {
+    "titleUpi": "Hifadhi tena UPI yako ili kuendelea kutoa pesa",
+    "titleBank": "Hifadhi tena akaunti yako ya benki ili kuendelea kutoa pesa",
+    "body": "Ukaguzi wetu wa hivi karibuni uliopangwa wa maelezo ya malipo uliyohifadhi haukufaulu, kwa hivyo utoaji pesa umesitishwa hadi uyahifadhi tena.",
+    "reason": "Sababu: {{reason}}",
+    "cta": "Hifadhi tena akaunti"
+  }
+}

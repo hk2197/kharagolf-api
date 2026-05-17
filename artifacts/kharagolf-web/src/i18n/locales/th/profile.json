@@ -1,0 +1,249 @@
+{
+  "myProfile": "โปรไฟล์ของฉัน",
+  "editProfile": "แก้ไขโปรไฟล์",
+  "cancel": "ยกเลิก",
+  "comingSoon": "Coming Soon",
+  "editProfileSoon": "Profile editing will be available soon.",
+  "changePasswordSoon": "Password change will be available soon.",
+  "displayName": "ชื่อที่แสดง",
+  "email": "อีเมล",
+  "phone": "โทรศัพท์",
+  "handicapIndex": "ดัชนีแฮนดิแคป",
+  "memberSince": "สมาชิกตั้งแต่",
+  "languagePreference": "ภาษา",
+  "selectLanguage": "เลือกภาษา",
+  "changePhoto": "เปลี่ยนรูปภาพ",
+  "notifications": "การแจ้งเตือน",
+  "security": "Security & Privacy",
+  "changePassword": "เปลี่ยนรหัสผ่าน",
+  "tournamentsPlayed": "ทัวร์นาเมนต์ที่เล่น",
+  "bestRound": "รอบที่ดีที่สุด",
+  "averageScore": "คะแนนเฉลี่ย",
+  "logOut": "ออกจากระบบ",
+  "confirmLogout": "คุณต้องการออกจากระบบหรือไม่?",
+  "myTournaments": "ทัวร์นาเมนต์ของฉัน",
+  "myLeagues": "ลีกของฉัน",
+  "myScores": "คะแนนของฉัน",
+  "profileUpdated": "อัปเดตโปรไฟล์สำเร็จ",
+  "emailNotVerified": "Email not verified",
+  "worldHandicap": "ดัชนีแฮนดิแคปโลก",
+  "fromLastRecord": "from last record",
+  "fullHistory": "Full History",
+  "statsLabels": {
+    "tournaments": "ทัวร์นาเมนต์",
+    "avgStrokes": "Avg Strokes",
+    "bestRound": "รอบที่ดีที่สุด",
+    "holesPlayed": "Holes Played"
+  },
+  "loyalty": {
+    "section": "Loyalty & Rewards",
+    "pointsBalance": "Points Balance",
+    "lifetimeEarned": "Lifetime Earned",
+    "thisYear": "This Year",
+    "availableRewards": "Available Rewards",
+    "pts": "pts",
+    "needMore": "Need {{count}} more"
+  },
+  "myGolf": {
+    "section": "My Golf",
+    "generalPlay": "เล่นทั่วไป",
+    "generalPlaySub": "Post casual rounds & build handicap",
+    "teeBookings": "จองเวลาตี",
+    "teeBookingsSub": "Book a tee time at your club",
+    "handicapProfile": "Handicap Profile",
+    "handicapProfileSub": "View your WHS Handicap Index history"
+  },
+  "locker": {
+    "section": "My Locker",
+    "renewalDate": "Renewal Date",
+    "annualFee": "Annual Fee",
+    "paymentComplete": "Payment complete",
+    "paymentPending": "Payment pending",
+    "expired": "Expired",
+    "daysLeft": "{{count}}d left",
+    "payRenewal": "Pay Renewal Fee",
+    "onWaitlist": "On Waitlist",
+    "notified": "Notified",
+    "joinWaitlist": "Join Waitlist",
+    "joining": "Joining…",
+    "noAssigned": "No locker assigned.",
+    "bay": "Bay {{number}}",
+    "lockerTitle": "Locker {{number}}",
+    "waitlistJoinedOn": "You joined the waitlist on {{date}}.",
+    "lockerAvailable": "A locker is available — contact the club.",
+    "willBeNotified": "You will be notified when a locker becomes available."
+  },
+  "invoices": {
+    "section": "My Invoices",
+    "payNow": "Pay Now",
+    "overdueSince": "Overdue since: ",
+    "due": "Due: ",
+    "paid": "Paid {{date}}",
+    "statuses": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled",
+      "void": "Void"
+    }
+  },
+  "repairs": {
+    "section": "My Club Repairs",
+    "readyForPickup": "Your clubs are ready!",
+    "technician": "Technician: {{name}}",
+    "expected": "Expected: {{date}}",
+    "status": {
+      "received": "Received",
+      "in_progress": "In Progress",
+      "ready_for_pickup": "Ready for Pickup",
+      "collected": "Collected"
+    },
+    "type": {
+      "regrip": "Regrip",
+      "reshaft": "Reshaft",
+      "loft_lie_adjustment": "Loft/Lie Adj.",
+      "cleaning": "Cleaning",
+      "other": "Other"
+    }
+  },
+  "fittingSessions": {
+    "section": "My Fitting Sessions",
+    "recommendedSpecs": "Recommended Specs",
+    "statuses": {
+      "booked": "Booked",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "notificationPreferences": "Notification Preferences",
+  "alwaysOn": "Always on",
+  "notifLabels": {
+    "email": "Email Notifications",
+    "emailDesc": "Receive tournament updates via email",
+    "push": "Push Notifications",
+    "pushDesc": "Receive real-time alerts",
+    "pushNeedApp": "Install app to enable push notifications",
+    "sms": "SMS Notifications",
+    "smsDesc": "Receive text reminders",
+    "whatsapp": "WhatsApp Notifications",
+    "whatsappDesc": "Receive updates via WhatsApp",
+    "noPhone": "No phone number on file"
+  },
+  "languageModal": {
+    "title": "ภาษา",
+    "description": "Choose your preferred display language.",
+    "rtlNote": "Right-to-left layout"
+  },
+  "scoringHistory": {
+    "section": "Scoring History",
+    "noHistory": "No tournament history yet",
+    "noHistoryDesc": "Register for a tournament and post scores",
+    "loadError": "Failed to load scoring history",
+    "retry": "Retry",
+    "format": "Format",
+    "handicap": "แฮนดิแคป",
+    "tee": "Tee",
+    "rounds": "รอบ",
+    "noScores": "No scores posted yet",
+    "withdraw": "Withdraw from Tournament"
+  },
+  "withdraw": {
+    "title": "Withdraw from Tournament",
+    "cancel": "ยกเลิก",
+    "confirm": "ยืนยัน",
+    "successWithRefund": "You have been withdrawn. A refund request has been raised.",
+    "success": "Successfully withdrawn.",
+    "message": "Are you sure you want to withdraw from \"{{name}}\"?"
+  },
+  "rankings": {
+    "section": "Rankings & Points",
+    "rankingSeries": "Ranking Series",
+    "ranked": "Ranked",
+    "pts": "pts",
+    "events": "Events",
+    "wins": "Wins",
+    "top3": "Top 3",
+    "eventHistory": "Event History",
+    "tournament": "ทัวร์นาเมนต์"
+  },
+  "activeClub": {
+    "section": "Active Club"
+  },
+  "eventRoles": {
+    "section": "Event Roles",
+    "volunteering": "My Volunteering Assignments"
+  },
+  "account": {
+    "section": "Account",
+    "editProfile": "แก้ไขโปรไฟล์",
+    "languagePreference": "ภาษา",
+    "changePassword": "เปลี่ยนรหัสผ่าน",
+    "signOut": "ออกจากระบบ"
+  },
+  "roundCard": {
+    "round": "Round {{n}}",
+    "holes_one": "{{count}} hole",
+    "holes_other": "{{count}} holes",
+    "strokes": "การตี"
+  },
+  "roundTable": {
+    "hole": "หลุม",
+    "strokes": "การตี",
+    "putts": "การพัตต์",
+    "fir": "FIR",
+    "gir": "GIR",
+    "total": "รวม"
+  },
+  "photoOptions": {
+    "chooseLibrary": "Choose from Library",
+    "takePhoto": "Take Photo",
+    "chooseAvatar": "Choose Avatar",
+    "removePhoto": "Remove Photo",
+    "changeProfilePhoto": "Change Profile Photo",
+    "cancel": "ยกเลิก"
+  },
+  "tournaments": {
+    "statuses": {
+      "upcoming": "UPCOMING",
+      "active": "ACTIVE",
+      "completed": "COMPLETED",
+      "cancelled": "CANCELLED"
+    }
+  },
+  "errors": {
+    "failedLanguageSave": "Failed to save language preference",
+    "failedWithdraw": "Failed to withdraw from tournament",
+    "networkError": "Network error. Please try again.",
+    "photoUpdated": "Profile photo updated.",
+    "photoUploadFailed": "Failed to upload profile photo.",
+    "avatarSelectFailed": "Failed to select avatar.",
+    "avatarPickerDesc": "Pick a golf-themed avatar.",
+    "switchClubTitle": "Switch Club",
+    "photoRemoveFailed": "Failed to remove photo.",
+    "permissionDenied": "Permission denied",
+    "permissionLibrary": "Allow photo library access in Settings.",
+    "permissionCamera": "Allow camera access in Settings.",
+    "waitlistFailed": "Failed to join waitlist",
+    "success": "สำเร็จ",
+    "error": "ข้อผิดพลาด"
+  },
+  "username": "Username",
+  "profilePicture": "Profile Picture",
+  "removePhoto": "Remove Photo",
+  "role": "Role",
+  "organization": "Organization",
+  "saveLanguage": "บันทึก ภาษา",
+  "currentPassword": "Current Password",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "passwordUpdated": "Password updated successfully",
+  "myStats": "My Statistics",
+  "walletPayoutNeedsReverify": {
+    "titleUpi": "บันทึก UPI ของคุณอีกครั้งเพื่อดำเนินการถอนต่อ",
+    "titleBank": "บันทึกบัญชีธนาคารของคุณอีกครั้งเพื่อดำเนินการถอนต่อ",
+    "body": "การตรวจสอบรายละเอียดการจ่ายเงินที่คุณบันทึกไว้ตามกำหนดล่าสุดของเราไม่ผ่าน การถอนจึงถูกระงับไว้จนกว่าคุณจะบันทึกใหม่อีกครั้ง",
+    "reason": "เหตุผล: {{reason}}",
+    "cta": "บันทึกบัญชีอีกครั้ง"
+  }
+}

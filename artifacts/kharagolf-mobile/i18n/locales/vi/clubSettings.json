@@ -1,0 +1,7 @@
+{
+  "title": "Cài đặt câu lạc bộ",
+  "subtitleWithClub": "Điều khiển quản trị cho {{club}}",
+  "subtitleNoClub": "Điều khiển quản trị cho câu lạc bộ của bạn",
+  "notAvailableTitle": "Không khả dụng",
+  "notAvailableText": "Cài đặt câu lạc bộ chỉ hiển thị cho quản trị viên câu lạc bộ và giám đốc giải đấu."
+}

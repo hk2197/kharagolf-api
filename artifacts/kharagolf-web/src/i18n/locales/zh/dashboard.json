@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "退出登录",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "锦标赛",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "卡住的副赛事收据",
+    "summary": "{{exhausted}} 条重试已耗尽 · {{skipped}} 条投递前已跳过",
+    "truncation": " · 显示 {{total}} 条中的 {{shown}} 条",
+    "userFallback": "用户 #{{id}}",
+    "rowDetails": "{{game}} · 结算 #{{settlementId}} · 付款人 {{payer}}",
+    "channelEmail": "邮件",
+    "channelPush": "推送",
+    "channelExhausted": "已耗尽 ({{count}})",
+    "channelSkipped": "已跳过",
+    "resendButton": "重新排队投递",
+    "resending": "重新排队中…",
+    "loadMore": "加载更多（还剩 {{remaining}} 条）",
+    "loading": "加载中…",
+    "toast": {
+      "successTitle": "收据已重新排队",
+      "successDescription": "下一次 cron 将重试 {{channels}}。",
+      "errorTitle": "无法重新排队",
+      "channelEmail": "邮件",
+      "channelPush": "推送",
+      "channelDelivery": "投递",
+      "channelSeparator": "和"
+    },
+    "statuses": {
+      "skipped": "已跳过",
+      "no_address": "无登记地址",
+      "opted_out": "已退订",
+      "no_user": "无用户账户",
+      "failed": "失败",
+      "pending": "待处理",
+      "queued": "已排队",
+      "unknown": "未知"
+    }
+  }
+}

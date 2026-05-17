@@ -1,0 +1,20 @@
+{
+  "title": "通知",
+  "subtitle": "ハンディキャップ委員会とマッチプレーの更新",
+  "unreadBadge_one": "新着 {{count}} 件",
+  "unreadBadge_other": "新着 {{count}} 件",
+  "markAll": "すべて既読",
+  "markAllAccessibility": "すべて既読にする",
+  "markAllErrorTitle": "すべて既読にできませんでした",
+  "markAllErrorMessage": "もう一度お試しください。",
+  "emptyTitle": "通知はありません",
+  "emptyText": "ハンディキャップ審査ケースが開かれたり決定されたとき、またはあなたの記録にタイブレークマッチが作成されたとき、ここに表示されます。",
+  "peerResponsesHeading": "新しいピア回答",
+  "peerResponsesUnread_one": "未読 {{count}} 件",
+  "peerResponsesUnread_other": "未読 {{count}} 件",
+  "peerResponsesHint": "タップして、該当するケースを委員会ツールで開きます。",
+  "tieBreakLabel": "タイブレークが必要",
+  "tieBreakFallbackSubject": "ラウンドロビンのタイブレークが必要",
+  "matchSuffix": "試合 #{{id}}",
+  "caseSuffix": "ケース #{{id}}"
+}

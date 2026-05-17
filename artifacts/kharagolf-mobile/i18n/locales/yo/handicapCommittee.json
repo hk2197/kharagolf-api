@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Yan",
+    "invitePeer": "Pe alábàákẹ́gbẹ́",
+    "recordDecision": "Kọ ìpinnu"
+  },
+  "assignModal": {
+    "title": "Yan ẹjọ",
+    "subtitle": "Yan ọmọ ẹgbẹ́ ìgbìmọ̀ láti gbà ojúṣe.",
+    "submit": "Yan"
+  },
+  "peerModal": {
+    "title": "Pe aláyẹ̀wò alábàákẹ́gbẹ́",
+    "subtitle": "Wọn yóò gba ímeèlì àti ìfitónileti tì.",
+    "submit": "Fi ìpèpè ránṣẹ́"
+  },
+  "decideModal": {
+    "title": "Kọ ìpinnu",
+    "decisionLabel": "Ìpinnu",
+    "rationaleLabel": "Ìdí (a nílò)",
+    "rationalePlaceholder": "Ṣàlàyé ìdí ìgbìmọ̀ náà",
+    "strokesLabel": "Ìlù àtúnṣe",
+    "strokesPlaceholder": "fún àpẹẹrẹ 1.0",
+    "capLabel": "Iye ààlà (HI 0–54)",
+    "capPlaceholder": "fún àpẹẹrẹ 18.4",
+    "notesLabel": "Àkíyèsí (yíyàn)",
+    "notesPlaceholder": "Àkíyèsí inú ìgbìmọ̀",
+    "applyToPlayerTitle": "Lo fún oṣèré",
+    "applyToPlayerHelp": "Tún kọ Atọ́ka Handicap tó jáde sí àkọsílẹ̀ oṣèré náà.",
+    "submit": "Kọ ìpinnu"
+  },
+  "decisions": {
+    "no_action": "Kò sí ìṣe",
+    "soft_cap": "Ààlà rírọ̀",
+    "hard_cap": "Ààlà líle",
+    "index_adjustment": "Àtúnṣe atọ́ka"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "A nílò ìdí",
+    "rationaleRequiredMessage": "Jọwọ kọ ìdí fún ìpinnu yìí.",
+    "invalidStrokesTitle": "Ìlù tí kò bá òfin mu",
+    "invalidStrokesMessage": "Ìlù àtúnṣe gbọ́dọ̀ jẹ́ nọ́mbà rere.",
+    "invalidCapTitle": "Ààlà tí kò bá òfin mu",
+    "invalidCapMessage": "Iye ààlà gbọ́dọ̀ wà láàárín 0 àti 54."
+  },
+  "errors": {
+    "assignFailed": "Yíyàn kọ̀",
+    "peerInviteFailed": "Ìpèpè alábàákẹ́gbẹ́ kọ̀",
+    "decisionFailed": "Ìpinnu kọ̀",
+    "membersLoadFailed": "Kò lè kó àwọn ọmọ ẹgbẹ́",
+    "couldNotOpen": "Kò lè ṣí ẹjọ",
+    "notFound": "A kò rí ẹjọ",
+    "couldNotLoad": "Kò lè kó ẹjọ.",
+    "missingOrgContext": "Ọ̀rọ̀ àyíká ètò àjọ kò sí fún ẹjọ yìí."
+  },
+  "memberPicker": {
+    "noMembers": "A kò rí àwọn ọmọ ẹgbẹ́ ìgbìmọ̀ tó yẹ.",
+    "cancel": "Fagilé"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} ninu {{total}} ti ṣii",
+    "badgeAccessibility": "{{opened}} ninu {{total}} olùyẹwò ti ṣi ìpè náà. Tẹ̀ láti rí àwọn alaye.",
+    "sheetTitle": "Ipo olùyẹwò ẹlẹgbẹ́",
+    "sheetSubtitle": "{{opened}} ninu {{total}} ti ṣi ìpè náà",
+    "openedHeading": "Ti ṣii ({{count}})",
+    "notYetOpenedHeading": "Kò tíì ṣí ({{count}})",
+    "everyoneOpened": "Gbogbo ènìyàn ti ṣi ìpè náà.",
+    "noneOpened": "Kò sí olùyẹwò tó ti ṣi ìpè náà síbẹ̀.",
+    "seenRelative": "A rí {{relative}}",
+    "invitedRelative": "A pè {{relative}}",
+    "close": "Tì"
+  },
+  "header": {
+    "caseNumber": "Ẹjọ #{{id}}",
+    "subtitle": "Àyẹ̀wò ìgbìmọ̀ handicap",
+    "back": "Padà"
+  },
+  "summary": {
+    "subject": "Kókó-ọ̀rọ̀",
+    "period": "Àkókò",
+    "details": "Àwọn alaye",
+    "decision": "Ìpinnu",
+    "openedAt": "Ṣí ní {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Àwọn ìdáhùn ẹlẹgbẹ́",
+    "headingWithCount": "Àwọn ìdáhùn ẹlẹgbẹ́ ({{count}})",
+    "empty": "Kò sí ìdáhùn ẹlẹgbẹ́ síbẹ̀.",
+    "recommendations": {
+      "confirm": "Jẹ́risí",
+      "dispute": "Tako",
+      "insufficient_info": "Ìwífún kò tó",
+      "responded": "A ti dáhùn"
+    },
+    "reviewerFallback": "Olùyẹwò",
+    "seenRelative": "A rí {{relative}}",
+    "notYetOpened": "Kò tíì ṣí",
+    "respondedAt": "A dáhùn ní {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Ń dúró fún ìdáhùn ({{count}})",
+    "filters": {
+      "all": "Gbogbo ({{count}})",
+      "openedUnresponded": "Ti ṣí, kò sí ìdáhùn ({{count}})",
+      "unopened": "Kò tíì ṣí ({{count}})"
+    },
+    "empty": "Kò sí olùyẹwò tó bá àjáfò yìí mu.",
+    "invited": "A pè ní {{date}}",
+    "invitedWithSeen": "A pè ní {{invited}} · a rí ní {{seen}}"
+  },
+  "activity": {
+    "heading": "Iṣẹ́ ṣíṣe"
+  },
+  "common": {
+    "close": "Tì"
+  },
+  "events": {
+    "opened": "Ti ṣii ẹjọ́",
+    "decided": "Ti gba ìpinnu sílẹ̀",
+    "closed": "Ti pa ẹjọ́",
+    "reopened": "Tun ṣii ẹjọ́",
+    "peer_responded": "Ìdáhùn ẹlẹgbẹ́"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}} ìṣẹ́jú-ààyá sẹ́yìn",
+      "second_other": "{{count}} ìṣẹ́jú-ààyá sẹ́yìn",
+      "minute_one": "{{count}} ìṣẹ́jú sẹ́yìn",
+      "minute_other": "{{count}} ìṣẹ́jú sẹ́yìn",
+      "hour_one": "{{count}} wákàtí sẹ́yìn",
+      "hour_other": "{{count}} wákàtí sẹ́yìn",
+      "day_one": "{{count}} ọjọ́ sẹ́yìn",
+      "day_other": "{{count}} ọjọ́ sẹ́yìn",
+      "month_one": "{{count}} oṣù sẹ́yìn",
+      "month_other": "{{count}} oṣù sẹ́yìn",
+      "year_one": "{{count}} ọdún sẹ́yìn",
+      "year_other": "{{count}} ọdún sẹ́yìn"
+    },
+    "future": {
+      "second_one": "ní {{count}} ìṣẹ́jú-ààyá sí iwájú",
+      "second_other": "ní {{count}} ìṣẹ́jú-ààyá sí iwájú",
+      "minute_one": "ní {{count}} ìṣẹ́jú sí iwájú",
+      "minute_other": "ní {{count}} ìṣẹ́jú sí iwájú",
+      "hour_one": "ní {{count}} wákàtí sí iwájú",
+      "hour_other": "ní {{count}} wákàtí sí iwájú",
+      "day_one": "ní {{count}} ọjọ́ sí iwájú",
+      "day_other": "ní {{count}} ọjọ́ sí iwájú",
+      "month_one": "ní {{count}} oṣù sí iwájú",
+      "month_other": "ní {{count}} oṣù sí iwájú",
+      "year_one": "ní {{count}} ọdún sí iwájú",
+      "year_other": "ní {{count}} ọdún sí iwájú"
+    }
+  }
+}

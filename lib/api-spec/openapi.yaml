@@ -1,0 +1,2108 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.1.0
+  description: KHARAGOLF Enterprise - Golf Tournament SaaS API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: auth
+    description: Authentication operations
+  - name: organizations
+    description: Organization/club management
+  - name: users
+    description: User management
+  - name: tournaments
+    description: Tournament management
+  - name: courses
+    description: Golf course management
+  - name: players
+    description: Player management and registration
+  - name: scores
+    description: Score entry and management
+  - name: leaderboard
+    description: Real-time leaderboard
+  - name: tee-times
+    description: Tee time and pairing management
+
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  # AUTH
+  /auth/me:
+    get:
+      operationId: getMe
+      tags: [auth]
+      summary: Get current authenticated user
+      responses:
+        "200":
+          description: Current user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthUser"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  # ORGANIZATIONS
+  /organizations:
+    get:
+      operationId: listOrganizations
+      tags: [organizations]
+      summary: List organizations (super admin sees all, others see their own)
+      responses:
+        "200":
+          description: List of organizations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Organization"
+    post:
+      operationId: createOrganization
+      tags: [organizations]
+      summary: Create a new organization
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateOrganizationInput"
+      responses:
+        "201":
+          description: Created organization
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Organization"
+
+  /organizations/{orgId}:
+    get:
+      operationId: getOrganization
+      tags: [organizations]
+      summary: Get organization details
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Organization
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Organization"
+    put:
+      operationId: updateOrganization
+      tags: [organizations]
+      summary: Update organization
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateOrganizationInput"
+      responses:
+        "200":
+          description: Updated organization
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Organization"
+
+  /organizations/{orgId}/stats:
+    get:
+      operationId: getOrganizationStats
+      tags: [organizations]
+      summary: Get org stats (tournaments, players, revenue)
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Organization statistics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrgStats"
+
+  # USERS
+  /organizations/{orgId}/members:
+    get:
+      operationId: listOrgMembers
+      tags: [users]
+      summary: List members of an organization
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: List of members
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/OrgMember"
+    post:
+      operationId: addOrgMember
+      tags: [users]
+      summary: Add member to organization
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AddMemberInput"
+      responses:
+        "201":
+          description: Added member
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrgMember"
+
+  /organizations/{orgId}/members/{userId}:
+    put:
+      operationId: updateMemberRole
+      tags: [users]
+      summary: Update member role
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateRoleInput"
+      responses:
+        "200":
+          description: Updated member
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrgMember"
+    delete:
+      operationId: removeOrgMember
+      tags: [users]
+      summary: Remove member from organization
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Removed
+
+  /organizations/{orgId}/members/notification-prefs/last-digest:
+    get:
+      operationId: getLastMemberPrefsDigest
+      tags: [users]
+      summary: Latest monthly member-prefs digest send (recipient list + counts).
+      description: |
+        Returns the most recent `member_audit_log` row written by the
+        monthly `sendMemberPrefsDigest` cron (entity=`comm_prefs`,
+        action=`member_prefs_digest_sent`) for this org. Used by the
+        admin notification-prefs panel to confirm who received the last
+        digest without querying the audit log directly. Returns
+        `{ lastDigest: null }` when nothing has been sent yet.
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Last digest send (or null when none exists yet).
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LastMemberPrefsDigestResponse"
+
+  /organizations/{orgId}/members/{userId}/notification-prefs:
+    put:
+      operationId: updateMemberNotifPrefs
+      tags: [users]
+      summary: Admin toggle of a member's notification preferences (currently side-game receipts)
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateMemberNotifPrefsInput"
+      responses:
+        "200":
+          description: Updated notification preferences for the member
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrgMemberNotifPrefs"
+
+  /organizations/{orgId}/members/audit-log.csv:
+    get:
+      operationId: exportOrgCommPrefsAuditCsv
+      tags: [users]
+      summary: Org-wide CSV export of the comm_prefs audit history.
+      description: |
+        Compliance/treasury staff often need to download every notification
+        preference change recorded in the org for offline review. Returns the
+        same `member_audit_log` rows as the in-page Players timeline (Task
+        #1505) — one CSV row per (audit row × field) so multi-field saves
+        expand naturally — with columns: Timestamp, Member User ID, Member,
+        Actor, Role, Entity, Action, Field, Before, After, Reason.
+        Defaults to entity=`comm_prefs`; pass `?entity=all` to include every
+        entity recorded against members in the org.
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: entity
+          in: query
+          required: false
+          description: Audit `entity` slug to filter by. Defaults to `comm_prefs`. Pass `all` to include every entity.
+          schema:
+            type: string
+            default: comm_prefs
+      responses:
+        "200":
+          description: CSV file (text/csv).
+          content:
+            text/csv:
+              schema:
+                type: string
+                format: binary
+
+  /organizations/{orgId}/members/{userId}/audit-log.csv:
+    get:
+      operationId: exportMemberCommPrefsAuditCsv
+      tags: [users]
+      summary: Per-member CSV export of the comm_prefs audit history.
+      description: |
+        Same column set as `/organizations/{orgId}/members/audit-log.csv` but
+        scoped to a single member's audit rows (entityId match). Backs the
+        per-member "Download history" button rendered alongside the
+        in-page timeline (Task #1505).
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: entity
+          in: query
+          required: false
+          description: Audit `entity` slug to filter by. Defaults to `comm_prefs`. Pass `all` to include every entity.
+          schema:
+            type: string
+            default: comm_prefs
+      responses:
+        "200":
+          description: CSV file (text/csv).
+          content:
+            text/csv:
+              schema:
+                type: string
+                format: binary
+        "404":
+          description: The user is not a member of this organization.
+
+  /organizations/{orgId}/members/{userId}/audit-log:
+    get:
+      operationId: getMemberAuditLog
+      tags: [users]
+      summary: Chronological audit log for a member (defaults to comm_prefs entries).
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: entity
+          in: query
+          required: false
+          description: Audit `entity` slug to filter by (e.g. `comm_prefs`). Pass `all` to return every entity. Defaults to `comm_prefs`.
+          schema:
+            type: string
+            default: comm_prefs
+        - name: limit
+          in: query
+          required: false
+          description: Max number of rows to return (1-100). Defaults to 20.
+          schema:
+            type: integer
+            default: 20
+            minimum: 1
+            maximum: 100
+        - name: from
+          in: query
+          required: false
+          description: Inclusive ISO timestamp lower bound on `createdAt`. Entries strictly before this are excluded.
+          schema:
+            type: string
+            format: date-time
+        - name: to
+          in: query
+          required: false
+          description: Inclusive ISO timestamp upper bound on `createdAt`. Entries strictly after this are excluded.
+          schema:
+            type: string
+            format: date-time
+        - name: actorUserId
+          in: query
+          required: false
+          description: Restrict results to entries written by the given actor (`app_users.id`).
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Reverse-chronological list of audit-log entries for the member.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MemberAuditLogResponse"
+
+  # COURSES
+  /organizations/{orgId}/courses:
+    get:
+      operationId: listCourses
+      tags: [courses]
+      summary: List golf courses for an organization
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: List of courses
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Course"
+    post:
+      operationId: createCourse
+      tags: [courses]
+      summary: Create a new course
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateCourseInput"
+      responses:
+        "201":
+          description: Created course
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Course"
+
+  /organizations/{orgId}/courses/{courseId}:
+    get:
+      operationId: getCourse
+      tags: [courses]
+      summary: Get course with hole details
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: courseId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Course with holes
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CourseWithHoles"
+    put:
+      operationId: updateCourse
+      tags: [courses]
+      summary: Update course
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: courseId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateCourseInput"
+      responses:
+        "200":
+          description: Updated course
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CourseWithHoles"
+
+  # TOURNAMENTS
+  /organizations/{orgId}/tournaments:
+    get:
+      operationId: listTournaments
+      tags: [tournaments]
+      summary: List tournaments for an organization
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [upcoming, active, completed, cancelled]
+      responses:
+        "200":
+          description: List of tournaments
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Tournament"
+    post:
+      operationId: createTournament
+      tags: [tournaments]
+      summary: Create a new tournament
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateTournamentInput"
+      responses:
+        "201":
+          description: Created tournament
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tournament"
+
+  /organizations/{orgId}/tournaments/{tournamentId}:
+    get:
+      operationId: getTournament
+      tags: [tournaments]
+      summary: Get tournament details
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Tournament
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TournamentDetail"
+    put:
+      operationId: updateTournament
+      tags: [tournaments]
+      summary: Update tournament
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateTournamentInput"
+      responses:
+        "200":
+          description: Updated tournament
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tournament"
+    delete:
+      operationId: deleteTournament
+      tags: [tournaments]
+      summary: Delete tournament
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Deleted
+
+  /organizations/{orgId}/tournaments/{tournamentId}/publish:
+    post:
+      operationId: publishTournament
+      tags: [tournaments]
+      summary: Publish/activate a tournament
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Published
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tournament"
+
+  # PLAYERS / REGISTRATIONS
+  /organizations/{orgId}/tournaments/{tournamentId}/players:
+    get:
+      operationId: listPlayers
+      tags: [players]
+      summary: List registered players in a tournament
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: List of players
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Player"
+    post:
+      operationId: registerPlayer
+      tags: [players]
+      summary: Register a player for a tournament
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegisterPlayerInput"
+      responses:
+        "201":
+          description: Registered player
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Player"
+
+  /organizations/{orgId}/tournaments/{tournamentId}/players/{playerId}:
+    put:
+      operationId: updatePlayer
+      tags: [players]
+      summary: Update player registration
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: playerId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegisterPlayerInput"
+      responses:
+        "200":
+          description: Updated player
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Player"
+    delete:
+      operationId: removePlayer
+      tags: [players]
+      summary: Remove player from tournament
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: playerId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Removed
+
+  /organizations/{orgId}/tournaments/{tournamentId}/players/{playerId}/checkin:
+    post:
+      operationId: checkInPlayer
+      tags: [players]
+      summary: QR check-in player
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: playerId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Checked in
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Player"
+
+  # TEE TIMES
+  /organizations/{orgId}/tournaments/{tournamentId}/tee-times:
+    get:
+      operationId: listTeeTimes
+      tags: [tee-times]
+      summary: List tee times and pairings
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Tee times
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TeeTime"
+    post:
+      operationId: createTeeTime
+      tags: [tee-times]
+      summary: Create tee time
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateTeeTimeInput"
+      responses:
+        "201":
+          description: Created tee time
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TeeTime"
+
+  /organizations/{orgId}/tournaments/{tournamentId}/generate-pairings:
+    post:
+      operationId: generatePairings
+      tags: [tee-times]
+      summary: Auto-generate pairings and tee times
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GeneratePairingsInput"
+      responses:
+        "200":
+          description: Generated tee times
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TeeTime"
+
+  # SCORES
+  /organizations/{orgId}/tournaments/{tournamentId}/scores:
+    get:
+      operationId: listScores
+      tags: [scores]
+      summary: List all scores for a tournament
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: playerId
+          in: query
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Scores
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Score"
+    post:
+      operationId: submitScore
+      tags: [scores]
+      summary: Submit or update a hole score
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SubmitScoreInput"
+      responses:
+        "200":
+          description: Submitted score
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Score"
+
+  /organizations/{orgId}/tournaments/{tournamentId}/scores/bulk:
+    post:
+      operationId: bulkSubmitScores
+      tags: [scores]
+      summary: Submit multiple hole scores at once
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BulkSubmitScoresInput"
+      responses:
+        "200":
+          description: Submitted scores
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Score"
+
+  # LEADERBOARD
+  /organizations/{orgId}/tournaments/{tournamentId}/leaderboard:
+    get:
+      operationId: getLeaderboard
+      tags: [leaderboard]
+      summary: Get tournament leaderboard
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: flight
+          in: query
+          schema:
+            type: string
+        - name: format
+          in: query
+          schema:
+            type: string
+            enum: [gross, net, skins, match_play]
+      responses:
+        "200":
+          description: Leaderboard
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Leaderboard"
+
+  /organizations/{orgId}/tournaments/{tournamentId}/scorecard/{playerId}:
+    get:
+      operationId: getScorecard
+      tags: [scores]
+      summary: Get full scorecard for a player
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: tournamentId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: playerId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Scorecard
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Scorecard"
+
+  # SUPER ADMIN
+  /admin/stats:
+    get:
+      operationId: getAdminStats
+      tags: [organizations]
+      summary: Super admin global stats
+      responses:
+        "200":
+          description: Global stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AdminStats"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required: [status]
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+      required: [error]
+
+    AuthUser:
+      type: object
+      properties:
+        id:
+          type: integer
+        replitId:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+        displayName:
+          type: string
+        profileImage:
+          type: string
+          nullable: true
+        role:
+          type: string
+          enum: [super_admin, org_admin, tournament_director, committee_member, competition_secretary, volunteer, player, spectator, pro_shop]
+        organizationId:
+          type: integer
+          nullable: true
+        organizationName:
+          type: string
+          nullable: true
+        preferredLanguage:
+          type: string
+          nullable: true
+        memberAdminOrgIds:
+          type: array
+          description: >
+            Org ids in which this user has a membership-derived
+            member-admin role (org_admin / membership_secretary /
+            treasurer in `org_memberships`). Pre-computed by the server
+            so clients can gate member-360 controller surfaces (stuck
+            erasure, privacy requests, etc.) for treasurers and
+            membership secretaries without issuing a follow-up
+            "what are my memberships?" request. The shared
+            `@workspace/member-admin-roles` helper consumes this field
+            on both web and mobile.
+          items:
+            type: integer
+        createdAt:
+          type: string
+      required: [id, replitId, username, role, createdAt]
+
+    Organization:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        slug:
+          type: string
+        description:
+          type: string
+          nullable: true
+        logoUrl:
+          type: string
+          nullable: true
+        primaryColor:
+          type: string
+          nullable: true
+        customDomain:
+          type: string
+          nullable: true
+        subscriptionTier:
+          type: string
+          enum: [free, starter, pro, enterprise]
+        isActive:
+          type: boolean
+        memberCount:
+          type: integer
+        tournamentCount:
+          type: integer
+        createdAt:
+          type: string
+      required: [id, name, slug, subscriptionTier, isActive, memberCount, tournamentCount, createdAt]
+
+    CreateOrganizationInput:
+      type: object
+      properties:
+        name:
+          type: string
+        slug:
+          type: string
+        description:
+          type: string
+          nullable: true
+        logoUrl:
+          type: string
+          nullable: true
+        primaryColor:
+          type: string
+          nullable: true
+        customDomain:
+          type: string
+          nullable: true
+        subscriptionTier:
+          type: string
+          enum: [free, starter, pro, enterprise]
+      required: [name, slug]
+
+    OrgStats:
+      type: object
+      properties:
+        totalTournaments:
+          type: integer
+        activeTournaments:
+          type: integer
+        totalPlayers:
+          type: integer
+        totalRounds:
+          type: integer
+        recentActivity:
+          type: array
+          items:
+            type: object
+            properties:
+              type:
+                type: string
+              description:
+                type: string
+              timestamp:
+                type: string
+            required: [type, description, timestamp]
+      required: [totalTournaments, activeTournaments, totalPlayers, totalRounds, recentActivity]
+
+    AdminStats:
+      type: object
+      properties:
+        totalOrganizations:
+          type: integer
+        totalTournaments:
+          type: integer
+        totalPlayers:
+          type: integer
+        totalUsers:
+          type: integer
+        activeTournaments:
+          type: integer
+      required: [totalOrganizations, totalTournaments, totalPlayers, totalUsers, activeTournaments]
+
+    OrgMemberNotifPrefs:
+      type: object
+      properties:
+        preferEmail:
+          type: boolean
+        preferPush:
+          type: boolean
+        preferSms:
+          type: boolean
+        preferWhatsapp:
+          type: boolean
+        notifySideGameReceipts:
+          type: boolean
+      required: [preferEmail, preferPush, preferSms, preferWhatsapp, notifySideGameReceipts]
+
+    OrgMember:
+      type: object
+      properties:
+        id:
+          type: integer
+        userId:
+          type: integer
+        username:
+          type: string
+        displayName:
+          type: string
+          nullable: true
+        email:
+          type: string
+          nullable: true
+        role:
+          type: string
+          enum: [org_admin, tournament_director, player, spectator, pro_shop]
+        joinedAt:
+          type: string
+        isLocalAuth:
+          type: boolean
+        emailVerified:
+          type: boolean
+        notifPrefs:
+          allOf:
+            - $ref: "#/components/schemas/OrgMemberNotifPrefs"
+          nullable: true
+      required: [id, userId, username, role, joinedAt]
+
+    UpdateMemberNotifPrefsInput:
+      type: object
+      description: |
+        Admin-side override of one or more of a member's notification preferences.
+        At least one of the boolean fields must be provided; unspecified fields
+        are left unchanged.
+      properties:
+        preferEmail:
+          type: boolean
+        preferPush:
+          type: boolean
+        preferSms:
+          type: boolean
+        preferWhatsapp:
+          type: boolean
+        notifySideGameReceipts:
+          type: boolean
+        reason:
+          type: string
+          description: Optional free-text reason recorded in the audit trail.
+
+    MemberAuditLogFieldChange:
+      type: object
+      description: Before/after values for a single field that was edited.
+      properties:
+        from:
+          nullable: true
+          description: Previous value (any JSON-serialisable shape; may be null).
+        to:
+          nullable: true
+          description: New value (any JSON-serialisable shape; may be null).
+
+    MemberAuditLogEntry:
+      type: object
+      description: A single row from `member_audit_log` rendered for the admin Players timeline. Returned in reverse-chronological order (newest first).
+      properties:
+        id:
+          type: integer
+        createdAt:
+          type: string
+          format: date-time
+        actorUserId:
+          type: integer
+          nullable: true
+        actorName:
+          type: string
+          nullable: true
+          description: Display name of the admin who performed the action (falls back to email or "system").
+        actorRole:
+          type: string
+          nullable: true
+        entity:
+          type: string
+        entityId:
+          type: integer
+          nullable: true
+        action:
+          type: string
+          description: e.g. `create`, `update`, `delete`, `view_pii`.
+        fieldChanges:
+          type: object
+          nullable: true
+          additionalProperties:
+            $ref: "#/components/schemas/MemberAuditLogFieldChange"
+          description: Map of field name to before/after values. Empty/null when the action was not a field-level edit.
+        reason:
+          type: string
+          nullable: true
+        metadata:
+          type: object
+          nullable: true
+          additionalProperties: true
+      required: [id, createdAt, entity, action]
+
+    MemberAuditLogActor:
+      type: object
+      description: A distinct actor (admin) that has appeared in this member's audit history. Used to populate the actor filter dropdown.
+      properties:
+        actorUserId:
+          type: integer
+        actorName:
+          type: string
+          nullable: true
+      required: [actorUserId]
+
+    MemberAuditLogAppliedFilters:
+      type: object
+      description: Echoes the filter values that were applied to this response (after parsing/validation).
+      properties:
+        from:
+          type: string
+          format: date-time
+          nullable: true
+        to:
+          type: string
+          format: date-time
+          nullable: true
+        actorUserId:
+          type: integer
+          nullable: true
+      required: [from, to, actorUserId]
+
+    MemberAuditLogResponse:
+      type: object
+      properties:
+        entries:
+          type: array
+          items:
+            $ref: "#/components/schemas/MemberAuditLogEntry"
+        limit:
+          type: integer
+          description: The cap that was applied to this response.
+        availableActors:
+          type: array
+          description: Distinct actors that have ever written an audit row for this member (within the same `entity` scope). Stable across filter changes so the actor dropdown stays populated.
+          items:
+            $ref: "#/components/schemas/MemberAuditLogActor"
+        appliedFilters:
+          $ref: "#/components/schemas/MemberAuditLogAppliedFilters"
+      required: [entries, limit, availableActors, appliedFilters]
+
+    MemberPrefsDigestRecipient:
+      type: object
+      description: One recipient that successfully received the monthly digest email.
+      properties:
+        userId:
+          type: integer
+        email:
+          type: string
+      required: [userId, email]
+
+    LastMemberPrefsDigestSummary:
+      type: object
+      description: |
+        Summary of the most recent monthly member-prefs digest send for an
+        org, parsed from the `member_audit_log` row written by the cron.
+      properties:
+        sentAt:
+          type: string
+          format: date-time
+          description: When the digest was sent (ISO timestamp).
+        period:
+          type: string
+          nullable: true
+          description: Calendar month covered, formatted as `YYYY-MM` (UTC).
+        memberRows:
+          type: integer
+          description: Number of member rows in the attached CSV snapshot.
+        recipientsEmailed:
+          type: integer
+          description: Count of controllers who successfully received the email.
+        recipientsSuppressed:
+          type: integer
+          description: Count of eligible controllers skipped due to per-user opt-out.
+        filename:
+          type: string
+          nullable: true
+          description: Filename of the CSV attachment that was emailed.
+        recipients:
+          type: array
+          items:
+            $ref: "#/components/schemas/MemberPrefsDigestRecipient"
+          description: Per-recipient list (userId + email) that successfully received the digest.
+      required:
+        - sentAt
+        - memberRows
+        - recipientsEmailed
+        - recipientsSuppressed
+        - recipients
+
+    LastMemberPrefsDigestResponse:
+      type: object
+      properties:
+        lastDigest:
+          allOf:
+            - $ref: "#/components/schemas/LastMemberPrefsDigestSummary"
+          nullable: true
+          description: Null when no digest has been sent yet for this organization.
+      required: [lastDigest]
+
+    AddMemberInput:
+      type: object
+      properties:
+        username:
+          type: string
+        role:
+          type: string
+          enum: [org_admin, tournament_director, player, spectator, pro_shop]
+      required: [username, role]
+
+    UpdateRoleInput:
+      type: object
+      properties:
+        role:
+          type: string
+          enum: [org_admin, tournament_director, player, spectator, pro_shop]
+      required: [role]
+
+    Course:
+      type: object
+      properties:
+        id:
+          type: integer
+        organizationId:
+          type: integer
+        name:
+          type: string
+        location:
+          type: string
+          nullable: true
+        holes:
+          type: integer
+        par:
+          type: integer
+        rating:
+          type: number
+          nullable: true
+        slope:
+          type: integer
+          nullable: true
+        yardage:
+          type: integer
+          nullable: true
+        externalCourseId:
+          type: string
+          nullable: true
+        # Task #1312 — remembered course mapper centre. Saved when an admin
+        # opens the in-house mapper so it flies straight to the course
+        # next time. Surfaced on the list response (Task #1558) so the
+        # admin courses list can show "Located near …" without an extra
+        # round-trip to GET /courses/:id.
+        mapDefaultLat:
+          type: string
+          nullable: true
+        mapDefaultLng:
+          type: string
+          nullable: true
+        mapDefaultZoom:
+          type: integer
+          nullable: true
+        createdAt:
+          type: string
+      required: [id, organizationId, name, holes, par, createdAt]
+
+    CourseWithHoles:
+      allOf:
+        - $ref: "#/components/schemas/Course"
+        - type: object
+          properties:
+            holeDetails:
+              type: array
+              items:
+                $ref: "#/components/schemas/HoleDetail"
+          required: [holeDetails]
+
+    HoleDetail:
+      type: object
+      properties:
+        id:
+          type: integer
+        holeNumber:
+          type: integer
+        par:
+          type: integer
+        handicap:
+          type: integer
+          nullable: true
+        yardageBlue:
+          type: integer
+          nullable: true
+        yardageWhite:
+          type: integer
+          nullable: true
+        yardageRed:
+          type: integer
+          nullable: true
+        description:
+          type: string
+          nullable: true
+      required: [id, holeNumber, par]
+
+    CreateCourseInput:
+      type: object
+      properties:
+        name:
+          type: string
+        location:
+          type: string
+          nullable: true
+        holes:
+          type: integer
+        par:
+          type: integer
+        rating:
+          type: number
+          nullable: true
+        slope:
+          type: integer
+          nullable: true
+        yardage:
+          type: integer
+          nullable: true
+        externalCourseId:
+          type: string
+          nullable: true
+        holeDetails:
+          type: array
+          items:
+            type: object
+            properties:
+              holeNumber:
+                type: integer
+              par:
+                type: integer
+              handicap:
+                type: integer
+                nullable: true
+              yardageBlue:
+                type: integer
+                nullable: true
+              yardageWhite:
+                type: integer
+                nullable: true
+              yardageRed:
+                type: integer
+                nullable: true
+            required: [holeNumber, par]
+      required: [name, holes, par]
+
+    Tournament:
+      type: object
+      properties:
+        id:
+          type: integer
+        organizationId:
+          type: integer
+        courseId:
+          type: integer
+          nullable: true
+        courseName:
+          type: string
+          nullable: true
+        name:
+          type: string
+        description:
+          type: string
+          nullable: true
+        format:
+          type: string
+          enum: [stroke_play, net_stroke, best_ball, scramble, skins, match_play, stableford, shamble]
+        status:
+          type: string
+          enum: [draft, upcoming, active, completed, cancelled]
+        startDate:
+          type: string
+          nullable: true
+        endDate:
+          type: string
+          nullable: true
+        rounds:
+          type: integer
+        maxPlayers:
+          type: integer
+          nullable: true
+        entryFee:
+          type: number
+          nullable: true
+        currency:
+          type: string
+          nullable: true
+        checkInCutoffAt:
+          type: string
+          nullable: true
+        reminderDaysBefore:
+          type: integer
+          nullable: true
+        isPublic:
+          type: boolean
+        allowSpectators:
+          type: boolean
+        registrationDeadline:
+          type: string
+          nullable: true
+        playerCount:
+          type: integer
+        createdAt:
+          type: string
+      required: [id, organizationId, name, format, status, rounds, isPublic, allowSpectators, playerCount, createdAt]
+
+    TournamentDetail:
+      allOf:
+        - $ref: "#/components/schemas/Tournament"
+        - type: object
+          properties:
+            course:
+              $ref: "#/components/schemas/CourseWithHoles"
+              nullable: true
+            flights:
+              type: array
+              items:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  minHandicap:
+                    type: number
+                    nullable: true
+                  maxHandicap:
+                    type: number
+                    nullable: true
+                  playerCount:
+                    type: integer
+                required: [name, playerCount]
+
+    CreateTournamentInput:
+      type: object
+      properties:
+        courseId:
+          type: integer
+          nullable: true
+        name:
+          type: string
+        description:
+          type: string
+          nullable: true
+        format:
+          type: string
+          enum: [stroke_play, net_stroke, best_ball, scramble, skins, match_play, stableford, shamble]
+        startDate:
+          type: string
+          nullable: true
+        endDate:
+          type: string
+          nullable: true
+        rounds:
+          type: integer
+        maxPlayers:
+          type: integer
+          nullable: true
+        entryFee:
+          type: number
+          nullable: true
+        isPublic:
+          type: boolean
+        allowSpectators:
+          type: boolean
+        registrationDeadline:
+          type: string
+          nullable: true
+      required: [name, format, rounds, isPublic, allowSpectators]
+
+    Player:
+      type: object
+      properties:
+        id:
+          type: integer
+        tournamentId:
+          type: integer
+        userId:
+          type: integer
+          nullable: true
+        firstName:
+          type: string
+        lastName:
+          type: string
+        email:
+          type: string
+          nullable: true
+        phone:
+          type: string
+          nullable: true
+        handicapIndex:
+          type: number
+          nullable: true
+        ghinNumber:
+          type: string
+          nullable: true
+        flight:
+          type: string
+          nullable: true
+        teeBox:
+          type: string
+          nullable: true
+        paymentStatus:
+          type: string
+          enum: [unpaid, pending, paid, refunded]
+        paymentLinkUrl:
+          type: string
+          nullable: true
+        paymentLinkId:
+          type: string
+          nullable: true
+        razorpayPaymentId:
+          type: string
+          nullable: true
+        dns:
+          type: boolean
+          nullable: true
+        checkedIn:
+          type: boolean
+        checkedInAt:
+          type: string
+          nullable: true
+        teamName:
+          type: string
+          nullable: true
+        currentRound:
+          type: integer
+        currentHole:
+          type: integer
+          nullable: true
+        grossScore:
+          type: integer
+          nullable: true
+        netScore:
+          type: number
+          nullable: true
+        scoreToPar:
+          type: integer
+          nullable: true
+        registeredAt:
+          type: string
+      required: [id, tournamentId, firstName, lastName, paymentStatus, checkedIn, currentRound, registeredAt]
+
+    RegisterPlayerInput:
+      type: object
+      properties:
+        userId:
+          type: integer
+          nullable: true
+        firstName:
+          type: string
+        lastName:
+          type: string
+        email:
+          type: string
+          nullable: true
+        phone:
+          type: string
+          nullable: true
+        handicapIndex:
+          type: number
+          nullable: true
+        ghinNumber:
+          type: string
+          nullable: true
+        flight:
+          type: string
+          nullable: true
+        teeBox:
+          type: string
+          nullable: true
+        teamName:
+          type: string
+          nullable: true
+      required: [firstName, lastName]
+
+    TeeTime:
+      type: object
+      properties:
+        id:
+          type: integer
+        tournamentId:
+          type: integer
+        teeTime:
+          type: string
+        hole:
+          type: integer
+        round:
+          type: integer
+        players:
+          type: array
+          items:
+            type: object
+            properties:
+              playerId:
+                type: integer
+              firstName:
+                type: string
+              lastName:
+                type: string
+              flight:
+                type: string
+                nullable: true
+            required: [playerId, firstName, lastName]
+      required: [id, tournamentId, teeTime, hole, round, players]
+
+    CreateTeeTimeInput:
+      type: object
+      properties:
+        teeTime:
+          type: string
+        hole:
+          type: integer
+        round:
+          type: integer
+        playerIds:
+          type: array
+          items:
+            type: integer
+      required: [teeTime, hole, round, playerIds]
+
+    StartMode:
+      type: string
+      enum: [sequential, shotgun, split_tee, multi_hole]
+
+    GeneratePairingsInput:
+      type: object
+      properties:
+        round:
+          type: integer
+        startTime:
+          type: string
+        intervalMinutes:
+          type: integer
+        groupSize:
+          type: integer
+        startingHole:
+          type: integer
+          deprecated: true
+          description: Use startMode and startingHoles instead
+        shotgunStart:
+          type: boolean
+          deprecated: true
+          description: "Use startMode: 'shotgun' instead"
+        startMode:
+          $ref: '#/components/schemas/StartMode'
+          description: New explicit start mode
+        startingHoles:
+          type: array
+          items:
+            type: integer
+          description: Array of starting hole numbers (required for split_tee and multi_hole)
+      required: [round, startTime, intervalMinutes, groupSize]
+
+    Score:
+      type: object
+      properties:
+        id:
+          type: integer
+        tournamentId:
+          type: integer
+        playerId:
+          type: integer
+        round:
+          type: integer
+        holeNumber:
+          type: integer
+        strokes:
+          type: integer
+        putts:
+          type: integer
+          nullable: true
+        fairwayHit:
+          type: boolean
+          nullable: true
+        girHit:
+          type: boolean
+          nullable: true
+        isVerified:
+          type: boolean
+        submittedAt:
+          type: string
+      required: [id, tournamentId, playerId, round, holeNumber, strokes, isVerified, submittedAt]
+
+    SubmitScoreInput:
+      type: object
+      properties:
+        playerId:
+          type: integer
+        round:
+          type: integer
+        holeNumber:
+          type: integer
+        strokes:
+          type: integer
+        putts:
+          type: integer
+          nullable: true
+        fairwayHit:
+          type: boolean
+          nullable: true
+        girHit:
+          type: boolean
+          nullable: true
+      required: [playerId, round, holeNumber, strokes]
+
+    BulkSubmitScoresInput:
+      type: object
+      properties:
+        scores:
+          type: array
+          items:
+            $ref: "#/components/schemas/SubmitScoreInput"
+      required: [scores]
+
+    Leaderboard:
+      type: object
+      properties:
+        tournamentId:
+          type: integer
+        tournamentName:
+          type: string
+        format:
+          type: string
+        lastUpdated:
+          type: string
+        entries:
+          type: array
+          items:
+            $ref: "#/components/schemas/LeaderboardEntry"
+      required: [tournamentId, tournamentName, format, lastUpdated, entries]
+
+    LeaderboardEntry:
+      type: object
+      properties:
+        position:
+          type: integer
+        positionDisplay:
+          type: string
+        playerId:
+          type: integer
+        playerName:
+          type: string
+        flight:
+          type: string
+          nullable: true
+        handicapIndex:
+          type: number
+          nullable: true
+        grossScore:
+          type: integer
+          nullable: true
+        netScore:
+          type: number
+          nullable: true
+        scoreToPar:
+          type: integer
+          nullable: true
+        holesCompleted:
+          type: integer
+        currentHole:
+          type: integer
+          nullable: true
+        holeScores:
+          type: array
+          items:
+            type: object
+            properties:
+              hole:
+                type: integer
+              strokes:
+                type: integer
+              par:
+                type: integer
+              toPar:
+                type: integer
+            required: [hole, strokes, par, toPar]
+        thru:
+          type: string
+          nullable: true
+        movement:
+          type: integer
+          nullable: true
+        checkedIn:
+          type: boolean
+      required: [position, positionDisplay, playerId, playerName, grossScore, holesCompleted, checkedIn]
+
+    Scorecard:
+      type: object
+      properties:
+        player:
+          $ref: "#/components/schemas/Player"
+        tournament:
+          $ref: "#/components/schemas/Tournament"
+        round:
+          type: integer
+        holes:
+          type: array
+          items:
+            type: object
+            properties:
+              holeNumber:
+                type: integer
+              par:
+                type: integer
+              handicap:
+                type: integer
+                nullable: true
+              strokes:
+                type: integer
+                nullable: true
+              putts:
+                type: integer
+                nullable: true
+              fairwayHit:
+                type: boolean
+                nullable: true
+              girHit:
+                type: boolean
+                nullable: true
+              netStrokes:
+                type: number
+                nullable: true
+              toPar:
+                type: integer
+                nullable: true
+            required: [holeNumber, par]
+        totalStrokes:
+          type: integer
+          nullable: true
+        totalPutts:
+          type: integer
+          nullable: true
+        totalNetScore:
+          type: number
+          nullable: true
+        scoreToPar:
+          type: integer
+          nullable: true
+      required: [player, tournament, round, holes]

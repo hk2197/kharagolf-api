@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Ibi tí èyí ti wá:",
+    "source_whs": "handicap WHS rẹ tí ó wà láàyè",
+    "source_history": "ìyíká tí ìwọ ṣẹ̀ṣẹ̀ tẹ̀ síta",
+    "source_profile": "handicap tó wà nínú profáìlì rẹ",
+    "fix_whs": "Ṣe àfikún WHS",
+    "fix_history": "Tẹ̀ ìyíká tuntun síta",
+    "fix_profile": "Ṣàtúnṣe handicap profáìlì",
+    "fix_default": "Fi handicap rẹ kún",
+    "summary": "Handicap {{handicap}} láti ọ̀dọ̀ {{source}}.",
+    "summaryWithAsOf": "Handicap {{handicap}} láti ọ̀dọ̀ {{source}} (láti {{asOf}}).",
+    "noneAuto": "Kò sí handicap kankan síbẹ̀ — a ń lo àfiwé ìbẹ̀rẹ̀.",
+    "nonePinned": "Kò sí handicap kankan síbẹ̀.",
+    "asOfToday": "lónìí",
+    "asOfYesterday": "àná",
+    "asOfDays": "ọjọ́ {{count}} sẹ́yìn",
+    "asOfMonth": "oṣù {{count}} sẹ́yìn",
+    "asOfMonths": "oṣù {{count}} sẹ́yìn",
+    "asOfYear": "ọdún {{count}} sẹ́yìn",
+    "asOfYears": "ọdún {{count}} sẹ́yìn"
+  }
+}

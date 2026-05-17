@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Phân công",
+    "invitePeer": "Mời đồng nghiệp",
+    "recordDecision": "Ghi nhận quyết định"
+  },
+  "assignModal": {
+    "title": "Phân công vụ việc",
+    "subtitle": "Chọn một thành viên ủy ban để chịu trách nhiệm.",
+    "submit": "Phân công"
+  },
+  "peerModal": {
+    "title": "Mời người đánh giá đồng nghiệp",
+    "subtitle": "Họ sẽ nhận được email và thông báo đẩy.",
+    "submit": "Gửi lời mời"
+  },
+  "decideModal": {
+    "title": "Ghi nhận quyết định",
+    "decisionLabel": "Quyết định",
+    "rationaleLabel": "Lý do (bắt buộc)",
+    "rationalePlaceholder": "Giải thích lý do của ủy ban",
+    "strokesLabel": "Số gậy điều chỉnh",
+    "strokesPlaceholder": "ví dụ: 1.0",
+    "capLabel": "Giá trị giới hạn (HI 0–54)",
+    "capPlaceholder": "ví dụ: 18.4",
+    "notesLabel": "Ghi chú (tùy chọn)",
+    "notesPlaceholder": "Ghi chú nội bộ của ủy ban",
+    "applyToPlayerTitle": "Áp dụng cho người chơi",
+    "applyToPlayerHelp": "Cũng ghi Chỉ số Handicap kết quả vào hồ sơ của người chơi.",
+    "submit": "Ghi nhận quyết định"
+  },
+  "decisions": {
+    "no_action": "Không hành động",
+    "soft_cap": "Giới hạn mềm",
+    "hard_cap": "Giới hạn cứng",
+    "index_adjustment": "Điều chỉnh chỉ số"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Cần có lý do",
+    "rationaleRequiredMessage": "Vui lòng ghi lại lý do cho quyết định này.",
+    "invalidStrokesTitle": "Số gậy không hợp lệ",
+    "invalidStrokesMessage": "Số gậy điều chỉnh phải là một số dương.",
+    "invalidCapTitle": "Giới hạn không hợp lệ",
+    "invalidCapMessage": "Giá trị giới hạn phải nằm giữa 0 và 54."
+  },
+  "errors": {
+    "assignFailed": "Phân công thất bại",
+    "peerInviteFailed": "Mời đồng nghiệp thất bại",
+    "decisionFailed": "Quyết định thất bại",
+    "membersLoadFailed": "Không thể tải các thành viên",
+    "couldNotOpen": "Không thể mở vụ việc",
+    "notFound": "Không tìm thấy vụ việc",
+    "couldNotLoad": "Không thể tải vụ việc.",
+    "missingOrgContext": "Thiếu ngữ cảnh tổ chức cho vụ việc này."
+  },
+  "memberPicker": {
+    "noMembers": "Không tìm thấy thành viên ủy ban đủ điều kiện.",
+    "cancel": "Hủy"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} trên {{total}} đã mở",
+    "badgeAccessibility": "{{opened}} trên {{total}} người đánh giá đã mở lời mời. Nhấn để xem chi tiết.",
+    "sheetTitle": "Trạng thái người đánh giá đồng cấp",
+    "sheetSubtitle": "{{opened}} trên {{total}} đã mở lời mời",
+    "openedHeading": "Đã mở ({{count}})",
+    "notYetOpenedHeading": "Chưa mở ({{count}})",
+    "everyoneOpened": "Mọi người đã mở lời mời.",
+    "noneOpened": "Chưa có người đánh giá nào mở lời mời.",
+    "seenRelative": "Đã xem {{relative}}",
+    "invitedRelative": "Đã mời {{relative}}",
+    "close": "Đóng"
+  },
+  "header": {
+    "caseNumber": "Vụ việc #{{id}}",
+    "subtitle": "Đánh giá của ủy ban handicap",
+    "back": "Quay lại"
+  },
+  "summary": {
+    "subject": "Đối tượng",
+    "period": "Khoảng thời gian",
+    "details": "Chi tiết",
+    "decision": "Quyết định",
+    "openedAt": "Mở vào {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Phản hồi của đồng nghiệp",
+    "headingWithCount": "Phản hồi của đồng nghiệp ({{count}})",
+    "empty": "Chưa có phản hồi của đồng nghiệp.",
+    "recommendations": {
+      "confirm": "Đã xác nhận",
+      "dispute": "Tranh chấp",
+      "insufficient_info": "Thông tin không đủ",
+      "responded": "Đã phản hồi"
+    },
+    "reviewerFallback": "Người đánh giá",
+    "seenRelative": "Đã xem {{relative}}",
+    "notYetOpened": "Chưa mở",
+    "respondedAt": "Đã phản hồi {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Đang chờ phản hồi ({{count}})",
+    "filters": {
+      "all": "Tất cả ({{count}})",
+      "openedUnresponded": "Đã mở, không phản hồi ({{count}})",
+      "unopened": "Chưa mở ({{count}})"
+    },
+    "empty": "Không có người đánh giá nào khớp với bộ lọc này.",
+    "invited": "Đã mời {{date}}",
+    "invitedWithSeen": "Đã mời {{invited}} · đã xem {{seen}}"
+  },
+  "activity": {
+    "heading": "Hoạt động"
+  },
+  "common": {
+    "close": "Đóng"
+  },
+  "events": {
+    "opened": "Đã mở hồ sơ",
+    "decided": "Đã ghi nhận quyết định",
+    "closed": "Đã đóng hồ sơ",
+    "reopened": "Đã mở lại hồ sơ",
+    "peer_responded": "Phản hồi của đồng nghiệp"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}} giây trước",
+      "second_other": "{{count}} giây trước",
+      "minute_one": "{{count}} phút trước",
+      "minute_other": "{{count}} phút trước",
+      "hour_one": "{{count}} giờ trước",
+      "hour_other": "{{count}} giờ trước",
+      "day_one": "{{count}} ngày trước",
+      "day_other": "{{count}} ngày trước",
+      "month_one": "{{count}} tháng trước",
+      "month_other": "{{count}} tháng trước",
+      "year_one": "{{count}} năm trước",
+      "year_other": "{{count}} năm trước"
+    },
+    "future": {
+      "second_one": "sau {{count}} giây",
+      "second_other": "sau {{count}} giây",
+      "minute_one": "sau {{count}} phút",
+      "minute_other": "sau {{count}} phút",
+      "hour_one": "sau {{count}} giờ",
+      "hour_other": "sau {{count}} giờ",
+      "day_one": "sau {{count}} ngày",
+      "day_other": "sau {{count}} ngày",
+      "month_one": "sau {{count}} tháng",
+      "month_other": "sau {{count}} tháng",
+      "year_one": "sau {{count}} năm",
+      "year_other": "sau {{count}} năm"
+    }
+  }
+}

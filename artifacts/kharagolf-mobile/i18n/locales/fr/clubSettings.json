@@ -1,0 +1,7 @@
+{
+  "title": "Paramètres du club",
+  "subtitleWithClub": "Contrôles d’administration pour {{club}}",
+  "subtitleNoClub": "Contrôles d’administration pour votre club",
+  "notAvailableTitle": "Indisponible",
+  "notAvailableText": "Les paramètres du club ne sont visibles que par les administrateurs du club et les directeurs de tournoi."
+}

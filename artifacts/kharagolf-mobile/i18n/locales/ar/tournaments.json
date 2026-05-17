@@ -1,0 +1,18 @@
+{
+  "tournaments": "البطولات",
+  "tournament": "البطولة",
+  "register": "تسجيل",
+  "registered": "مسجل",
+  "checkIn": "تسجيل الحضور",
+  "checkedIn": "تم تسجيل الحضور",
+  "leaderboard": "لوحة المتصدرين",
+  "teeTimes": "أوقات الانطلاق",
+  "results": "النتائج",
+  "round": "الجولة",
+  "course": "الملعب",
+  "entryFee": "رسوم الدخول",
+  "format": "التنسيق",
+  "startDate": "تاريخ البداية",
+  "status": "الحالة",
+  "noTournaments": "لا توجد بطولات متاحة"
+}

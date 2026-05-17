@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Tugaskan",
+    "invitePeer": "Jemput rakan",
+    "recordDecision": "Rekod keputusan"
+  },
+  "assignModal": {
+    "title": "Tugaskan kes",
+    "subtitle": "Pilih ahli jawatankuasa untuk mengambil tanggungjawab.",
+    "submit": "Tugaskan"
+  },
+  "peerModal": {
+    "title": "Jemput penyemak rakan",
+    "subtitle": "Mereka akan menerima e-mel dan pemberitahuan tolak.",
+    "submit": "Hantar jemputan"
+  },
+  "decideModal": {
+    "title": "Rekod keputusan",
+    "decisionLabel": "Keputusan",
+    "rationaleLabel": "Justifikasi (diperlukan)",
+    "rationalePlaceholder": "Jelaskan alasan jawatankuasa",
+    "strokesLabel": "Pukulan pelarasan",
+    "strokesPlaceholder": "cth. 1.0",
+    "capLabel": "Nilai had (HI 0–54)",
+    "capPlaceholder": "cth. 18.4",
+    "notesLabel": "Nota (pilihan)",
+    "notesPlaceholder": "Nota dalaman jawatankuasa",
+    "applyToPlayerTitle": "Terapkan kepada pemain",
+    "applyToPlayerHelp": "Tulis juga Indeks Handikap yang terhasil dalam rekod pemain.",
+    "submit": "Rekod keputusan"
+  },
+  "decisions": {
+    "no_action": "Tiada tindakan",
+    "soft_cap": "Had lembut",
+    "hard_cap": "Had ketat",
+    "index_adjustment": "Pelarasan indeks"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Justifikasi diperlukan",
+    "rationaleRequiredMessage": "Sila rekod justifikasi untuk keputusan ini.",
+    "invalidStrokesTitle": "Pukulan tidak sah",
+    "invalidStrokesMessage": "Pukulan pelarasan mestilah nombor positif.",
+    "invalidCapTitle": "Had tidak sah",
+    "invalidCapMessage": "Nilai had mestilah antara 0 dan 54."
+  },
+  "errors": {
+    "assignFailed": "Penugasan gagal",
+    "peerInviteFailed": "Jemputan rakan gagal",
+    "decisionFailed": "Keputusan gagal",
+    "membersLoadFailed": "Tidak dapat memuatkan ahli",
+    "couldNotOpen": "Tidak dapat membuka kes",
+    "notFound": "Kes tidak ditemui",
+    "couldNotLoad": "Tidak dapat memuatkan kes.",
+    "missingOrgContext": "Konteks organisasi tiada untuk kes ini."
+  },
+  "memberPicker": {
+    "noMembers": "Tiada ahli jawatankuasa yang layak ditemui.",
+    "cancel": "Batal"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} daripada {{total}} dibuka",
+    "badgeAccessibility": "{{opened}} daripada {{total}} penyemak telah membuka jemputan. Ketik untuk melihat butiran.",
+    "sheetTitle": "Status penyemak rakan sebaya",
+    "sheetSubtitle": "{{opened}} daripada {{total}} telah membuka jemputan",
+    "openedHeading": "Dibuka ({{count}})",
+    "notYetOpenedHeading": "Belum dibuka ({{count}})",
+    "everyoneOpened": "Semua orang telah membuka jemputan.",
+    "noneOpened": "Belum ada penyemak yang membuka jemputan.",
+    "seenRelative": "Dilihat {{relative}}",
+    "invitedRelative": "Dijemput {{relative}}",
+    "close": "Tutup"
+  },
+  "header": {
+    "caseNumber": "Kes #{{id}}",
+    "subtitle": "Semakan jawatankuasa handikap",
+    "back": "Kembali"
+  },
+  "summary": {
+    "subject": "Subjek",
+    "period": "Tempoh",
+    "details": "Butiran",
+    "decision": "Keputusan",
+    "openedAt": "Dibuka {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Respons rakan sebaya",
+    "headingWithCount": "Respons rakan sebaya ({{count}})",
+    "empty": "Belum ada respons rakan sebaya.",
+    "recommendations": {
+      "confirm": "Disahkan",
+      "dispute": "Dipertikaikan",
+      "insufficient_info": "Maklumat tidak mencukupi",
+      "responded": "Membalas"
+    },
+    "reviewerFallback": "Penyemak",
+    "seenRelative": "Dilihat {{relative}}",
+    "notYetOpened": "Belum dibuka",
+    "respondedAt": "Membalas {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Menunggu respons ({{count}})",
+    "filters": {
+      "all": "Semua ({{count}})",
+      "openedUnresponded": "Dibuka, tiada respons ({{count}})",
+      "unopened": "Belum dibuka ({{count}})"
+    },
+    "empty": "Tiada penyemak yang sepadan dengan penapis ini.",
+    "invited": "Dijemput {{date}}",
+    "invitedWithSeen": "Dijemput {{invited}} · dilihat {{seen}}"
+  },
+  "activity": {
+    "heading": "Aktiviti"
+  },
+  "common": {
+    "close": "Tutup"
+  },
+  "events": {
+    "opened": "Kes dibuka",
+    "decided": "Keputusan direkodkan",
+    "closed": "Kes ditutup",
+    "reopened": "Kes dibuka semula",
+    "peer_responded": "Respons rakan"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}} saat yang lalu",
+      "second_other": "{{count}} saat yang lalu",
+      "minute_one": "{{count}} minit yang lalu",
+      "minute_other": "{{count}} minit yang lalu",
+      "hour_one": "{{count}} jam yang lalu",
+      "hour_other": "{{count}} jam yang lalu",
+      "day_one": "{{count}} hari yang lalu",
+      "day_other": "{{count}} hari yang lalu",
+      "month_one": "{{count}} bulan yang lalu",
+      "month_other": "{{count}} bulan yang lalu",
+      "year_one": "{{count}} tahun yang lalu",
+      "year_other": "{{count}} tahun yang lalu"
+    },
+    "future": {
+      "second_one": "dalam {{count}} saat",
+      "second_other": "dalam {{count}} saat",
+      "minute_one": "dalam {{count}} minit",
+      "minute_other": "dalam {{count}} minit",
+      "hour_one": "dalam {{count}} jam",
+      "hour_other": "dalam {{count}} jam",
+      "day_one": "dalam {{count}} hari",
+      "day_other": "dalam {{count}} hari",
+      "month_one": "dalam {{count}} bulan",
+      "month_other": "dalam {{count}} bulan",
+      "year_one": "dalam {{count}} tahun",
+      "year_other": "dalam {{count}} tahun"
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "सौंपें",
+    "invitePeer": "सहकर्मी आमंत्रित करें",
+    "recordDecision": "निर्णय दर्ज करें"
+  },
+  "assignModal": {
+    "title": "केस सौंपें",
+    "subtitle": "स्वामित्व लेने के लिए एक समिति सदस्य चुनें।",
+    "submit": "सौंपें"
+  },
+  "peerModal": {
+    "title": "सहकर्मी समीक्षक आमंत्रित करें",
+    "subtitle": "उन्हें ईमेल और पुश सूचना मिलेगी।",
+    "submit": "आमंत्रण भेजें"
+  },
+  "decideModal": {
+    "title": "निर्णय दर्ज करें",
+    "decisionLabel": "निर्णय",
+    "rationaleLabel": "तर्क (आवश्यक)",
+    "rationalePlaceholder": "समिति का कारण समझाएँ",
+    "strokesLabel": "समायोजन स्ट्रोक",
+    "strokesPlaceholder": "उदा. 1.0",
+    "capLabel": "कैप मान (HI 0–54)",
+    "capPlaceholder": "उदा. 18.4",
+    "notesLabel": "नोट्स (वैकल्पिक)",
+    "notesPlaceholder": "आंतरिक समिति नोट्स",
+    "applyToPlayerTitle": "खिलाड़ी पर लागू करें",
+    "applyToPlayerHelp": "परिणामी हैंडीकैप इंडेक्स को खिलाड़ी के रिकॉर्ड में भी लिखें।",
+    "submit": "निर्णय दर्ज करें"
+  },
+  "decisions": {
+    "no_action": "कोई कार्रवाई नहीं",
+    "soft_cap": "सॉफ्ट कैप",
+    "hard_cap": "हार्ड कैप",
+    "index_adjustment": "इंडेक्स समायोजन"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "तर्क आवश्यक है",
+    "rationaleRequiredMessage": "कृपया इस निर्णय का तर्क दर्ज करें।",
+    "invalidStrokesTitle": "अमान्य स्ट्रोक",
+    "invalidStrokesMessage": "समायोजन स्ट्रोक एक धनात्मक संख्या होनी चाहिए।",
+    "invalidCapTitle": "अमान्य कैप",
+    "invalidCapMessage": "कैप मान 0 से 54 के बीच होना चाहिए।"
+  },
+  "errors": {
+    "assignFailed": "सौंपना विफल",
+    "peerInviteFailed": "सहकर्मी आमंत्रण विफल",
+    "decisionFailed": "निर्णय विफल",
+    "membersLoadFailed": "सदस्यों को लोड नहीं किया जा सका",
+    "couldNotOpen": "केस नहीं खोला जा सका",
+    "notFound": "केस नहीं मिला",
+    "couldNotLoad": "केस लोड नहीं किया जा सका।",
+    "missingOrgContext": "इस केस के लिए संगठन का संदर्भ नहीं है।"
+  },
+  "memberPicker": {
+    "noMembers": "कोई पात्र समिति सदस्य नहीं मिला।",
+    "cancel": "रद्द करें"
+  },
+  "peerSummary": {
+    "badge": "{{total}} में से {{opened}} ने खोला",
+    "badgeAccessibility": "{{total}} में से {{opened}} समीक्षकों ने निमंत्रण खोला। विवरण देखने के लिए टैप करें।",
+    "sheetTitle": "साथी समीक्षक स्थिति",
+    "sheetSubtitle": "{{total}} में से {{opened}} ने निमंत्रण खोला",
+    "openedHeading": "खोला गया ({{count}})",
+    "notYetOpenedHeading": "अभी तक नहीं खोला ({{count}})",
+    "everyoneOpened": "सभी ने निमंत्रण खोल लिया है।",
+    "noneOpened": "किसी भी समीक्षक ने अभी तक निमंत्रण नहीं खोला है।",
+    "seenRelative": "देखा {{relative}}",
+    "invitedRelative": "आमंत्रित {{relative}}",
+    "close": "बंद करें"
+  },
+  "header": {
+    "caseNumber": "केस #{{id}}",
+    "subtitle": "हैंडीकैप समिति समीक्षा",
+    "back": "वापस"
+  },
+  "summary": {
+    "subject": "विषय",
+    "period": "अवधि",
+    "details": "विवरण",
+    "decision": "निर्णय",
+    "openedAt": "खोला गया {{date}}"
+  },
+  "peerResponses": {
+    "heading": "सहकर्मी प्रतिक्रियाएँ",
+    "headingWithCount": "सहकर्मी प्रतिक्रियाएँ ({{count}})",
+    "empty": "अभी तक कोई सहकर्मी प्रतिक्रिया नहीं।",
+    "recommendations": {
+      "confirm": "पुष्टि की",
+      "dispute": "विवादित",
+      "insufficient_info": "अपर्याप्त जानकारी",
+      "responded": "उत्तर दिया"
+    },
+    "reviewerFallback": "समीक्षक",
+    "seenRelative": "देखा {{relative}}",
+    "notYetOpened": "अभी तक नहीं खोली",
+    "respondedAt": "उत्तर दिया {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "उत्तर की प्रतीक्षा ({{count}})",
+    "filters": {
+      "all": "सभी ({{count}})",
+      "openedUnresponded": "खोली, उत्तर नहीं ({{count}})",
+      "unopened": "अभी तक नहीं खोली ({{count}})"
+    },
+    "empty": "इस फ़िल्टर से मेल खाने वाला कोई समीक्षक नहीं।",
+    "invited": "आमंत्रित {{date}}",
+    "invitedWithSeen": "आमंत्रित {{invited}} · देखा {{seen}}"
+  },
+  "activity": {
+    "heading": "गतिविधि"
+  },
+  "common": {
+    "close": "बंद करें"
+  },
+  "events": {
+    "opened": "केस खोला गया",
+    "decided": "निर्णय दर्ज",
+    "closed": "केस बंद किया गया",
+    "reopened": "केस फिर से खोला गया",
+    "peer_responded": "सहकर्मी प्रतिक्रिया"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}} सेकंड पहले",
+      "second_other": "{{count}} सेकंड पहले",
+      "minute_one": "{{count}} मिनट पहले",
+      "minute_other": "{{count}} मिनट पहले",
+      "hour_one": "{{count}} घंटा पहले",
+      "hour_other": "{{count}} घंटे पहले",
+      "day_one": "{{count}} दिन पहले",
+      "day_other": "{{count}} दिन पहले",
+      "month_one": "{{count}} महीना पहले",
+      "month_other": "{{count}} महीने पहले",
+      "year_one": "{{count}} साल पहले",
+      "year_other": "{{count}} साल पहले"
+    },
+    "future": {
+      "second_one": "{{count}} सेकंड में",
+      "second_other": "{{count}} सेकंड में",
+      "minute_one": "{{count}} मिनट में",
+      "minute_other": "{{count}} मिनट में",
+      "hour_one": "{{count}} घंटे में",
+      "hour_other": "{{count}} घंटों में",
+      "day_one": "{{count}} दिन में",
+      "day_other": "{{count}} दिन में",
+      "month_one": "{{count}} महीने में",
+      "month_other": "{{count}} महीनों में",
+      "year_one": "{{count}} साल में",
+      "year_other": "{{count}} सालों में"
+    }
+  }
+}

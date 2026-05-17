@@ -1,0 +1,23 @@
+{
+  "title": "Notifications",
+  "subtitle": "Handicap committee & match-play updates",
+  "unreadBadge_one": "{{count}} new",
+  "unreadBadge_other": "{{count}} new",
+  "markAll": "Mark all",
+  "markAllAccessibility": "Mark all read",
+  "markAllErrorTitle": "Could not mark all read",
+  "markAllErrorMessage": "Please try again.",
+  "emptyTitle": "No notifications",
+  "emptyText": "When a handicap review case is opened, decided, or a tie-break match is created on your record, it will show up here.",
+  "peerResponsesHeading": "New peer responses",
+  "peerResponsesUnread_one": "{{count}} unread",
+  "peerResponsesUnread_other": "{{count}} unread",
+  "peerResponsesHint": "Tap to open the affected case in the committee tools.",
+  "tieBreakLabel": "Tie-break required",
+  "tieBreakFallbackSubject": "Round-robin tie-break required",
+  "matchSuffix": "Match #{{id}}",
+  "caseSuffix": "Case #{{id}}",
+  "feedPostLabel": "New feed post",
+  "feedPostFallbackSubject": "New feed post",
+  "feedPostSuffix": "Post #{{id}}"
+}

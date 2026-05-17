@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Kabidhi",
+    "invitePeer": "Alika rika",
+    "recordDecision": "Rekodi uamuzi"
+  },
+  "assignModal": {
+    "title": "Kabidhi kesi",
+    "subtitle": "Chagua mwanakamati kuchukua jukumu.",
+    "submit": "Kabidhi"
+  },
+  "peerModal": {
+    "title": "Alika mkaguzi rika",
+    "subtitle": "Watapokea barua pepe na arifa ya kushinikiza.",
+    "submit": "Tuma mwaliko"
+  },
+  "decideModal": {
+    "title": "Rekodi uamuzi",
+    "decisionLabel": "Uamuzi",
+    "rationaleLabel": "Sababu (inahitajika)",
+    "rationalePlaceholder": "Eleza mantiki ya kamati",
+    "strokesLabel": "Mipigo ya marekebisho",
+    "strokesPlaceholder": "k.m. 1.0",
+    "capLabel": "Thamani ya kikomo (HI 0–54)",
+    "capPlaceholder": "k.m. 18.4",
+    "notesLabel": "Maelezo (hiari)",
+    "notesPlaceholder": "Maelezo ya ndani ya kamati",
+    "applyToPlayerTitle": "Tumia kwa mchezaji",
+    "applyToPlayerHelp": "Pia andika Kielelezo cha Handikepu kinachotokana kwenye rekodi ya mchezaji.",
+    "submit": "Rekodi uamuzi"
+  },
+  "decisions": {
+    "no_action": "Hakuna hatua",
+    "soft_cap": "Kikomo laini",
+    "hard_cap": "Kikomo kigumu",
+    "index_adjustment": "Marekebisho ya kielelezo"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Sababu inahitajika",
+    "rationaleRequiredMessage": "Tafadhali rekodi sababu ya uamuzi huu.",
+    "invalidStrokesTitle": "Mipigo batili",
+    "invalidStrokesMessage": "Mipigo ya marekebisho lazima iwe nambari chanya.",
+    "invalidCapTitle": "Kikomo batili",
+    "invalidCapMessage": "Thamani ya kikomo lazima iwe kati ya 0 na 54."
+  },
+  "errors": {
+    "assignFailed": "Ukabidhi umeshindikana",
+    "peerInviteFailed": "Mwaliko wa rika umeshindikana",
+    "decisionFailed": "Uamuzi umeshindikana",
+    "membersLoadFailed": "Imeshindwa kupakia wanachama",
+    "couldNotOpen": "Imeshindwa kufungua kesi",
+    "notFound": "Kesi haijapatikana",
+    "couldNotLoad": "Imeshindwa kupakia kesi.",
+    "missingOrgContext": "Muktadha wa shirika haupo kwa kesi hii."
+  },
+  "memberPicker": {
+    "noMembers": "Hakuna wanachama wa kamati wanaostahili waliopatikana.",
+    "cancel": "Ghairi"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} kati ya {{total}} wamefungua",
+    "badgeAccessibility": "Wakaguzi {{opened}} kati ya {{total}} wamefungua mwaliko. Gusa ili kuona maelezo.",
+    "sheetTitle": "Hali ya mkaguzi mwenza",
+    "sheetSubtitle": "{{opened}} kati ya {{total}} wamefungua mwaliko",
+    "openedHeading": "Imefunguliwa ({{count}})",
+    "notYetOpenedHeading": "Bado haijafunguliwa ({{count}})",
+    "everyoneOpened": "Kila mtu amefungua mwaliko.",
+    "noneOpened": "Hakuna mkaguzi aliyefungua mwaliko bado.",
+    "seenRelative": "Imeonekana {{relative}}",
+    "invitedRelative": "Amealikwa {{relative}}",
+    "close": "Funga"
+  },
+  "header": {
+    "caseNumber": "Kesi #{{id}}",
+    "subtitle": "Mapitio ya kamati ya handicap",
+    "back": "Rudi"
+  },
+  "summary": {
+    "subject": "Mhusika",
+    "period": "Kipindi",
+    "details": "Maelezo",
+    "decision": "Uamuzi",
+    "openedAt": "Ilifunguliwa {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Majibu ya wenzao",
+    "headingWithCount": "Majibu ya wenzao ({{count}})",
+    "empty": "Bado hakuna majibu ya wenzao.",
+    "recommendations": {
+      "confirm": "Imethibitishwa",
+      "dispute": "Imepingwa",
+      "insufficient_info": "Taarifa hazitoshi",
+      "responded": "Alijibu"
+    },
+    "reviewerFallback": "Mkaguzi",
+    "seenRelative": "Imeonekana {{relative}}",
+    "notYetOpened": "Bado haijafunguliwa",
+    "respondedAt": "Alijibu {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Inasubiri jibu ({{count}})",
+    "filters": {
+      "all": "Vyote ({{count}})",
+      "openedUnresponded": "Imefunguliwa, hakuna jibu ({{count}})",
+      "unopened": "Bado haijafunguliwa ({{count}})"
+    },
+    "empty": "Hakuna wakaguzi wanaolingana na kichujio hiki.",
+    "invited": "Alialikwa {{date}}",
+    "invitedWithSeen": "Alialikwa {{invited}} · imeonekana {{seen}}"
+  },
+  "activity": {
+    "heading": "Shughuli"
+  },
+  "common": {
+    "close": "Funga"
+  },
+  "events": {
+    "opened": "Kesi imefunguliwa",
+    "decided": "Uamuzi umerekodiwa",
+    "closed": "Kesi imefungwa",
+    "reopened": "Kesi imefunguliwa upya",
+    "peer_responded": "Jibu la mwenzako"
+  },
+  "relative": {
+    "past": {
+      "second_one": "sekunde {{count}} iliyopita",
+      "second_other": "sekunde {{count}} zilizopita",
+      "minute_one": "dakika {{count}} iliyopita",
+      "minute_other": "dakika {{count}} zilizopita",
+      "hour_one": "saa {{count}} iliyopita",
+      "hour_other": "masaa {{count}} yaliyopita",
+      "day_one": "siku {{count}} iliyopita",
+      "day_other": "siku {{count}} zilizopita",
+      "month_one": "mwezi {{count}} uliopita",
+      "month_other": "miezi {{count}} iliyopita",
+      "year_one": "mwaka {{count}} uliopita",
+      "year_other": "miaka {{count}} iliyopita"
+    },
+    "future": {
+      "second_one": "baada ya sekunde {{count}}",
+      "second_other": "baada ya sekunde {{count}}",
+      "minute_one": "baada ya dakika {{count}}",
+      "minute_other": "baada ya dakika {{count}}",
+      "hour_one": "baada ya saa {{count}}",
+      "hour_other": "baada ya masaa {{count}}",
+      "day_one": "baada ya siku {{count}}",
+      "day_other": "baada ya siku {{count}}",
+      "month_one": "baada ya mwezi {{count}}",
+      "month_other": "baada ya miezi {{count}}",
+      "year_one": "baada ya mwaka {{count}}",
+      "year_other": "baada ya miaka {{count}}"
+    }
+  }
+}

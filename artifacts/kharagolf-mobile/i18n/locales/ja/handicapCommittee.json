@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "割り当て",
+    "invitePeer": "ピアを招待",
+    "recordDecision": "決定を記録"
+  },
+  "assignModal": {
+    "title": "ケースを割り当てる",
+    "subtitle": "担当する委員会メンバーを選択してください。",
+    "submit": "割り当て"
+  },
+  "peerModal": {
+    "title": "ピアレビュアーを招待",
+    "subtitle": "メールとプッシュ通知が届きます。",
+    "submit": "招待を送信"
+  },
+  "decideModal": {
+    "title": "決定を記録",
+    "decisionLabel": "決定",
+    "rationaleLabel": "理由(必須)",
+    "rationalePlaceholder": "委員会の理由を説明してください",
+    "strokesLabel": "調整ストローク",
+    "strokesPlaceholder": "例: 1.0",
+    "capLabel": "キャップ値 (HI 0–54)",
+    "capPlaceholder": "例: 18.4",
+    "notesLabel": "メモ(任意)",
+    "notesPlaceholder": "委員会内部メモ",
+    "applyToPlayerTitle": "プレーヤーに適用",
+    "applyToPlayerHelp": "結果のハンディキャップインデックスをプレーヤーの記録にも書き込みます。",
+    "submit": "決定を記録"
+  },
+  "decisions": {
+    "no_action": "対応なし",
+    "soft_cap": "ソフトキャップ",
+    "hard_cap": "ハードキャップ",
+    "index_adjustment": "インデックス調整"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "理由が必要です",
+    "rationaleRequiredMessage": "この決定の理由を記録してください。",
+    "invalidStrokesTitle": "無効なストローク",
+    "invalidStrokesMessage": "調整ストロークは正の数でなければなりません。",
+    "invalidCapTitle": "無効なキャップ",
+    "invalidCapMessage": "キャップ値は0から54の間でなければなりません。"
+  },
+  "errors": {
+    "assignFailed": "割り当てに失敗しました",
+    "peerInviteFailed": "ピア招待に失敗しました",
+    "decisionFailed": "決定に失敗しました",
+    "membersLoadFailed": "メンバーを読み込めませんでした",
+    "couldNotOpen": "ケースを開けませんでした",
+    "notFound": "ケースが見つかりません",
+    "couldNotLoad": "ケースを読み込めませんでした。",
+    "missingOrgContext": "このケースの組織コンテキストがありません。"
+  },
+  "memberPicker": {
+    "noMembers": "対象の委員会メンバーが見つかりません。",
+    "cancel": "キャンセル"
+  },
+  "peerSummary": {
+    "badge": "{{total}} 人中 {{opened}} 人が開封",
+    "badgeAccessibility": "{{total}} 人中 {{opened}} 人のレビュアーが招待を開封しました。詳細を見るにはタップしてください。",
+    "sheetTitle": "ピアレビュアーのステータス",
+    "sheetSubtitle": "{{total}} 人中 {{opened}} 人が招待を開封しました",
+    "openedHeading": "開封済み ({{count}})",
+    "notYetOpenedHeading": "未開封 ({{count}})",
+    "everyoneOpened": "全員が招待を開封しました。",
+    "noneOpened": "まだ誰も招待を開封していません。",
+    "seenRelative": "閲覧 {{relative}}",
+    "invitedRelative": "招待 {{relative}}",
+    "close": "閉じる"
+  },
+  "header": {
+    "caseNumber": "ケース #{{id}}",
+    "subtitle": "ハンディキャップ委員会レビュー",
+    "back": "戻る"
+  },
+  "summary": {
+    "subject": "対象",
+    "period": "期間",
+    "details": "詳細",
+    "decision": "決定",
+    "openedAt": "{{date}} に開設"
+  },
+  "peerResponses": {
+    "heading": "ピア回答",
+    "headingWithCount": "ピア回答 ({{count}})",
+    "empty": "ピアからの回答はまだありません。",
+    "recommendations": {
+      "confirm": "確認済み",
+      "dispute": "異議あり",
+      "insufficient_info": "情報不足",
+      "responded": "回答済み"
+    },
+    "reviewerFallback": "レビュアー",
+    "seenRelative": "閲覧 {{relative}}",
+    "notYetOpened": "まだ開封されていません",
+    "respondedAt": "{{date}} に回答"
+  },
+  "pendingPeer": {
+    "heading": "回答待ち ({{count}})",
+    "filters": {
+      "all": "すべて ({{count}})",
+      "openedUnresponded": "開封済み、未回答 ({{count}})",
+      "unopened": "未開封 ({{count}})"
+    },
+    "empty": "このフィルターに該当するレビュアーはいません。",
+    "invited": "{{date}} に招待",
+    "invitedWithSeen": "{{invited}} に招待 · {{seen}} に閲覧"
+  },
+  "activity": {
+    "heading": "アクティビティ"
+  },
+  "common": {
+    "close": "閉じる"
+  },
+  "events": {
+    "opened": "ケースを開きました",
+    "decided": "決定を記録しました",
+    "closed": "ケースを終了しました",
+    "reopened": "ケースを再開しました",
+    "peer_responded": "ピアからの回答"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}}秒前",
+      "second_other": "{{count}}秒前",
+      "minute_one": "{{count}}分前",
+      "minute_other": "{{count}}分前",
+      "hour_one": "{{count}}時間前",
+      "hour_other": "{{count}}時間前",
+      "day_one": "{{count}}日前",
+      "day_other": "{{count}}日前",
+      "month_one": "{{count}}ヶ月前",
+      "month_other": "{{count}}ヶ月前",
+      "year_one": "{{count}}年前",
+      "year_other": "{{count}}年前"
+    },
+    "future": {
+      "second_one": "{{count}}秒後",
+      "second_other": "{{count}}秒後",
+      "minute_one": "{{count}}分後",
+      "minute_other": "{{count}}分後",
+      "hour_one": "{{count}}時間後",
+      "hour_other": "{{count}}時間後",
+      "day_one": "{{count}}日後",
+      "day_other": "{{count}}日後",
+      "month_one": "{{count}}ヶ月後",
+      "month_other": "{{count}}ヶ月後",
+      "year_one": "{{count}}年後",
+      "year_other": "{{count}}年後"
+    }
+  }
+}

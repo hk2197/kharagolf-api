@@ -1,0 +1,52 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "license": "MIT",
+  "packageManager": "pnpm@10.26.1",
+  "scripts": {
+    "postinstall": "node scripts/patch-drizzle-kit.mjs",
+    "build": "pnpm run lint:sql-arrays && pnpm run lint:watch-string-duplicates && pnpm run lint:watch-translation-coverage && pnpm run lint:watch-xcstrings-coverage && pnpm run lint:watch-translations && pnpm run lint:watch-label-coverage && pnpm run lint:mobile-translations && pnpm run lint:mobile-screen-translations && pnpm run lint:portal-translations && pnpm run lint:locale-duplicate-keys && pnpm run lint:notification-row-translations && pnpm run typecheck && pnpm -r --if-present run build",
+    "typecheck:libs": "tsc --build",
+    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./lib/**\" --filter \"./scripts\" --if-present run typecheck",
+    "check:db-drift": "bash scripts/check-db-drift.sh",
+    "lint:sql-arrays": "node scripts/check-sql-array-anti-patterns.mjs",
+    "lint:sql-arrays:self-test": "node scripts/check-sql-array-anti-patterns.mjs --self-test",
+    "lint:watch-translations": "node scripts/check-watch-translations.mjs",
+    "lint:watch-translations:self-test": "node scripts/check-watch-translations.mjs --self-test",
+    "lint:watch-string-duplicates": "node scripts/check-watch-string-duplicates.mjs",
+    "lint:watch-string-duplicates:self-test": "node scripts/check-watch-string-duplicates.mjs --self-test",
+    "lint:watch-translation-coverage": "node scripts/check-watch-translation-coverage.mjs",
+    "lint:watch-translation-coverage:self-test": "node scripts/check-watch-translation-coverage.mjs --self-test",
+    "lint:watch-xcstrings-coverage": "node scripts/check-watch-xcstrings-coverage.mjs",
+    "lint:watch-xcstrings-coverage:self-test": "node scripts/check-watch-xcstrings-coverage.mjs --self-test",
+    "lint:watch-label-coverage": "node scripts/check-watch-label-coverage.mjs",
+    "lint:watch-label-coverage:self-test": "node scripts/check-watch-label-coverage.mjs --self-test",
+    "lint:garmin-watch-overflow": "node scripts/check-garmin-watch-overflow.mjs",
+    "lint:garmin-watch-overflow:self-test": "node scripts/check-garmin-watch-overflow.mjs --self-test",
+    "lint:garmin-watch-overflow:update-baseline": "node scripts/check-garmin-watch-overflow.mjs --update-baseline",
+    "lint:garmin-watch-overflow-tight": "node scripts/check-garmin-watch-overflow-tight.mjs",
+    "lint:garmin-watch-overflow-tight:self-test": "node scripts/check-garmin-watch-overflow-tight.mjs --self-test",
+    "lint:garmin-watch-overflow-tight:write-harness": "node scripts/check-garmin-watch-overflow-tight.mjs --write-harness",
+    "lint:mobile-translations": "node scripts/check-mobile-translations.mjs",
+    "lint:mobile-translations:self-test": "node scripts/check-mobile-translations.mjs --self-test",
+    "lint:mobile-translations:update-baseline": "node scripts/check-mobile-translations.mjs --update-baseline",
+    "lint:mobile-screen-translations": "node scripts/check-mobile-screen-translations.mjs",
+    "lint:mobile-screen-translations:self-test": "node scripts/check-mobile-screen-translations.mjs --self-test",
+    "lint:mobile-screen-translations:update-baseline": "node scripts/check-mobile-screen-translations.mjs --update-baseline",
+    "lint:portal-translations": "node scripts/check-portal-translations.mjs",
+    "lint:portal-translations:self-test": "node scripts/check-portal-translations.mjs --self-test",
+    "lint:portal-translations:update-baseline": "node scripts/check-portal-translations.mjs --update-baseline",
+    "lint:notification-row-translations": "node scripts/check-notification-row-translations.mjs",
+    "lint:notification-row-translations:self-test": "node scripts/check-notification-row-translations.mjs --self-test",
+    "lint:locale-duplicate-keys": "node scripts/check-locale-duplicate-keys.mjs",
+    "lint:locale-duplicate-keys:self-test": "node scripts/check-locale-duplicate-keys.mjs --self-test"
+  },
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.2"
+  },
+  "dependencies": {
+    "openai": "^6.33.0"
+  }
+}

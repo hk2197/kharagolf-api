@@ -1,0 +1,20 @@
+{
+  "title": "通知",
+  "subtitle": "差点委员会和比洞赛更新",
+  "unreadBadge_one": "{{count}} 条新",
+  "unreadBadge_other": "{{count}} 条新",
+  "markAll": "全部已读",
+  "markAllAccessibility": "标记全部为已读",
+  "markAllErrorTitle": "无法标记全部为已读",
+  "markAllErrorMessage": "请重试。",
+  "emptyTitle": "暂无通知",
+  "emptyText": "当差点审查案件被开启、决定，或您的记录上创建了加洞赛对局时,将在此处显示。",
+  "peerResponsesHeading": "新的同伴回复",
+  "peerResponsesUnread_one": "{{count}} 条未读",
+  "peerResponsesUnread_other": "{{count}} 条未读",
+  "peerResponsesHint": "点击在委员会工具中打开相关案件。",
+  "tieBreakLabel": "需要加洞赛",
+  "tieBreakFallbackSubject": "需要循环赛加洞决胜",
+  "matchSuffix": "对局 #{{id}}",
+  "caseSuffix": "案件 #{{id}}"
+}

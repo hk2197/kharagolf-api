@@ -1,0 +1,55 @@
+{
+  "_comment": "Task #1445 baseline (extended in Task #1754 with next-tier screens, Task #1755 with the synthetic safety net, Task #2180 to swap the loading-state entries for loaded-state findings once the per-screen fetch stubs were extended, and Task #2182 with the my-360 hub + sub-screens, marketplace, scheduling, and scorer-station). Fingerprint format: ${screen}::${ruleId}::${selector}. Each entry is a known serious/critical axe-core finding on the matching mobile screen rendered through react-native-web (or the matching `-synthetic` representative markup). CI fails when this list grows; do not add entries without an audit note. To clear an entry, fix the underlying issue on the real screen and remove it from this list. The remaining `aria-prohibited-attr` entry on mobile-notifications is the screen's back-button TouchableOpacity rendering as a generic <div> with an aria-label on web — react-native-web does not currently translate `accessibilityRole=\"button\"` consistently into a button role from a Touchable*, so axe sees aria-label on a generic role. The Task #2182 `mobile-my360-consents::label::*` entries are a react-native-web rendering artefact: <Switch> translates to a hidden <input> whose accessible name is supplied via the parent <View> (`accessibilityLabel`) on the iOS/Android renderers but is not visible to axe on the underlying web <input>. The native renderers expose these correctly, so we baseline them here only so the in-process web scan still catches *new* regressions instead of being silenced by them.",
+  "mobile-signin": [
+    "mobile-signin::autocomplete-valid::input[placeholder=\"••••••••\"]"
+  ],
+  "mobile-home": [],
+  "mobile-scoring": [],
+  "mobile-leaderboard": [],
+  "mobile-profile": [],
+  "mobile-wallet": [],
+  "mobile-ai-caddie": [
+    "mobile-ai-caddie::aria-required-children::ul"
+  ],
+  "mobile-coach": [],
+  "mobile-lessons": [],
+  "mobile-shop": [],
+  "mobile-badges": [],
+  "mobile-feed": [],
+  "mobile-rules": [],
+  "mobile-notifications": [
+    "mobile-notifications::aria-prohibited-attr::div[aria-label=\"common:back\"]"
+  ],
+  "mobile-more": [],
+  "mobile-club": [],
+  "mobile-handicap-profile": [],
+  "mobile-my360": [],
+  "mobile-my360-consents": [
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(2) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg:nth-child(2) > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(2) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg:nth-child(3) > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(3) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(4) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg:nth-child(2) > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(4) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg:nth-child(3) > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(5) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg:nth-child(2) > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(5) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg:nth-child(3) > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(6) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(7) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(8) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(9) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg:nth-child(2) > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input",
+    "mobile-my360-consents::label::.css-view-g5y9jx:nth-child(9) > .r-alignItems-1awozwy.r-backgroundColor-ep8a71.r-borderColor-1350hwg:nth-child(3) > .r-cursor-1loqt21.r-userSelect-lrvibr.css-view-g5y9jx > input"
+  ],
+  "mobile-my360-communications": [],
+  "mobile-my360-documents": [],
+  "mobile-my360-family": [],
+  "mobile-my360-milestones": [],
+  "mobile-my360-payment-history": [],
+  "mobile-my360-privacy": [],
+  "mobile-my360-statement": [],
+  "mobile-marketplace": [],
+  "mobile-scheduling": [],
+  "mobile-scorer-station": [],
+  "mobile-home-synthetic": [],
+  "mobile-scoring-synthetic": [],
+  "mobile-leaderboard-synthetic": [],
+  "mobile-profile-synthetic": []
+}

@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Tugaskan",
+    "invitePeer": "Undang rekan",
+    "recordDecision": "Catat keputusan"
+  },
+  "assignModal": {
+    "title": "Tugaskan kasus",
+    "subtitle": "Pilih anggota komite untuk mengambil alih.",
+    "submit": "Tugaskan"
+  },
+  "peerModal": {
+    "title": "Undang peninjau rekan",
+    "subtitle": "Mereka akan menerima email dan notifikasi push.",
+    "submit": "Kirim undangan"
+  },
+  "decideModal": {
+    "title": "Catat keputusan",
+    "decisionLabel": "Keputusan",
+    "rationaleLabel": "Alasan (wajib)",
+    "rationalePlaceholder": "Jelaskan alasan komite",
+    "strokesLabel": "Pukulan penyesuaian",
+    "strokesPlaceholder": "mis. 1.0",
+    "capLabel": "Nilai batas (HI 0–54)",
+    "capPlaceholder": "mis. 18.4",
+    "notesLabel": "Catatan (opsional)",
+    "notesPlaceholder": "Catatan internal komite",
+    "applyToPlayerTitle": "Terapkan ke pemain",
+    "applyToPlayerHelp": "Tulis juga Indeks Handicap yang dihasilkan ke catatan pemain.",
+    "submit": "Catat keputusan"
+  },
+  "decisions": {
+    "no_action": "Tidak ada tindakan",
+    "soft_cap": "Batas lunak",
+    "hard_cap": "Batas keras",
+    "index_adjustment": "Penyesuaian indeks"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Alasan diperlukan",
+    "rationaleRequiredMessage": "Silakan catat alasan untuk keputusan ini.",
+    "invalidStrokesTitle": "Pukulan tidak valid",
+    "invalidStrokesMessage": "Pukulan penyesuaian harus berupa angka positif.",
+    "invalidCapTitle": "Batas tidak valid",
+    "invalidCapMessage": "Nilai batas harus antara 0 dan 54."
+  },
+  "errors": {
+    "assignFailed": "Penugasan gagal",
+    "peerInviteFailed": "Undangan rekan gagal",
+    "decisionFailed": "Keputusan gagal",
+    "membersLoadFailed": "Tidak dapat memuat anggota",
+    "couldNotOpen": "Tidak dapat membuka kasus",
+    "notFound": "Kasus tidak ditemukan",
+    "couldNotLoad": "Tidak dapat memuat kasus.",
+    "missingOrgContext": "Konteks organisasi tidak ada untuk kasus ini."
+  },
+  "memberPicker": {
+    "noMembers": "Tidak ditemukan anggota komite yang memenuhi syarat.",
+    "cancel": "Batal"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} dari {{total}} dibuka",
+    "badgeAccessibility": "{{opened}} dari {{total}} peninjau membuka undangan. Ketuk untuk melihat detail.",
+    "sheetTitle": "Status peninjau sejawat",
+    "sheetSubtitle": "{{opened}} dari {{total}} membuka undangan",
+    "openedHeading": "Dibuka ({{count}})",
+    "notYetOpenedHeading": "Belum dibuka ({{count}})",
+    "everyoneOpened": "Semua orang telah membuka undangan.",
+    "noneOpened": "Belum ada peninjau yang membuka undangan.",
+    "seenRelative": "Dilihat {{relative}}",
+    "invitedRelative": "Diundang {{relative}}",
+    "close": "Tutup"
+  },
+  "header": {
+    "caseNumber": "Kasus #{{id}}",
+    "subtitle": "Tinjauan komite handicap",
+    "back": "Kembali"
+  },
+  "summary": {
+    "subject": "Subjek",
+    "period": "Periode",
+    "details": "Detail",
+    "decision": "Keputusan",
+    "openedAt": "Dibuka {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Tanggapan rekan",
+    "headingWithCount": "Tanggapan rekan ({{count}})",
+    "empty": "Belum ada tanggapan rekan.",
+    "recommendations": {
+      "confirm": "Dikonfirmasi",
+      "dispute": "Disanggah",
+      "insufficient_info": "Informasi tidak cukup",
+      "responded": "Menanggapi"
+    },
+    "reviewerFallback": "Peninjau",
+    "seenRelative": "Dilihat {{relative}}",
+    "notYetOpened": "Belum dibuka",
+    "respondedAt": "Menanggapi {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Menunggu tanggapan ({{count}})",
+    "filters": {
+      "all": "Semua ({{count}})",
+      "openedUnresponded": "Dibuka, tidak ada tanggapan ({{count}})",
+      "unopened": "Belum dibuka ({{count}})"
+    },
+    "empty": "Tidak ada peninjau yang cocok dengan filter ini.",
+    "invited": "Diundang {{date}}",
+    "invitedWithSeen": "Diundang {{invited}} · dilihat {{seen}}"
+  },
+  "activity": {
+    "heading": "Aktivitas"
+  },
+  "common": {
+    "close": "Tutup"
+  },
+  "events": {
+    "opened": "Kasus dibuka",
+    "decided": "Keputusan tercatat",
+    "closed": "Kasus ditutup",
+    "reopened": "Kasus dibuka kembali",
+    "peer_responded": "Tanggapan rekan"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}} detik yang lalu",
+      "second_other": "{{count}} detik yang lalu",
+      "minute_one": "{{count}} menit yang lalu",
+      "minute_other": "{{count}} menit yang lalu",
+      "hour_one": "{{count}} jam yang lalu",
+      "hour_other": "{{count}} jam yang lalu",
+      "day_one": "{{count}} hari yang lalu",
+      "day_other": "{{count}} hari yang lalu",
+      "month_one": "{{count}} bulan yang lalu",
+      "month_other": "{{count}} bulan yang lalu",
+      "year_one": "{{count}} tahun yang lalu",
+      "year_other": "{{count}} tahun yang lalu"
+    },
+    "future": {
+      "second_one": "dalam {{count}} detik",
+      "second_other": "dalam {{count}} detik",
+      "minute_one": "dalam {{count}} menit",
+      "minute_other": "dalam {{count}} menit",
+      "hour_one": "dalam {{count}} jam",
+      "hour_other": "dalam {{count}} jam",
+      "day_one": "dalam {{count}} hari",
+      "day_other": "dalam {{count}} hari",
+      "month_one": "dalam {{count}} bulan",
+      "month_other": "dalam {{count}} bulan",
+      "year_one": "dalam {{count}} tahun",
+      "year_other": "dalam {{count}} tahun"
+    }
+  }
+}

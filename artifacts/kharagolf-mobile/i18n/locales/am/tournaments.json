@@ -1,0 +1,18 @@
+{
+  "tournaments": "ውድድሮች",
+  "tournament": "ውድድር",
+  "register": "ተመዝገብ",
+  "registered": "ተመዝግቧል",
+  "checkIn": "ግባ",
+  "checkedIn": "ገብቷል",
+  "leaderboard": "ደረጃ ሰሌዳ",
+  "teeTimes": "የTee ሰዓቶች",
+  "results": "ውጤቶች",
+  "round": "ዙር",
+  "course": "ኮርስ",
+  "entryFee": "የመግቢያ ክፍያ",
+  "format": "ፎርማት",
+  "startDate": "የመጀመሪያ ቀን",
+  "status": "ሁኔታ",
+  "noTournaments": "ምንም ውድድሮች አይገኙም"
+}

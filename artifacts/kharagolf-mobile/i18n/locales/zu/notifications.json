@@ -1,0 +1,20 @@
+{
+  "title": "Izaziso",
+  "subtitle": "Izibuyekezo zekomidi lehandikepi nezomdlalo wokukhipha",
+  "unreadBadge_one": "{{count}} entsha",
+  "unreadBadge_other": "{{count}} ezintsha",
+  "markAll": "Maka konke",
+  "markAllAccessibility": "Maka konke njengokufundwa",
+  "markAllErrorTitle": "Akukwazanga ukumaka konke njengokufundwa",
+  "markAllErrorMessage": "Sicela uzame futhi.",
+  "emptyTitle": "Azikho izaziso",
+  "emptyText": "Lapho icala lokubuyekeza ihandikepi livulwa, linqunywa, noma kudalwe umdlalo wokuqeda umqhudelwano emrekhodini wakho, kuzovela lapha.",
+  "peerResponsesHeading": "Izimpendulo zontanga ezintsha",
+  "peerResponsesUnread_one": "{{count}} engafundiwe",
+  "peerResponsesUnread_other": "{{count}} ezingafundiwe",
+  "peerResponsesHint": "Thepha ukuvula icala elathintekayo emathuluzini ekomidi.",
+  "tieBreakLabel": "Kudingeka umdlalo wokuqeda umqhudelwano",
+  "tieBreakFallbackSubject": "Kudingeka umdlalo wokuqeda umqhudelwano wokuzungeza",
+  "matchSuffix": "Umdlalo #{{id}}",
+  "caseSuffix": "Icala #{{id}}"
+}

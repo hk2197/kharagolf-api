@@ -1,0 +1,7 @@
+{
+  "title": "Club-Einstellungen",
+  "subtitleWithClub": "Admin-Steuerungen für {{club}}",
+  "subtitleNoClub": "Admin-Steuerungen für deinen Club",
+  "notAvailableTitle": "Nicht verfügbar",
+  "notAvailableText": "Club-Einstellungen sind nur für Club-Administratoren und Turnierleiter sichtbar."
+}

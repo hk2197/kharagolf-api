@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "Meld af",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "Toernooie",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "Vasgevangen side-game-kwitansies",
+    "summary": "{{exhausted}} se herprobeer is uitgeput · {{skipped}} oorgeslaan voor aflewering",
+    "truncation": " · wys {{shown}} van {{total}}",
+    "userFallback": "Gebruiker #{{id}}",
+    "rowDetails": "{{game}} · vereffening #{{settlementId}} · betaal deur {{payer}}",
+    "channelEmail": "E-pos",
+    "channelPush": "Push",
+    "channelExhausted": "uitgeput ({{count}})",
+    "channelSkipped": "oorgeslaan",
+    "resendButton": "Plaas aflewering weer in tou",
+    "resending": "Word weer in tou geplaas…",
+    "loadMore": "Laai meer ({{remaining}} oor)",
+    "loading": "Besig om te laai…",
+    "toast": {
+      "successTitle": "Kwitansie weer in tou",
+      "successDescription": "Sal {{channels}} weer probeer by die volgende cron-tik.",
+      "errorTitle": "Kon nie weer in tou plaas nie",
+      "channelEmail": "e-pos",
+      "channelPush": "push",
+      "channelDelivery": "aflewering",
+      "channelSeparator": " & "
+    },
+    "statuses": {
+      "skipped": "oorgeslaan",
+      "no_address": "geen adres op rekord",
+      "opted_out": "uitgeteken",
+      "no_user": "geen gebruikersrekening",
+      "failed": "het misluk",
+      "pending": "hangend",
+      "queued": "in tou",
+      "unknown": "onbekend"
+    }
+  }
+}

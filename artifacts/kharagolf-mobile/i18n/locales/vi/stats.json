@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Nguồn của số này:",
+    "source_whs": "handicap WHS trực tiếp của bạn",
+    "source_history": "vòng đấu gần nhất bạn đã đăng",
+    "source_profile": "handicap trong hồ sơ của bạn",
+    "fix_whs": "Cập nhật WHS",
+    "fix_history": "Đăng vòng mới",
+    "fix_profile": "Sửa handicap hồ sơ",
+    "fix_default": "Thêm handicap của bạn",
+    "summary": "Handicap {{handicap}} từ {{source}}.",
+    "summaryWithAsOf": "Handicap {{handicap}} từ {{source}} (tính đến {{asOf}}).",
+    "noneAuto": "Chưa có handicap nào — chúng tôi đang dùng so sánh mặc định.",
+    "nonePinned": "Chưa có handicap nào.",
+    "asOfToday": "hôm nay",
+    "asOfYesterday": "hôm qua",
+    "asOfDays": "{{count}} ngày trước",
+    "asOfMonth": "{{count}} tháng trước",
+    "asOfMonths": "{{count}} tháng trước",
+    "asOfYear": "{{count}} năm trước",
+    "asOfYears": "{{count}} năm trước"
+  }
+}

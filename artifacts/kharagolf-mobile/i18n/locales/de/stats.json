@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Woher das kommt:",
+    "source_whs": "deinem aktuellen WHS-Handicap",
+    "source_history": "deiner zuletzt eingetragenen Runde",
+    "source_profile": "dem Handicap in deinem Profil",
+    "fix_whs": "WHS aktualisieren",
+    "fix_history": "Neue Runde eintragen",
+    "fix_profile": "Profil-Handicap bearbeiten",
+    "fix_default": "Handicap hinzufügen",
+    "summary": "Handicap {{handicap}} aus {{source}}.",
+    "summaryWithAsOf": "Handicap {{handicap}} aus {{source}} (Stand: {{asOf}}).",
+    "noneAuto": "Noch kein Handicap hinterlegt – wir verwenden einen Standardvergleich.",
+    "nonePinned": "Noch kein Handicap hinterlegt.",
+    "asOfToday": "heute",
+    "asOfYesterday": "gestern",
+    "asOfDays": "vor {{count}} Tagen",
+    "asOfMonth": "vor {{count}} Monat",
+    "asOfMonths": "vor {{count}} Monaten",
+    "asOfYear": "vor {{count}} Jahr",
+    "asOfYears": "vor {{count}} Jahren"
+  }
+}

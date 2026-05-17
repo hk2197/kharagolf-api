@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "ที่มาของค่านี้:",
+    "source_whs": "แฮนดิแคป WHS แบบสด ๆ ของคุณ",
+    "source_history": "รอบล่าสุดที่คุณบันทึก",
+    "source_profile": "แฮนดิแคปในโปรไฟล์ของคุณ",
+    "fix_whs": "อัปเดต WHS",
+    "fix_history": "บันทึกรอบใหม่",
+    "fix_profile": "แก้ไขแฮนดิแคปในโปรไฟล์",
+    "fix_default": "เพิ่มแฮนดิแคปของคุณ",
+    "summary": "แฮนดิแคป {{handicap}} จาก {{source}}",
+    "summaryWithAsOf": "แฮนดิแคป {{handicap}} จาก {{source}} (เมื่อ {{asOf}})",
+    "noneAuto": "ยังไม่มีแฮนดิแคปบันทึกไว้ — เราใช้การเปรียบเทียบเริ่มต้น",
+    "nonePinned": "ยังไม่มีแฮนดิแคปบันทึกไว้",
+    "asOfToday": "วันนี้",
+    "asOfYesterday": "เมื่อวาน",
+    "asOfDays": "{{count}} วันที่แล้ว",
+    "asOfMonth": "{{count}} เดือนที่แล้ว",
+    "asOfMonths": "{{count}} เดือนที่แล้ว",
+    "asOfYear": "{{count}} ปีที่แล้ว",
+    "asOfYears": "{{count}} ปีที่แล้ว"
+  }
+}

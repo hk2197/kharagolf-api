@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Daga ina wannan ya zo:",
+    "source_whs": "WHS handicap ɗinka kai tsaye",
+    "source_history": "zagayen da ka rubuta na ƙarshe",
+    "source_profile": "handicap ɗin bayanin martabarka",
+    "fix_whs": "Sabunta WHS",
+    "fix_history": "Saka sabon zage",
+    "fix_profile": "Gyara handicap ɗin martaba",
+    "fix_default": "Ƙara handicap ɗinka",
+    "summary": "Handicap {{handicap}} daga {{source}}.",
+    "summaryWithAsOf": "Handicap {{handicap}} daga {{source}} (tun {{asOf}}).",
+    "noneAuto": "Babu handicap a ajiye tukuna — muna amfani da kwatanci na tsohuwa.",
+    "nonePinned": "Babu handicap a ajiye tukuna.",
+    "asOfToday": "yau",
+    "asOfYesterday": "jiya",
+    "asOfDays": "kwana {{count}} da suka wuce",
+    "asOfMonth": "wata {{count}} da ya wuce",
+    "asOfMonths": "watanni {{count}} da suka wuce",
+    "asOfYear": "shekara {{count}} da ta wuce",
+    "asOfYears": "shekaru {{count}} da suka wuce"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Waar dit vandaan kom:",
+    "source_whs": "jou lewendige WHS-paaihouvermoë",
+    "source_history": "jou jongste geplaaste rondte",
+    "source_profile": "jou profiel se paaihouvermoë",
+    "fix_whs": "Werk WHS by",
+    "fix_history": "Plaas 'n nuwe rondte",
+    "fix_profile": "Wysig profiel se paaihouvermoë",
+    "fix_default": "Voeg jou paaihouvermoë by",
+    "summary": "Paaihouvermoë van {{handicap}} vanaf {{source}}.",
+    "summaryWithAsOf": "Paaihouvermoë van {{handicap}} vanaf {{source}} ({{asOf}}).",
+    "noneAuto": "Nog geen paaihouvermoë op rekord nie — ons gebruik 'n verstekvergelyking.",
+    "nonePinned": "Nog geen paaihouvermoë op rekord nie.",
+    "asOfToday": "vandag",
+    "asOfYesterday": "gister",
+    "asOfDays": "{{count}} dae gelede",
+    "asOfMonth": "{{count}} maand gelede",
+    "asOfMonths": "{{count}} maande gelede",
+    "asOfYear": "{{count}} jaar gelede",
+    "asOfYears": "{{count}} jare gelede"
+  }
+}

@@ -1,0 +1,21 @@
+-- Task #1759 — per-run snapshot of recipients filtered out by the
+-- bounce-aware suppression filter inside
+-- `runOneWalletTopupRefundEmailSchedule`. Until now the auto-refund
+-- digest dashboard's run-history table only listed the addresses that
+-- were *actually* emailed plus a free-text errorMessage, so finance
+-- could not see at a glance which recipients had been silently dropped
+-- on a particular run. The schedule-level "X paused" chip (Task #1443)
+-- only reflected the *current* suppression state, which would vanish
+-- the moment finance lifted the suppression — leaving past runs
+-- unexplainable.
+--
+-- This column stores a JSON array of `{email, reason, bounceType,
+-- description}` objects captured at send time, mirroring the metadata
+-- the schedule chip surfaces, so the run history remains accurate even
+-- after the suppression list later changes.
+--
+-- Defaults to an empty JSON array so existing rows backfill cleanly and
+-- the cron's three insert paths (no recipients configured / all paused
+-- / normal send) can all rely on the column being non-null.
+ALTER TABLE "wallet_topup_refund_email_runs"
+  ADD COLUMN IF NOT EXISTS "paused_recipients" jsonb NOT NULL DEFAULT '[]'::jsonb;

@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "ውጣ",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "ውድድሮች",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "የተጨናነቁ የጎን-ጨዋታ ደረሰኞች",
+    "summary": "{{exhausted}} የድግግሞሽ ሙከራዎች አልቋል · {{skipped}} ከመላኩ በፊት ተዘሏል",
+    "truncation": " · ከ {{total}} ውስጥ {{shown}} እያሳየ",
+    "userFallback": "ተጠቃሚ #{{id}}",
+    "rowDetails": "{{game}} · ክፍያ #{{settlementId}} · የተከፈለ በ {{payer}}",
+    "channelEmail": "ኢሜይል",
+    "channelPush": "ግፋ",
+    "channelExhausted": "አልቋል ({{count}})",
+    "channelSkipped": "ተዘሏል",
+    "resendButton": "መላክን እንደገና ሰልፍ",
+    "resending": "እንደገና በሰልፍ ላይ…",
+    "loadMore": "ተጨማሪ ጫን ({{remaining}} ቀርቷል)",
+    "loading": "በመጫን ላይ…",
+    "toast": {
+      "successTitle": "ደረሰኝ እንደገና ተሰልፏል",
+      "successDescription": "በቀጣዩ የcron ሩጫ ላይ {{channels}} እንደገና ይሞክራል።",
+      "errorTitle": "እንደገና ማሰለፍ አልተቻለም",
+      "channelEmail": "ኢሜይል",
+      "channelPush": "ግፋ ማሳወቂያ",
+      "channelDelivery": "መላክ",
+      "channelSeparator": " እና "
+    },
+    "statuses": {
+      "skipped": "ተዘሏል",
+      "no_address": "አድራሻ የለም",
+      "opted_out": "ሰርዟል",
+      "no_user": "የተጠቃሚ መለያ የለም",
+      "failed": "አልተሳካም",
+      "pending": "በመጠባበቅ ላይ",
+      "queued": "በሰልፍ ላይ",
+      "unknown": "ያልታወቀ"
+    }
+  }
+}

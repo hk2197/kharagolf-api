@@ -1,0 +1,105 @@
+{
+  "title": "نظرة عامة على المنظمة",
+  "subtitle": "التحليلات والفعاليات النشطة لـ {{name}}",
+  "settingUp": "جارٍ إعداد حسابك",
+  "settingUpDesc": "يتم ربط ملفك الشخصي بمنظمة. عادةً ما يستغرق ذلك لحظة فقط.",
+  "refreshNow": "تحديث الآن",
+  "signOut": "تسجيل الخروج وإعادة تسجيل الدخول",
+  "retrying": "جارٍ إعادة المحاولة تلقائيًا…",
+  "noDataYet": "لا توجد بيانات بعد",
+  "noTournamentsYet": "لا توجد بطولات بعد",
+  "noActiveTournaments": "لا توجد بطولات نشطة",
+  "noActiveTournamentsDesc": "ابدأ بطولة لمشاهدة التسجيل المباشر هنا.",
+  "createTournament": "إنشاء بطولة",
+  "viewAll": "عرض الكل",
+  "view": "عرض",
+  "live": "مباشر",
+  "tbd": "يُحدَّد لاحقًا",
+  "tabs": {
+    "overview": "نظرة عامة",
+    "clubStats": "إحصاءات النادي",
+    "analytics": "التحليلات"
+  },
+  "stats": {
+    "activeEvents": "الفعاليات النشطة",
+    "totalPlayers": "إجمالي اللاعبين",
+    "roundsPlayed": "الجولات المُلعبة",
+    "totalEvents": "إجمالي الفعاليات",
+    "tournaments": "البطولات",
+    "players": "اللاعبون",
+    "roundsCompleted": "الجولات المكتملة",
+    "retentionRate": "معدل الاحتفاظ",
+    "totalRounds": "إجمالي الجولات",
+    "scoreRecords": "إجمالي سجلات النتائج",
+    "scoreRecordsDesc": "عبر جميع البطولات والجولات",
+    "retentionDesc": "اللاعبون المشاركون في فعالتين أو أكثر"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "أفضل متوسط تسجيل",
+    "mostBirdies": "أكثر بيرديز",
+    "mostEagles": "أكثر نسور",
+    "mostConsistent": "الأكثر ثباتًا (جولات)",
+    "valueLabels": {
+      "avg": "متوسط",
+      "birdies": "بيرديز",
+      "eagles": "نسور",
+      "rounds": "جولات"
+    }
+  },
+  "charts": {
+    "formatPopularity": "شعبية الصيغ",
+    "eventParticipationLast12": "مشاركة الفعاليات (آخر 12)",
+    "eventParticipationLast8": "مشاركة الفعاليات (آخر 8)",
+    "monthlyGrowth": "النمو الشهري للاعبين (12 شهرًا)",
+    "revenueTrend": "اتجاه الإيرادات (رسوم الدخول)",
+    "participationRetention": "المشاركة والاحتفاظ",
+    "playerRetentionRate": "معدل احتفاظ اللاعبين",
+    "seriesRegistered": "المسجلون",
+    "seriesPaid": "المدفوع",
+    "seriesPlayers": "اللاعبون",
+    "seriesNewPlayers": "لاعبون جدد",
+    "seriesRevenue": "الإيرادات",
+    "seriesTournaments": "البطولات"
+  },
+  "quickLinks": {
+    "title": "روابط سريعة",
+    "allTournaments": "جميع البطولات",
+    "courses": "الملاعب",
+    "clubStats": "إحصاءات النادي"
+  },
+  "liveEvents": "الفعاليات المباشرة والقادمة",
+  "stuckReceipts": {
+    "title": "إيصالات اللعبة الجانبية العالقة",
+    "summary": "{{exhausted}} نفدت محاولاتها · {{skipped}} تم تخطيها قبل التسليم",
+    "truncation": " · يتم عرض {{shown}} من {{total}}",
+    "userFallback": "المستخدم رقم {{id}}",
+    "rowDetails": "{{game}} · التسوية رقم {{settlementId}} · دُفع بواسطة {{payer}}",
+    "channelEmail": "البريد",
+    "channelPush": "إشعار",
+    "channelExhausted": "نفدت ({{count}})",
+    "channelSkipped": "تم تخطيها",
+    "resendButton": "إعادة وضع التسليم في قائمة الانتظار",
+    "resending": "جارٍ إعادة الإدراج…",
+    "loadMore": "تحميل المزيد (المتبقي {{remaining}})",
+    "loading": "جارٍ التحميل…",
+    "toast": {
+      "successTitle": "تمت إعادة إدراج الإيصال",
+      "successDescription": "ستُعاد المحاولة لـ {{channels}} في تشغيل الكرون التالي.",
+      "errorTitle": "تعذر إعادة الإدراج",
+      "channelEmail": "البريد الإلكتروني",
+      "channelPush": "الإشعار الفوري",
+      "channelDelivery": "التسليم",
+      "channelSeparator": " و "
+    },
+    "statuses": {
+      "skipped": "تم تخطيها",
+      "no_address": "لا يوجد عنوان",
+      "opted_out": "إلغاء الاشتراك",
+      "no_user": "لا يوجد حساب مستخدم",
+      "failed": "فشل",
+      "pending": "قيد الانتظار",
+      "queued": "في قائمة الانتظار",
+      "unknown": "غير معروف"
+    }
+  }
+}

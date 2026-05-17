@@ -1,0 +1,202 @@
+{
+  "actions": {
+    "assign": "تعيين",
+    "invitePeer": "دعوة زميل",
+    "recordDecision": "تسجيل القرار"
+  },
+  "assignModal": {
+    "title": "تعيين الحالة",
+    "subtitle": "اختر عضوًا من اللجنة لتولي المسؤولية.",
+    "submit": "تعيين"
+  },
+  "peerModal": {
+    "title": "دعوة مراجع زميل",
+    "subtitle": "سوف يتلقى بريدًا إلكترونيًا وإشعارًا فوريًا.",
+    "submit": "إرسال الدعوة"
+  },
+  "decideModal": {
+    "title": "تسجيل القرار",
+    "decisionLabel": "القرار",
+    "rationaleLabel": "المبرر (مطلوب)",
+    "rationalePlaceholder": "اشرح منطق اللجنة",
+    "strokesLabel": "ضربات التعديل",
+    "strokesPlaceholder": "مثال: 1.0",
+    "capLabel": "قيمة الحد (HI 0–54)",
+    "capPlaceholder": "مثال: 18.4",
+    "notesLabel": "ملاحظات (اختياري)",
+    "notesPlaceholder": "ملاحظات اللجنة الداخلية",
+    "applyToPlayerTitle": "تطبيق على اللاعب",
+    "applyToPlayerHelp": "اكتب أيضًا مؤشر الإعاقة الناتج في سجل اللاعب.",
+    "submit": "تسجيل القرار"
+  },
+  "decisions": {
+    "no_action": "لا إجراء",
+    "soft_cap": "حد مرن",
+    "hard_cap": "حد صارم",
+    "index_adjustment": "تعديل المؤشر"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "المبرر مطلوب",
+    "rationaleRequiredMessage": "يرجى تسجيل مبرر لهذا القرار.",
+    "invalidStrokesTitle": "ضربات غير صالحة",
+    "invalidStrokesMessage": "يجب أن تكون ضربات التعديل رقمًا موجبًا.",
+    "invalidCapTitle": "حد غير صالح",
+    "invalidCapMessage": "يجب أن تكون قيمة الحد بين 0 و 54."
+  },
+  "errors": {
+    "assignFailed": "فشل التعيين",
+    "peerInviteFailed": "فشلت دعوة الزميل",
+    "decisionFailed": "فشل القرار",
+    "membersLoadFailed": "تعذر تحميل الأعضاء",
+    "couldNotOpen": "تعذر فتح الحالة",
+    "notFound": "الحالة غير موجودة",
+    "couldNotLoad": "تعذر تحميل الحالة.",
+    "missingOrgContext": "سياق المنظمة مفقود لهذه الحالة."
+  },
+  "memberPicker": {
+    "noMembers": "لم يتم العثور على أعضاء لجنة مؤهلين.",
+    "cancel": "إلغاء"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} من {{total}} فتحوا",
+    "badgeAccessibility": "{{opened}} من {{total}} مراجعين فتحوا الدعوة. انقر لرؤية التفاصيل.",
+    "sheetTitle": "حالة المراجعين الزملاء",
+    "sheetSubtitle": "{{opened}} من {{total}} فتحوا الدعوة",
+    "openedHeading": "مفتوح ({{count}})",
+    "notYetOpenedHeading": "لم يُفتح بعد ({{count}})",
+    "everyoneOpened": "فتح الجميع الدعوة.",
+    "noneOpened": "لم يفتح أي مراجع الدعوة بعد.",
+    "seenRelative": "شوهد {{relative}}",
+    "invitedRelative": "دُعي {{relative}}",
+    "close": "إغلاق"
+  },
+  "header": {
+    "caseNumber": "الحالة #{{id}}",
+    "subtitle": "مراجعة لجنة الإعاقة",
+    "back": "رجوع"
+  },
+  "summary": {
+    "subject": "الموضوع",
+    "period": "الفترة",
+    "details": "التفاصيل",
+    "decision": "القرار",
+    "openedAt": "فُتحت في {{date}}"
+  },
+  "peerResponses": {
+    "heading": "ردود الزملاء",
+    "headingWithCount": "ردود الزملاء ({{count}})",
+    "empty": "لا توجد ردود من الزملاء بعد.",
+    "recommendations": {
+      "confirm": "مؤكد",
+      "dispute": "متنازع عليه",
+      "insufficient_info": "معلومات غير كافية",
+      "responded": "ردّ"
+    },
+    "reviewerFallback": "المراجع",
+    "seenRelative": "شوهد {{relative}}",
+    "notYetOpened": "لم يُفتح بعد",
+    "respondedAt": "ردّ في {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "في انتظار الرد ({{count}})",
+    "filters": {
+      "all": "الكل ({{count}})",
+      "openedUnresponded": "مفتوح، بلا رد ({{count}})",
+      "unopened": "لم يُفتح بعد ({{count}})"
+    },
+    "empty": "لا يوجد مراجعون يطابقون هذه التصفية.",
+    "invited": "دُعي في {{date}}",
+    "invitedWithSeen": "دُعي {{invited}} · شوهد {{seen}}"
+  },
+  "activity": {
+    "heading": "النشاط"
+  },
+  "common": {
+    "close": "إغلاق"
+  },
+  "events": {
+    "opened": "تم فتح الحالة",
+    "decided": "تم تسجيل القرار",
+    "closed": "تم إغلاق الحالة",
+    "reopened": "تم إعادة فتح الحالة",
+    "peer_responded": "رد الزميل"
+  },
+  "relative": {
+    "past": {
+      "second_zero": "قبل ثانية",
+      "second_one": "قبل ثانية واحدة",
+      "second_two": "قبل ثانيتين",
+      "second_few": "قبل {{count}} ثوانٍ",
+      "second_many": "قبل {{count}} ثانية",
+      "second_other": "قبل {{count}} ثانية",
+      "minute_zero": "قبل دقيقة",
+      "minute_one": "قبل دقيقة واحدة",
+      "minute_two": "قبل دقيقتين",
+      "minute_few": "قبل {{count}} دقائق",
+      "minute_many": "قبل {{count}} دقيقة",
+      "minute_other": "قبل {{count}} دقيقة",
+      "hour_zero": "قبل ساعة",
+      "hour_one": "قبل ساعة واحدة",
+      "hour_two": "قبل ساعتين",
+      "hour_few": "قبل {{count}} ساعات",
+      "hour_many": "قبل {{count}} ساعة",
+      "hour_other": "قبل {{count}} ساعة",
+      "day_zero": "قبل يوم",
+      "day_one": "قبل يوم واحد",
+      "day_two": "قبل يومين",
+      "day_few": "قبل {{count}} أيام",
+      "day_many": "قبل {{count}} يوم",
+      "day_other": "قبل {{count}} يوم",
+      "month_zero": "قبل شهر",
+      "month_one": "قبل شهر واحد",
+      "month_two": "قبل شهرين",
+      "month_few": "قبل {{count}} أشهر",
+      "month_many": "قبل {{count}} شهر",
+      "month_other": "قبل {{count}} شهر",
+      "year_zero": "قبل سنة",
+      "year_one": "قبل سنة واحدة",
+      "year_two": "قبل سنتين",
+      "year_few": "قبل {{count}} سنوات",
+      "year_many": "قبل {{count}} سنة",
+      "year_other": "قبل {{count}} سنة"
+    },
+    "future": {
+      "second_zero": "خلال ثانية",
+      "second_one": "خلال ثانية واحدة",
+      "second_two": "خلال ثانيتين",
+      "second_few": "خلال {{count}} ثوانٍ",
+      "second_many": "خلال {{count}} ثانية",
+      "second_other": "خلال {{count}} ثانية",
+      "minute_zero": "خلال دقيقة",
+      "minute_one": "خلال دقيقة واحدة",
+      "minute_two": "خلال دقيقتين",
+      "minute_few": "خلال {{count}} دقائق",
+      "minute_many": "خلال {{count}} دقيقة",
+      "minute_other": "خلال {{count}} دقيقة",
+      "hour_zero": "خلال ساعة",
+      "hour_one": "خلال ساعة واحدة",
+      "hour_two": "خلال ساعتين",
+      "hour_few": "خلال {{count}} ساعات",
+      "hour_many": "خلال {{count}} ساعة",
+      "hour_other": "خلال {{count}} ساعة",
+      "day_zero": "خلال يوم",
+      "day_one": "خلال يوم واحد",
+      "day_two": "خلال يومين",
+      "day_few": "خلال {{count}} أيام",
+      "day_many": "خلال {{count}} يوم",
+      "day_other": "خلال {{count}} يوم",
+      "month_zero": "خلال شهر",
+      "month_one": "خلال شهر واحد",
+      "month_two": "خلال شهرين",
+      "month_few": "خلال {{count}} أشهر",
+      "month_many": "خلال {{count}} شهر",
+      "month_other": "خلال {{count}} شهر",
+      "year_zero": "خلال سنة",
+      "year_one": "خلال سنة واحدة",
+      "year_two": "خلال سنتين",
+      "year_few": "خلال {{count}} سنوات",
+      "year_many": "خلال {{count}} سنة",
+      "year_other": "خلال {{count}} سنة"
+    }
+  }
+}

@@ -1,0 +1,1184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KHARAGOLF — Platform Capability Report</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #0f1a12;
+        color: #e8e8e8;
+        font-family: "Inter", Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      .wrapper {
+        max-width: 720px;
+        margin: 0 auto;
+        background-color: #0f1a12;
+      }
+
+      .header {
+        background: linear-gradient(
+          160deg,
+          #0a1a0f 0%,
+          #112318 50%,
+          #0e1f15 100%
+        );
+        border-bottom: 2px solid #c9a84c;
+        padding: 52px 48px 40px;
+        text-align: center;
+      }
+
+      .logo-text {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 42px;
+        font-weight: 900;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        line-height: 1;
+      }
+
+      .logo-khara {
+        color: #ffffff;
+      }
+      .logo-golf {
+        color: #c9a84c;
+      }
+
+      .tagline {
+        font-family: "Inter", Arial, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: #c9a84c;
+        margin-top: 10px;
+        opacity: 0.85;
+      }
+
+      .sub-tagline {
+        font-size: 13px;
+        color: #7aab8a;
+        margin-top: 6px;
+        letter-spacing: 0.06em;
+        font-style: italic;
+      }
+
+      .intro {
+        background-color: #112318;
+        padding: 36px 48px;
+        border-bottom: 1px solid #1e3325;
+      }
+
+      .intro p {
+        font-size: 15px;
+        color: #c8d8cc;
+        line-height: 1.8;
+      }
+
+      .intro p + p {
+        margin-top: 14px;
+      }
+
+      .section {
+        padding: 36px 48px;
+        border-bottom: 1px solid #1a2f20;
+      }
+
+      .section:nth-child(odd) {
+        background-color: #0f1a12;
+      }
+      .section:nth-child(even) {
+        background-color: #111c15;
+      }
+
+      .section-title {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #c9a84c;
+        letter-spacing: 0.04em;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .section-title .icon {
+        font-size: 20px;
+      }
+
+      .sub-heading {
+        font-size: 11px;
+        font-weight: 700;
+        color: #c9a84c;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin: 20px 0 10px;
+      }
+
+      .sub-heading:first-of-type {
+        margin-top: 0;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 20px;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        font-size: 13.5px;
+        color: #c0d4c8;
+        line-height: 1.5;
+      }
+
+      .feature-item .check {
+        color: #22c55e;
+        font-size: 13px;
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+
+      .channel-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 8px;
+      }
+
+      .channel-table td {
+        padding: 10px 14px;
+        font-size: 13.5px;
+        border-bottom: 1px solid #1e3325;
+      }
+
+      .channel-table td:first-child {
+        color: #c9a84c;
+        font-weight: 600;
+        white-space: nowrap;
+        width: 220px;
+      }
+
+      .channel-table td:last-child {
+        color: #a8c4b0;
+      }
+
+      .footer {
+        background: linear-gradient(160deg, #0a1a0f 0%, #0d1e12 100%);
+        border-top: 2px solid #c9a84c;
+        padding: 36px 48px;
+        text-align: center;
+      }
+
+      .footer .footer-logo {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .footer-contact {
+        margin-top: 16px;
+        font-size: 13px;
+        color: #7aab8a;
+        line-height: 2;
+      }
+
+      .footer-contact a {
+        color: #c9a84c;
+        text-decoration: none;
+      }
+
+      .footer-note {
+        margin-top: 20px;
+        font-size: 11px;
+        color: #3d5c47;
+        letter-spacing: 0.05em;
+      }
+
+      @media (max-width: 600px) {
+        .header,
+        .intro,
+        .section,
+        .footer {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+        .logo-text {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo-text">
+          <span class="logo-khara">KHARA</span
+          ><span class="logo-golf">GOLF</span>
+        </div>
+        <div class="tagline">The Definitive Tournament Management Platform</div>
+        <div class="sub-tagline">"Mastery demands precision."</div>
+      </div>
+
+      <div class="intro">
+        <p>
+          KHARAGOLF is an enterprise-grade golf club management platform
+          purpose-built for prestigious clubs, national federations, and
+          professional tournament directors. It unifies every dimension of club
+          life — from WHS-compliant handicap management and live tournament
+          scoring to tee time booking, pro shop POS, and on-course F&amp;B
+          ordering — into a single, beautifully designed system available in 21
+          languages across 6 global regions.
+        </p>
+        <p>
+          The platform serves three audiences simultaneously:
+          <strong style="color: #c9a84c">Club Administrators</strong>,
+          <strong style="color: #22c55e">Players</strong>, and
+          <strong style="color: #93c5fd">Sponsors</strong> — across web, iOS,
+          Android, Apple Watch, Wear OS, and Garmin.
+        </p>
+      </div>
+
+      <!-- Platform Channels -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">🖥️</span> Platform Channels
+        </div>
+        <table class="channel-table">
+          <tr>
+            <td>Enterprise Web App</td>
+            <td>
+              Full admin command centre — tournaments, members, finance,
+              operations
+            </td>
+          </tr>
+          <tr>
+            <td>iOS App (Native)</td>
+            <td>
+              Player portal — scoring, booking, analytics, shop (App Store)
+            </td>
+          </tr>
+          <tr>
+            <td>Android App (Native)</td>
+            <td>Player portal — full iOS parity (Google Play)</td>
+          </tr>
+          <tr>
+            <td>Apple Watch</td>
+            <td>Wrist scoring, GPS distances, complications</td>
+          </tr>
+          <tr>
+            <td>Wear OS</td>
+            <td>Scorecard tiles, score vs par glance, tee time alerts</td>
+          </tr>
+          <tr>
+            <td>Garmin Connect IQ</td>
+            <td>Score, GPS yardage &amp; handicap index on Garmin devices</td>
+          </tr>
+          <tr>
+            <td>KHARAGOLF.com</td>
+            <td>Marketing, club directory, demo requests, pricing</td>
+          </tr>
+          <tr>
+            <td>API / KHARAGOLF Cloud</td>
+            <td>Unified data engine powering all surfaces</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Tournament Engine -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">🏆</span> Tournament &amp; Competition Engine
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Stroke Play (Gross &amp; Net), Stableford, Max Score, Par</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Match Play — Ryder Cup, Foursomes, Greensomes, Scramble, Best
+              Ball, Shamble</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Multi-round events with cut lines</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Multi-course championships &amp; interclub fixtures</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Shotgun, split tee &amp; simultaneous starts</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Automated WHS Playing Handicap calculations</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Side games — Skins, CTP, Longest Drive, Birdies pool</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Live Leaderboard — real-time, kiosk mode, TV display board</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Public results page (shareable, no login required)</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Professional 4-panel pocket scorecards (PDF + QR)</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Draw builder — auto pairings, drag-and-drop, manual lock</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Flight management — bulk assign, drag-and-drop</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Prize payout calculator &amp; auto-assignment</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Waitlist management with automated promotion</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Tournament templates — save and re-use formats</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Corporate &amp; charity event management</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Eclectic scoring &amp; Order of Merit</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Handicap simulator &amp; what-if modelling</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Team competitions — named teams, rosters &amp; team handicap
+              aggregation</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Team draws, team leaderboards &amp; team scoring</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Bulk team registration &amp; team-based entry management</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- League Management -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">⛳</span> League Management
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Stroke, Stableford, Match Play &amp; Round Robin formats</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Team leagues — named teams, rosters &amp; team-based
+              standings</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Season-long standings &amp; cumulative scorecards</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>PDF scorecard printing &amp; export</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Post-round results notifications to all members</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WHS Engine -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">📊</span> World Handicap System (WHS 2024/2026)
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Full WHS Rules of Handicapping compliance</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Score differential — 18-hole, 9-hole &amp; partial round
+              prorating</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>ESR, Soft Cap, Hard Cap enforcement</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Best 8 of last 20 differentials logic</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>GHIN / IGU automated score posting</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Handicap committee governance &amp; simulator</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Scoring -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">📍</span> Live Scoring — All Channels
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Web scorer console — bulk grid entry for large fields</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Mobile scorer station — group-centric flow</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Player self-scoring with marker confirmation
+              (WHS-compliant)</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Apple Watch &amp; Wear OS standalone wrist scoring</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Offline scoring with automatic background sync</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GPS & Shot Tracking -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">🛰️</span> GPS &amp; Shot Tracking
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Live distance to front / centre / back of green</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Shot-by-shot GPS tracking (Tee → Fairway → Approach → Putt)</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>3D hole flyover via satellite imagery</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Garmin, Apple Watch &amp; Fitbit sync</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Player Analytics -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">📈</span> Player Analytics &amp; Performance
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Strokes Gained — OTT, Approach, ATG, Putting (PGA Tour
+              baselines)</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Fairways hit, GIR, putts, scoring average trend charts</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span><span>Club distance profiling</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span><span>Practice session tracker</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Interactive round replay map</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Shareable round summary card</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>National &amp; regional rankings integration</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>50+ achievement badges &amp; gamification milestones</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Membership & Administration -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">👥</span> Membership &amp; Club Administration
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Full member lifecycle — onboarding, classification, renewal</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Role-based access — Super Admin / Club Admin / Scorer /
+              Member</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Automated recurring dues billing</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Digital membership card with QR code</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Handicap committee tools &amp; governance</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Club governance hub — documents, board minutes, member
+              voting</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Payments & Finance -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">💳</span> Payments &amp; Finance
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Razorpay — entry fees, dues, shop (multi-currency)</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>COD support &amp; GST-compliant tax invoices</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Financial reporting dashboard by event / category / period</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Refund workflow &amp; payment reminders</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span><span>Razorpay Payment Links</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Sponsor payment &amp; contract tracking</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Communications -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">📣</span> Communications &amp; Notifications
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span><span>Email delivery (SMTP)</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Push notifications — iOS &amp; Android</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>SMS &amp; WhatsApp broadcast</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>In-app messaging per tournament / league</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Automated communication workflow builder</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Club-branded email templates &amp; post-event recaps</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Branding & Sponsorship -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">🎨</span> Club Branding, White-Labelling &amp;
+          Sponsorship
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Custom logo, colours, and domain per club</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Branded scorecards, results PDFs &amp; emails</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Sponsor logos on leaderboards, scorecards &amp; results
+              pages</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Sponsor CRM — contracts, deal values, renewals</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span><span>Sponsor self-service portal</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Automated ROI reporting &amp; analytics</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>CTP / Longest Drive hole sponsorships</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Custom registration forms &amp; post-event surveys</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pro Shop & E-Commerce -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">🛍️</span> Pro Shop, POS &amp; E-Commerce
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >POS terminal with barcode scanning &amp; multi-location
+              inventory</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Supplier purchase orders &amp; receiving</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Returns, refunds &amp; exchanges</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Member pricing, promotions &amp; loyalty rewards</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Gift cards &amp; store credit</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Online shop with dropshipping (Shiprocket + Printful)</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>GST invoices &amp; commerce analytics</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Third-party vendor / consignment operator support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facilities & Operations -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">🏗️</span> Facilities &amp; Operations Management
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Golf Cart Fleet — GPS tracking, scheduling &amp; maintenance
+              logs</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Driving Range &amp; Bay Booking — time slots &amp; billing</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Locker Room — assignments, renewals &amp; waitlist</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Rental Equipment — clubs, trolleys, GPS devices</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Course condition reports (published live to mobile)</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >F&amp;B on-course ordering — from any hole, paid at order or on
+              tab</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Lesson &amp; Coaching Booking — pro calendar, student
+              history</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Junior Golf Programmes — enrolment, progress &amp; parent
+              notifications</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Tee Time Booking -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">📅</span> Tee Time Booking
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Member &amp; public booking portal</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Rule-based slot engine — normal, split tee &amp; shotgun</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Maintenance blocks &amp; event reservations</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Booking management &amp; cancellation workflow</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social & Community -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">🌐</span> Social &amp; Community
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Club social wall &amp; activity feed</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Media galleries (photos &amp; video) per tournament &amp;
+              league</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Real-time tournament chat rooms</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span><span>Fantasy Golf League</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Golf trip &amp; away day planner</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span><span>Pace of play tracker</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multi-Club SaaS -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">☁️</span> Multi-Club SaaS Platform
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Self-service club onboarding with subscription billing</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Super-Admin dashboard for platform-wide oversight</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Per-club data isolation and access controls</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Public club directory on KHARAGOLF.com</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Integrations -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">🔌</span> Integrations &amp; API
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>GHIN player &amp; course data lookup</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Razorpay, Shiprocket, Printful</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>OpenWeatherMap — weather widget on tournament day</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Outbound webhook API for external system integration</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Custom report builder — CSV &amp; PDF export</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Calendar export (iCal / Google Calendar)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multi-Language Support -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">🌍</span> Multi-Language Support
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >21 languages across 6 global regions — with full RTL support for
+              Arabic</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >🌍 Global Core: English, Spanish, French, German,
+              Portuguese</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span><span>🇮🇳 South Asia: Hindi</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >🇸🇦 Middle East: Arabic (RTL — right-to-left layout across web and
+              mobile)</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>🌏 East Asia: Japanese, Korean, Chinese (Simplified)</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >🌏 Southeast Asia: Thai, Bahasa Melayu, Bahasa Indonesia, Tiếng
+              Việt, Filipino</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >🌍 Africa: Kiswahili, Afrikaans, Amharic, Hausa, isiZulu,
+              Yorùbá</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >All UI strings translated — buttons, labels, errors, navigation,
+              notifications</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Language preference stored per user, applied automatically on
+              login</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Players change language from profile settings (web &amp;
+              mobile)</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Club admins set a default language for their club</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Public registration page respects the club's default
+              language</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Date, number, and currency formats follow locale
+              conventions</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Native Apps -->
+      <div class="section">
+        <div class="section-title">
+          <span class="icon">📱</span> Native iOS, Android &amp; Wearable Apps
+        </div>
+
+        <p class="sub-heading">iOS — App Store Ready (Swift / SwiftUI)</p>
+        <div class="feature-grid" style="margin-bottom: 22px">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Full feature parity — scoring, leaderboards, handicap, tee times,
+              shop</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Biometric authentication (Face ID / Touch ID)</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span><span>APNs push notifications</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Background GPS tracking &amp; native haptic feedback</span>
+          </div>
+        </div>
+
+        <p class="sub-heading">
+          Android — Google Play Ready (Kotlin / Jetpack Compose)
+        </p>
+        <div class="feature-grid" style="margin-bottom: 22px">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Full feature parity, Material You design aligned to brand</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Fingerprint / biometric authentication</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span><span>FCM push notifications</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span><span>Background GPS tracking</span>
+          </div>
+        </div>
+
+        <p class="sub-heading">Apple Watch (watchOS)</p>
+        <div class="feature-grid" style="margin-bottom: 22px">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Complication showing current round score &amp; upcoming hole
+              par</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Hole-by-hole score entry using the digital crown</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Live distance-to-pin display</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Round timer — syncs with iPhone via WatchConnectivity</span>
+          </div>
+        </div>
+
+        <p class="sub-heading">Wear OS</p>
+        <div class="feature-grid" style="margin-bottom: 22px">
+          <div class="feature-item">
+            <span class="check">✓</span><span>Scorecard entry tiles</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Glance showing current score vs par</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Tee time reminder notifications</span>
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Syncs with Android phone via Data Layer API</span>
+          </div>
+        </div>
+
+        <p class="sub-heading">Garmin Connect IQ</p>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span
+              >Custom data field &amp; widget — hole score, distance to pin
+              (GPS), handicap index</span
+            >
+          </div>
+          <div class="feature-item">
+            <span class="check">✓</span
+            ><span>Side-loadable on all compatible Garmin devices</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer-logo">
+          <span style="color: #ffffff">KHARA</span
+          ><span style="color: #c9a84c">GOLF</span>
+        </div>
+        <div
+          class="tagline"
+          style="
+            margin-top: 8px;
+            font-size: 10px;
+            letter-spacing: 0.3em;
+            color: #c9a84c;
+            opacity: 0.7;
+            text-transform: uppercase;
+          "
+        >
+          The Definitive Tournament Management Platform
+        </div>
+        <div class="footer-contact">
+          📧
+          <a href="mailto:tournamentmanager@kharagolf.com"
+            >tournamentmanager@kharagolf.com</a
+          ><br />
+          🌐 <a href="https://www.kharagolf.com">www.kharagolf.com</a>
+        </div>
+        <div class="footer-note">
+          Confidential — Prepared for prospective partners &amp; clubs · April
+          2026
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

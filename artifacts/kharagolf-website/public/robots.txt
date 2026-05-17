@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Static marketing-page sitemap
+Sitemap: /sitemap.xml
+
+# Per-club marketing site sitemap (Task #369). Crawlers follow this
+# to discover every published club mini-site.
+Sitemap: /api/public/sitemap.xml

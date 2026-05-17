@@ -1,0 +1,1227 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > achievement.unlocked → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">업적</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, Pebble Beach GC에서 새로운 업적을 달성했습니다.</p><div style="…"> <table style="…"><tr><td style="…">업적</td><td style="…">Sub-80 Streak</td></tr></table> </div><p style="…">계속 플레이해서 다음 업적을 달성해 보세요.</p> </div> <div style="…"> Notification: <code style="…">achievement.unlocked</code> </div> </div>",
+  "key": "achievement.unlocked",
+  "lang": "ko",
+  "subject": "🏆 업적 달성 — Sub-80 Streak",
+  "text": "안녕하세요 Jordan Spieth,
+
+달성한 업적: Sub-80 Streak.
+계속 플레이해서 다음 업적을 달성해 보세요.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > booking.cancelled → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">취소</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 티 예약이 취소되었습니다.</p><div style="…"> <table style="…"><tr><td style="…">코스</td><td style="…">Ocean Course</td></tr><tr><td style="…">티타임</td><td style="…">08:40</td></tr><tr><td style="…">사유</td><td style="…">Course closure</td></tr></table> </div><p style="…">본인이 한 것이 아니라면 즉시 프로숍에 문의해 주세요.</p> </div> <div style="…"> Notification: <code style="…">booking.cancelled</code> </div> </div>",
+  "key": "booking.cancelled",
+  "lang": "ko",
+  "subject": "예약 취소 — Ocean Course",
+  "text": "안녕하세요 Jordan Spieth,
+
+Ocean Course의 티 예약이 취소되었습니다.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > booking.confirmed → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">티타임</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 티 예약이 확정되었습니다.</p><div style="…"> <table style="…"><tr><td style="…">코스</td><td style="…">Ocean Course</td></tr><tr><td style="…">티타임</td><td style="…">08:40</td></tr><tr><td style="…">인원</td><td style="…">4</td></tr></table> </div><p style="…">티오프 직전에 알림을 보내드립니다. 즐거운 라운드 되세요!</p> </div> <div style="…"> Notification: <code style="…">booking.confirmed</code> </div> </div>",
+  "key": "booking.confirmed",
+  "lang": "ko",
+  "subject": "티타임 확정 — Ocean Course",
+  "text": "안녕하세요 Jordan Spieth,
+
+Ocean Course의 티타임이 08:40에 확정되었습니다.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > booking.reminder.2h → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">2시간 알림</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 곧 시작합니다. 출발할 시간이에요.</p><div style="…"> <table style="…"><tr><td style="…">코스</td><td style="…">Ocean Course</td></tr><tr><td style="…">티타임</td><td style="…">08:40</td></tr></table> </div><p style="…">연습장에서 몸을 풀려면 30분 일찍 도착하세요.</p> </div> <div style="…"> Notification: <code style="…">booking.reminder.2h</code> </div> </div>",
+  "key": "booking.reminder.2h",
+  "lang": "ko",
+  "subject": "2시간 후 티오프 — Ocean Course",
+  "text": "안녕하세요 Jordan Spieth,
+
+알림: Ocean Course에서 08:40 티오프.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > booking.reminder.24h → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">24시간 알림</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 알려드립니다 — 내일 티오프입니다.</p><div style="…"> <table style="…"><tr><td style="…">코스</td><td style="…">Ocean Course</td></tr><tr><td style="…">티타임</td><td style="…">08:40</td></tr></table> </div><p style="…">장비를 챙기고 날씨를 확인한 후 첫 번째 티에서 만나요.</p> </div> <div style="…"> Notification: <code style="…">booking.reminder.24h</code> </div> </div>",
+  "key": "booking.reminder.24h",
+  "lang": "ko",
+  "subject": "알림 — 내일 Ocean Course 티타임",
+  "text": "안녕하세요 Jordan Spieth,
+
+알림: Ocean Course의 티타임은 08:40입니다.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > booking.waitlist.promoted → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">대기 승격</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 좋은 소식 — 자리가 나서 예약이 확정되었습니다.</p><div style="…"> <table style="…"><tr><td style="…">코스</td><td style="…">Ocean Course</td></tr><tr><td style="…">티타임</td><td style="…">08:40</td></tr></table> </div><p style="…">앱에서 세부사항을 확인하세요. 코스에서 만나요!</p> </div> <div style="…"> Notification: <code style="…">booking.waitlist.promoted</code> </div> </div>",
+  "key": "booking.waitlist.promoted",
+  "lang": "ko",
+  "subject": "🎉 대기자 명단에서 확정 — Ocean Course",
+  "text": "안녕하세요 Jordan Spieth,
+
+좋은 소식 — Ocean Course의 대기 예약이 확정되었습니다.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > caddie.mode.blocked → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">캐디 알림</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, AI 캐디 요청을 처리할 수 없었습니다.</p><div style="…"> <table style="…"><tr><td style="…">사유</td><td style="…">Tournament round mode disables AI assistance</td></tr></table> </div><p style="…">보통 라운드가 코칭 보조를 비활성화하는 대회 모드이기 때문입니다. 오류라고 생각되면 위원회에 문의하세요.</p> </div> <div style="…"> Notification: <code style="…">caddie.mode.blocked</code> </div> </div>",
+  "key": "caddie.mode.blocked",
+  "lang": "ko",
+  "subject": "AI 캐디 요청이 차단되었습니다",
+  "text": "안녕하세요 Jordan Spieth,
+
+AI 캐디 요청이 차단되었습니다. 사유: Tournament round mode disables AI assistance.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > coach.review.delivered → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">코칭</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, <strong>Coach Lee</strong>님이 최근 스윙 리뷰에 대한 피드백을 게시했습니다.</p><p style="…">타임스탬프 음성 메모와 드릴이 포함된 분석을 보려면 아래를 누르세요.</p> <div style="…"><a href="https://app.example.com/reviews/9" style="…">리뷰 보기</a></div> </div> <div style="…"> Notification: <code style="…">coach.review.delivered</code> </div> </div>",
+  "key": "coach.review.delivered",
+  "lang": "ko",
+  "subject": "🎥 Coach Lee님이 스윙 리뷰를 전달했습니다",
+  "text": "안녕하세요 Jordan Spieth,
+
+Coach Lee님이 스윙 리뷰를 전달했습니다.
+Watch it: https://app.example.com/reviews/9
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > course.correction.resolved → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">코스 수정</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, Pebble Beach GC 코스 팀이 신고한 수정에 대한 검토를 완료했습니다.</p><div style="…"> <table style="…"><tr><td style="…">필드</td><td style="…">Hole 3 yardage</td></tr><tr><td style="…">홀</td><td style="…">3</td></tr><tr><td style="…">결과</td><td style="…">수락</td></tr></table> </div><p style="…"><em style="…">검토자 메모:</em> Verified by greenkeeper</p><p style="…">코스 데이터의 정확성을 유지하는 데 도움 주셔서 감사합니다.</p> </div> <div style="…"> Notification: <code style="…">course.correction.resolved</code> </div> </div>",
+  "key": "course.correction.resolved",
+  "lang": "ko",
+  "subject": "코스 수정이 수락되었습니다",
+  "text": "안녕하세요 Jordan Spieth,
+
+Hole 3 yardage on hole 3에 대한 신고 수정이 수락되었습니다.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > handicap.committee.changed → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">핸디캡</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, Pebble Beach GC 핸디캡 위원회가 귀하의 인덱스를 조정했습니다.</p><div style="…"> <table style="…"><tr><td style="…">이전 인덱스</td><td style="…">12.4</td></tr><tr><td style="…">새 인덱스</td><td style="…">11.8</td></tr><tr><td style="…">사유</td><td style="…">Annual review adjustment</td></tr></table> </div><p style="…">전체 사유와 다음 단계를 보려면 핸디캡 프로필을 열어주세요.</p> </div> <div style="…"> Notification: <code style="…">handicap.committee.changed</code> </div> </div>",
+  "key": "handicap.committee.changed",
+  "lang": "ko",
+  "subject": "핸디캡 위원회가 인덱스를 업데이트했습니다",
+  "text": "안녕하세요 Jordan Spieth,
+
+핸디캡 위원회가 인덱스를 11.8로 업데이트했습니다.
+Reason: Annual review adjustment.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > handicap.exceptional.score → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">핸디캡</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 최근 라운드에서 예외적 스코어가 나와 WHS 엔진이 자동 조정을 적용했습니다.</p><div style="…"> <table style="…"><tr><td style="…">디퍼렌셜</td><td style="…">예외적 디퍼렌셜</td></tr><tr><td style="…">조정</td><td style="…">0.4</td></tr></table> </div><p style="…">롤링 윈도우 계산의 자세한 내용을 보려면 핸디캡 설명을 열어주세요.</p> </div> <div style="…"> Notification: <code style="…">handicap.exceptional.score</code> </div> </div>",
+  "key": "handicap.exceptional.score",
+  "lang": "ko",
+  "subject": "예외적 스코어 감소가 적용되었습니다",
+  "text": "안녕하세요 Jordan Spieth,
+
+예외적 스코어 감소가 적용되었습니다 (디퍼렌셜 예외적 디퍼렌셜, 0.4).
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > highlight.ready → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">하이라이트</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 최신 하이라이트 릴 편집을 막 마쳤습니다.</p><p style="…">이번 라운드의 베스트 샷을 보고, 공유하고, 저장하세요.</p> <div style="…"><a href="https://app.example.com/h/abc" style="…">하이라이트 보기</a></div> </div> <div style="…"> Notification: <code style="…">highlight.ready</code> </div> </div>",
+  "key": "highlight.ready",
+  "lang": "ko",
+  "subject": "🎬 하이라이트 릴이 준비되었습니다",
+  "text": "안녕하세요 Jordan Spieth,
+
+하이라이트 릴이 준비되었습니다.
+Watch: https://app.example.com/h/abc
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > interclub.qualified → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">인터클럽</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 축하드립니다 — 좋은 성적으로 <strong>Coastal Inter-Club</strong> 출전 자격을 얻으셨습니다.</p><p style="…">주장이 팀을 확정할 수 있도록 앱에서 참가를 확정해 주세요.</p> </div> <div style="…"> Notification: <code style="…">interclub.qualified</code> </div> </div>",
+  "key": "interclub.qualified",
+  "lang": "ko",
+  "subject": "🏌️ Coastal Inter-Club 출전 자격 획득",
+  "text": "안녕하세요 Jordan Spieth,
+
+Coastal Inter-Club 출전 자격을 얻었습니다.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > leaderboard.position.change → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">리더보드</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 리더보드에서 순위 상승.</p><div style="…"> <table style="…"><tr><td style="…">이전</td><td style="…">T14</td></tr><tr><td style="…">현재</td><td style="…">T7</td></tr><tr><td style="…">토너먼트</td><td style="…">Spring Open</td></tr></table> </div><p style="…">다른 사람의 움직임과 남은 경기는 앱에서 확인하세요.</p> </div> <div style="…"> Notification: <code style="…">leaderboard.position.change</code> </div> </div>",
+  "key": "leaderboard.position.change",
+  "lang": "ko",
+  "subject": "Spring Open에서 순위 상승",
+  "text": "안녕하세요 Jordan Spieth,
+
+Spring Open에서 순위 상승.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > league.standings.updated → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">리그</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, <strong>Tuesday Night League</strong>의 순위가 방금 업데이트되었습니다.</p><div style="…"> <table style="…"><tr><td style="…">당신의 순위</td><td style="…">#3</td></tr></table> </div><p style="…">전체 순위표와 다가오는 경기를 확인하려면 순위를 열어주세요.</p> </div> <div style="…"> Notification: <code style="…">league.standings.updated</code> </div> </div>",
+  "key": "league.standings.updated",
+  "lang": "ko",
+  "subject": "Tuesday Night League 순위 업데이트",
+  "text": "안녕하세요 Jordan Spieth,
+
+Tuesday Night League 순위 업데이트 — you are now #3.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > marker.share.requested → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">마커 요청</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, <strong>Sam Cooke</strong>님이 오늘 라운드 동안 카드 마킹을 요청했습니다.</p><p style="…">마커 화면을 열어 실시간으로 점수를 입력하세요.</p> </div> <div style="…"> Notification: <code style="…">marker.share.requested</code> </div> </div>",
+  "key": "marker.share.requested",
+  "lang": "ko",
+  "subject": "Sam Cooke님이 카드 마킹을 요청했습니다",
+  "text": "안녕하세요 Jordan Spieth,
+
+Sam Cooke님이 카드 마킹을 요청했습니다.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > match.result.recorded → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">경기 결과</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 경기 공식 결과가 게시되었습니다.</p><div style="…"> <table style="…"><tr><td style="…">상대</td><td style="…">Alex Murray</td></tr><tr><td style="…">결과</td><td style="…">won</td></tr><tr><td style="…">스코어</td><td style="…">3 &amp; 2</td></tr></table> </div><p style="…">이상이 있다면 24시간 이내에 브래킷 페이지에서 문의해 주세요.</p> </div> <div style="…"> Notification: <code style="…">match.result.recorded</code> </div> </div>",
+  "key": "match.result.recorded",
+  "lang": "ko",
+  "subject": "Alex Murray와의 경기 결과 기록",
+  "text": "안녕하세요 Jordan Spieth,
+
+Alex Murray와의 결과: won (3 & 2).
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > match.scheduled → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">매치 플레이</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 다음 매치 일정이 잡혔습니다.</p><div style="…"> <table style="…"><tr><td style="…">상대</td><td style="…">Alex Murray</td></tr><tr><td style="…">티타임</td><td style="…">추후 확정</td></tr><tr><td style="…">코스</td><td style="…">Ocean Course</td></tr></table> </div><p style="…">앱에서 출전 가능 여부를 확정해 주세요 — 노쇼는 기권으로 간주됩니다.</p> </div> <div style="…"> Notification: <code style="…">match.scheduled</code> </div> </div>",
+  "key": "match.scheduled",
+  "lang": "ko",
+  "subject": "Alex Murray와의 매치 일정 확정",
+  "text": "안녕하세요 Jordan Spieth,
+
+매치 일정: Alex Murray와 — 티오프 추후 확정.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > near.miss → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">아쉬운 차이</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, <strong>Spring Open</strong>까지 단 1 stroke 차였습니다.</p><p style="…">다음 라운드 한 번만 잘 치면 손에 들어옵니다.</p> </div> <div style="…"> Notification: <code style="…">near.miss</code> </div> </div>",
+  "key": "near.miss",
+  "lang": "ko",
+  "subject": "정말 아슬아슬 — 1 stroke 차로 Spring Open",
+  "text": "안녕하세요 Jordan Spieth,
+
+Spring Open 아슬아슬 (1 stroke 차).
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > post.event.survey → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">이벤트 후 설문</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, <strong>Spring Open</strong>에 참가해 주셔서 감사합니다.</p><p style="…">몇 분의 피드백으로 다음 이벤트가 더 좋아질 수 있습니다.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">설문 열기</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "ko",
+  "subject": "Spring Open는 어땠나요? — 짧은 피드백",
+  "text": "안녕하세요 Jordan Spieth,
+
+Spring Open 참가에 감사드립니다.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > post.round.results → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">라운드 요약</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 오늘 라운드의 수치입니다.</p><div style="…"> <table style="…"><tr><td style="…">코스</td><td style="…">Ocean Course</td></tr><tr><td style="…">그로스</td><td style="…">82</td></tr><tr><td style="…">네트</td><td style="…">74</td></tr></table> </div><p style="…">전체 홀별 분석, 스트로크스 게인드, 샷 맵은 앱에서 확인하세요.</p> </div> <div style="…"> Notification: <code style="…">post.round.results</code> </div> </div>",
+  "key": "post.round.results",
+  "lang": "ko",
+  "subject": "라운드 종료 — Ocean Course",
+  "text": "안녕하세요 Jordan Spieth,
+
+Ocean Course 라운드 — 그로스 82, 네트 74.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > recap.year.ready → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">골프 한 해</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, <strong>2025</strong>년 골프 결산이 완성되었습니다.</p><p style="…">라운드 수, 최저 스코어, 최장 드라이브, 핫 스트릭 — 공유 가능한 카드 한 장에 전부.</p> <div style="…"><a href="https://app.example.com/recap/2025" style="…">결산 열기</a></div> </div> <div style="…"> Notification: <code style="…">recap.year.ready</code> </div> </div>",
+  "key": "recap.year.ready",
+  "lang": "ko",
+  "subject": "🎉 2025년 골프 결산이 준비되었습니다",
+  "text": "안녕하세요 Jordan Spieth,
+
+2025년 골프 결산이 준비되었습니다.
+Open: https://app.example.com/recap/2025
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > scoring.event.eagle → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">스코어링 이벤트</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 멋진 플레이 — Pebble Beach GC에서 이글를 기록했습니다.</p><div style="…"> <table style="…"><tr><td style="…">코스</td><td style="…">Ocean Course</td></tr><tr><td style="…">홀</td><td style="…">13</td></tr><tr><td style="…">스코어</td><td style="…">이글</td></tr></table> </div><p style="…">이 샷은 하이라이트 릴에 추가되었습니다. 공유는 앱의 공유 아이콘을 눌러주세요.</p> </div> <div style="…"> Notification: <code style="…">scoring.event.eagle</code> </div> </div>",
+  "key": "scoring.event.eagle",
+  "lang": "ko",
+  "subject": "🦅 Ocean Course에서 이글 (또는 그 이상)",
+  "text": "안녕하세요 Jordan Spieth,
+
+Ocean Course에서 이글 (또는 그 이상), hole 13.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > scoring.event.hole_in_one → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">홀인원</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 축하드립니다 — <strong>에이스</strong>를 기록하셨습니다!</p><div style="…"> <table style="…"><tr><td style="…">코스</td><td style="…">Ocean Course</td></tr><tr><td style="…">홀</td><td style="…">7</td></tr><tr><td style="…">클럽</td><td style="…">7-iron</td></tr></table> </div><p style="…">공식 기록에 등재되었습니다. 19번 홀에서 한 잔은 당신이.</p> </div> <div style="…"> Notification: <code style="…">scoring.event.hole_in_one</code> </div> </div>",
+  "key": "scoring.event.hole_in_one",
+  "lang": "ko",
+  "subject": "🎯 Ocean Course에서 홀인원!",
+  "text": "안녕하세요 Jordan Spieth,
+
+Ocean Course에서 홀인원, hole 7!
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > streak.milestone → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">연속 기록</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 연속 기록이 뜨겁습니다.</p><div style="…"> <table style="…"><tr><td style="…">연속 기록</td><td style="…">10 sub-90 rounds</td></tr><tr><td style="…">마일스톤</td><td style="…">30</td></tr></table> </div><p style="…">이대로 계속 — 다음 마일스톤도 자동으로 전달됩니다.</p> </div> <div style="…"> Notification: <code style="…">streak.milestone</code> </div> </div>",
+  "key": "streak.milestone",
+  "lang": "ko",
+  "subject": "🔥 10 sub-90 rounds이(가) 30 달성",
+  "text": "안녕하세요 Jordan Spieth,
+
+10 sub-90 rounds이(가) 30 달성.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > tournament.cut.applied → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">토너먼트 컷</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, <strong>Spring Open</strong>의 2라운드 후 컷이 결정되었습니다.</p><div style="…"> <table style="…"><tr><td style="…">상태</td><td style="…">컷 통과</td></tr><tr><td style="…">라운드</td><td style="…">라운드 2</td></tr></table> </div><p style="…">3라운드 조 편성이 공개되었습니다. 앱에서 티타임을 확인하세요.</p> </div> <div style="…"> Notification: <code style="…">tournament.cut.applied</code> </div> </div>",
+  "key": "tournament.cut.applied",
+  "lang": "ko",
+  "subject": "Spring Open — 2라운드 후 컷 적용",
+  "text": "안녕하세요 Jordan Spieth,
+
+Spring Open — 2라운드 후 컷 적용. (컷 통과)
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > tournament.tee.published → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">티시트</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, <strong>Spring Open</strong>의 티시트가 공개되었습니다.</p><div style="…"> <table style="…"><tr><td style="…">당신의 티타임</td><td style="…">08:40</td></tr><tr><td style="…">토너먼트</td><td style="…">Spring Open</td></tr></table> </div><p style="…">조 편성, 시작 홀, 페어링은 앱에서 확인하세요.</p> </div> <div style="…"> Notification: <code style="…">tournament.tee.published</code> </div> </div>",
+  "key": "tournament.tee.published",
+  "lang": "ko",
+  "subject": "Spring Open — 티시트 공개",
+  "text": "안녕하세요 Jordan Spieth,
+
+Spring Open 티시트가 공개되었습니다 — you tee off 08:40.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > verified.handicap.expiring → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">인증</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, 인증 핸디캡 배지가 <strong>2026-06-01</strong>에 만료됩니다.</p><p style="…">다른 클럽과 토너먼트에서도 인증 상태를 유지하려면 지금 갱신하세요.</p> </div> <div style="…"> Notification: <code style="…">verified.handicap.expiring</code> </div> </div>",
+  "key": "verified.handicap.expiring",
+  "lang": "ko",
+  "subject": "인증 핸디캡 배지 만료 — 2026-06-01",
+  "text": "안녕하세요 Jordan Spieth,
+
+인증 핸디캡 배지가 2026-06-01에 만료됩니다.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Korean snapshots (all 29 keys) > wearable.reauth.required → renders in Korean 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">웨어러블</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, <strong>Garmin Connect</strong>와의 연결에 주의가 필요합니다.</p><p style="…">앱을 열어 계정을 다시 연결하여 샷 데이터 동기화를 계속할 수 있게 해주세요.</p> <div style="…"><a href="https://app.example.com/wearables" style="…">Garmin Connect 재인증</a></div> </div> <div style="…"> Notification: <code style="…">wearable.reauth.required</code> </div> </div>",
+  "key": "wearable.reauth.required",
+  "lang": "ko",
+  "subject": "Garmin Connect 재인증 필요",
+  "text": "안녕하세요 Jordan Spieth,
+
+샷 동기화를 재개하려면 앱에서 Garmin Connect를 재인증해 주세요.
+Re-authorise: https://app.example.com/wearables
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > achievement.unlocked → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Logro</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, acabas de desbloquear un nuevo logro en Pebble Beach GC.</p><div style="…"> <table style="…"><tr><td style="…">Logro</td><td style="…">Sub-80 Streak</td></tr></table> </div><p style="…">Sigue jugando para desbloquear el próximo.</p> </div> <div style="…"> Notification: <code style="…">achievement.unlocked</code> </div> </div>",
+  "key": "achievement.unlocked",
+  "lang": "es",
+  "subject": "🏆 Logro desbloqueado — Sub-80 Streak",
+  "text": "Hola Jordan Spieth,
+
+Has desbloqueado: Sub-80 Streak.
+Sigue jugando para desbloquear el próximo.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > booking.cancelled → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Cancelación</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, tu reserva de salida fue cancelada.</p><div style="…"> <table style="…"><tr><td style="…">Campo</td><td style="…">Ocean Course</td></tr><tr><td style="…">Hora de salida</td><td style="…">08:40</td></tr><tr><td style="…">Motivo</td><td style="…">Course closure</td></tr></table> </div><p style="…">Si no fuiste tú, contacta a la tienda del pro de inmediato.</p> </div> <div style="…"> Notification: <code style="…">booking.cancelled</code> </div> </div>",
+  "key": "booking.cancelled",
+  "lang": "es",
+  "subject": "Reserva cancelada — Ocean Course",
+  "text": "Hola Jordan Spieth,
+
+Tu reserva de salida en Ocean Course fue cancelada.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > booking.confirmed → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Hora de salida</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, tu reserva de salida está confirmada.</p><div style="…"> <table style="…"><tr><td style="…">Campo</td><td style="…">Ocean Course</td></tr><tr><td style="…">Hora de salida</td><td style="…">08:40</td></tr><tr><td style="…">Personas</td><td style="…">4</td></tr></table> </div><p style="…">Te enviaremos un recordatorio cerca de la salida. ¡Disfruta la ronda!</p> </div> <div style="…"> Notification: <code style="…">booking.confirmed</code> </div> </div>",
+  "key": "booking.confirmed",
+  "lang": "es",
+  "subject": "Reserva confirmada — Ocean Course",
+  "text": "Hola Jordan Spieth,
+
+Tu salida en Ocean Course está confirmada para las 08:40.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > booking.reminder.2h → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Recordatorio 2h</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, sales pronto. Hora de ir.</p><div style="…"> <table style="…"><tr><td style="…">Campo</td><td style="…">Ocean Course</td></tr><tr><td style="…">Hora de salida</td><td style="…">08:40</td></tr></table> </div><p style="…">Llega 30 minutos antes para calentar en el campo de prácticas.</p> </div> <div style="…"> Notification: <code style="…">booking.reminder.2h</code> </div> </div>",
+  "key": "booking.reminder.2h",
+  "lang": "es",
+  "subject": "Salida en 2 horas — Ocean Course",
+  "text": "Hola Jordan Spieth,
+
+Aviso: salida 08:40 en Ocean Course.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > booking.reminder.24h → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Recordatorio 24h</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, un aviso — sales mañana.</p><div style="…"> <table style="…"><tr><td style="…">Campo</td><td style="…">Ocean Course</td></tr><tr><td style="…">Hora de salida</td><td style="…">08:40</td></tr></table> </div><p style="…">Prepara tu equipo, revisa el clima, y nos vemos en el primer tee.</p> </div> <div style="…"> Notification: <code style="…">booking.reminder.24h</code> </div> </div>",
+  "key": "booking.reminder.24h",
+  "lang": "es",
+  "subject": "Recordatorio — tu salida en Ocean Course es mañana",
+  "text": "Hola Jordan Spieth,
+
+Recordatorio: tu salida en Ocean Course es 08:40.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > booking.waitlist.promoted → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Lista de espera</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, buenas noticias — se abrió un lugar y tu reserva está confirmada.</p><div style="…"> <table style="…"><tr><td style="…">Campo</td><td style="…">Ocean Course</td></tr><tr><td style="…">Hora de salida</td><td style="…">08:40</td></tr></table> </div><p style="…">Abre la app para revisar los detalles. ¡Nos vemos en el campo!</p> </div> <div style="…"> Notification: <code style="…">booking.waitlist.promoted</code> </div> </div>",
+  "key": "booking.waitlist.promoted",
+  "lang": "es",
+  "subject": "🎉 Saliste de la lista de espera — Ocean Course",
+  "text": "Hola Jordan Spieth,
+
+Buenas noticias — tu reserva en lista de espera en Ocean Course está confirmada.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > caddie.mode.blocked → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Aviso del Caddie</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, tu solicitud de AI Caddie no pudo procesarse.</p><div style="…"> <table style="…"><tr><td style="…">Motivo</td><td style="…">Tournament round mode disables AI assistance</td></tr></table> </div><p style="…">Suele ser porque la ronda está en un modo de competición que desactiva las ayudas. Contacta con el comité si crees que es un error.</p> </div> <div style="…"> Notification: <code style="…">caddie.mode.blocked</code> </div> </div>",
+  "key": "caddie.mode.blocked",
+  "lang": "es",
+  "subject": "Solicitud de AI Caddie bloqueada",
+  "text": "Hola Jordan Spieth,
+
+Una solicitud de AI Caddie fue bloqueada. Motivo: Tournament round mode disables AI assistance.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > coach.review.delivered → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Entrenamiento</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, <strong>Coach Lee</strong> acaba de publicar comentarios sobre tu análisis de swing.</p><p style="…">Toca abajo para ver el análisis con notas de voz y ejercicios.</p> <div style="…"><a href="https://app.example.com/reviews/9" style="…">Ver análisis</a></div> </div> <div style="…"> Notification: <code style="…">coach.review.delivered</code> </div> </div>",
+  "key": "coach.review.delivered",
+  "lang": "es",
+  "subject": "🎥 Coach Lee entregó tu análisis de swing",
+  "text": "Hola Jordan Spieth,
+
+Coach Lee entregó tu análisis de swing.
+Watch it: https://app.example.com/reviews/9
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > course.correction.resolved → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Corrección del Campo</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, el equipo del campo de Pebble Beach GC terminó de revisar tu corrección reportada.</p><div style="…"> <table style="…"><tr><td style="…">Campo</td><td style="…">Hole 3 yardage</td></tr><tr><td style="…">Hoyo</td><td style="…">3</td></tr><tr><td style="…">Resultado</td><td style="…">aceptada</td></tr></table> </div><p style="…"><em style="…">Nota del revisor:</em> Verified by greenkeeper</p><p style="…">Gracias por ayudarnos a mantener los datos del campo precisos.</p> </div> <div style="…"> Notification: <code style="…">course.correction.resolved</code> </div> </div>",
+  "key": "course.correction.resolved",
+  "lang": "es",
+  "subject": "Tu corrección del campo fue aceptada",
+  "text": "Hola Jordan Spieth,
+
+Tu corrección reportada a Hole 3 yardage on hole 3 fue aceptada.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > handicap.committee.changed → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Hándicap</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, el comité de hándicap en Pebble Beach GC ajustó tu índice.</p><div style="…"> <table style="…"><tr><td style="…">Índice anterior</td><td style="…">12.4</td></tr><tr><td style="…">Nuevo índice</td><td style="…">11.8</td></tr><tr><td style="…">Motivo</td><td style="…">Annual review adjustment</td></tr></table> </div><p style="…">Abre tu perfil de hándicap para ver la justificación completa y los próximos pasos.</p> </div> <div style="…"> Notification: <code style="…">handicap.committee.changed</code> </div> </div>",
+  "key": "handicap.committee.changed",
+  "lang": "es",
+  "subject": "El comité de hándicap actualizó tu índice",
+  "text": "Hola Jordan Spieth,
+
+El comité de hándicap actualizó tu índice a 11.8.
+Reason: Annual review adjustment.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > handicap.exceptional.score → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Hándicap</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, tu última ronda produjo un score excepcional, así que el motor WHS aplicó un ajuste automático.</p><div style="…"> <table style="…"><tr><td style="…">Diferencial</td><td style="…">un diferencial excepcional</td></tr><tr><td style="…">Ajuste</td><td style="…">0.4</td></tr></table> </div><p style="…">Abre el explicador de hándicap para ver el cálculo de ventana móvil en detalle.</p> </div> <div style="…"> Notification: <code style="…">handicap.exceptional.score</code> </div> </div>",
+  "key": "handicap.exceptional.score",
+  "lang": "es",
+  "subject": "Reducción por score excepcional aplicada",
+  "text": "Hola Jordan Spieth,
+
+Se aplicó una reducción por score excepcional (diferencial un diferencial excepcional, 0.4).
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > highlight.ready → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Destacados</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, acabamos de terminar de editar tu último reel de destacados.</p><p style="…">Mira, comparte y guarda tus mejores tiros de esta ronda.</p> <div style="…"><a href="https://app.example.com/h/abc" style="…">Ver destacado</a></div> </div> <div style="…"> Notification: <code style="…">highlight.ready</code> </div> </div>",
+  "key": "highlight.ready",
+  "lang": "es",
+  "subject": "🎬 Tu reel de momentos destacados está listo",
+  "text": "Hola Jordan Spieth,
+
+Tu reel de destacados está listo.
+Watch: https://app.example.com/h/abc
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > interclub.qualified → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Inter-Club</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, felicidades — tu rendimiento te ganó un lugar en <strong>Coastal Inter-Club</strong>.</p><p style="…">Confirma tu participación en la app para que el capitán pueda cerrar el equipo.</p> </div> <div style="…"> Notification: <code style="…">interclub.qualified</code> </div> </div>",
+  "key": "interclub.qualified",
+  "lang": "es",
+  "subject": "🏌️ Te clasificaste para Coastal Inter-Club",
+  "text": "Hola Jordan Spieth,
+
+Te clasificaste para Coastal Inter-Club.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > leaderboard.position.change → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Clasificación</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, subiste en la clasificación.</p><div style="…"> <table style="…"><tr><td style="…">Antes</td><td style="…">T14</td></tr><tr><td style="…">Ahora</td><td style="…">T7</td></tr><tr><td style="…">Torneo</td><td style="…">Spring Open</td></tr></table> </div><p style="…">Entra a la app para ver quién más se mueve y qué queda por jugar.</p> </div> <div style="…"> Notification: <code style="…">leaderboard.position.change</code> </div> </div>",
+  "key": "leaderboard.position.change",
+  "lang": "es",
+  "subject": "Subiste en Spring Open",
+  "text": "Hola Jordan Spieth,
+
+subiste en Spring Open.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > league.standings.updated → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Liga</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, la clasificación de <strong>Tuesday Night League</strong> acaba de actualizarse.</p><div style="…"> <table style="…"><tr><td style="…">Tu posición</td><td style="…">#3</td></tr></table> </div><p style="…">Abre la clasificación para ver la tabla completa y los próximos partidos.</p> </div> <div style="…"> Notification: <code style="…">league.standings.updated</code> </div> </div>",
+  "key": "league.standings.updated",
+  "lang": "es",
+  "subject": "Clasificación de Tuesday Night League actualizada",
+  "text": "Hola Jordan Spieth,
+
+Clasificación de Tuesday Night League actualizada — you are now #3.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > marker.share.requested → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Solicitud de Marcador</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, <strong>Sam Cooke</strong> quiere que marques su tarjeta durante la ronda de hoy.</p><p style="…">Abre la vista de marcador para ingresar los scores en tiempo real.</p> </div> <div style="…"> Notification: <code style="…">marker.share.requested</code> </div> </div>",
+  "key": "marker.share.requested",
+  "lang": "es",
+  "subject": "Sam Cooke te pidió marcar su tarjeta",
+  "text": "Hola Jordan Spieth,
+
+Sam Cooke te pidió marcar su tarjeta.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > match.result.recorded → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Resultado del Partido</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, el resultado oficial de tu partido ha sido publicado.</p><div style="…"> <table style="…"><tr><td style="…">Rival</td><td style="…">Alex Murray</td></tr><tr><td style="…">Resultado</td><td style="…">won</td></tr><tr><td style="…">Score</td><td style="…">3 &amp; 2</td></tr></table> </div><p style="…">Si algo no cuadra, plantea una consulta en la página del cuadro en 24 horas.</p> </div> <div style="…"> Notification: <code style="…">match.result.recorded</code> </div> </div>",
+  "key": "match.result.recorded",
+  "lang": "es",
+  "subject": "Resultado registrado vs Alex Murray",
+  "text": "Hola Jordan Spieth,
+
+Resultado vs Alex Murray: won (3 & 2).
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > match.scheduled → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Match Play</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, tu próximo partido ha sido programado.</p><div style="…"> <table style="…"><tr><td style="…">Rival</td><td style="…">Alex Murray</td></tr><tr><td style="…">Hora de salida</td><td style="…">Por confirmar</td></tr><tr><td style="…">Campo</td><td style="…">Ocean Course</td></tr></table> </div><p style="…">Confirma tu disponibilidad en la app — las inasistencias cuentan como derrota.</p> </div> <div style="…"> Notification: <code style="…">match.scheduled</code> </div> </div>",
+  "key": "match.scheduled",
+  "lang": "es",
+  "subject": "Partido programado vs Alex Murray",
+  "text": "Hola Jordan Spieth,
+
+Partido programado vs Alex Murray — salida Por confirmar.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > near.miss → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Casi</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, te quedaste a 1 stroke de desbloquear <strong>Spring Open</strong>.</p><p style="…">Una ronda sólida más y es tuya.</p> </div> <div style="…"> Notification: <code style="…">near.miss</code> </div> </div>",
+  "key": "near.miss",
+  "lang": "es",
+  "subject": "Por poco — Spring Open por 1 stroke",
+  "text": "Hola Jordan Spieth,
+
+Casi en Spring Open (por 1 stroke).
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > post.event.survey → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Encuesta Post-Evento</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, gracias por jugar <strong>Spring Open</strong>.</p><p style="…">Nos encantaría un par de minutos de tus comentarios para mejorar el próximo evento.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Abrir encuesta</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "es",
+  "subject": "¿Cómo estuvo Spring Open? — Comentarios rápidos",
+  "text": "Hola Jordan Spieth,
+
+Gracias por jugar Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > post.round.results → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Resumen de la Ronda</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, aquí están tus números de la ronda de hoy.</p><div style="…"> <table style="…"><tr><td style="…">Campo</td><td style="…">Ocean Course</td></tr><tr><td style="…">Bruto</td><td style="…">82</td></tr><tr><td style="…">Neto</td><td style="…">74</td></tr></table> </div><p style="…">Abre la app para el desglose hoyo por hoyo, strokes-gained y mapa de tiros.</p> </div> <div style="…"> Notification: <code style="…">post.round.results</code> </div> </div>",
+  "key": "post.round.results",
+  "lang": "es",
+  "subject": "Ronda completa — Ocean Course",
+  "text": "Hola Jordan Spieth,
+
+Ronda en Ocean Course — bruto 82, neto 74.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > recap.year.ready → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Año en Golf</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, tu <strong>2025</strong> Año en Golf está terminado y listo.</p><p style="…">Rondas jugadas, mejores scores, drives más largos, rachas — todo en una tarjeta compartible.</p> <div style="…"><a href="https://app.example.com/recap/2025" style="…">Abrir recap</a></div> </div> <div style="…"> Notification: <code style="…">recap.year.ready</code> </div> </div>",
+  "key": "recap.year.ready",
+  "lang": "es",
+  "subject": "🎉 Tu Año en Golf 2025 está listo",
+  "text": "Hola Jordan Spieth,
+
+Tu Año en Golf 2025 está listo.
+Open: https://app.example.com/recap/2025
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > scoring.event.eagle → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Evento de Score</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, juego sensacional — anotaste un eagle en Pebble Beach GC.</p><div style="…"> <table style="…"><tr><td style="…">Campo</td><td style="…">Ocean Course</td></tr><tr><td style="…">Hoyo</td><td style="…">13</td></tr><tr><td style="…">Score</td><td style="…">un eagle</td></tr></table> </div><p style="…">Este tiro ya está en tu reel de destacados. ¿Quieres compartirlo? Abre la app y toca el icono de compartir.</p> </div> <div style="…"> Notification: <code style="…">scoring.event.eagle</code> </div> </div>",
+  "key": "scoring.event.eagle",
+  "lang": "es",
+  "subject": "🦅 Eagle (o mejor) en Ocean Course",
+  "text": "Hola Jordan Spieth,
+
+Eagle (o mejor) en Ocean Course, hole 13.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > scoring.event.hole_in_one → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Hoyo en Uno</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, felicidades — ¡acabas de hacer un <strong>ace</strong>!</p><div style="…"> <table style="…"><tr><td style="…">Campo</td><td style="…">Ocean Course</td></tr><tr><td style="…">Hoyo</td><td style="…">7</td></tr><tr><td style="…">Palo</td><td style="…">7-iron</td></tr></table> </div><p style="…">Queda registrado oficialmente. Las copas en el 19 son tuyas.</p> </div> <div style="…"> Notification: <code style="…">scoring.event.hole_in_one</code> </div> </div>",
+  "key": "scoring.event.hole_in_one",
+  "lang": "es",
+  "subject": "🎯 ¡HOYO EN UNO en Ocean Course!",
+  "text": "Hola Jordan Spieth,
+
+¡Hoyo en uno en Ocean Course, hole 7!
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > streak.milestone → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Racha</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, tu racha está encendida.</p><div style="…"> <table style="…"><tr><td style="…">Racha</td><td style="…">10 sub-90 rounds</td></tr><tr><td style="…">Hito</td><td style="…">30</td></tr></table> </div><p style="…">Sigue así — el próximo hito llegará automáticamente a tu inbox.</p> </div> <div style="…"> Notification: <code style="…">streak.milestone</code> </div> </div>",
+  "key": "streak.milestone",
+  "lang": "es",
+  "subject": "🔥 10 sub-90 rounds alcanzó 30",
+  "text": "Hola Jordan Spieth,
+
+10 sub-90 rounds alcanzó 30.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > tournament.cut.applied → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Corte del Torneo</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, la línea de corte de <strong>Spring Open</strong> se ha establecido tras la ronda 2.</p><div style="…"> <table style="…"><tr><td style="…">Estado</td><td style="…">PASASTE EL CORTE</td></tr><tr><td style="…">Ronda</td><td style="…">Ronda 2</td></tr></table> </div><p style="…">Los emparejamientos de la ronda 3 ya están publicados. Revisa la app para tu hora de salida.</p> </div> <div style="…"> Notification: <code style="…">tournament.cut.applied</code> </div> </div>",
+  "key": "tournament.cut.applied",
+  "lang": "es",
+  "subject": "Spring Open — Línea de corte aplicada tras la ronda 2",
+  "text": "Hola Jordan Spieth,
+
+Spring Open — línea de corte aplicada tras la ronda 2. (PASASTE EL CORTE)
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > tournament.tee.published → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Hoja de Salidas</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, la hoja de salidas de <strong>Spring Open</strong> está publicada.</p><div style="…"> <table style="…"><tr><td style="…">Tu hora de salida</td><td style="…">08:40</td></tr><tr><td style="…">Torneo</td><td style="…">Spring Open</td></tr></table> </div><p style="…">Abre la app para ver tu grupo, hoyo de salida y emparejamientos.</p> </div> <div style="…"> Notification: <code style="…">tournament.tee.published</code> </div> </div>",
+  "key": "tournament.tee.published",
+  "lang": "es",
+  "subject": "Spring Open — Hoja de salidas publicada",
+  "text": "Hola Jordan Spieth,
+
+Hoja de salidas de Spring Open publicada — you tee off 08:40.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > verified.handicap.expiring → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Verificación</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, tu insignia de hándicap verificado expirará el <strong>2026-06-01</strong>.</p><p style="…">Renueva ahora para mantener tu estado verificado visible para otros clubes y torneos.</p> </div> <div style="…"> Notification: <code style="…">verified.handicap.expiring</code> </div> </div>",
+  "key": "verified.handicap.expiring",
+  "lang": "es",
+  "subject": "Insignia de hándicap verificado expira 2026-06-01",
+  "text": "Hola Jordan Spieth,
+
+Tu insignia de hándicap verificado expira 2026-06-01.
+
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — Spanish snapshots (all 29 keys) > wearable.reauth.required → renders in Spanish 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Wearable</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, la conexión con <strong>Garmin Connect</strong> requiere tu atención.</p><p style="…">Abre la app y vuelve a vincular tu cuenta para seguir sincronizando los datos de tus tiros.</p> <div style="…"><a href="https://app.example.com/wearables" style="…">Re-authorise Garmin Connect</a></div> </div> <div style="…"> Notification: <code style="…">wearable.reauth.required</code> </div> </div>",
+  "key": "wearable.reauth.required",
+  "lang": "es",
+  "subject": "Re-autoriza Garmin Connect",
+  "text": "Hola Jordan Spieth,
+
+Re-autoriza Garmin Connect desde la app para reanudar la sincronización.
+Re-authorise: https://app.example.com/wearables
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in af 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Ná-geleentheid-opname</p> </div> <div style="…"> <p style="…">Hallo <strong>Jordan Spieth</strong>, dankie dat jy by <strong>Spring Open</strong> gespeel het.</p><p style="…">’n Paar minute van jou terugvoer sal ons steeds help om die volgende geleentheid nog beter te maak.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Maak opname oop</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "af",
+  "subject": "Herinnering: Hoe was Spring Open? — Vinnige terugvoer",
+  "text": "Hallo Jordan Spieth,
+
+Herinnering — deel asseblief jou vinnige terugvoer oor Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in am 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">ከክስተት በኋላ መጠይቅ</p> </div> <div style="…"> <p style="…">ሰላም <strong>Jordan Spieth</strong>፣ <strong>Spring Open</strong> ስለተጫወቱ እናመሰግናለን።</p><p style="…">ጥቂት ደቂቃ ግብረመልስ ቀጣዩን ክስተት ይበልጥ ያሻሽላል። እባክዎ ይተባበሩ።</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">መጠይቅ ይክፈቱ</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "am",
+  "subject": "ማስታወሻ: Spring Open እንዴት ነበር? — ፈጣን ግብረመልስ",
+  "text": "ሰላም Jordan Spieth,
+
+ማስታወሻ — እባክዎ ስለ Spring Open ፈጣን ግብረመልስ ያካፍሉ።
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in ar 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">استطلاع ما بعد الحدث</p> </div> <div style="…"> <p style="…">مرحباً <strong>Jordan Spieth</strong>، شكراً لمشاركتك في <strong>Spring Open</strong>.</p><p style="…">ما زلنا نودّ بضع دقائق من رأيك حتى نجعل الحدث القادم أفضل.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">فتح الاستطلاع</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "ar",
+  "subject": "تذكير: كيف كان Spring Open؟ — رأي سريع",
+  "text": "مرحباً Jordan Spieth,
+
+تذكير — يرجى مشاركة رأيك السريع حول Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in de 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Umfrage nach dem Event</p> </div> <div style="…"> <p style="…">Hallo <strong>Jordan Spieth</strong>, danke fürs Spielen bei <strong>Spring Open</strong>.</p><p style="…">Ein paar Minuten Feedback würden uns weiterhin helfen, das nächste Event noch besser zu machen.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Umfrage öffnen</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "de",
+  "subject": "Erinnerung: Wie war Spring Open? — Kurzes Feedback",
+  "text": "Hallo Jordan Spieth,
+
+Erinnerung — bitte teile dein kurzes Feedback zu Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in en 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Post-Event Survey</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, thanks for playing <strong>Spring Open</strong>.</p><p style="…">We'd still love a couple of minutes of feedback so the next event is even better.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Open survey</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "en",
+  "subject": "Reminder: How was Spring Open? — Quick feedback",
+  "text": "Hi Jordan Spieth,
+
+Reminder — please share quick feedback on Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in es 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Encuesta Post-Evento</p> </div> <div style="…"> <p style="…">Hola <strong>Jordan Spieth</strong>, gracias por jugar <strong>Spring Open</strong>.</p><p style="…">Aún nos encantaría un par de minutos de tus comentarios para mejorar el próximo evento.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Abrir encuesta</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "es",
+  "subject": "Recordatorio: ¿Cómo estuvo Spring Open? — Comentarios rápidos",
+  "text": "Hola Jordan Spieth,
+
+Recordatorio — comparte tus comentarios rápidos sobre Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in fil 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Post-Event Survey</p> </div> <div style="…"> <p style="…">Kumusta <strong>Jordan Spieth</strong>, salamat sa paglalaro sa <strong>Spring Open</strong>.</p><p style="…">Ikalulugod pa rin namin ang ilang minutong feedback para mas mapaganda ang susunod na event.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Buksan ang survey</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "fil",
+  "subject": "Paalala: Kumusta ang Spring Open? — Mabilis na feedback",
+  "text": "Kumusta Jordan Spieth,
+
+Paalala — pakibahagi ang iyong mabilis na feedback tungkol sa Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in fr 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Enquête post-événement</p> </div> <div style="…"> <p style="…">Bonjour <strong>Jordan Spieth</strong>, merci d'avoir joué <strong>Spring Open</strong>.</p><p style="…">Quelques minutes de votre avis nous aideraient encore à améliorer le prochain événement.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Ouvrir le sondage</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "fr",
+  "subject": "Rappel : Comment s'est passé Spring Open ? — Avis rapide",
+  "text": "Bonjour Jordan Spieth,
+
+Rappel — partagez votre avis rapide sur Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in ha 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Bincike Bayan Taron</p> </div> <div style="…"> <p style="…">Sannu <strong>Jordan Spieth</strong>, na gode da bayyana a Spring Open.</p><p style="…">Mintuna kaɗan na ra’ayinka har yanzu zai sa taron na gaba ya zama mafi kyau.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Buɗe binciken</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "ha",
+  "subject": "Tunasarwa: Yaya Spring Open? — Ra’ayi mai sauri",
+  "text": "Sannu Jordan Spieth,
+
+Tunasarwa — don Allah raba ra’ayinka mai sauri kan Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in hi 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">इवेंट के बाद का सर्वेक्षण</p> </div> <div style="…"> <p style="…">नमस्ते <strong>Jordan Spieth</strong>, <strong>Spring Open</strong> खेलने के लिए धन्यवाद।</p><p style="…">अगला इवेंट और भी बेहतर हो, इसके लिए अब भी कुछ मिनट की प्रतिक्रिया चाहेंगे।</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">सर्वेक्षण खोलें</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "hi",
+  "subject": "अनुस्मारक: Spring Open कैसा रहा? — त्वरित फीडबैक",
+  "text": "नमस्ते Jordan Spieth,
+
+अनुस्मारक — कृपया Spring Open पर अपनी त्वरित प्रतिक्रिया साझा करें।
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in id 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Survei Pasca-Acara</p> </div> <div style="…"> <p style="…">Hai <strong>Jordan Spieth</strong>, terima kasih sudah bermain di <strong>Spring Open</strong>.</p><p style="…">Beberapa menit umpan balik akan tetap membantu acara berikutnya menjadi lebih baik.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Buka survei</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "id",
+  "subject": "Pengingat: Bagaimana Spring Open? — Umpan balik cepat",
+  "text": "Hai Jordan Spieth,
+
+Pengingat — silakan bagikan umpan balik cepat tentang Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in ja 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">イベント後アンケート</p> </div> <div style="…"> <p style="…">こんにちは <strong>Jordan Spieth</strong>、<strong>Spring Open</strong> へのご参加ありがとうございました。</p><p style="…">数分のフィードバックで次のイベントをさらに良くできます。引き続きご協力をお願いします。</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">アンケートを開く</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "ja",
+  "subject": "リマインダー: Spring Open はいかがでしたか? — 簡単なフィードバック",
+  "text": "こんにちは Jordan Spieth,
+
+リマインダー — Spring Open について簡単なフィードバックをお願いします。
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in ko 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">이벤트 후 설문</p> </div> <div style="…"> <p style="…">안녕하세요 <strong>Jordan Spieth</strong>님, <strong>Spring Open</strong>에 참가해 주셔서 감사합니다.</p><p style="…">몇 분의 피드백으로 다음 이벤트가 더 좋아질 수 있습니다. 계속해서 의견을 부탁드립니다.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">설문 열기</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "ko",
+  "subject": "알림: Spring Open는 어땠나요? — 짧은 피드백",
+  "text": "안녕하세요 Jordan Spieth,
+
+알림 — Spring Open에 대한 짧은 피드백을 부탁드립니다.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in ms 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Tinjauan Pasca-Acara</p> </div> <div style="…"> <p style="…">Hai <strong>Jordan Spieth</strong>, terima kasih bermain <strong>Spring Open</strong>.</p><p style="…">Kami masih mengalu-alukan beberapa minit maklum balas anda untuk acara seterusnya.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Buka tinjauan</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "ms",
+  "subject": "Peringatan: Bagaimana Spring Open? — Maklum balas pantas",
+  "text": "Hai Jordan Spieth,
+
+Peringatan — sila kongsi maklum balas pantas anda tentang Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in pt 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Pesquisa Pós-Evento</p> </div> <div style="…"> <p style="…">Olá <strong>Jordan Spieth</strong>, obrigado por jogar <strong>Spring Open</strong>.</p><p style="…">Adoraríamos ainda alguns minutos de feedback para o próximo evento ser ainda melhor.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Abrir pesquisa</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "pt",
+  "subject": "Lembrete: Como foi Spring Open? — Feedback rápido",
+  "text": "Olá Jordan Spieth,
+
+Lembrete — compartilhe um feedback rápido sobre Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in sw 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Utafiti wa Baada ya Tukio</p> </div> <div style="…"> <p style="…">Habari <strong>Jordan Spieth</strong>, asante kwa kucheza <strong>Spring Open</strong>.</p><p style="…">Bado tungependa dakika kadhaa za maoni ili tukio lijalo liwe bora zaidi.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Fungua utafiti</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "sw",
+  "subject": "Ukumbusho: Spring Open ulikuwaje? — Maoni ya haraka",
+  "text": "Habari Jordan Spieth,
+
+Ukumbusho — tafadhali shiriki maoni yako ya haraka kuhusu Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in th 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">แบบสำรวจหลังกิจกรรม</p> </div> <div style="…"> <p style="…">สวัสดี <strong>Jordan Spieth</strong>, ขอบคุณที่เล่น <strong>Spring Open</strong></p><p style="…">เรายังอยากได้ความเห็นสักครู่เพื่อให้กิจกรรมครั้งถัดไปดียิ่งขึ้น</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">เปิดแบบสำรวจ</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "th",
+  "subject": "เตือนความจำ: Spring Open เป็นอย่างไรบ้าง? — ฟีดแบ็กสั้นๆ",
+  "text": "สวัสดี Jordan Spieth,
+
+เตือนความจำ — โปรดแบ่งปันฟีดแบ็กสั้นๆ เกี่ยวกับ Spring Open
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in vi 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Khảo sát sau Sự kiện</p> </div> <div style="…"> <p style="…">Xin chào <strong>Jordan Spieth</strong>, cảm ơn bạn đã chơi <strong>Spring Open</strong>.</p><p style="…">Chúng tôi vẫn rất mong vài phút phản hồi để sự kiện tiếp theo tốt hơn nữa.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Mở khảo sát</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "vi",
+  "subject": "Nhắc nhở: Spring Open thế nào? — Phản hồi nhanh",
+  "text": "Xin chào Jordan Spieth,
+
+Nhắc nhở — vui lòng chia sẻ phản hồi nhanh về Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in xx-not-a-lang 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Post-Event Survey</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, thanks for playing <strong>Spring Open</strong>.</p><p style="…">We'd still love a couple of minutes of feedback so the next event is even better.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Open survey</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "xx-not-a-lang",
+  "subject": "Reminder: How was Spring Open? — Quick feedback",
+  "text": "Hi Jordan Spieth,
+
+Reminder — please share quick feedback on Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in yo 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Ìbéèrè Lẹ́yìn Ìṣẹ̀lẹ̀</p> </div> <div style="…"> <p style="…">Bawo <strong>Jordan Spieth</strong>, ọpẹ́ fún ṣíṣe ìṣeré ní <strong>Spring Open</strong>.</p><p style="…">Ìṣẹ́jú díẹ̀ ti ìmọ̀ràn rẹ ṣì lè mú kí ìṣẹ̀lẹ̀ tó kàn dára jù.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Ṣí ìbéèrè</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "yo",
+  "subject": "Ìránnilétí: Báwo ni Spring Open? — Ìmọ̀ràn kíákíá",
+  "text": "Bawo Jordan Spieth,
+
+Ìránnilétí — jọ̀wọ́ pín ìmọ̀ràn rẹ kíákíá lórí Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in zh 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">赛后调查</p> </div> <div style="…"> <p style="…">您好 <strong>Jordan Spieth</strong>，感谢参与 <strong>Spring Open</strong>。</p><p style="…">几分钟的反馈仍能让下一场赛事更精彩，欢迎继续分享。</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">打开调查</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "zh",
+  "subject": "提醒：Spring Open 体验如何？— 快速反馈",
+  "text": "您好 Jordan Spieth,
+
+提醒 — 请分享您对 Spring Open 的快速反馈。
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — post.event.survey reminder snapshots (Task #2012) > post.event.survey reminder renders in zu 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Inhlolovo Ngemuva komcimbi</p> </div> <div style="…"> <p style="…">Sawubona <strong>Jordan Spieth</strong>, siyabonga ngokudlala i-<strong>Spring Open</strong>.</p><p style="…">Sisathanda imizuzu embalwa yempendulo ukuze umcimbi olandelayo ube ngcono.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Vula inhlolovo</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "lang": "zu",
+  "subject": "Isikhumbuzo: I-Spring Open ibinjani? — Impendulo esheshayo",
+  "text": "Sawubona Jordan Spieth,
+
+Isikhumbuzo — sicela uphawule kafushane nge-Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;

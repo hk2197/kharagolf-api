@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "この数値の出所：",
+    "source_whs": "あなたの最新のWHSハンディキャップ",
+    "source_history": "直近に登録したラウンド",
+    "source_profile": "プロフィールのハンディキャップ",
+    "fix_whs": "WHSを更新",
+    "fix_history": "新しいラウンドを登録",
+    "fix_profile": "プロフィールのハンディキャップを編集",
+    "fix_default": "ハンディキャップを追加",
+    "summary": "{{source}}によるハンディキャップ {{handicap}}。",
+    "summaryWithAsOf": "{{source}}によるハンディキャップ {{handicap}}（{{asOf}}時点）。",
+    "noneAuto": "まだハンディキャップが登録されていません — 既定の比較を使用しています。",
+    "nonePinned": "まだハンディキャップが登録されていません。",
+    "asOfToday": "今日",
+    "asOfYesterday": "昨日",
+    "asOfDays": "{{count}}日前",
+    "asOfMonth": "{{count}}か月前",
+    "asOfMonths": "{{count}}か月前",
+    "asOfYear": "{{count}}年前",
+    "asOfYears": "{{count}}年前"
+  }
+}

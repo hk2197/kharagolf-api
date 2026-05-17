@@ -1,0 +1,18 @@
+{
+  "tournaments": "Kejohanan",
+  "tournament": "Kejohanan",
+  "register": "Daftar",
+  "registered": "Berdaftar",
+  "checkIn": "Daftar Masuk",
+  "checkedIn": "Sudah Daftar Masuk",
+  "leaderboard": "Papan Pendahulu",
+  "teeTimes": "Waktu Tee",
+  "results": "Keputusan",
+  "round": "Pusingan",
+  "course": "Padang",
+  "entryFee": "Yuran Penyertaan",
+  "format": "Format",
+  "startDate": "Tarikh Mula",
+  "status": "Status",
+  "noTournaments": "Tiada kejohanan tersedia"
+}

@@ -1,0 +1,249 @@
+{
+  "myProfile": "我的资料",
+  "editProfile": "编辑资料",
+  "cancel": "取消",
+  "comingSoon": "Coming Soon",
+  "editProfileSoon": "Profile editing will be available soon.",
+  "changePasswordSoon": "Password change will be available soon.",
+  "displayName": "显示名称",
+  "email": "电子邮件",
+  "phone": "电话",
+  "handicapIndex": "差点指数",
+  "memberSince": "入会时间",
+  "languagePreference": "语言",
+  "selectLanguage": "选择语言",
+  "changePhoto": "更换照片",
+  "notifications": "通知",
+  "security": "Security & Privacy",
+  "changePassword": "修改密码",
+  "tournamentsPlayed": "参赛次数",
+  "bestRound": "最佳轮次",
+  "averageScore": "平均得分",
+  "logOut": "退出登录",
+  "confirmLogout": "确定要退出登录吗？",
+  "myTournaments": "我的锦标赛",
+  "myLeagues": "我的联赛",
+  "myScores": "我的得分",
+  "profileUpdated": "个人资料已更新",
+  "emailNotVerified": "Email not verified",
+  "worldHandicap": "世界差点指数",
+  "fromLastRecord": "from last record",
+  "fullHistory": "Full History",
+  "statsLabels": {
+    "tournaments": "锦标赛",
+    "avgStrokes": "Avg Strokes",
+    "bestRound": "最佳轮次",
+    "holesPlayed": "Holes Played"
+  },
+  "loyalty": {
+    "section": "Loyalty & Rewards",
+    "pointsBalance": "Points Balance",
+    "lifetimeEarned": "Lifetime Earned",
+    "thisYear": "This Year",
+    "availableRewards": "Available Rewards",
+    "pts": "pts",
+    "needMore": "Need {{count}} more"
+  },
+  "myGolf": {
+    "section": "My Golf",
+    "generalPlay": "休闲打球",
+    "generalPlaySub": "Post casual rounds & build handicap",
+    "teeBookings": "开球时间预约",
+    "teeBookingsSub": "Book a tee time at your club",
+    "handicapProfile": "Handicap Profile",
+    "handicapProfileSub": "View your WHS Handicap Index history"
+  },
+  "locker": {
+    "section": "My Locker",
+    "renewalDate": "Renewal Date",
+    "annualFee": "Annual Fee",
+    "paymentComplete": "Payment complete",
+    "paymentPending": "Payment pending",
+    "expired": "Expired",
+    "daysLeft": "{{count}}d left",
+    "payRenewal": "Pay Renewal Fee",
+    "onWaitlist": "On Waitlist",
+    "notified": "Notified",
+    "joinWaitlist": "Join Waitlist",
+    "joining": "Joining…",
+    "noAssigned": "No locker assigned.",
+    "bay": "Bay {{number}}",
+    "lockerTitle": "Locker {{number}}",
+    "waitlistJoinedOn": "You joined the waitlist on {{date}}.",
+    "lockerAvailable": "A locker is available — contact the club.",
+    "willBeNotified": "You will be notified when a locker becomes available."
+  },
+  "invoices": {
+    "section": "My Invoices",
+    "payNow": "Pay Now",
+    "overdueSince": "Overdue since: ",
+    "due": "Due: ",
+    "paid": "Paid {{date}}",
+    "statuses": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled",
+      "void": "Void"
+    }
+  },
+  "repairs": {
+    "section": "My Club Repairs",
+    "readyForPickup": "Your clubs are ready!",
+    "technician": "Technician: {{name}}",
+    "expected": "Expected: {{date}}",
+    "status": {
+      "received": "Received",
+      "in_progress": "In Progress",
+      "ready_for_pickup": "Ready for Pickup",
+      "collected": "Collected"
+    },
+    "type": {
+      "regrip": "Regrip",
+      "reshaft": "Reshaft",
+      "loft_lie_adjustment": "Loft/Lie Adj.",
+      "cleaning": "Cleaning",
+      "other": "Other"
+    }
+  },
+  "fittingSessions": {
+    "section": "My Fitting Sessions",
+    "recommendedSpecs": "Recommended Specs",
+    "statuses": {
+      "booked": "Booked",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "notificationPreferences": "Notification Preferences",
+  "alwaysOn": "Always on",
+  "notifLabels": {
+    "email": "Email Notifications",
+    "emailDesc": "Receive tournament updates via email",
+    "push": "Push Notifications",
+    "pushDesc": "Receive real-time alerts",
+    "pushNeedApp": "Install app to enable push notifications",
+    "sms": "SMS Notifications",
+    "smsDesc": "Receive text reminders",
+    "whatsapp": "WhatsApp Notifications",
+    "whatsappDesc": "Receive updates via WhatsApp",
+    "noPhone": "No phone number on file"
+  },
+  "languageModal": {
+    "title": "语言",
+    "description": "Choose your preferred display language.",
+    "rtlNote": "Right-to-left layout"
+  },
+  "scoringHistory": {
+    "section": "Scoring History",
+    "noHistory": "No tournament history yet",
+    "noHistoryDesc": "Register for a tournament and post scores",
+    "loadError": "Failed to load scoring history",
+    "retry": "Retry",
+    "format": "Format",
+    "handicap": "差点",
+    "tee": "Tee",
+    "rounds": "轮次",
+    "noScores": "No scores posted yet",
+    "withdraw": "Withdraw from Tournament"
+  },
+  "withdraw": {
+    "title": "Withdraw from Tournament",
+    "cancel": "取消",
+    "confirm": "确认",
+    "successWithRefund": "You have been withdrawn. A refund request has been raised.",
+    "success": "Successfully withdrawn.",
+    "message": "Are you sure you want to withdraw from \"{{name}}\"?"
+  },
+  "rankings": {
+    "section": "Rankings & Points",
+    "rankingSeries": "Ranking Series",
+    "ranked": "Ranked",
+    "pts": "pts",
+    "events": "Events",
+    "wins": "Wins",
+    "top3": "Top 3",
+    "eventHistory": "Event History",
+    "tournament": "锦标赛"
+  },
+  "activeClub": {
+    "section": "Active Club"
+  },
+  "eventRoles": {
+    "section": "Event Roles",
+    "volunteering": "My Volunteering Assignments"
+  },
+  "account": {
+    "section": "Account",
+    "editProfile": "编辑资料",
+    "languagePreference": "语言",
+    "changePassword": "修改密码",
+    "signOut": "退出登录"
+  },
+  "roundCard": {
+    "round": "Round {{n}}",
+    "holes_one": "{{count}} hole",
+    "holes_other": "{{count}} holes",
+    "strokes": "杆数"
+  },
+  "roundTable": {
+    "hole": "洞",
+    "strokes": "杆数",
+    "putts": "推杆",
+    "fir": "FIR",
+    "gir": "GIR",
+    "total": "合计"
+  },
+  "photoOptions": {
+    "chooseLibrary": "Choose from Library",
+    "takePhoto": "Take Photo",
+    "chooseAvatar": "Choose Avatar",
+    "removePhoto": "Remove Photo",
+    "changeProfilePhoto": "Change Profile Photo",
+    "cancel": "取消"
+  },
+  "tournaments": {
+    "statuses": {
+      "upcoming": "UPCOMING",
+      "active": "ACTIVE",
+      "completed": "COMPLETED",
+      "cancelled": "CANCELLED"
+    }
+  },
+  "errors": {
+    "failedLanguageSave": "Failed to save language preference",
+    "failedWithdraw": "Failed to withdraw from tournament",
+    "networkError": "Network error. Please try again.",
+    "photoUpdated": "Profile photo updated.",
+    "photoUploadFailed": "Failed to upload profile photo.",
+    "avatarSelectFailed": "Failed to select avatar.",
+    "avatarPickerDesc": "Pick a golf-themed avatar.",
+    "switchClubTitle": "Switch Club",
+    "photoRemoveFailed": "Failed to remove photo.",
+    "permissionDenied": "Permission denied",
+    "permissionLibrary": "Allow photo library access in Settings.",
+    "permissionCamera": "Allow camera access in Settings.",
+    "waitlistFailed": "Failed to join waitlist",
+    "success": "成功",
+    "error": "错误"
+  },
+  "username": "Username",
+  "profilePicture": "Profile Picture",
+  "removePhoto": "Remove Photo",
+  "role": "Role",
+  "organization": "Organization",
+  "saveLanguage": "保存 语言",
+  "currentPassword": "Current Password",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "passwordUpdated": "Password updated successfully",
+  "myStats": "My Statistics",
+  "walletPayoutNeedsReverify": {
+    "titleUpi": "请重新保存您的 UPI 以恢复提现",
+    "titleBank": "请重新保存您的银行账户以恢复提现",
+    "body": "我们最近一次定期重新核对您保存的收款详情未通过，因此在您重新保存之前，提现已暂停。",
+    "reason": "原因：{{reason}}",
+    "cta": "重新保存账户"
+  }
+}

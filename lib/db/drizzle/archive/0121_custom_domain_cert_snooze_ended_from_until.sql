@@ -1,0 +1,27 @@
+-- Task #1482 — Surface "your snooze just ended" in the in-app HTTPS panel
+-- (not just the resumed re-nudge email).
+--
+-- Task #1262 added a "you snoozed this until X — that snooze has now ended"
+-- header line to the resumed re-nudge email, but an admin who only checks
+-- the dashboard (and never opens the email) won't see the same
+-- acknowledgement. The re-nudge job atomically clears
+-- `custom_domain_cert_renudge_snoozed_until` when it sends the snooze-ended
+-- email, so we can't recover the original snooze date from the row state
+-- afterwards.
+--
+-- This column is the durable record the in-app panel needs:
+--   * `custom_domain_cert_snooze_ended_from_until` — the value that
+--     `custom_domain_cert_renudge_snoozed_until` had at the moment the
+--     re-nudge job fired the snooze-ended email. NULL when no snooze just
+--     ended (initial transition, threshold-only re-nudges, or admin acted
+--     after the snooze ended).
+--
+-- The re-nudge job sets it in the same atomic UPDATE that clears the
+-- snooze and bumps `custom_domain_cert_notified_at`. It is cleared on the
+-- next admin action (retry, snooze, cancel-snooze, domain change) and on
+-- any path that flips the cert back to 'active' (status panel auto-clear).
+-- The GET /custom-domain/status endpoint additionally hides the value if
+-- the most recent admin notification is more than 7 days old, so a stale
+-- banner can't linger forever even if no admin action ever happens.
+ALTER TABLE "organizations"
+  ADD COLUMN IF NOT EXISTS "custom_domain_cert_snooze_ended_from_until" timestamp with time zone;

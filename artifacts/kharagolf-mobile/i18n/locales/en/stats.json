@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Where this comes from:",
+    "source_whs": "your live WHS handicap",
+    "source_history": "your most recent posted round",
+    "source_profile": "your profile handicap",
+    "fix_whs": "Update WHS",
+    "fix_history": "Post a new round",
+    "fix_profile": "Edit profile handicap",
+    "fix_default": "Add your handicap",
+    "summary": "{{handicap}} handicap from {{source}}.",
+    "summaryWithAsOf": "{{handicap}} handicap from {{source}} (as of {{asOf}}).",
+    "noneAuto": "No handicap on file yet — we're using a default comparison.",
+    "nonePinned": "No handicap on file yet.",
+    "asOfToday": "today",
+    "asOfYesterday": "yesterday",
+    "asOfDays": "{{count}} days ago",
+    "asOfMonth": "{{count}} month ago",
+    "asOfMonths": "{{count}} months ago",
+    "asOfYear": "{{count}} year ago",
+    "asOfYears": "{{count}} years ago"
+  }
+}

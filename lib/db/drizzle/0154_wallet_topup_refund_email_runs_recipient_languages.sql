@@ -1,0 +1,27 @@
+-- Task #2170 — per-recipient language attribution snapshot for the
+-- wallet auto-refund finance digest (Task #1073).
+--
+-- Until now the cron `runOneWalletTopupRefundEmailSchedule` rendered
+-- the digest in a single org-wide language (the org's resolved
+-- `defaultLanguage`) and blasted it to every recipient on the saved
+-- list — so an internal recipient with a different
+-- `app_users.preferredLanguage`, or an external accountant, all got
+-- the same translation regardless of personal preference.
+--
+-- The cron now groups recipients by their resolved digest language
+-- (`appUsersTable.preferredLanguage` for known app users with a
+-- supported preference, falling back to the org's resolved
+-- `defaultLanguage` for external recipients and for users whose
+-- preference is null or unsupported) and dispatches one rendered
+-- digest per language group. To keep the run-history dashboard
+-- accurate, this column snapshots which recipient was attributed to
+-- which language at send time so the attribution stays correct even
+-- after the user later changes their preference.
+--
+-- Stored as a JSON array of `{email, language}` objects mirroring the
+-- existing `paused_recipients` snapshot pattern (Task #1759). Defaults
+-- to an empty JSON array so existing rows backfill cleanly and the
+-- cron's three insert paths (no recipients configured / all paused /
+-- normal send) can all rely on the column being non-null.
+ALTER TABLE "wallet_topup_refund_email_runs"
+  ADD COLUMN IF NOT EXISTS "recipient_languages" jsonb NOT NULL DEFAULT '[]'::jsonb;

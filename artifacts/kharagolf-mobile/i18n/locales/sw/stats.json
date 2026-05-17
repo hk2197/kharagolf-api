@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Hii inatoka wapi:",
+    "source_whs": "handicap yako ya WHS ya moja kwa moja",
+    "source_history": "raundi yako ya hivi karibuni iliyowekwa",
+    "source_profile": "handicap ya wasifu wako",
+    "fix_whs": "Sasisha WHS",
+    "fix_history": "Weka raundi mpya",
+    "fix_profile": "Hariri handicap ya wasifu",
+    "fix_default": "Ongeza handicap yako",
+    "summary": "Handicap ya {{handicap}} kutoka {{source}}.",
+    "summaryWithAsOf": "Handicap ya {{handicap}} kutoka {{source}} (tangu {{asOf}}).",
+    "noneAuto": "Bado hakuna handicap iliyowekwa — tunatumia ulinganisho wa kawaida.",
+    "nonePinned": "Bado hakuna handicap iliyowekwa.",
+    "asOfToday": "leo",
+    "asOfYesterday": "jana",
+    "asOfDays": "siku {{count}} zilizopita",
+    "asOfMonth": "mwezi {{count}} uliopita",
+    "asOfMonths": "miezi {{count}} iliyopita",
+    "asOfYear": "mwaka {{count}} uliopita",
+    "asOfYears": "miaka {{count}} iliyopita"
+  }
+}

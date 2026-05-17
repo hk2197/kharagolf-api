@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "ログアウト",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "トーナメント",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "滞留しているサイドゲーム領収",
+    "summary": "{{exhausted}} 件は再試行が尽きた · {{skipped}} 件は配信前にスキップ",
+    "truncation": " · {{total}} 件中 {{shown}} 件を表示",
+    "userFallback": "ユーザー #{{id}}",
+    "rowDetails": "{{game}} · 精算 #{{settlementId}} · 支払者 {{payer}}",
+    "channelEmail": "メール",
+    "channelPush": "プッシュ",
+    "channelExhausted": "再試行尽 ({{count}})",
+    "channelSkipped": "スキップ",
+    "resendButton": "配信を再キュー",
+    "resending": "再キュー中…",
+    "loadMore": "さらに読み込む（残り {{remaining}} 件）",
+    "loading": "読み込み中…",
+    "toast": {
+      "successTitle": "領収を再キューしました",
+      "successDescription": "次回の cron 実行で {{channels}} を再試行します。",
+      "errorTitle": "再キューできませんでした",
+      "channelEmail": "メール",
+      "channelPush": "プッシュ",
+      "channelDelivery": "配信",
+      "channelSeparator": "・"
+    },
+    "statuses": {
+      "skipped": "スキップ",
+      "no_address": "アドレス未登録",
+      "opted_out": "受信拒否",
+      "no_user": "ユーザーアカウントなし",
+      "failed": "失敗",
+      "pending": "保留中",
+      "queued": "キュー待ち",
+      "unknown": "不明"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+-- Task #2196 — per-run snapshot of recipients filtered out by the
+-- bounce-aware suppression filter inside
+-- `runOneSideGameReceiptDigestSchedule`. Until now the side-game
+-- receipt digest dashboard's run-history table only listed the
+-- addresses that were *actually* emailed plus a free-text errorMessage,
+-- so support could not see at a glance which recipients had been
+-- silently dropped on a particular run. The schedule-level "paused"
+-- chip only reflects the *current* suppression state, which would
+-- vanish the moment support lifted the suppression — leaving past runs
+-- unexplainable.
+--
+-- Mirrors the wallet auto-refund counterpart added in Task #1759
+-- (`0133_wallet_topup_refund_email_runs_paused_recipients.sql`). This
+-- column stores a JSON array of `{email, reason, bounceType,
+-- description}` objects captured at send time so the run history
+-- remains accurate even after the suppression list later changes.
+--
+-- Defaults to an empty JSON array so existing rows backfill cleanly and
+-- the cron's three insert paths (no recipients configured / all paused
+-- / normal send) can all rely on the column being non-null.
+ALTER TABLE "side_game_receipt_digest_runs"
+  ADD COLUMN IF NOT EXISTS "paused_recipients" jsonb NOT NULL DEFAULT '[]'::jsonb;

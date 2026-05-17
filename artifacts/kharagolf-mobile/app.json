@@ -1,0 +1,116 @@
+{
+  "expo": {
+    "name": "KHARAGOLF Mobile",
+    "slug": "kharagolf-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "kharagolf-mobile",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "usesAppleSignIn": true,
+      "entitlements": {
+        "com.apple.developer.applesignin": ["Default"],
+        "com.apple.developer.healthkit": true,
+        "com.apple.developer.healthkit.access": [
+          "HKQuantityTypeIdentifierHeartRateVariabilitySDNN",
+          "HKQuantityTypeIdentifierRestingHeartRate",
+          "HKQuantityTypeIdentifierStepCount",
+          "HKCategoryTypeIdentifierSleepAnalysis"
+        ],
+        "com.apple.developer.associated-domains": ["applinks:kharagolf.com"]
+      },
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "KHARAGOLF needs calendar access to save tournament dates to your calendar.",
+        "NSCameraUsageDescription": "KHARAGOLF needs camera access to scan player QR codes for check-in.",
+        "NSHealthShareUsageDescription": "KHARAGOLF reads your workout data from Apple Health to sync round activity and heart rate.",
+        "NSHealthUpdateUsageDescription": "KHARAGOLF saves golf round workouts to Apple Health.",
+        "NSLocationWhenInUseUsageDescription": "KHARAGOLF uses your location for distance-to-pin and shot tracking.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "KHARAGOLF uses background location to track GPS shots during a round.",
+        "WKWatchOnly": false,
+        "WKCompanionAppBundleIdentifier": "com.kharagolf.mobile"
+      }
+    },
+    "android": {
+      "permissions": [
+        "READ_CALENDAR",
+        "WRITE_CALENDAR",
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "BODY_SENSORS",
+        "ACTIVITY_RECOGNITION",
+        "android.permission.health.READ_SLEEP",
+        "android.permission.health.READ_HEART_RATE_VARIABILITY",
+        "android.permission.health.READ_RESTING_HEART_RATE",
+        "android.permission.health.READ_STEPS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-apple-authentication",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#1a7f5a",
+          "sounds": [],
+          "mode": "production"
+        }
+      ],
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Allow KHARAGOLF to access your calendar to save tournament events."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow KHARAGOLF to access your camera to scan player check-in QR codes."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow KHARAGOLF to save shot replay images to your photo library.",
+          "savePhotosPermission": "Allow KHARAGOLF to save shot replay images to your photo library.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      "./plugins/withWatchExtension",
+      "./plugins/withWatchBridge",
+      "./plugins/withHealthKitBridge",
+      "./plugins/withHealthConnectBridge",
+      "expo-background-task",
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.kharagolf",
+          "enableGooglePay": true
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

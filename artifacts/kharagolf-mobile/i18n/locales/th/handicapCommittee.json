@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "มอบหมาย",
+    "invitePeer": "เชิญเพื่อนร่วมงาน",
+    "recordDecision": "บันทึกการตัดสิน"
+  },
+  "assignModal": {
+    "title": "มอบหมายคดี",
+    "subtitle": "เลือกสมาชิกคณะกรรมการเพื่อเป็นผู้รับผิดชอบ",
+    "submit": "มอบหมาย"
+  },
+  "peerModal": {
+    "title": "เชิญผู้ตรวจสอบเพื่อนร่วมงาน",
+    "subtitle": "พวกเขาจะได้รับอีเมลและการแจ้งเตือนแบบพุช",
+    "submit": "ส่งคำเชิญ"
+  },
+  "decideModal": {
+    "title": "บันทึกการตัดสิน",
+    "decisionLabel": "การตัดสิน",
+    "rationaleLabel": "เหตุผล (จำเป็น)",
+    "rationalePlaceholder": "อธิบายเหตุผลของคณะกรรมการ",
+    "strokesLabel": "สโตรกการปรับ",
+    "strokesPlaceholder": "เช่น 1.0",
+    "capLabel": "ค่าเพดาน (HI 0–54)",
+    "capPlaceholder": "เช่น 18.4",
+    "notesLabel": "หมายเหตุ (ไม่บังคับ)",
+    "notesPlaceholder": "บันทึกภายในคณะกรรมการ",
+    "applyToPlayerTitle": "นำไปใช้กับผู้เล่น",
+    "applyToPlayerHelp": "บันทึกดัชนีแฮนดิแคปที่ได้ลงในประวัติของผู้เล่นด้วย",
+    "submit": "บันทึกการตัดสิน"
+  },
+  "decisions": {
+    "no_action": "ไม่ดำเนินการ",
+    "soft_cap": "เพดานยืดหยุ่น",
+    "hard_cap": "เพดานเข้มงวด",
+    "index_adjustment": "ปรับดัชนี"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "ต้องระบุเหตุผล",
+    "rationaleRequiredMessage": "กรุณาบันทึกเหตุผลสำหรับการตัดสินนี้",
+    "invalidStrokesTitle": "สโตรกไม่ถูกต้อง",
+    "invalidStrokesMessage": "สโตรกการปรับต้องเป็นจำนวนบวก",
+    "invalidCapTitle": "เพดานไม่ถูกต้อง",
+    "invalidCapMessage": "ค่าเพดานต้องอยู่ระหว่าง 0 ถึง 54"
+  },
+  "errors": {
+    "assignFailed": "การมอบหมายล้มเหลว",
+    "peerInviteFailed": "การเชิญเพื่อนร่วมงานล้มเหลว",
+    "decisionFailed": "การตัดสินล้มเหลว",
+    "membersLoadFailed": "ไม่สามารถโหลดสมาชิกได้",
+    "couldNotOpen": "ไม่สามารถเปิดคดีได้",
+    "notFound": "ไม่พบคดี",
+    "couldNotLoad": "ไม่สามารถโหลดคดีได้",
+    "missingOrgContext": "ขาดบริบทองค์กรสำหรับคดีนี้"
+  },
+  "memberPicker": {
+    "noMembers": "ไม่พบสมาชิกคณะกรรมการที่มีคุณสมบัติ",
+    "cancel": "ยกเลิก"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} จาก {{total}} เปิดแล้ว",
+    "badgeAccessibility": "ผู้ตรวจสอบ {{opened}} จาก {{total}} คนเปิดคำเชิญแล้ว แตะเพื่อดูรายละเอียด",
+    "sheetTitle": "สถานะผู้ตรวจสอบเพียร์",
+    "sheetSubtitle": "{{opened}} จาก {{total}} เปิดคำเชิญแล้ว",
+    "openedHeading": "เปิดแล้ว ({{count}})",
+    "notYetOpenedHeading": "ยังไม่ได้เปิด ({{count}})",
+    "everyoneOpened": "ทุกคนได้เปิดคำเชิญแล้ว",
+    "noneOpened": "ยังไม่มีผู้ตรวจสอบเปิดคำเชิญ",
+    "seenRelative": "เห็นเมื่อ {{relative}}",
+    "invitedRelative": "เชิญเมื่อ {{relative}}",
+    "close": "ปิด"
+  },
+  "header": {
+    "caseNumber": "คดี #{{id}}",
+    "subtitle": "การพิจารณาของคณะกรรมการแฮนดิแคป",
+    "back": "ย้อนกลับ"
+  },
+  "summary": {
+    "subject": "เรื่อง",
+    "period": "ช่วงเวลา",
+    "details": "รายละเอียด",
+    "decision": "การตัดสิน",
+    "openedAt": "เปิดเมื่อ {{date}}"
+  },
+  "peerResponses": {
+    "heading": "การตอบกลับจากเพื่อนร่วมงาน",
+    "headingWithCount": "การตอบกลับจากเพื่อนร่วมงาน ({{count}})",
+    "empty": "ยังไม่มีการตอบกลับจากเพื่อนร่วมงาน",
+    "recommendations": {
+      "confirm": "ยืนยันแล้ว",
+      "dispute": "โต้แย้ง",
+      "insufficient_info": "ข้อมูลไม่เพียงพอ",
+      "responded": "ตอบกลับแล้ว"
+    },
+    "reviewerFallback": "ผู้ตรวจสอบ",
+    "seenRelative": "เห็นเมื่อ {{relative}}",
+    "notYetOpened": "ยังไม่ได้เปิด",
+    "respondedAt": "ตอบกลับเมื่อ {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "รอการตอบกลับ ({{count}})",
+    "filters": {
+      "all": "ทั้งหมด ({{count}})",
+      "openedUnresponded": "เปิดแล้ว ยังไม่ตอบ ({{count}})",
+      "unopened": "ยังไม่ได้เปิด ({{count}})"
+    },
+    "empty": "ไม่มีผู้ตรวจสอบที่ตรงกับตัวกรองนี้",
+    "invited": "เชิญเมื่อ {{date}}",
+    "invitedWithSeen": "เชิญเมื่อ {{invited}} · เห็นเมื่อ {{seen}}"
+  },
+  "activity": {
+    "heading": "กิจกรรม"
+  },
+  "common": {
+    "close": "ปิด"
+  },
+  "events": {
+    "opened": "เปิดเคสแล้ว",
+    "decided": "บันทึกการตัดสินแล้ว",
+    "closed": "ปิดเคสแล้ว",
+    "reopened": "เปิดเคสใหม่แล้ว",
+    "peer_responded": "การตอบกลับจากเพื่อน"
+  },
+  "relative": {
+    "past": {
+      "second_one": "วินาที {{count}} ที่แล้ว",
+      "second_other": "วินาที {{count}} ที่แล้ว",
+      "minute_one": "นาที {{count}} ที่แล้ว",
+      "minute_other": "นาที {{count}} ที่แล้ว",
+      "hour_one": "ชั่วโมง {{count}} ที่แล้ว",
+      "hour_other": "ชั่วโมง {{count}} ที่แล้ว",
+      "day_one": "วัน {{count}} ที่แล้ว",
+      "day_other": "วัน {{count}} ที่แล้ว",
+      "month_one": "เดือน {{count}} ที่แล้ว",
+      "month_other": "เดือน {{count}} ที่แล้ว",
+      "year_one": "ปี {{count}} ที่แล้ว",
+      "year_other": "ปี {{count}} ที่แล้ว"
+    },
+    "future": {
+      "second_one": "อีก {{count}} วินาที",
+      "second_other": "อีก {{count}} วินาที",
+      "minute_one": "อีก {{count}} นาที",
+      "minute_other": "อีก {{count}} นาที",
+      "hour_one": "อีก {{count}} ชั่วโมง",
+      "hour_other": "อีก {{count}} ชั่วโมง",
+      "day_one": "อีก {{count}} วัน",
+      "day_other": "อีก {{count}} วัน",
+      "month_one": "อีก {{count}} เดือน",
+      "month_other": "อีก {{count}} เดือน",
+      "year_one": "อีก {{count}} ปี",
+      "year_other": "อีก {{count}} ปี"
+    }
+  }
+}

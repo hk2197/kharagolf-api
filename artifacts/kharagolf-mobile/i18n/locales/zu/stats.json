@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Lokhu kuvelaphi:",
+    "source_whs": "i-handicap yakho ye-WHS ebukhoma",
+    "source_history": "umjikelezo wakho wakamuva othunyelwe",
+    "source_profile": "i-handicap yephrofayela yakho",
+    "fix_whs": "Buyekeza i-WHS",
+    "fix_history": "Thumela umjikelezo omusha",
+    "fix_profile": "Hlela i-handicap yephrofayela",
+    "fix_default": "Yengeza i-handicap yakho",
+    "summary": "I-handicap engu-{{handicap}} kusukela ku-{{source}}.",
+    "summaryWithAsOf": "I-handicap engu-{{handicap}} kusukela ku-{{source}} (kusukela {{asOf}}).",
+    "noneAuto": "Ayikho i-handicap eqoshiwe okwamanje — sisebenzisa ukuqhathaniswa okuzenzakalelayo.",
+    "nonePinned": "Ayikho i-handicap eqoshiwe okwamanje.",
+    "asOfToday": "namuhla",
+    "asOfYesterday": "izolo",
+    "asOfDays": "ezinsukwini ezingu-{{count}} ezedlule",
+    "asOfMonth": "enyangeni engu-{{count}} edlule",
+    "asOfMonths": "ezinyangeni ezingu-{{count}} ezedlule",
+    "asOfYear": "onyakeni ongu-{{count}} odlule",
+    "asOfYears": "eminyakeni engu-{{count}} edlule"
+  }
+}

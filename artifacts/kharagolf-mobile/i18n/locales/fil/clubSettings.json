@@ -1,0 +1,7 @@
+{
+  "title": "Mga setting ng club",
+  "subtitleWithClub": "Mga kontrol ng admin para sa {{club}}",
+  "subtitleNoClub": "Mga kontrol ng admin para sa iyong club",
+  "notAvailableTitle": "Hindi available",
+  "notAvailableText": "Ang mga setting ng club ay nakikita lang ng mga admin ng club at mga direktor ng torneo."
+}

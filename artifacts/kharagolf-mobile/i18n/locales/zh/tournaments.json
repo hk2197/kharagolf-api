@@ -1,0 +1,18 @@
+{
+  "tournaments": "锦标赛",
+  "tournament": "锦标赛",
+  "register": "注册",
+  "registered": "已注册",
+  "checkIn": "签到",
+  "checkedIn": "已签到",
+  "leaderboard": "排行榜",
+  "teeTimes": "开球时间",
+  "results": "结果",
+  "round": "轮次",
+  "course": "球场",
+  "entryFee": "报名费",
+  "format": "赛制",
+  "startDate": "开始日期",
+  "status": "状态",
+  "noTournaments": "暂无可用赛事"
+}

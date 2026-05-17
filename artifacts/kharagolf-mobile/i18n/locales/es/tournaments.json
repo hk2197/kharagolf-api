@@ -1,0 +1,18 @@
+{
+  "tournaments": "Torneos",
+  "tournament": "Torneo",
+  "register": "Registrarse",
+  "registered": "Registrado",
+  "checkIn": "Registrar llegada",
+  "checkedIn": "Llegada registrada",
+  "leaderboard": "Clasificación",
+  "teeTimes": "Tee times",
+  "results": "Resultados",
+  "round": "Ronda",
+  "course": "Campo",
+  "entryFee": "Cuota de inscripción",
+  "format": "Formato",
+  "startDate": "Fecha de inicio",
+  "status": "Estado",
+  "noTournaments": "No hay torneos disponibles"
+}

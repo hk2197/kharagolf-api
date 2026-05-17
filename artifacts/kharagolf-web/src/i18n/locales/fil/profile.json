@@ -1,0 +1,249 @@
+{
+  "myProfile": "Aking Profile",
+  "editProfile": "I-edit ang Profile",
+  "cancel": "Kanselahin",
+  "comingSoon": "Coming Soon",
+  "editProfileSoon": "Profile editing will be available soon.",
+  "changePasswordSoon": "Password change will be available soon.",
+  "displayName": "Pangalan na Ipinapakita",
+  "email": "Email",
+  "phone": "Telepono",
+  "handicapIndex": "Handicap Index",
+  "memberSince": "Miyembro mula",
+  "languagePreference": "Wika",
+  "selectLanguage": "Pumili ng wika",
+  "changePhoto": "Palitan ang Larawan",
+  "notifications": "Mga Notipikasyon",
+  "security": "Security & Privacy",
+  "changePassword": "Palitan ang Password",
+  "tournamentsPlayed": "Mga Tournament na Nilaro",
+  "bestRound": "Pinakamahusay na Round",
+  "averageScore": "Average na Score",
+  "logOut": "Mag-logout",
+  "confirmLogout": "Sigurado ka bang gusto mong mag-logout?",
+  "myTournaments": "Aking mga Tournament",
+  "myLeagues": "Aking mga Liga",
+  "myScores": "Aking mga Score",
+  "profileUpdated": "Matagumpay na na-update ang profile",
+  "emailNotVerified": "Email not verified",
+  "worldHandicap": "World Handicap Index",
+  "fromLastRecord": "from last record",
+  "fullHistory": "Full History",
+  "statsLabels": {
+    "tournaments": "Mga Tournament",
+    "avgStrokes": "Avg Strokes",
+    "bestRound": "Pinakamahusay na Round",
+    "holesPlayed": "Holes Played"
+  },
+  "loyalty": {
+    "section": "Loyalty & Rewards",
+    "pointsBalance": "Points Balance",
+    "lifetimeEarned": "Lifetime Earned",
+    "thisYear": "This Year",
+    "availableRewards": "Available Rewards",
+    "pts": "pts",
+    "needMore": "Need {{count}} more"
+  },
+  "myGolf": {
+    "section": "My Golf",
+    "generalPlay": "Pangkalahatang Laro",
+    "generalPlaySub": "Post casual rounds & build handicap",
+    "teeBookings": "Mga Booking sa Tee",
+    "teeBookingsSub": "Book a tee time at your club",
+    "handicapProfile": "Handicap Profile",
+    "handicapProfileSub": "View your WHS Handicap Index history"
+  },
+  "locker": {
+    "section": "My Locker",
+    "renewalDate": "Renewal Date",
+    "annualFee": "Annual Fee",
+    "paymentComplete": "Payment complete",
+    "paymentPending": "Payment pending",
+    "expired": "Expired",
+    "daysLeft": "{{count}}d left",
+    "payRenewal": "Pay Renewal Fee",
+    "onWaitlist": "On Waitlist",
+    "notified": "Notified",
+    "joinWaitlist": "Join Waitlist",
+    "joining": "Joining…",
+    "noAssigned": "No locker assigned.",
+    "bay": "Bay {{number}}",
+    "lockerTitle": "Locker {{number}}",
+    "waitlistJoinedOn": "You joined the waitlist on {{date}}.",
+    "lockerAvailable": "A locker is available — contact the club.",
+    "willBeNotified": "You will be notified when a locker becomes available."
+  },
+  "invoices": {
+    "section": "My Invoices",
+    "payNow": "Pay Now",
+    "overdueSince": "Overdue since: ",
+    "due": "Due: ",
+    "paid": "Paid {{date}}",
+    "statuses": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled",
+      "void": "Void"
+    }
+  },
+  "repairs": {
+    "section": "My Club Repairs",
+    "readyForPickup": "Your clubs are ready!",
+    "technician": "Technician: {{name}}",
+    "expected": "Expected: {{date}}",
+    "status": {
+      "received": "Received",
+      "in_progress": "In Progress",
+      "ready_for_pickup": "Ready for Pickup",
+      "collected": "Collected"
+    },
+    "type": {
+      "regrip": "Regrip",
+      "reshaft": "Reshaft",
+      "loft_lie_adjustment": "Loft/Lie Adj.",
+      "cleaning": "Cleaning",
+      "other": "Other"
+    }
+  },
+  "fittingSessions": {
+    "section": "My Fitting Sessions",
+    "recommendedSpecs": "Recommended Specs",
+    "statuses": {
+      "booked": "Booked",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "notificationPreferences": "Notification Preferences",
+  "alwaysOn": "Always on",
+  "notifLabels": {
+    "email": "Email Notifications",
+    "emailDesc": "Receive tournament updates via email",
+    "push": "Push Notifications",
+    "pushDesc": "Receive real-time alerts",
+    "pushNeedApp": "Install app to enable push notifications",
+    "sms": "SMS Notifications",
+    "smsDesc": "Receive text reminders",
+    "whatsapp": "WhatsApp Notifications",
+    "whatsappDesc": "Receive updates via WhatsApp",
+    "noPhone": "No phone number on file"
+  },
+  "languageModal": {
+    "title": "Wika",
+    "description": "Choose your preferred display language.",
+    "rtlNote": "Right-to-left layout"
+  },
+  "scoringHistory": {
+    "section": "Scoring History",
+    "noHistory": "No tournament history yet",
+    "noHistoryDesc": "Register for a tournament and post scores",
+    "loadError": "Failed to load scoring history",
+    "retry": "Retry",
+    "format": "Format",
+    "handicap": "Handicap",
+    "tee": "Tee",
+    "rounds": "Round",
+    "noScores": "No scores posted yet",
+    "withdraw": "Withdraw from Tournament"
+  },
+  "withdraw": {
+    "title": "Withdraw from Tournament",
+    "cancel": "Kanselahin",
+    "confirm": "Kumpirmahin",
+    "successWithRefund": "You have been withdrawn. A refund request has been raised.",
+    "success": "Successfully withdrawn.",
+    "message": "Are you sure you want to withdraw from \"{{name}}\"?"
+  },
+  "rankings": {
+    "section": "Rankings & Points",
+    "rankingSeries": "Ranking Series",
+    "ranked": "Ranked",
+    "pts": "pts",
+    "events": "Events",
+    "wins": "Wins",
+    "top3": "Top 3",
+    "eventHistory": "Event History",
+    "tournament": "Mga Tournament"
+  },
+  "activeClub": {
+    "section": "Active Club"
+  },
+  "eventRoles": {
+    "section": "Event Roles",
+    "volunteering": "My Volunteering Assignments"
+  },
+  "account": {
+    "section": "Account",
+    "editProfile": "I-edit ang Profile",
+    "languagePreference": "Wika",
+    "changePassword": "Palitan ang Password",
+    "signOut": "Mag-logout"
+  },
+  "roundCard": {
+    "round": "Round {{n}}",
+    "holes_one": "{{count}} hole",
+    "holes_other": "{{count}} holes",
+    "strokes": "Mga Suntok"
+  },
+  "roundTable": {
+    "hole": "Butas",
+    "strokes": "Mga Suntok",
+    "putts": "Mga Putt",
+    "fir": "FIR",
+    "gir": "GIR",
+    "total": "Kabuuan"
+  },
+  "photoOptions": {
+    "chooseLibrary": "Choose from Library",
+    "takePhoto": "Take Photo",
+    "chooseAvatar": "Choose Avatar",
+    "removePhoto": "Remove Photo",
+    "changeProfilePhoto": "Change Profile Photo",
+    "cancel": "Kanselahin"
+  },
+  "tournaments": {
+    "statuses": {
+      "upcoming": "UPCOMING",
+      "active": "ACTIVE",
+      "completed": "COMPLETED",
+      "cancelled": "CANCELLED"
+    }
+  },
+  "errors": {
+    "failedLanguageSave": "Failed to save language preference",
+    "failedWithdraw": "Failed to withdraw from tournament",
+    "networkError": "Network error. Please try again.",
+    "photoUpdated": "Profile photo updated.",
+    "photoUploadFailed": "Failed to upload profile photo.",
+    "avatarSelectFailed": "Failed to select avatar.",
+    "avatarPickerDesc": "Pick a golf-themed avatar.",
+    "switchClubTitle": "Switch Club",
+    "photoRemoveFailed": "Failed to remove photo.",
+    "permissionDenied": "Permission denied",
+    "permissionLibrary": "Allow photo library access in Settings.",
+    "permissionCamera": "Allow camera access in Settings.",
+    "waitlistFailed": "Failed to join waitlist",
+    "success": "Tagumpay",
+    "error": "Error"
+  },
+  "username": "Username",
+  "profilePicture": "Profile Picture",
+  "removePhoto": "Remove Photo",
+  "role": "Role",
+  "organization": "Organization",
+  "saveLanguage": "I-save Wika",
+  "currentPassword": "Current Password",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "passwordUpdated": "Password updated successfully",
+  "myStats": "My Statistics",
+  "walletPayoutNeedsReverify": {
+    "titleUpi": "I-save muli ang iyong UPI para ipagpatuloy ang mga withdrawal",
+    "titleBank": "I-save muli ang iyong bank account para ipagpatuloy ang mga withdrawal",
+    "body": "Hindi nagtagumpay ang pinakahuling naka-iskedyul na muling pagsusuri namin sa iyong nai-save na mga detalye ng payout, kaya naka-pause ang mga withdrawal hanggang i-save mo muli ang mga ito.",
+    "reason": "Dahilan: {{reason}}",
+    "cta": "I-save muli ang account"
+  }
+}

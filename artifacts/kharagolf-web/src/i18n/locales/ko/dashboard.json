@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "로그아웃",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "토너먼트",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "지연된 사이드 게임 영수증",
+    "summary": "{{exhausted}}건 재시도 소진 · {{skipped}}건 전송 전 건너뜀",
+    "truncation": " · 전체 {{total}}건 중 {{shown}}건 표시",
+    "userFallback": "사용자 #{{id}}",
+    "rowDetails": "{{game}} · 정산 #{{settlementId}} · 결제 {{payer}}",
+    "channelEmail": "이메일",
+    "channelPush": "푸시",
+    "channelExhausted": "재시도 소진 ({{count}})",
+    "channelSkipped": "건너뜀",
+    "resendButton": "전송 재대기열",
+    "resending": "재대기열 중…",
+    "loadMore": "더 보기 (남은 {{remaining}}건)",
+    "loading": "로드 중…",
+    "toast": {
+      "successTitle": "영수증 재대기열 완료",
+      "successDescription": "다음 cron 실행 시 {{channels}} 재시도합니다.",
+      "errorTitle": "재대기열 실패",
+      "channelEmail": "이메일",
+      "channelPush": "푸시",
+      "channelDelivery": "전송",
+      "channelSeparator": " 및 "
+    },
+    "statuses": {
+      "skipped": "건너뜀",
+      "no_address": "주소 없음",
+      "opted_out": "수신 거부",
+      "no_user": "사용자 계정 없음",
+      "failed": "실패",
+      "pending": "대기 중",
+      "queued": "큐 대기",
+      "unknown": "알 수 없음"
+    }
+  }
+}

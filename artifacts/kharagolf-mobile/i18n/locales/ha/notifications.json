@@ -1,0 +1,20 @@
+{
+  "title": "Sanarwa",
+  "subtitle": "Sabunta kwamitin nakasa da wasannin daidaita",
+  "unreadBadge_one": "{{count}} sabo",
+  "unreadBadge_other": "{{count}} sababbi",
+  "markAll": "Sanya alama duka",
+  "markAllAccessibility": "Sanya alamar an karanta duka",
+  "markAllErrorTitle": "An kasa sanya alamar an karanta duka",
+  "markAllErrorMessage": "Da fatan za a sake gwadawa.",
+  "emptyTitle": "Babu sanarwa",
+  "emptyText": "Lokacin da aka buɗe shari'ar bita ta nakasa, aka yanke hukunci, ko aka ƙirƙiri wasan ƙarar gwabza a tarihinka, zai bayyana a nan.",
+  "peerResponsesHeading": "Sabbin amsoshi daga abokan aiki",
+  "peerResponsesUnread_one": "{{count}} ba a karanta ba",
+  "peerResponsesUnread_other": "{{count}} ba a karanta ba",
+  "peerResponsesHint": "Danna don buɗe shari'ar da abin ya shafa a kayan aikin kwamiti.",
+  "tieBreakLabel": "Ana buƙatar ƙarar gwabza",
+  "tieBreakFallbackSubject": "Ana buƙatar ƙarar gwabza ta zagaye",
+  "matchSuffix": "Wasa #{{id}}",
+  "caseSuffix": "Shari'a #{{id}}"
+}

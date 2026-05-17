@@ -1,0 +1,18 @@
+{
+  "tournaments": "Tournaments",
+  "tournament": "Tournament",
+  "register": "Register",
+  "registered": "Registered",
+  "checkIn": "Check In",
+  "checkedIn": "Checked In",
+  "leaderboard": "Leaderboard",
+  "teeTimes": "Tee Times",
+  "results": "Results",
+  "round": "Round",
+  "course": "Course",
+  "entryFee": "Entry Fee",
+  "format": "Format",
+  "startDate": "Start Date",
+  "status": "Status",
+  "noTournaments": "No tournaments available"
+}

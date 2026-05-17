@@ -1,0 +1,7 @@
+{
+  "title": "የክለብ ቅንብሮች",
+  "subtitleWithClub": "ለ {{club}} የአስተዳዳሪ መቆጣጠሪያዎች",
+  "subtitleNoClub": "ለክለብዎ የአስተዳዳሪ መቆጣጠሪያዎች",
+  "notAvailableTitle": "አይገኝም",
+  "notAvailableText": "የክለብ ቅንብሮች ለክለብ አስተዳዳሪዎች እና ለውድድር ዳይሬክተሮች ብቻ ይታያሉ።"
+}

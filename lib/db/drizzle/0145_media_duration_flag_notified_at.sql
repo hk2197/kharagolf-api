@@ -1,0 +1,29 @@
+-- Task #1975 — Email an admin digest when videos are auto-flagged as
+-- unverifiable.
+--
+-- The `recheckLegacyVideoDurations` cron silently flags rows as
+-- `object_missing` or `permanently_unverifiable` once it has given up
+-- on the auto-retry cap. Until now no one was notified — admins only
+-- saw the rows by visiting the unverifiable-videos page. The cron now
+-- fans out a single digest email per org admin listing every row it
+-- just flagged.
+--
+-- This column is the per-row dedup the cron uses to make sure the same
+-- row is never included in two digests, even across:
+--   * a manual recheck → re-flag round trip that re-enters the
+--     flag-this-pass set, or
+--   * two concurrent sweeps racing to send digests for the same row.
+--
+-- The cron claims the stamp atomically with a `WHERE
+-- duration_flag_notified_at IS NULL` guard before fanning out the
+-- emails so a sibling sweep that races us drops out cleanly.
+--
+-- Nullable + no default so legacy rows that were silently flagged
+-- before this column existed read as "never digested" — they remain
+-- on the unverifiable-videos page but won't trigger a backfill blast
+-- of digest emails for ancient rows.
+--
+-- Added with IF NOT EXISTS so a partial replay during a deploy retry
+-- is safe.
+ALTER TABLE "media"
+  ADD COLUMN IF NOT EXISTS "duration_flag_notified_at" timestamp with time zone;

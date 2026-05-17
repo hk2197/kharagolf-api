@@ -1,0 +1,7 @@
+{
+  "title": "クラブ設定",
+  "subtitleWithClub": "{{club}} の管理者向けコントロール",
+  "subtitleNoClub": "あなたのクラブの管理者向けコントロール",
+  "notAvailableTitle": "利用できません",
+  "notAvailableText": "クラブ設定はクラブ管理者とトーナメントディレクターにのみ表示されます。"
+}

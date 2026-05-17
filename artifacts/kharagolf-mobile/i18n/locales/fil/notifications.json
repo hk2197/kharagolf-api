@@ -1,0 +1,20 @@
+{
+  "title": "Mga abiso",
+  "subtitle": "Mga update mula sa komite ng handikap at match-play",
+  "unreadBadge_one": "{{count}} bago",
+  "unreadBadge_other": "{{count}} na bago",
+  "markAll": "Markahan lahat",
+  "markAllAccessibility": "Markahan lahat bilang nabasa",
+  "markAllErrorTitle": "Hindi nai-mark ang lahat bilang nabasa",
+  "markAllErrorMessage": "Pakisubukan muli.",
+  "emptyTitle": "Walang abiso",
+  "emptyText": "Kapag binuksan, napagdesisyunan, o nilikha ang tie-break na laro sa iyong record, lalabas dito.",
+  "peerResponsesHeading": "Bagong mga tugon ng kasamahan",
+  "peerResponsesUnread_one": "{{count}} hindi pa nababasa",
+  "peerResponsesUnread_other": "{{count}} hindi pa nababasa",
+  "peerResponsesHint": "I-tap upang buksan ang apektadong kaso sa mga tool ng komite.",
+  "tieBreakLabel": "Kailangan ng tie-break",
+  "tieBreakFallbackSubject": "Kailangan ng tie-break sa round-robin",
+  "matchSuffix": "Laban #{{id}}",
+  "caseSuffix": "Kaso #{{id}}"
+}

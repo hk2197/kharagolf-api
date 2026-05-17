@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "배정",
+    "invitePeer": "동료 초대",
+    "recordDecision": "결정 기록"
+  },
+  "assignModal": {
+    "title": "사건 배정",
+    "subtitle": "담당할 위원회 구성원을 선택하세요.",
+    "submit": "배정"
+  },
+  "peerModal": {
+    "title": "동료 검토자 초대",
+    "subtitle": "이메일과 푸시 알림을 받게 됩니다.",
+    "submit": "초대 보내기"
+  },
+  "decideModal": {
+    "title": "결정 기록",
+    "decisionLabel": "결정",
+    "rationaleLabel": "근거 (필수)",
+    "rationalePlaceholder": "위원회의 근거를 설명하세요",
+    "strokesLabel": "조정 스트로크",
+    "strokesPlaceholder": "예: 1.0",
+    "capLabel": "상한값 (HI 0–54)",
+    "capPlaceholder": "예: 18.4",
+    "notesLabel": "메모 (선택사항)",
+    "notesPlaceholder": "위원회 내부 메모",
+    "applyToPlayerTitle": "선수에게 적용",
+    "applyToPlayerHelp": "결과 핸디캡 지수를 선수 기록에도 기록합니다.",
+    "submit": "결정 기록"
+  },
+  "decisions": {
+    "no_action": "조치 없음",
+    "soft_cap": "소프트 캡",
+    "hard_cap": "하드 캡",
+    "index_adjustment": "지수 조정"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "근거 필요",
+    "rationaleRequiredMessage": "이 결정에 대한 근거를 기록하세요.",
+    "invalidStrokesTitle": "잘못된 스트로크",
+    "invalidStrokesMessage": "조정 스트로크는 양수여야 합니다.",
+    "invalidCapTitle": "잘못된 상한",
+    "invalidCapMessage": "상한값은 0에서 54 사이여야 합니다."
+  },
+  "errors": {
+    "assignFailed": "배정 실패",
+    "peerInviteFailed": "동료 초대 실패",
+    "decisionFailed": "결정 실패",
+    "membersLoadFailed": "구성원을 불러올 수 없습니다",
+    "couldNotOpen": "사건을 열 수 없습니다",
+    "notFound": "사건을 찾을 수 없습니다",
+    "couldNotLoad": "사건을 불러올 수 없습니다.",
+    "missingOrgContext": "이 사건의 조직 컨텍스트가 없습니다."
+  },
+  "memberPicker": {
+    "noMembers": "자격이 있는 위원회 구성원을 찾을 수 없습니다.",
+    "cancel": "취소"
+  },
+  "peerSummary": {
+    "badge": "{{total}}명 중 {{opened}}명 열어봄",
+    "badgeAccessibility": "{{total}}명의 검토자 중 {{opened}}명이 초대를 열어봤습니다. 자세히 보려면 탭하세요.",
+    "sheetTitle": "동료 검토자 상태",
+    "sheetSubtitle": "{{total}}명 중 {{opened}}명이 초대를 열어봤습니다",
+    "openedHeading": "열어봄 ({{count}})",
+    "notYetOpenedHeading": "아직 열어보지 않음 ({{count}})",
+    "everyoneOpened": "모두 초대를 열어봤습니다.",
+    "noneOpened": "아직 어떤 검토자도 초대를 열어보지 않았습니다.",
+    "seenRelative": "확인 {{relative}}",
+    "invitedRelative": "초대 {{relative}}",
+    "close": "닫기"
+  },
+  "header": {
+    "caseNumber": "사건 #{{id}}",
+    "subtitle": "핸디캡 위원회 검토",
+    "back": "뒤로"
+  },
+  "summary": {
+    "subject": "대상",
+    "period": "기간",
+    "details": "세부 사항",
+    "decision": "결정",
+    "openedAt": "{{date}}에 개시"
+  },
+  "peerResponses": {
+    "heading": "동료 응답",
+    "headingWithCount": "동료 응답 ({{count}})",
+    "empty": "아직 동료 응답이 없습니다.",
+    "recommendations": {
+      "confirm": "확인됨",
+      "dispute": "이의 제기됨",
+      "insufficient_info": "정보 불충분",
+      "responded": "응답함"
+    },
+    "reviewerFallback": "검토자",
+    "seenRelative": "확인 {{relative}}",
+    "notYetOpened": "아직 열어보지 않음",
+    "respondedAt": "{{date}}에 응답"
+  },
+  "pendingPeer": {
+    "heading": "응답 대기 중 ({{count}})",
+    "filters": {
+      "all": "전체 ({{count}})",
+      "openedUnresponded": "열어봄, 미응답 ({{count}})",
+      "unopened": "아직 열어보지 않음 ({{count}})"
+    },
+    "empty": "이 필터와 일치하는 검토자가 없습니다.",
+    "invited": "{{date}}에 초대",
+    "invitedWithSeen": "{{invited}}에 초대 · {{seen}}에 확인"
+  },
+  "activity": {
+    "heading": "활동"
+  },
+  "common": {
+    "close": "닫기"
+  },
+  "events": {
+    "opened": "케이스 열림",
+    "decided": "결정 기록됨",
+    "closed": "케이스 종료됨",
+    "reopened": "케이스 재개됨",
+    "peer_responded": "동료 응답"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}}초 전",
+      "second_other": "{{count}}초 전",
+      "minute_one": "{{count}}분 전",
+      "minute_other": "{{count}}분 전",
+      "hour_one": "{{count}}시간 전",
+      "hour_other": "{{count}}시간 전",
+      "day_one": "{{count}}일 전",
+      "day_other": "{{count}}일 전",
+      "month_one": "{{count}}개월 전",
+      "month_other": "{{count}}개월 전",
+      "year_one": "{{count}}년 전",
+      "year_other": "{{count}}년 전"
+    },
+    "future": {
+      "second_one": "{{count}}초 후",
+      "second_other": "{{count}}초 후",
+      "minute_one": "{{count}}분 후",
+      "minute_other": "{{count}}분 후",
+      "hour_one": "{{count}}시간 후",
+      "hour_other": "{{count}}시간 후",
+      "day_one": "{{count}}일 후",
+      "day_other": "{{count}}일 후",
+      "month_one": "{{count}}개월 후",
+      "month_other": "{{count}}개월 후",
+      "year_one": "{{count}}년 후",
+      "year_other": "{{count}}년 후"
+    }
+  }
+}

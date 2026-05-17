@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "Keluar",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "Turnamen",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "Tanda terima side-game tertahan",
+    "summary": "{{exhausted}} dengan percobaan habis · {{skipped}} dilewati sebelum pengiriman",
+    "truncation": " · menampilkan {{shown}} dari {{total}}",
+    "userFallback": "Pengguna #{{id}}",
+    "rowDetails": "{{game}} · penyelesaian #{{settlementId}} · dibayar oleh {{payer}}",
+    "channelEmail": "Email",
+    "channelPush": "Push",
+    "channelExhausted": "habis ({{count}})",
+    "channelSkipped": "dilewati",
+    "resendButton": "Antrekan ulang pengiriman",
+    "resending": "Mengantre ulang…",
+    "loadMore": "Muat lebih banyak (tersisa {{remaining}})",
+    "loading": "Memuat…",
+    "toast": {
+      "successTitle": "Tanda terima diantrekan ulang",
+      "successDescription": "Akan mencoba ulang {{channels}} pada cron berikutnya.",
+      "errorTitle": "Tidak dapat mengantrekan ulang",
+      "channelEmail": "email",
+      "channelPush": "push",
+      "channelDelivery": "pengiriman",
+      "channelSeparator": " & "
+    },
+    "statuses": {
+      "skipped": "dilewati",
+      "no_address": "tidak ada alamat",
+      "opted_out": "berhenti berlangganan",
+      "no_user": "tidak ada akun pengguna",
+      "failed": "gagal",
+      "pending": "tertunda",
+      "queued": "antre",
+      "unknown": "tidak diketahui"
+    }
+  }
+}

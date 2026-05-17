@@ -1,0 +1,20 @@
+{
+  "title": "Notificações",
+  "subtitle": "Atualizações do comitê de handicap e match-play",
+  "unreadBadge_one": "{{count}} novo",
+  "unreadBadge_other": "{{count}} novos",
+  "markAll": "Marcar todas",
+  "markAllAccessibility": "Marcar todas como lidas",
+  "markAllErrorTitle": "Não foi possível marcar todas como lidas",
+  "markAllErrorMessage": "Por favor, tente novamente.",
+  "emptyTitle": "Sem notificações",
+  "emptyText": "Quando um caso de revisão de handicap é aberto, decidido ou uma partida de desempate é criada no seu registro, aparecerá aqui.",
+  "peerResponsesHeading": "Novas respostas de pares",
+  "peerResponsesUnread_one": "{{count}} não lida",
+  "peerResponsesUnread_other": "{{count}} não lidas",
+  "peerResponsesHint": "Toque para abrir o caso afetado nas ferramentas do comitê.",
+  "tieBreakLabel": "Desempate necessário",
+  "tieBreakFallbackSubject": "Desempate de torneio round-robin necessário",
+  "matchSuffix": "Partida nº {{id}}",
+  "caseSuffix": "Caso nº {{id}}"
+}

@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "이 값의 출처:",
+    "source_whs": "실시간 WHS 핸디캡",
+    "source_history": "가장 최근에 등록한 라운드",
+    "source_profile": "프로필의 핸디캡",
+    "fix_whs": "WHS 업데이트",
+    "fix_history": "새 라운드 등록",
+    "fix_profile": "프로필 핸디캡 편집",
+    "fix_default": "핸디캡 추가",
+    "summary": "{{source}} 기준 핸디캡 {{handicap}}.",
+    "summaryWithAsOf": "{{source}} 기준 핸디캡 {{handicap}} ({{asOf}} 기준).",
+    "noneAuto": "아직 등록된 핸디캡이 없습니다 — 기본 비교를 사용 중입니다.",
+    "nonePinned": "아직 등록된 핸디캡이 없습니다.",
+    "asOfToday": "오늘",
+    "asOfYesterday": "어제",
+    "asOfDays": "{{count}}일 전",
+    "asOfMonth": "{{count}}개월 전",
+    "asOfMonths": "{{count}}개월 전",
+    "asOfYear": "{{count}}년 전",
+    "asOfYears": "{{count}}년 전"
+  }
+}

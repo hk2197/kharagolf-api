@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Assigner",
+    "invitePeer": "Inviter un pair",
+    "recordDecision": "Enregistrer la décision"
+  },
+  "assignModal": {
+    "title": "Assigner le dossier",
+    "subtitle": "Choisissez un membre du comité pour en prendre la responsabilité.",
+    "submit": "Assigner"
+  },
+  "peerModal": {
+    "title": "Inviter un évaluateur pair",
+    "subtitle": "Il recevra un e-mail et une notification push.",
+    "submit": "Envoyer l'invitation"
+  },
+  "decideModal": {
+    "title": "Enregistrer la décision",
+    "decisionLabel": "Décision",
+    "rationaleLabel": "Justification (requise)",
+    "rationalePlaceholder": "Expliquez le raisonnement du comité",
+    "strokesLabel": "Coups d'ajustement",
+    "strokesPlaceholder": "p. ex. 1.0",
+    "capLabel": "Valeur du plafond (HI 0–54)",
+    "capPlaceholder": "p. ex. 18.4",
+    "notesLabel": "Notes (facultatif)",
+    "notesPlaceholder": "Notes internes du comité",
+    "applyToPlayerTitle": "Appliquer au joueur",
+    "applyToPlayerHelp": "Inscrire également l'Index de Handicap résultant dans le dossier du joueur.",
+    "submit": "Enregistrer la décision"
+  },
+  "decisions": {
+    "no_action": "Aucune action",
+    "soft_cap": "Plafond souple",
+    "hard_cap": "Plafond strict",
+    "index_adjustment": "Ajustement de l'index"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Justification requise",
+    "rationaleRequiredMessage": "Veuillez enregistrer une justification pour cette décision.",
+    "invalidStrokesTitle": "Coups invalides",
+    "invalidStrokesMessage": "Les coups d'ajustement doivent être un nombre positif.",
+    "invalidCapTitle": "Plafond invalide",
+    "invalidCapMessage": "La valeur du plafond doit être comprise entre 0 et 54."
+  },
+  "errors": {
+    "assignFailed": "Échec de l'assignation",
+    "peerInviteFailed": "Échec de l'invitation au pair",
+    "decisionFailed": "Échec de la décision",
+    "membersLoadFailed": "Impossible de charger les membres",
+    "couldNotOpen": "Impossible d'ouvrir le dossier",
+    "notFound": "Dossier introuvable",
+    "couldNotLoad": "Impossible de charger le dossier.",
+    "missingOrgContext": "Contexte d'organisation manquant pour ce dossier."
+  },
+  "memberPicker": {
+    "noMembers": "Aucun membre du comité éligible trouvé.",
+    "cancel": "Annuler"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} sur {{total}} ouverts",
+    "badgeAccessibility": "{{opened}} évaluateurs sur {{total}} ont ouvert l'invitation. Touchez pour voir les détails.",
+    "sheetTitle": "Statut des évaluateurs pairs",
+    "sheetSubtitle": "{{opened}} sur {{total}} ont ouvert l'invitation",
+    "openedHeading": "Ouvert ({{count}})",
+    "notYetOpenedHeading": "Pas encore ouvert ({{count}})",
+    "everyoneOpened": "Tout le monde a ouvert l'invitation.",
+    "noneOpened": "Aucun relecteur n'a encore ouvert l'invitation.",
+    "seenRelative": "Vu {{relative}}",
+    "invitedRelative": "Invité {{relative}}",
+    "close": "Fermer"
+  },
+  "header": {
+    "caseNumber": "Dossier nº {{id}}",
+    "subtitle": "Examen du comité de handicap",
+    "back": "Retour"
+  },
+  "summary": {
+    "subject": "Sujet",
+    "period": "Période",
+    "details": "Détails",
+    "decision": "Décision",
+    "openedAt": "Ouvert le {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Réponses des pairs",
+    "headingWithCount": "Réponses des pairs ({{count}})",
+    "empty": "Aucune réponse des pairs pour le moment.",
+    "recommendations": {
+      "confirm": "Confirmé",
+      "dispute": "Contesté",
+      "insufficient_info": "Informations insuffisantes",
+      "responded": "A répondu"
+    },
+    "reviewerFallback": "Évaluateur",
+    "seenRelative": "Vu {{relative}}",
+    "notYetOpened": "Pas encore ouvert",
+    "respondedAt": "A répondu le {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "En attente de réponse ({{count}})",
+    "filters": {
+      "all": "Tous ({{count}})",
+      "openedUnresponded": "Ouvert, sans réponse ({{count}})",
+      "unopened": "Pas encore ouvert ({{count}})"
+    },
+    "empty": "Aucun évaluateur ne correspond à ce filtre.",
+    "invited": "Invité le {{date}}",
+    "invitedWithSeen": "Invité le {{invited}} · vu le {{seen}}"
+  },
+  "activity": {
+    "heading": "Activité"
+  },
+  "common": {
+    "close": "Fermer"
+  },
+  "events": {
+    "opened": "Dossier ouvert",
+    "decided": "Décision enregistrée",
+    "closed": "Dossier fermé",
+    "reopened": "Dossier rouvert",
+    "peer_responded": "Réponse du pair"
+  },
+  "relative": {
+    "past": {
+      "second_one": "il y a {{count}} seconde",
+      "second_other": "il y a {{count}} secondes",
+      "minute_one": "il y a {{count}} minute",
+      "minute_other": "il y a {{count}} minutes",
+      "hour_one": "il y a {{count}} heure",
+      "hour_other": "il y a {{count}} heures",
+      "day_one": "il y a {{count}} jour",
+      "day_other": "il y a {{count}} jours",
+      "month_one": "il y a {{count}} mois",
+      "month_other": "il y a {{count}} mois",
+      "year_one": "il y a {{count}} an",
+      "year_other": "il y a {{count}} ans"
+    },
+    "future": {
+      "second_one": "dans {{count}} seconde",
+      "second_other": "dans {{count}} secondes",
+      "minute_one": "dans {{count}} minute",
+      "minute_other": "dans {{count}} minutes",
+      "hour_one": "dans {{count}} heure",
+      "hour_other": "dans {{count}} heures",
+      "day_one": "dans {{count}} jour",
+      "day_other": "dans {{count}} jours",
+      "month_one": "dans {{count}} mois",
+      "month_other": "dans {{count}} mois",
+      "year_one": "dans {{count}} an",
+      "year_other": "dans {{count}} ans"
+    }
+  }
+}

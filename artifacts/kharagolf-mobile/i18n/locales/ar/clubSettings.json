@@ -1,0 +1,7 @@
+{
+  "title": "إعدادات النادي",
+  "subtitleWithClub": "أدوات تحكم المسؤول لـ {{club}}",
+  "subtitleNoClub": "أدوات تحكم المسؤول لناديك",
+  "notAvailableTitle": "غير متوفر",
+  "notAvailableText": "إعدادات النادي مرئية فقط لمسؤولي النادي ومديري البطولات."
+}

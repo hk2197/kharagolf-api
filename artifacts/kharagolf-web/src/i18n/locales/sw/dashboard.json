@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "Ondoka",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "Mashindano",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "Risiti za mchezo wa pembeni zilizokwama",
+    "summary": "{{exhausted}} zilimaliza majaribio · {{skipped}} ziliruka kabla ya kufikishwa",
+    "truncation": " · inaonyesha {{shown}} kati ya {{total}}",
+    "userFallback": "Mtumiaji #{{id}}",
+    "rowDetails": "{{game}} · malipo #{{settlementId}} · imelipwa na {{payer}}",
+    "channelEmail": "Barua pepe",
+    "channelPush": "Arifa",
+    "channelExhausted": "zimemalizika ({{count}})",
+    "channelSkipped": "imerukwa",
+    "resendButton": "Panga upya uwasilishaji",
+    "resending": "Inapanga upya…",
+    "loadMore": "Pakia zaidi (zimebaki {{remaining}})",
+    "loading": "Inapakia…",
+    "toast": {
+      "successTitle": "Risiti imepangwa upya",
+      "successDescription": "Itajaribu tena {{channels}} kwenye mzunguko ujao wa cron.",
+      "errorTitle": "Imeshindikana kupanga upya",
+      "channelEmail": "barua pepe",
+      "channelPush": "arifa",
+      "channelDelivery": "uwasilishaji",
+      "channelSeparator": " na "
+    },
+    "statuses": {
+      "skipped": "imerukwa",
+      "no_address": "hakuna anwani",
+      "opted_out": "amejiondoa",
+      "no_user": "hakuna akaunti ya mtumiaji",
+      "failed": "imeshindikana",
+      "pending": "inasubiri",
+      "queued": "iko kwenye foleni",
+      "unknown": "haijulikani"
+    }
+  }
+}

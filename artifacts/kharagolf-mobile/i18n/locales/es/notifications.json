@@ -1,0 +1,20 @@
+{
+  "title": "Notificaciones",
+  "subtitle": "Actualizaciones del comité de hándicap y match-play",
+  "unreadBadge_one": "{{count}} nuevo",
+  "unreadBadge_other": "{{count}} nuevos",
+  "markAll": "Marcar todo",
+  "markAllAccessibility": "Marcar todo como leído",
+  "markAllErrorTitle": "No se pudo marcar todo como leído",
+  "markAllErrorMessage": "Inténtalo de nuevo.",
+  "emptyTitle": "Sin notificaciones",
+  "emptyText": "Cuando se abra, decida o cree un caso de revisión de hándicap o un partido de desempate en tu registro, aparecerá aquí.",
+  "peerResponsesHeading": "Nuevas respuestas de pares",
+  "peerResponsesUnread_one": "{{count}} sin leer",
+  "peerResponsesUnread_other": "{{count}} sin leer",
+  "peerResponsesHint": "Toca para abrir el caso afectado en las herramientas del comité.",
+  "tieBreakLabel": "Desempate requerido",
+  "tieBreakFallbackSubject": "Desempate de liga round-robin requerido",
+  "matchSuffix": "Partido #{{id}}",
+  "caseSuffix": "Caso #{{id}}"
+}

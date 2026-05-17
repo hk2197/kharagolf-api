@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Atribuir",
+    "invitePeer": "Convidar par",
+    "recordDecision": "Registrar decisão"
+  },
+  "assignModal": {
+    "title": "Atribuir caso",
+    "subtitle": "Escolha um membro do comitê para assumir a responsabilidade.",
+    "submit": "Atribuir"
+  },
+  "peerModal": {
+    "title": "Convidar revisor par",
+    "subtitle": "Ele receberá um e-mail e uma notificação push.",
+    "submit": "Enviar convite"
+  },
+  "decideModal": {
+    "title": "Registrar decisão",
+    "decisionLabel": "Decisão",
+    "rationaleLabel": "Justificativa (obrigatória)",
+    "rationalePlaceholder": "Explique o raciocínio do comitê",
+    "strokesLabel": "Tacadas de ajuste",
+    "strokesPlaceholder": "ex. 1.0",
+    "capLabel": "Valor do limite (HI 0–54)",
+    "capPlaceholder": "ex. 18.4",
+    "notesLabel": "Observações (opcional)",
+    "notesPlaceholder": "Observações internas do comitê",
+    "applyToPlayerTitle": "Aplicar ao jogador",
+    "applyToPlayerHelp": "Também grave o Índice de Handicap resultante no registro do jogador.",
+    "submit": "Registrar decisão"
+  },
+  "decisions": {
+    "no_action": "Nenhuma ação",
+    "soft_cap": "Limite flexível",
+    "hard_cap": "Limite rígido",
+    "index_adjustment": "Ajuste de índice"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Justificativa obrigatória",
+    "rationaleRequiredMessage": "Por favor, registre uma justificativa para esta decisão.",
+    "invalidStrokesTitle": "Tacadas inválidas",
+    "invalidStrokesMessage": "As tacadas de ajuste devem ser um número positivo.",
+    "invalidCapTitle": "Limite inválido",
+    "invalidCapMessage": "O valor do limite deve estar entre 0 e 54."
+  },
+  "errors": {
+    "assignFailed": "Falha na atribuição",
+    "peerInviteFailed": "Falha no convite ao par",
+    "decisionFailed": "Falha na decisão",
+    "membersLoadFailed": "Não foi possível carregar os membros",
+    "couldNotOpen": "Não foi possível abrir o caso",
+    "notFound": "Caso não encontrado",
+    "couldNotLoad": "Não foi possível carregar o caso.",
+    "missingOrgContext": "Falta contexto da organização para este caso."
+  },
+  "memberPicker": {
+    "noMembers": "Nenhum membro elegível do comitê encontrado.",
+    "cancel": "Cancelar"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} de {{total}} abriram",
+    "badgeAccessibility": "{{opened}} de {{total}} revisores abriram o convite. Toque para ver os detalhes.",
+    "sheetTitle": "Status dos revisores pares",
+    "sheetSubtitle": "{{opened}} de {{total}} abriram o convite",
+    "openedHeading": "Aberto ({{count}})",
+    "notYetOpenedHeading": "Ainda não aberto ({{count}})",
+    "everyoneOpened": "Todos abriram o convite.",
+    "noneOpened": "Nenhum revisor abriu o convite ainda.",
+    "seenRelative": "Visto {{relative}}",
+    "invitedRelative": "Convidado {{relative}}",
+    "close": "Fechar"
+  },
+  "header": {
+    "caseNumber": "Caso #{{id}}",
+    "subtitle": "Análise do comitê de handicap",
+    "back": "Voltar"
+  },
+  "summary": {
+    "subject": "Assunto",
+    "period": "Período",
+    "details": "Detalhes",
+    "decision": "Decisão",
+    "openedAt": "Aberto em {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Respostas dos pares",
+    "headingWithCount": "Respostas dos pares ({{count}})",
+    "empty": "Ainda não há respostas dos pares.",
+    "recommendations": {
+      "confirm": "Confirmado",
+      "dispute": "Contestado",
+      "insufficient_info": "Informações insuficientes",
+      "responded": "Respondeu"
+    },
+    "reviewerFallback": "Avaliador",
+    "seenRelative": "Visto {{relative}}",
+    "notYetOpened": "Ainda não aberto",
+    "respondedAt": "Respondeu em {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Aguardando resposta ({{count}})",
+    "filters": {
+      "all": "Todos ({{count}})",
+      "openedUnresponded": "Aberto, sem resposta ({{count}})",
+      "unopened": "Ainda não aberto ({{count}})"
+    },
+    "empty": "Nenhum avaliador corresponde a este filtro.",
+    "invited": "Convidado em {{date}}",
+    "invitedWithSeen": "Convidado em {{invited}} · visto em {{seen}}"
+  },
+  "activity": {
+    "heading": "Atividade"
+  },
+  "common": {
+    "close": "Fechar"
+  },
+  "events": {
+    "opened": "Caso aberto",
+    "decided": "Decisão registrada",
+    "closed": "Caso encerrado",
+    "reopened": "Caso reaberto",
+    "peer_responded": "Resposta do par"
+  },
+  "relative": {
+    "past": {
+      "second_one": "há {{count}} segundo",
+      "second_other": "há {{count}} segundos",
+      "minute_one": "há {{count}} minuto",
+      "minute_other": "há {{count}} minutos",
+      "hour_one": "há {{count}} hora",
+      "hour_other": "há {{count}} horas",
+      "day_one": "há {{count}} dia",
+      "day_other": "há {{count}} dias",
+      "month_one": "há {{count}} mês",
+      "month_other": "há {{count}} meses",
+      "year_one": "há {{count}} ano",
+      "year_other": "há {{count}} anos"
+    },
+    "future": {
+      "second_one": "em {{count}} segundo",
+      "second_other": "em {{count}} segundos",
+      "minute_one": "em {{count}} minuto",
+      "minute_other": "em {{count}} minutos",
+      "hour_one": "em {{count}} hora",
+      "hour_other": "em {{count}} horas",
+      "day_one": "em {{count}} dia",
+      "day_other": "em {{count}} dias",
+      "month_one": "em {{count}} mês",
+      "month_other": "em {{count}} meses",
+      "year_one": "em {{count}} ano",
+      "year_other": "em {{count}} anos"
+    }
+  }
+}

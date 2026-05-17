@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "这个数据来自：",
+    "source_whs": "您实时的 WHS 差点",
+    "source_history": "您最近一次提交的成绩",
+    "source_profile": "您个人资料中的差点",
+    "fix_whs": "更新 WHS",
+    "fix_history": "提交新成绩",
+    "fix_profile": "编辑个人资料差点",
+    "fix_default": "添加差点",
+    "summary": "差点 {{handicap}}，来源：{{source}}。",
+    "summaryWithAsOf": "差点 {{handicap}}，来源：{{source}}（{{asOf}}）。",
+    "noneAuto": "尚未填写差点 — 我们正在使用默认对比。",
+    "nonePinned": "尚未填写差点。",
+    "asOfToday": "今天",
+    "asOfYesterday": "昨天",
+    "asOfDays": "{{count}} 天前",
+    "asOfMonth": "{{count}} 个月前",
+    "asOfMonths": "{{count}} 个月前",
+    "asOfYear": "{{count}} 年前",
+    "asOfYears": "{{count}} 年前"
+  }
+}

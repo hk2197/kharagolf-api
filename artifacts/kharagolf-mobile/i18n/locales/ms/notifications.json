@@ -1,0 +1,20 @@
+{
+  "title": "Pemberitahuan",
+  "subtitle": "Kemas kini jawatankuasa handikap & match-play",
+  "unreadBadge_one": "{{count}} baharu",
+  "unreadBadge_other": "{{count}} baharu",
+  "markAll": "Tandakan semua",
+  "markAllAccessibility": "Tandakan semua sebagai dibaca",
+  "markAllErrorTitle": "Tidak dapat menandakan semua sebagai dibaca",
+  "markAllErrorMessage": "Sila cuba lagi.",
+  "emptyTitle": "Tiada pemberitahuan",
+  "emptyText": "Apabila kes semakan handikap dibuka, diputuskan, atau perlawanan tie-break dicipta dalam rekod anda, ia akan dipaparkan di sini.",
+  "peerResponsesHeading": "Respons rakan baharu",
+  "peerResponsesUnread_one": "{{count}} belum dibaca",
+  "peerResponsesUnread_other": "{{count}} belum dibaca",
+  "peerResponsesHint": "Ketik untuk membuka kes yang terjejas dalam alat jawatankuasa.",
+  "tieBreakLabel": "Tie-break diperlukan",
+  "tieBreakFallbackSubject": "Tie-break liga round-robin diperlukan",
+  "matchSuffix": "Perlawanan #{{id}}",
+  "caseSuffix": "Kes #{{id}}"
+}

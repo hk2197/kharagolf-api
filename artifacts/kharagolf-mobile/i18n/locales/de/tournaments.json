@@ -1,0 +1,18 @@
+{
+  "tournaments": "Turniere",
+  "tournament": "Turnier",
+  "register": "Registrieren",
+  "registered": "Registriert",
+  "checkIn": "Einchecken",
+  "checkedIn": "Eingecheckt",
+  "leaderboard": "Rangliste",
+  "teeTimes": "Startzeiten",
+  "results": "Ergebnisse",
+  "round": "Runde",
+  "course": "Platz",
+  "entryFee": "Startgeld",
+  "format": "Format",
+  "startDate": "Startdatum",
+  "status": "Status",
+  "noTournaments": "Keine Turniere verfügbar"
+}

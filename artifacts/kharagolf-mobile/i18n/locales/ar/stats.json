@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "مصدر هذا الرقم:",
+    "source_whs": "إعاقتك المباشرة في WHS",
+    "source_history": "آخر جولة سجّلتها",
+    "source_profile": "إعاقتك في الملف الشخصي",
+    "fix_whs": "تحديث WHS",
+    "fix_history": "تسجيل جولة جديدة",
+    "fix_profile": "تعديل إعاقة الملف الشخصي",
+    "fix_default": "أضف إعاقتك",
+    "summary": "إعاقة {{handicap}} من {{source}}.",
+    "summaryWithAsOf": "إعاقة {{handicap}} من {{source}} ({{asOf}}).",
+    "noneAuto": "لا توجد إعاقة مسجّلة بعد — نستخدم مقارنة افتراضية.",
+    "nonePinned": "لا توجد إعاقة مسجّلة بعد.",
+    "asOfToday": "اليوم",
+    "asOfYesterday": "أمس",
+    "asOfDays": "قبل {{count}} يوم",
+    "asOfMonth": "قبل {{count}} شهر",
+    "asOfMonths": "قبل {{count}} أشهر",
+    "asOfYear": "قبل {{count}} سنة",
+    "asOfYears": "قبل {{count}} سنوات"
+  }
+}

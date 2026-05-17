@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Asal nombor ini:",
+    "source_whs": "handicap WHS langsung anda",
+    "source_history": "pusingan terkini yang anda hantar",
+    "source_profile": "handicap dalam profil anda",
+    "fix_whs": "Kemas kini WHS",
+    "fix_history": "Hantar pusingan baharu",
+    "fix_profile": "Edit handicap profil",
+    "fix_default": "Tambah handicap anda",
+    "summary": "Handicap {{handicap}} daripada {{source}}.",
+    "summaryWithAsOf": "Handicap {{handicap}} daripada {{source}} (sejak {{asOf}}).",
+    "noneAuto": "Belum ada handicap dalam fail — kami menggunakan perbandingan lalai.",
+    "nonePinned": "Belum ada handicap dalam fail.",
+    "asOfToday": "hari ini",
+    "asOfYesterday": "semalam",
+    "asOfDays": "{{count}} hari lalu",
+    "asOfMonth": "{{count}} bulan lalu",
+    "asOfMonths": "{{count}} bulan lalu",
+    "asOfYear": "{{count}} tahun lalu",
+    "asOfYears": "{{count}} tahun lalu"
+  }
+}

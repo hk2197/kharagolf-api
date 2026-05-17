@@ -1,0 +1,18 @@
+{
+  "tournaments": "トーナメント",
+  "tournament": "トーナメント",
+  "register": "登録",
+  "registered": "登録済み",
+  "checkIn": "チェックイン",
+  "checkedIn": "チェックイン済み",
+  "leaderboard": "リーダーボード",
+  "teeTimes": "ティータイム",
+  "results": "結果",
+  "round": "ラウンド",
+  "course": "コース",
+  "entryFee": "参加費",
+  "format": "形式",
+  "startDate": "開始日",
+  "status": "ステータス",
+  "noTournaments": "利用可能なトーナメントはありません"
+}

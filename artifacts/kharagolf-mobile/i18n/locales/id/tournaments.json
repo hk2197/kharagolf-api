@@ -1,0 +1,18 @@
+{
+  "tournaments": "Turnamen",
+  "tournament": "Turnamen",
+  "register": "Daftar",
+  "registered": "Terdaftar",
+  "checkIn": "Check-in",
+  "checkedIn": "Sudah Check-in",
+  "leaderboard": "Papan Peringkat",
+  "teeTimes": "Waktu Tee",
+  "results": "Hasil",
+  "round": "Putaran",
+  "course": "Lapangan",
+  "entryFee": "Biaya Masuk",
+  "format": "Format",
+  "startDate": "Tanggal Mulai",
+  "status": "Status",
+  "noTournaments": "Tidak ada turnamen tersedia"
+}

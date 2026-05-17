@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "分配",
+    "invitePeer": "邀请同行",
+    "recordDecision": "记录决定"
+  },
+  "assignModal": {
+    "title": "分配案件",
+    "subtitle": "选择一名委员会成员负责处理。",
+    "submit": "分配"
+  },
+  "peerModal": {
+    "title": "邀请同行评审员",
+    "subtitle": "他们将收到电子邮件和推送通知。",
+    "submit": "发送邀请"
+  },
+  "decideModal": {
+    "title": "记录决定",
+    "decisionLabel": "决定",
+    "rationaleLabel": "理由(必填)",
+    "rationalePlaceholder": "解释委员会的理由",
+    "strokesLabel": "调整杆数",
+    "strokesPlaceholder": "例如:1.0",
+    "capLabel": "上限值 (HI 0–54)",
+    "capPlaceholder": "例如:18.4",
+    "notesLabel": "备注(可选)",
+    "notesPlaceholder": "委员会内部备注",
+    "applyToPlayerTitle": "应用于球员",
+    "applyToPlayerHelp": "同时将得到的差点指数写入球员记录。",
+    "submit": "记录决定"
+  },
+  "decisions": {
+    "no_action": "不采取行动",
+    "soft_cap": "软上限",
+    "hard_cap": "硬上限",
+    "index_adjustment": "指数调整"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "需要理由",
+    "rationaleRequiredMessage": "请为此决定记录理由。",
+    "invalidStrokesTitle": "无效的杆数",
+    "invalidStrokesMessage": "调整杆数必须是正数。",
+    "invalidCapTitle": "无效的上限",
+    "invalidCapMessage": "上限值必须在0到54之间。"
+  },
+  "errors": {
+    "assignFailed": "分配失败",
+    "peerInviteFailed": "同行邀请失败",
+    "decisionFailed": "决定失败",
+    "membersLoadFailed": "无法加载成员",
+    "couldNotOpen": "无法打开案件",
+    "notFound": "未找到案件",
+    "couldNotLoad": "无法加载案件。",
+    "missingOrgContext": "此案件缺少组织上下文。"
+  },
+  "memberPicker": {
+    "noMembers": "未找到符合条件的委员会成员。",
+    "cancel": "取消"
+  },
+  "peerSummary": {
+    "badge": "{{total}} 人中已有 {{opened}} 人打开",
+    "badgeAccessibility": "{{total}} 名评审员中已有 {{opened}} 名打开邀请。点击查看详情。",
+    "sheetTitle": "同行评审员状态",
+    "sheetSubtitle": "{{total}} 人中已有 {{opened}} 人打开邀请",
+    "openedHeading": "已打开 ({{count}})",
+    "notYetOpenedHeading": "尚未打开 ({{count}})",
+    "everyoneOpened": "所有人都已打开邀请。",
+    "noneOpened": "还没有评审员打开邀请。",
+    "seenRelative": "已查看 {{relative}}",
+    "invitedRelative": "已邀请 {{relative}}",
+    "close": "关闭"
+  },
+  "header": {
+    "caseNumber": "案件 #{{id}}",
+    "subtitle": "差点委员会审核",
+    "back": "返回"
+  },
+  "summary": {
+    "subject": "对象",
+    "period": "期间",
+    "details": "详细信息",
+    "decision": "决定",
+    "openedAt": "于 {{date}} 开立"
+  },
+  "peerResponses": {
+    "heading": "同行回复",
+    "headingWithCount": "同行回复 ({{count}})",
+    "empty": "暂无同行回复。",
+    "recommendations": {
+      "confirm": "已确认",
+      "dispute": "有异议",
+      "insufficient_info": "信息不足",
+      "responded": "已回复"
+    },
+    "reviewerFallback": "审核者",
+    "seenRelative": "查看 {{relative}}",
+    "notYetOpened": "尚未打开",
+    "respondedAt": "{{date}} 回复"
+  },
+  "pendingPeer": {
+    "heading": "等待回复 ({{count}})",
+    "filters": {
+      "all": "全部 ({{count}})",
+      "openedUnresponded": "已打开,未回复 ({{count}})",
+      "unopened": "尚未打开 ({{count}})"
+    },
+    "empty": "没有审核者匹配此过滤器。",
+    "invited": "于 {{date}} 邀请",
+    "invitedWithSeen": "于 {{invited}} 邀请 · 于 {{seen}} 查看"
+  },
+  "activity": {
+    "heading": "活动"
+  },
+  "common": {
+    "close": "关闭"
+  },
+  "events": {
+    "opened": "案件已开启",
+    "decided": "已记录决定",
+    "closed": "案件已关闭",
+    "reopened": "案件已重新开启",
+    "peer_responded": "同伴回复"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}}秒前",
+      "second_other": "{{count}}秒前",
+      "minute_one": "{{count}}分钟前",
+      "minute_other": "{{count}}分钟前",
+      "hour_one": "{{count}}小时前",
+      "hour_other": "{{count}}小时前",
+      "day_one": "{{count}}天前",
+      "day_other": "{{count}}天前",
+      "month_one": "{{count}}个月前",
+      "month_other": "{{count}}个月前",
+      "year_one": "{{count}}年前",
+      "year_other": "{{count}}年前"
+    },
+    "future": {
+      "second_one": "{{count}}秒后",
+      "second_other": "{{count}}秒后",
+      "minute_one": "{{count}}分钟后",
+      "minute_other": "{{count}}分钟后",
+      "hour_one": "{{count}}小时后",
+      "hour_other": "{{count}}小时后",
+      "day_one": "{{count}}天后",
+      "day_other": "{{count}}天后",
+      "month_one": "{{count}}个月后",
+      "month_other": "{{count}}个月后",
+      "year_one": "{{count}}年后",
+      "year_other": "{{count}}年后"
+    }
+  }
+}

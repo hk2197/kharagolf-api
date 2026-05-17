@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "D'où ça vient :",
+    "source_whs": "votre handicap WHS en direct",
+    "source_history": "votre tour le plus récent publié",
+    "source_profile": "le handicap de votre profil",
+    "fix_whs": "Mettre à jour WHS",
+    "fix_history": "Publier un nouveau tour",
+    "fix_profile": "Modifier le handicap du profil",
+    "fix_default": "Ajouter votre handicap",
+    "summary": "Handicap de {{handicap}} d'après {{source}}.",
+    "summaryWithAsOf": "Handicap de {{handicap}} d'après {{source}} ({{asOf}}).",
+    "noneAuto": "Aucun handicap enregistré pour l'instant — nous utilisons une comparaison par défaut.",
+    "nonePinned": "Aucun handicap enregistré pour l'instant.",
+    "asOfToday": "aujourd'hui",
+    "asOfYesterday": "hier",
+    "asOfDays": "il y a {{count}} jours",
+    "asOfMonth": "il y a {{count}} mois",
+    "asOfMonths": "il y a {{count}} mois",
+    "asOfYear": "il y a {{count}} an",
+    "asOfYears": "il y a {{count}} ans"
+  }
+}

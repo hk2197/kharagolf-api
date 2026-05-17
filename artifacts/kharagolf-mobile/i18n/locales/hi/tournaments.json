@@ -1,0 +1,18 @@
+{
+  "tournaments": "टूर्नामेंट",
+  "tournament": "टूर्नामेंट",
+  "register": "पंजीकरण करें",
+  "registered": "पंजीकृत",
+  "checkIn": "चेक इन",
+  "checkedIn": "चेक इन किया",
+  "leaderboard": "लीडरबोर्ड",
+  "teeTimes": "टी टाइम",
+  "results": "परिणाम",
+  "round": "राउंड",
+  "course": "कोर्स",
+  "entryFee": "प्रवेश शुल्क",
+  "format": "प्रारूप",
+  "startDate": "शुरुआत की तारीख",
+  "status": "स्थिति",
+  "noTournaments": "कोई टूर्नामेंट उपलब्ध नहीं"
+}

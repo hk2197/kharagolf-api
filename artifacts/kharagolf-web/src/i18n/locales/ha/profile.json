@@ -1,0 +1,249 @@
+{
+  "myProfile": "Bayani Na",
+  "editProfile": "Gyara Bayani",
+  "cancel": "Soke",
+  "comingSoon": "Coming Soon",
+  "editProfileSoon": "Profile editing will be available soon.",
+  "changePasswordSoon": "Password change will be available soon.",
+  "displayName": "Sunan Nunawa",
+  "email": "Imel",
+  "phone": "Waya",
+  "handicapIndex": "Lissafin Nakasa",
+  "memberSince": "Memba Tun",
+  "languagePreference": "Yare",
+  "selectLanguage": "Zaɓi yare",
+  "changePhoto": "Canza Hoto",
+  "notifications": "Sanarwa",
+  "security": "Security & Privacy",
+  "changePassword": "Canza Kalmar Sirri",
+  "tournamentsPlayed": "Gasannin da aka Buga",
+  "bestRound": "Mafi Kyaun Zagaye",
+  "averageScore": "Matsakaicin Maki",
+  "logOut": "Fita",
+  "confirmLogout": "Shin tabbas kana son fita?",
+  "myTournaments": "Gasana Na",
+  "myLeagues": "Ƙungiyoyi Na",
+  "myScores": "Makin Na",
+  "profileUpdated": "An sabunta bayani",
+  "emailNotVerified": "Email not verified",
+  "worldHandicap": "Lissafin Nakasa na Duniya",
+  "fromLastRecord": "from last record",
+  "fullHistory": "Full History",
+  "statsLabels": {
+    "tournaments": "Gasar",
+    "avgStrokes": "Avg Strokes",
+    "bestRound": "Mafi Kyaun Zagaye",
+    "holesPlayed": "Holes Played"
+  },
+  "loyalty": {
+    "section": "Loyalty & Rewards",
+    "pointsBalance": "Points Balance",
+    "lifetimeEarned": "Lifetime Earned",
+    "thisYear": "This Year",
+    "availableRewards": "Available Rewards",
+    "pts": "pts",
+    "needMore": "Need {{count}} more"
+  },
+  "myGolf": {
+    "section": "My Golf",
+    "generalPlay": "Wasan Gaba ɗaya",
+    "generalPlaySub": "Post casual rounds & build handicap",
+    "teeBookings": "Keɓancewa na Tee",
+    "teeBookingsSub": "Book a tee time at your club",
+    "handicapProfile": "Handicap Profile",
+    "handicapProfileSub": "View your WHS Handicap Index history"
+  },
+  "locker": {
+    "section": "My Locker",
+    "renewalDate": "Renewal Date",
+    "annualFee": "Annual Fee",
+    "paymentComplete": "Payment complete",
+    "paymentPending": "Payment pending",
+    "expired": "Expired",
+    "daysLeft": "{{count}}d left",
+    "payRenewal": "Pay Renewal Fee",
+    "onWaitlist": "On Waitlist",
+    "notified": "Notified",
+    "joinWaitlist": "Join Waitlist",
+    "joining": "Joining…",
+    "noAssigned": "No locker assigned.",
+    "bay": "Bay {{number}}",
+    "lockerTitle": "Locker {{number}}",
+    "waitlistJoinedOn": "You joined the waitlist on {{date}}.",
+    "lockerAvailable": "A locker is available — contact the club.",
+    "willBeNotified": "You will be notified when a locker becomes available."
+  },
+  "invoices": {
+    "section": "My Invoices",
+    "payNow": "Pay Now",
+    "overdueSince": "Overdue since: ",
+    "due": "Due: ",
+    "paid": "Paid {{date}}",
+    "statuses": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled",
+      "void": "Void"
+    }
+  },
+  "repairs": {
+    "section": "My Club Repairs",
+    "readyForPickup": "Your clubs are ready!",
+    "technician": "Technician: {{name}}",
+    "expected": "Expected: {{date}}",
+    "status": {
+      "received": "Received",
+      "in_progress": "In Progress",
+      "ready_for_pickup": "Ready for Pickup",
+      "collected": "Collected"
+    },
+    "type": {
+      "regrip": "Regrip",
+      "reshaft": "Reshaft",
+      "loft_lie_adjustment": "Loft/Lie Adj.",
+      "cleaning": "Cleaning",
+      "other": "Other"
+    }
+  },
+  "fittingSessions": {
+    "section": "My Fitting Sessions",
+    "recommendedSpecs": "Recommended Specs",
+    "statuses": {
+      "booked": "Booked",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "notificationPreferences": "Notification Preferences",
+  "alwaysOn": "Always on",
+  "notifLabels": {
+    "email": "Email Notifications",
+    "emailDesc": "Receive tournament updates via email",
+    "push": "Push Notifications",
+    "pushDesc": "Receive real-time alerts",
+    "pushNeedApp": "Install app to enable push notifications",
+    "sms": "SMS Notifications",
+    "smsDesc": "Receive text reminders",
+    "whatsapp": "WhatsApp Notifications",
+    "whatsappDesc": "Receive updates via WhatsApp",
+    "noPhone": "No phone number on file"
+  },
+  "languageModal": {
+    "title": "Yare",
+    "description": "Choose your preferred display language.",
+    "rtlNote": "Right-to-left layout"
+  },
+  "scoringHistory": {
+    "section": "Scoring History",
+    "noHistory": "No tournament history yet",
+    "noHistoryDesc": "Register for a tournament and post scores",
+    "loadError": "Failed to load scoring history",
+    "retry": "Retry",
+    "format": "Format",
+    "handicap": "Nakasa",
+    "tee": "Tee",
+    "rounds": "Zagaye",
+    "noScores": "No scores posted yet",
+    "withdraw": "Withdraw from Tournament"
+  },
+  "withdraw": {
+    "title": "Withdraw from Tournament",
+    "cancel": "Soke",
+    "confirm": "Tabbatar",
+    "successWithRefund": "You have been withdrawn. A refund request has been raised.",
+    "success": "Successfully withdrawn.",
+    "message": "Are you sure you want to withdraw from \"{{name}}\"?"
+  },
+  "rankings": {
+    "section": "Rankings & Points",
+    "rankingSeries": "Ranking Series",
+    "ranked": "Ranked",
+    "pts": "pts",
+    "events": "Events",
+    "wins": "Wins",
+    "top3": "Top 3",
+    "eventHistory": "Event History",
+    "tournament": "Gasar"
+  },
+  "activeClub": {
+    "section": "Active Club"
+  },
+  "eventRoles": {
+    "section": "Event Roles",
+    "volunteering": "My Volunteering Assignments"
+  },
+  "account": {
+    "section": "Account",
+    "editProfile": "Gyara Bayani",
+    "languagePreference": "Yare",
+    "changePassword": "Canza Kalmar Sirri",
+    "signOut": "Fita"
+  },
+  "roundCard": {
+    "round": "Round {{n}}",
+    "holes_one": "{{count}} hole",
+    "holes_other": "{{count}} holes",
+    "strokes": "Bugawa"
+  },
+  "roundTable": {
+    "hole": "Rami",
+    "strokes": "Bugawa",
+    "putts": "Putt",
+    "fir": "FIR",
+    "gir": "GIR",
+    "total": "Jimila"
+  },
+  "photoOptions": {
+    "chooseLibrary": "Choose from Library",
+    "takePhoto": "Take Photo",
+    "chooseAvatar": "Choose Avatar",
+    "removePhoto": "Remove Photo",
+    "changeProfilePhoto": "Change Profile Photo",
+    "cancel": "Soke"
+  },
+  "tournaments": {
+    "statuses": {
+      "upcoming": "UPCOMING",
+      "active": "ACTIVE",
+      "completed": "COMPLETED",
+      "cancelled": "CANCELLED"
+    }
+  },
+  "errors": {
+    "failedLanguageSave": "Failed to save language preference",
+    "failedWithdraw": "Failed to withdraw from tournament",
+    "networkError": "Network error. Please try again.",
+    "photoUpdated": "Profile photo updated.",
+    "photoUploadFailed": "Failed to upload profile photo.",
+    "avatarSelectFailed": "Failed to select avatar.",
+    "avatarPickerDesc": "Pick a golf-themed avatar.",
+    "switchClubTitle": "Switch Club",
+    "photoRemoveFailed": "Failed to remove photo.",
+    "permissionDenied": "Permission denied",
+    "permissionLibrary": "Allow photo library access in Settings.",
+    "permissionCamera": "Allow camera access in Settings.",
+    "waitlistFailed": "Failed to join waitlist",
+    "success": "Nasara",
+    "error": "Kuskure"
+  },
+  "username": "Username",
+  "profilePicture": "Profile Picture",
+  "removePhoto": "Remove Photo",
+  "role": "Role",
+  "organization": "Organization",
+  "saveLanguage": "Ajiye Yare",
+  "currentPassword": "Current Password",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "passwordUpdated": "Password updated successfully",
+  "myStats": "My Statistics",
+  "walletPayoutNeedsReverify": {
+    "titleUpi": "Sake adana UPI ɗinka domin ci gaba da janyewar kuɗi",
+    "titleBank": "Sake adana asusun bankin ka domin ci gaba da janyewar kuɗi",
+    "body": "Sabuwar tantancewar mu ta yau da kullum game da bayanan biyan kuɗin da ka adana ba ta yi nasara ba, don haka an dakatar da janyewar kuɗi har sai ka sake adana su.",
+    "reason": "Dalili: {{reason}}",
+    "cta": "Sake adana asusu"
+  }
+}

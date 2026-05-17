@@ -1,0 +1,20 @@
+{
+  "title": "Benachrichtigungen",
+  "subtitle": "Aktualisierungen vom Handicap-Ausschuss und Match-Play",
+  "unreadBadge_one": "{{count}} neu",
+  "unreadBadge_other": "{{count}} neue",
+  "markAll": "Alle markieren",
+  "markAllAccessibility": "Alle als gelesen markieren",
+  "markAllErrorTitle": "Konnte nicht alle als gelesen markieren",
+  "markAllErrorMessage": "Bitte erneut versuchen.",
+  "emptyTitle": "Keine Benachrichtigungen",
+  "emptyText": "Wenn ein Handicap-Überprüfungsfall eröffnet, entschieden oder ein Stechen-Spiel in Ihrem Profil erstellt wird, erscheint es hier.",
+  "peerResponsesHeading": "Neue Peer-Antworten",
+  "peerResponsesUnread_one": "{{count}} ungelesen",
+  "peerResponsesUnread_other": "{{count}} ungelesene",
+  "peerResponsesHint": "Tippen Sie, um den betroffenen Fall in den Ausschuss-Tools zu öffnen.",
+  "tieBreakLabel": "Stechen erforderlich",
+  "tieBreakFallbackSubject": "Round-Robin-Stechen erforderlich",
+  "matchSuffix": "Spiel Nr. {{id}}",
+  "caseSuffix": "Fall Nr. {{id}}"
+}

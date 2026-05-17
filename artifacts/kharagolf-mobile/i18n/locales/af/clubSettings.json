@@ -1,0 +1,7 @@
+{
+  "title": "Klubinstellings",
+  "subtitleWithClub": "Adminkontroles vir {{club}}",
+  "subtitleNoClub": "Adminkontroles vir jou klub",
+  "notAvailableTitle": "Nie beskikbaar nie",
+  "notAvailableText": "Klubinstellings is slegs sigbaar vir klubadministrateurs en toernooidirekteure."
+}

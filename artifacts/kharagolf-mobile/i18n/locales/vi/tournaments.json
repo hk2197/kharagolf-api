@@ -1,0 +1,18 @@
+{
+  "tournaments": "Giải đấu",
+  "tournament": "Giải đấu",
+  "register": "Đăng ký",
+  "registered": "Đã đăng ký",
+  "checkIn": "Làm thủ tục",
+  "checkedIn": "Đã check in",
+  "leaderboard": "Bảng xếp hạng",
+  "teeTimes": "Giờ phát bóng",
+  "results": "Kết quả",
+  "round": "Vòng",
+  "course": "Sân",
+  "entryFee": "Phí tham dự",
+  "format": "Thể thức",
+  "startDate": "Ngày bắt đầu",
+  "status": "Trạng thái",
+  "noTournaments": "Không có giải đấu nào"
+}

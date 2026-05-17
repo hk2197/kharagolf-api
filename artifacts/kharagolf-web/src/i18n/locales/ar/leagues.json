@@ -1,0 +1,31 @@
+{
+  "leagues": "الدوريات",
+  "league": "الدوري",
+  "newLeague": "دوري جديد",
+  "createLeague": "إنشاء دوري",
+  "editLeague": "تعديل الدوري",
+  "leagueName": "اسم الدوري",
+  "leagueFormat": "التنسيق",
+  "seasonStart": "بداية الموسم",
+  "seasonEnd": "نهاية الموسم",
+  "entryFee": "رسوم الدخول",
+  "maxMembers": "الحد الأقصى للأعضاء",
+  "members": "الأعضاء",
+  "status": "الحالة",
+  "standings": "الترتيب",
+  "position": "المركز",
+  "points": "النقاط",
+  "rounds": "الجولات المشاركة",
+  "wins": "الفوز",
+  "draws": "التعادل",
+  "losses": "الخسارة",
+  "formats": {
+    "stableford": "ستابلفورد",
+    "stroke_play": "لعب الضربات",
+    "net_stroke": "الضربات الصافية",
+    "match_play": "لعب المباريات"
+  },
+  "noLeagues": "لم يتم العثور على دوريات",
+  "join": "الانضمام إلى الدوري",
+  "leave": "مغادرة الدوري"
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "Phuma",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "Amatumamente",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "Amarisidi we-side-game abhajiwe",
+    "summary": "{{exhausted}} aphelelwe yimizamo · {{skipped}} aweqiwe ngaphambi kokulethwa",
+    "truncation": " · kuboniswa okungu-{{shown}} kokungu-{{total}}",
+    "userFallback": "Umsebenzisi #{{id}}",
+    "rowDetails": "{{game}} · ukukhokhwa #{{settlementId}} · kukhokhwa ngu-{{payer}}",
+    "channelEmail": "I-imeyili",
+    "channelPush": "I-push",
+    "channelExhausted": "aphelile ({{count}})",
+    "channelSkipped": "kweqiwe",
+    "resendButton": "Faka kabusha ukulethwa",
+    "resending": "Kufakwa kabusha…",
+    "loadMore": "Layisha okwengeziwe (kusele okungu-{{remaining}})",
+    "loading": "Iyalayisha…",
+    "toast": {
+      "successTitle": "Irisidi ifakwe kabusha",
+      "successDescription": "Izozama futhi {{channels}} ekuphenduleni okulandelayo kwe-cron.",
+      "errorTitle": "Ayikwazanga ukufaka kabusha",
+      "channelEmail": "i-imeyili",
+      "channelPush": "i-push",
+      "channelDelivery": "ukulethwa",
+      "channelSeparator": " no-"
+    },
+    "statuses": {
+      "skipped": "kweqiwe",
+      "no_address": "akukho ikheli",
+      "opted_out": "uphumile",
+      "no_user": "akukho i-akhawunti yomsebenzisi",
+      "failed": "kuhlulekile",
+      "pending": "kulindile",
+      "queued": "kufakwe ku-queue",
+      "unknown": "akwaziwa"
+    }
+  }
+}

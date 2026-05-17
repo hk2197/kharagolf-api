@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "መድብ",
+    "invitePeer": "ባልደረባ ጋብዝ",
+    "recordDecision": "ውሳኔ መዝግብ"
+  },
+  "assignModal": {
+    "title": "ጉዳይ መድብ",
+    "subtitle": "ኃላፊነት የሚወስድ የኮሚቴ አባል ይምረጡ።",
+    "submit": "መድብ"
+  },
+  "peerModal": {
+    "title": "ባልደረባ ገምጋሚ ጋብዝ",
+    "subtitle": "ኢሜል እና የግፊት ማሳወቂያ ይደርሳቸዋል።",
+    "submit": "ግብዣ ላክ"
+  },
+  "decideModal": {
+    "title": "ውሳኔ መዝግብ",
+    "decisionLabel": "ውሳኔ",
+    "rationaleLabel": "ምክንያት (ያስፈልጋል)",
+    "rationalePlaceholder": "የኮሚቴውን ምክንያት ያስረዱ",
+    "strokesLabel": "የማስተካከያ ምቶች",
+    "strokesPlaceholder": "ለምሳሌ 1.0",
+    "capLabel": "የጣሪያ እሴት (HI 0–54)",
+    "capPlaceholder": "ለምሳሌ 18.4",
+    "notesLabel": "ማስታወሻዎች (አማራጭ)",
+    "notesPlaceholder": "የኮሚቴ ውስጣዊ ማስታወሻዎች",
+    "applyToPlayerTitle": "ለተጫዋች ተግብር",
+    "applyToPlayerHelp": "የተገኘውን የሐንዲካፕ መረጃ ጠቋሚ በተጫዋቹ መዝገብ ላይም ይፃፉ።",
+    "submit": "ውሳኔ መዝግብ"
+  },
+  "decisions": {
+    "no_action": "ምንም እርምጃ የለም",
+    "soft_cap": "ለስላሳ ጣሪያ",
+    "hard_cap": "ጠንካራ ጣሪያ",
+    "index_adjustment": "የመረጃ ጠቋሚ ማስተካከያ"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "ምክንያት ያስፈልጋል",
+    "rationaleRequiredMessage": "እባክዎ ለዚህ ውሳኔ ምክንያት ይመዝግቡ።",
+    "invalidStrokesTitle": "ልክ ያልሆኑ ምቶች",
+    "invalidStrokesMessage": "የማስተካከያ ምቶች አዎንታዊ ቁጥር መሆን አለባቸው።",
+    "invalidCapTitle": "ልክ ያልሆነ ጣሪያ",
+    "invalidCapMessage": "የጣሪያ እሴት ከ0 እና 54 መካከል መሆን አለበት።"
+  },
+  "errors": {
+    "assignFailed": "መመደብ አልተሳካም",
+    "peerInviteFailed": "ባልደረባ ግብዣ አልተሳካም",
+    "decisionFailed": "ውሳኔ አልተሳካም",
+    "membersLoadFailed": "አባላትን መጫን አልተቻለም",
+    "couldNotOpen": "ጉዳዩን መክፈት አልተቻለም",
+    "notFound": "ጉዳዩ አልተገኘም",
+    "couldNotLoad": "ጉዳዩን መጫን አልተቻለም።",
+    "missingOrgContext": "ለዚህ ጉዳይ የድርጅት አውድ የለም።"
+  },
+  "memberPicker": {
+    "noMembers": "ብቁ የኮሚቴ አባላት አልተገኙም።",
+    "cancel": "ሰርዝ"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} ከ{{total}} ከፍተዋል",
+    "badgeAccessibility": "{{opened}} ከ{{total}} ገምጋሚዎች ግብዣውን ከፍተዋል። ዝርዝሮችን ለማየት ይንኩ።",
+    "sheetTitle": "የእኩያ ገምጋሚ ሁኔታ",
+    "sheetSubtitle": "{{opened}} ከ{{total}} ግብዣውን ከፍተዋል",
+    "openedHeading": "ተከፍቷል ({{count}})",
+    "notYetOpenedHeading": "እስካሁን አልተከፈተም ({{count}})",
+    "everyoneOpened": "ሁሉም ሰው ግብዣውን ከፍቷል።",
+    "noneOpened": "እስካሁን ምንም ገምጋሚ ግብዣውን አልከፈተም።",
+    "seenRelative": "ታይቷል {{relative}}",
+    "invitedRelative": "ተጋብዟል {{relative}}",
+    "close": "ዝጋ"
+  },
+  "header": {
+    "caseNumber": "ጉዳይ #{{id}}",
+    "subtitle": "የሐንዲካፕ ኮሚቴ ግምገማ",
+    "back": "ተመለስ"
+  },
+  "summary": {
+    "subject": "ርዕሰ ጉዳይ",
+    "period": "ጊዜ",
+    "details": "ዝርዝሮች",
+    "decision": "ውሳኔ",
+    "openedAt": "{{date}} ተከፈተ"
+  },
+  "peerResponses": {
+    "heading": "የእኩዮች ምላሽ",
+    "headingWithCount": "የእኩዮች ምላሽ ({{count}})",
+    "empty": "ገና የእኩዮች ምላሽ የለም።",
+    "recommendations": {
+      "confirm": "ተረጋግጧል",
+      "dispute": "የተከራከረ",
+      "insufficient_info": "በቂ ያልሆነ መረጃ",
+      "responded": "መልስ ሰጥቷል"
+    },
+    "reviewerFallback": "ገምጋሚ",
+    "seenRelative": "ታይቷል {{relative}}",
+    "notYetOpened": "ገና አልተከፈተም",
+    "respondedAt": "{{date}} መልስ ሰጥቷል"
+  },
+  "pendingPeer": {
+    "heading": "ምላሽ በመጠበቅ ላይ ({{count}})",
+    "filters": {
+      "all": "ሁሉም ({{count}})",
+      "openedUnresponded": "ተከፍቷል፣ ምላሽ የለም ({{count}})",
+      "unopened": "ገና አልተከፈተም ({{count}})"
+    },
+    "empty": "ከዚህ ማጣሪያ ጋር የሚዛመድ ገምጋሚ የለም።",
+    "invited": "{{date}} ተጋብዟል",
+    "invitedWithSeen": "{{invited}} ተጋብዟል · {{seen}} ታይቷል"
+  },
+  "activity": {
+    "heading": "እንቅስቃሴ"
+  },
+  "common": {
+    "close": "ዝጋ"
+  },
+  "events": {
+    "opened": "ጉዳይ ተከፍቷል",
+    "decided": "ውሳኔ ተመዝግቧል",
+    "closed": "ጉዳይ ተዘግቷል",
+    "reopened": "ጉዳይ እንደገና ተከፍቷል",
+    "peer_responded": "የእኩል ምላሽ"
+  },
+  "relative": {
+    "past": {
+      "second_one": "ከ{{count}} ሰከንድ በፊት",
+      "second_other": "ከ{{count}} ሰከንድ በፊት",
+      "minute_one": "ከ{{count}} ደቂቃ በፊት",
+      "minute_other": "ከ{{count}} ደቂቃ በፊት",
+      "hour_one": "ከ{{count}} ሰዓት በፊት",
+      "hour_other": "ከ{{count}} ሰዓት በፊት",
+      "day_one": "ከ{{count}} ቀን በፊት",
+      "day_other": "ከ{{count}} ቀን በፊት",
+      "month_one": "ከ{{count}} ወር በፊት",
+      "month_other": "ከ{{count}} ወር በፊት",
+      "year_one": "ከ{{count}} ዓመት በፊት",
+      "year_other": "ከ{{count}} ዓመት በፊት"
+    },
+    "future": {
+      "second_one": "በ{{count}} ሰከንድ ውስጥ",
+      "second_other": "በ{{count}} ሰከንድ ውስጥ",
+      "minute_one": "በ{{count}} ደቂቃ ውስጥ",
+      "minute_other": "በ{{count}} ደቂቃ ውስጥ",
+      "hour_one": "በ{{count}} ሰዓት ውስጥ",
+      "hour_other": "በ{{count}} ሰዓት ውስጥ",
+      "day_one": "በ{{count}} ቀን ውስጥ",
+      "day_other": "በ{{count}} ቀን ውስጥ",
+      "month_one": "በ{{count}} ወር ውስጥ",
+      "month_other": "በ{{count}} ወር ውስጥ",
+      "year_one": "በ{{count}} ዓመት ውስጥ",
+      "year_other": "በ{{count}} ዓመት ውስጥ"
+    }
+  }
+}

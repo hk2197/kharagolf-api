@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Asal angka ini:",
+    "source_whs": "handicap WHS langsung Anda",
+    "source_history": "ronde terbaru yang Anda kirim",
+    "source_profile": "handicap di profil Anda",
+    "fix_whs": "Perbarui WHS",
+    "fix_history": "Kirim ronde baru",
+    "fix_profile": "Edit handicap profil",
+    "fix_default": "Tambahkan handicap Anda",
+    "summary": "Handicap {{handicap}} dari {{source}}.",
+    "summaryWithAsOf": "Handicap {{handicap}} dari {{source}} (per {{asOf}}).",
+    "noneAuto": "Belum ada handicap tersimpan — kami memakai perbandingan default.",
+    "nonePinned": "Belum ada handicap tersimpan.",
+    "asOfToday": "hari ini",
+    "asOfYesterday": "kemarin",
+    "asOfDays": "{{count}} hari yang lalu",
+    "asOfMonth": "{{count}} bulan yang lalu",
+    "asOfMonths": "{{count}} bulan yang lalu",
+    "asOfYear": "{{count}} tahun yang lalu",
+    "asOfYears": "{{count}} tahun yang lalu"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "title": "클럽 설정",
+  "subtitleWithClub": "{{club}}의 관리자 제어",
+  "subtitleNoClub": "내 클럽의 관리자 제어",
+  "notAvailableTitle": "사용할 수 없음",
+  "notAvailableText": "클럽 설정은 클럽 관리자와 토너먼트 디렉터에게만 표시됩니다."
+}

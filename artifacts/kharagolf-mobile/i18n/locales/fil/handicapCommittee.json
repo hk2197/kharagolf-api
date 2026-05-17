@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Italaga",
+    "invitePeer": "Mag-imbita ng kasamahan",
+    "recordDecision": "Itala ang desisyon"
+  },
+  "assignModal": {
+    "title": "Italaga ang kaso",
+    "subtitle": "Pumili ng miyembro ng komite na mangangasiwa.",
+    "submit": "Italaga"
+  },
+  "peerModal": {
+    "title": "Mag-imbita ng peer reviewer",
+    "subtitle": "Makakatanggap sila ng email at push notification.",
+    "submit": "Ipadala ang imbitasyon"
+  },
+  "decideModal": {
+    "title": "Itala ang desisyon",
+    "decisionLabel": "Desisyon",
+    "rationaleLabel": "Katwiran (kailangan)",
+    "rationalePlaceholder": "Ipaliwanag ang katwiran ng komite",
+    "strokesLabel": "Strokes ng pag-aayos",
+    "strokesPlaceholder": "hal. 1.0",
+    "capLabel": "Halaga ng cap (HI 0–54)",
+    "capPlaceholder": "hal. 18.4",
+    "notesLabel": "Tala (opsyonal)",
+    "notesPlaceholder": "Panloob na tala ng komite",
+    "applyToPlayerTitle": "Ilapat sa manlalaro",
+    "applyToPlayerHelp": "Isulat din ang resultang Handicap Index sa rekord ng manlalaro.",
+    "submit": "Itala ang desisyon"
+  },
+  "decisions": {
+    "no_action": "Walang aksyon",
+    "soft_cap": "Malambot na cap",
+    "hard_cap": "Mahigpit na cap",
+    "index_adjustment": "Pag-aayos ng indeks"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Kailangan ng katwiran",
+    "rationaleRequiredMessage": "Mangyaring magtala ng katwiran para sa desisyong ito.",
+    "invalidStrokesTitle": "Hindi wastong strokes",
+    "invalidStrokesMessage": "Ang strokes ng pag-aayos ay dapat positibong numero.",
+    "invalidCapTitle": "Hindi wastong cap",
+    "invalidCapMessage": "Ang halaga ng cap ay dapat nasa pagitan ng 0 at 54."
+  },
+  "errors": {
+    "assignFailed": "Nabigo ang pagtatalaga",
+    "peerInviteFailed": "Nabigo ang imbitasyon sa kasamahan",
+    "decisionFailed": "Nabigo ang desisyon",
+    "membersLoadFailed": "Hindi mai-load ang mga miyembro",
+    "couldNotOpen": "Hindi mabuksan ang kaso",
+    "notFound": "Hindi nakita ang kaso",
+    "couldNotLoad": "Hindi ma-load ang kaso.",
+    "missingOrgContext": "Walang konteksto ng organisasyon para sa kasong ito."
+  },
+  "memberPicker": {
+    "noMembers": "Walang nahanap na karapat-dapat na miyembro ng komite.",
+    "cancel": "Kanselahin"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} sa {{total}} ang nagbukas",
+    "badgeAccessibility": "{{opened}} sa {{total}} na tagasuri ang nagbukas ng imbitasyon. I-tap para makita ang mga detalye.",
+    "sheetTitle": "Katayuan ng peer reviewer",
+    "sheetSubtitle": "{{opened}} sa {{total}} ang nagbukas ng imbitasyon",
+    "openedHeading": "Nabuksan ({{count}})",
+    "notYetOpenedHeading": "Hindi pa nabuksan ({{count}})",
+    "everyoneOpened": "Nabuksan na ng lahat ang imbitasyon.",
+    "noneOpened": "Wala pang tagasuri na nagbukas ng imbitasyon.",
+    "seenRelative": "Nakita {{relative}}",
+    "invitedRelative": "Inimbitahan {{relative}}",
+    "close": "Isara"
+  },
+  "header": {
+    "caseNumber": "Kaso #{{id}}",
+    "subtitle": "Pagsusuri ng komite ng handicap",
+    "back": "Bumalik"
+  },
+  "summary": {
+    "subject": "Paksa",
+    "period": "Panahon",
+    "details": "Mga detalye",
+    "decision": "Desisyon",
+    "openedAt": "Binuksan {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Mga sagot ng kapwa",
+    "headingWithCount": "Mga sagot ng kapwa ({{count}})",
+    "empty": "Wala pang sagot mula sa kapwa.",
+    "recommendations": {
+      "confirm": "Kumpirmado",
+      "dispute": "Pinagtatalunan",
+      "insufficient_info": "Kulang na impormasyon",
+      "responded": "Sumagot"
+    },
+    "reviewerFallback": "Tagasuri",
+    "seenRelative": "Nakita {{relative}}",
+    "notYetOpened": "Hindi pa nabuksan",
+    "respondedAt": "Sumagot {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Naghihintay ng sagot ({{count}})",
+    "filters": {
+      "all": "Lahat ({{count}})",
+      "openedUnresponded": "Binuksan, walang sagot ({{count}})",
+      "unopened": "Hindi pa nabuksan ({{count}})"
+    },
+    "empty": "Walang tagasuri na tumutugma sa filter na ito.",
+    "invited": "Inimbitahan {{date}}",
+    "invitedWithSeen": "Inimbitahan {{invited}} · nakita {{seen}}"
+  },
+  "activity": {
+    "heading": "Aktibidad"
+  },
+  "common": {
+    "close": "Isara"
+  },
+  "events": {
+    "opened": "Binuksang kaso",
+    "decided": "Naitala ang desisyon",
+    "closed": "Sarado ang kaso",
+    "reopened": "Muling binuksan ang kaso",
+    "peer_responded": "Tugon ng kasamahan"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}} segundo na ang nakalipas",
+      "second_other": "segundo {{count}} na ang nakalipas",
+      "minute_one": "{{count}} minuto na ang nakalipas",
+      "minute_other": "minuto {{count}} na ang nakalipas",
+      "hour_one": "{{count}} oras na ang nakalipas",
+      "hour_other": "oras {{count}} na ang nakalipas",
+      "day_one": "{{count}} araw na ang nakalipas",
+      "day_other": "araw {{count}} na ang nakalipas",
+      "month_one": "{{count}} buwan na ang nakalipas",
+      "month_other": "buwan {{count}} na ang nakalipas",
+      "year_one": "{{count}} taon na ang nakalipas",
+      "year_other": "taon {{count}} na ang nakalipas"
+    },
+    "future": {
+      "second_one": "sa loob ng {{count}} segundo",
+      "second_other": "sa loob ng {{count}} segundo",
+      "minute_one": "sa loob ng {{count}} minuto",
+      "minute_other": "sa loob ng {{count}} minuto",
+      "hour_one": "sa loob ng {{count}} oras",
+      "hour_other": "sa loob ng {{count}} oras",
+      "day_one": "sa loob ng {{count}} araw",
+      "day_other": "sa loob ng {{count}} araw",
+      "month_one": "sa loob ng {{count}} buwan",
+      "month_other": "sa loob ng {{count}} buwan",
+      "year_one": "sa loob ng {{count}} taon",
+      "year_other": "sa loob ng {{count}} taon"
+    }
+  }
+}

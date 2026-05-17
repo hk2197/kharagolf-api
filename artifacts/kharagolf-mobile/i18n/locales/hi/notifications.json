@@ -1,0 +1,20 @@
+{
+  "title": "सूचनाएं",
+  "subtitle": "हैंडीकैप समिति और मैच-प्ले अपडेट",
+  "unreadBadge_one": "{{count}} नया",
+  "unreadBadge_other": "{{count}} नए",
+  "markAll": "सभी पढ़ा",
+  "markAllAccessibility": "सभी को पढ़ा हुआ चिह्नित करें",
+  "markAllErrorTitle": "सभी को पढ़ा हुआ चिह्नित नहीं किया जा सका",
+  "markAllErrorMessage": "कृपया पुनः प्रयास करें।",
+  "emptyTitle": "कोई सूचना नहीं",
+  "emptyText": "जब आपके रिकॉर्ड पर कोई हैंडीकैप समीक्षा केस खोला, तय किया, या टाई-ब्रेक मैच बनाया जाएगा, तो वह यहां दिखेगा।",
+  "peerResponsesHeading": "नई सहकर्मी प्रतिक्रियाएं",
+  "peerResponsesUnread_one": "{{count}} अपठित",
+  "peerResponsesUnread_other": "{{count}} अपठित",
+  "peerResponsesHint": "समिति टूल में प्रभावित केस खोलने के लिए टैप करें।",
+  "tieBreakLabel": "टाई-ब्रेक आवश्यक",
+  "tieBreakFallbackSubject": "राउंड-रॉबिन टाई-ब्रेक आवश्यक",
+  "matchSuffix": "मैच #{{id}}",
+  "caseSuffix": "केस #{{id}}"
+}

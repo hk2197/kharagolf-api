@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "Sair",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "Torneios",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "Recibos de side-game travados",
+    "summary": "{{exhausted}} com tentativas esgotadas · {{skipped}} ignorados antes do envio",
+    "truncation": " · exibindo {{shown}} de {{total}}",
+    "userFallback": "Usuário n.º {{id}}",
+    "rowDetails": "{{game}} · liquidação n.º {{settlementId}} · pago por {{payer}}",
+    "channelEmail": "E-mail",
+    "channelPush": "Push",
+    "channelExhausted": "esgotadas ({{count}})",
+    "channelSkipped": "ignorados",
+    "resendButton": "Reenfileirar entrega",
+    "resending": "Reenfileirando…",
+    "loadMore": "Carregar mais ({{remaining}} restantes)",
+    "loading": "Carregando…",
+    "toast": {
+      "successTitle": "Recibo reenfileirado",
+      "successDescription": "Tentará novamente {{channels}} no próximo ciclo do cron.",
+      "errorTitle": "Não foi possível reenfileirar",
+      "channelEmail": "e-mail",
+      "channelPush": "push",
+      "channelDelivery": "entrega",
+      "channelSeparator": " e "
+    },
+    "statuses": {
+      "skipped": "ignorado",
+      "no_address": "sem endereço cadastrado",
+      "opted_out": "cancelou inscrição",
+      "no_user": "sem conta de usuário",
+      "failed": "falhou",
+      "pending": "pendente",
+      "queued": "na fila",
+      "unknown": "desconhecido"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Thông báo",
+  "subtitle": "Cập nhật từ ủy ban handicap & đấu loại trực tiếp",
+  "unreadBadge_one": "{{count}} mới",
+  "unreadBadge_other": "{{count}} mới",
+  "markAll": "Đánh dấu tất cả",
+  "markAllAccessibility": "Đánh dấu tất cả là đã đọc",
+  "markAllErrorTitle": "Không thể đánh dấu tất cả là đã đọc",
+  "markAllErrorMessage": "Vui lòng thử lại.",
+  "emptyTitle": "Không có thông báo",
+  "emptyText": "Khi một hồ sơ xem xét handicap được mở, được quyết định, hoặc một trận đấu phân định thắng được tạo trên hồ sơ của bạn, nó sẽ xuất hiện ở đây.",
+  "peerResponsesHeading": "Phản hồi mới của đồng nghiệp",
+  "peerResponsesUnread_one": "{{count}} chưa đọc",
+  "peerResponsesUnread_other": "{{count}} chưa đọc",
+  "peerResponsesHint": "Chạm để mở hồ sơ liên quan trong công cụ ủy ban.",
+  "tieBreakLabel": "Cần trận phân định thắng",
+  "tieBreakFallbackSubject": "Cần trận phân định thắng vòng tròn",
+  "matchSuffix": "Trận #{{id}}",
+  "caseSuffix": "Hồ sơ #{{id}}"
+}

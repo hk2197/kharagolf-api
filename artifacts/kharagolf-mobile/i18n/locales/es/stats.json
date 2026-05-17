@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "De dónde sale esto:",
+    "source_whs": "tu hándicap WHS en vivo",
+    "source_history": "tu vuelta más reciente publicada",
+    "source_profile": "el hándicap de tu perfil",
+    "fix_whs": "Actualizar WHS",
+    "fix_history": "Registrar una vuelta",
+    "fix_profile": "Editar hándicap del perfil",
+    "fix_default": "Añade tu hándicap",
+    "summary": "Hándicap {{handicap}} desde {{source}}.",
+    "summaryWithAsOf": "Hándicap {{handicap}} desde {{source}} ({{asOf}}).",
+    "noneAuto": "Aún no hay hándicap registrado: estamos usando una comparación predeterminada.",
+    "nonePinned": "Aún no hay hándicap registrado.",
+    "asOfToday": "hoy",
+    "asOfYesterday": "ayer",
+    "asOfDays": "hace {{count}} días",
+    "asOfMonth": "hace {{count}} mes",
+    "asOfMonths": "hace {{count}} meses",
+    "asOfYear": "hace {{count}} año",
+    "asOfYears": "hace {{count}} años"
+  }
+}

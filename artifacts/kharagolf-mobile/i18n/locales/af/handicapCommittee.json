@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Wys toe",
+    "invitePeer": "Nooi eweknie",
+    "recordDecision": "Teken besluit aan"
+  },
+  "assignModal": {
+    "title": "Wys saak toe",
+    "subtitle": "Kies 'n komiteelid om eienaarskap te neem.",
+    "submit": "Wys toe"
+  },
+  "peerModal": {
+    "title": "Nooi eweknie-resensent",
+    "subtitle": "Hulle sal 'n e-pos en stootkennisgewing ontvang.",
+    "submit": "Stuur uitnodiging"
+  },
+  "decideModal": {
+    "title": "Teken besluit aan",
+    "decisionLabel": "Besluit",
+    "rationaleLabel": "Rasionaal (vereis)",
+    "rationalePlaceholder": "Verduidelik die komitee se redenasie",
+    "strokesLabel": "Aanpassingshale",
+    "strokesPlaceholder": "bv. 1.0",
+    "capLabel": "Plafonwaarde (HI 0–54)",
+    "capPlaceholder": "bv. 18.4",
+    "notesLabel": "Notas (opsioneel)",
+    "notesPlaceholder": "Interne komitee-notas",
+    "applyToPlayerTitle": "Pas toe op speler",
+    "applyToPlayerHelp": "Skryf ook die voortspruitende Handikap-indeks na die speler se rekord.",
+    "submit": "Teken besluit aan"
+  },
+  "decisions": {
+    "no_action": "Geen aksie",
+    "soft_cap": "Sagte plafon",
+    "hard_cap": "Harde plafon",
+    "index_adjustment": "Indeks-aanpassing"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Rasionaal vereis",
+    "rationaleRequiredMessage": "Teken asseblief 'n rasionaal vir hierdie besluit aan.",
+    "invalidStrokesTitle": "Ongeldige hale",
+    "invalidStrokesMessage": "Aanpassingshale moet 'n positiewe getal wees.",
+    "invalidCapTitle": "Ongeldige plafon",
+    "invalidCapMessage": "Plafonwaarde moet tussen 0 en 54 wees."
+  },
+  "errors": {
+    "assignFailed": "Toewysing het misluk",
+    "peerInviteFailed": "Eweknie-uitnodiging het misluk",
+    "decisionFailed": "Besluit het misluk",
+    "membersLoadFailed": "Kon nie lede laai nie",
+    "couldNotOpen": "Kon nie saak oopmaak nie",
+    "notFound": "Saak nie gevind nie",
+    "couldNotLoad": "Kon nie saak laai nie.",
+    "missingOrgContext": "Organisasie-konteks ontbreek vir hierdie saak."
+  },
+  "memberPicker": {
+    "noMembers": "Geen geskikte komiteelede gevind nie.",
+    "cancel": "Kanselleer"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} van {{total}} oopgemaak",
+    "badgeAccessibility": "{{opened}} van {{total}} resensente het die uitnodiging oopgemaak. Tik om besonderhede te sien.",
+    "sheetTitle": "Eweknie-resensent status",
+    "sheetSubtitle": "{{opened}} van {{total}} het die uitnodiging oopgemaak",
+    "openedHeading": "Oopgemaak ({{count}})",
+    "notYetOpenedHeading": "Nog nie oopgemaak nie ({{count}})",
+    "everyoneOpened": "Almal het die uitnodiging oopgemaak.",
+    "noneOpened": "Geen resensent het die uitnodiging nog oopgemaak nie.",
+    "seenRelative": "Gesien {{relative}}",
+    "invitedRelative": "Genooi {{relative}}",
+    "close": "Maak toe"
+  },
+  "header": {
+    "caseNumber": "Saak #{{id}}",
+    "subtitle": "Handicap-komitee hersiening",
+    "back": "Terug"
+  },
+  "summary": {
+    "subject": "Onderwerp",
+    "period": "Tydperk",
+    "details": "Besonderhede",
+    "decision": "Besluit",
+    "openedAt": "Geopen {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Eweknie-antwoorde",
+    "headingWithCount": "Eweknie-antwoorde ({{count}})",
+    "empty": "Nog geen eweknie-antwoorde nie.",
+    "recommendations": {
+      "confirm": "Bevestig",
+      "dispute": "Betwis",
+      "insufficient_info": "Onvoldoende inligting",
+      "responded": "Geantwoord"
+    },
+    "reviewerFallback": "Beoordelaar",
+    "seenRelative": "Gesien {{relative}}",
+    "notYetOpened": "Nog nie oopgemaak nie",
+    "respondedAt": "Geantwoord {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Wag op antwoord ({{count}})",
+    "filters": {
+      "all": "Alles ({{count}})",
+      "openedUnresponded": "Oopgemaak, geen antwoord ({{count}})",
+      "unopened": "Nog nie oopgemaak nie ({{count}})"
+    },
+    "empty": "Geen beoordelaars stem ooreen met hierdie filter nie.",
+    "invited": "Genooi {{date}}",
+    "invitedWithSeen": "Genooi {{invited}} · gesien {{seen}}"
+  },
+  "activity": {
+    "heading": "Aktiwiteit"
+  },
+  "common": {
+    "close": "Maak toe"
+  },
+  "events": {
+    "opened": "Saak geopen",
+    "decided": "Besluit aangeteken",
+    "closed": "Saak gesluit",
+    "reopened": "Saak heropen",
+    "peer_responded": "Eweknieë antwoord"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}} sekonde gelede",
+      "second_other": "{{count}} sekondes gelede",
+      "minute_one": "{{count}} minuut gelede",
+      "minute_other": "{{count}} minute gelede",
+      "hour_one": "{{count}} uur gelede",
+      "hour_other": "{{count}} uur gelede",
+      "day_one": "{{count}} dag gelede",
+      "day_other": "{{count}} dae gelede",
+      "month_one": "{{count}} maand gelede",
+      "month_other": "{{count}} maande gelede",
+      "year_one": "{{count}} jaar gelede",
+      "year_other": "{{count}} jaar gelede"
+    },
+    "future": {
+      "second_one": "oor {{count}} sekonde",
+      "second_other": "oor {{count}} sekondes",
+      "minute_one": "oor {{count}} minuut",
+      "minute_other": "oor {{count}} minute",
+      "hour_one": "oor {{count}} uur",
+      "hour_other": "oor {{count}} uur",
+      "day_one": "oor {{count}} dag",
+      "day_other": "oor {{count}} dae",
+      "month_one": "oor {{count}} maand",
+      "month_other": "oor {{count}} maande",
+      "year_one": "oor {{count}} jaar",
+      "year_other": "oor {{count}} jaar"
+    }
+  }
+}

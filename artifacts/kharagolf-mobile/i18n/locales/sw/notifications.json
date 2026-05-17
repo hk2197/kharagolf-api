@@ -1,0 +1,20 @@
+{
+  "title": "Arifa",
+  "subtitle": "Sasisho la kamati ya handicap na mechi za moja kwa moja",
+  "unreadBadge_one": "{{count}} mpya",
+  "unreadBadge_other": "{{count}} mpya",
+  "markAll": "Weka alama zote",
+  "markAllAccessibility": "Weka zote kama zimesomwa",
+  "markAllErrorTitle": "Imeshindwa kuweka zote kama zimesomwa",
+  "markAllErrorMessage": "Tafadhali jaribu tena.",
+  "emptyTitle": "Hakuna arifa",
+  "emptyText": "Wakati kesi ya ukaguzi wa handicap inafunguliwa, kuamuliwa, au mechi ya kuvunja sare inaundwa kwenye rekodi yako, itaonekana hapa.",
+  "peerResponsesHeading": "Majibu mapya ya wenzako",
+  "peerResponsesUnread_one": "{{count}} hazijasomwa",
+  "peerResponsesUnread_other": "{{count}} hazijasomwa",
+  "peerResponsesHint": "Gusa kufungua kesi inayohusika katika zana za kamati.",
+  "tieBreakLabel": "Mechi ya kuvunja sare inahitajika",
+  "tieBreakFallbackSubject": "Mechi ya kuvunja sare ya raundi-zungukwa inahitajika",
+  "matchSuffix": "Mechi #{{id}}",
+  "caseSuffix": "Kesi #{{id}}"
+}

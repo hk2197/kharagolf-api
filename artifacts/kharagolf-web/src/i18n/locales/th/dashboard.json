@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "ออกจากระบบ",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "ทัวร์นาเมนต์",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "ใบเสร็จเกมเสริมที่ติดค้าง",
+    "summary": "{{exhausted}} รายการพยายามใหม่จนหมด · {{skipped}} รายการข้ามก่อนส่ง",
+    "truncation": " · แสดง {{shown}} จาก {{total}}",
+    "userFallback": "ผู้ใช้ #{{id}}",
+    "rowDetails": "{{game}} · การชำระบัญชี #{{settlementId}} · จ่ายโดย {{payer}}",
+    "channelEmail": "อีเมล",
+    "channelPush": "พุช",
+    "channelExhausted": "หมดความพยายาม ({{count}})",
+    "channelSkipped": "ข้าม",
+    "resendButton": "จัดคิวการส่งใหม่",
+    "resending": "กำลังจัดคิว…",
+    "loadMore": "โหลดเพิ่ม (เหลือ {{remaining}})",
+    "loading": "กำลังโหลด…",
+    "toast": {
+      "successTitle": "จัดคิวใบเสร็จใหม่แล้ว",
+      "successDescription": "จะลองส่ง {{channels}} อีกครั้งในรอบ cron ถัดไป",
+      "errorTitle": "จัดคิวใหม่ไม่สำเร็จ",
+      "channelEmail": "อีเมล",
+      "channelPush": "พุช",
+      "channelDelivery": "การส่ง",
+      "channelSeparator": " และ "
+    },
+    "statuses": {
+      "skipped": "ข้าม",
+      "no_address": "ไม่มีที่อยู่",
+      "opted_out": "ปฏิเสธการรับ",
+      "no_user": "ไม่มีบัญชีผู้ใช้",
+      "failed": "ล้มเหลว",
+      "pending": "รอดำเนินการ",
+      "queued": "อยู่ในคิว",
+      "unknown": "ไม่ทราบ"
+    }
+  }
+}

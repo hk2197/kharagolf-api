@@ -1,0 +1,424 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`notificationEmailTemplates — post.event.survey reminder variant (Task #2012) > English reminder uses the reminder subject, closing and plaintext 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Post-Event Survey</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, thanks for playing <strong>Spring Open</strong>.</p><p style="…">We'd still love a couple of minutes of feedback so the next event is even better.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Open survey</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "subject": "Reminder: How was Spring Open? — Quick feedback",
+  "text": "Hi Jordan Spieth,
+
+Reminder — please share quick feedback on Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+  "variant": "reminder",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > achievement.unlocked → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Achievement</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, you just unlocked a new achievement at Pebble Beach GC.</p><div style="…"> <table style="…"><tr><td style="…">Achievement</td><td style="…">Sub-80 Streak</td></tr></table> </div><p style="…">Keep playing to unlock the next one.</p> <div style="…"><a href="https://app.example.com/achievements/sub-80" style="…">View achievement</a></div> </div> <div style="…"> Notification: <code style="…">achievement.unlocked</code> </div> </div>",
+  "key": "achievement.unlocked",
+  "subject": "🏆 Achievement unlocked — Sub-80 Streak",
+  "text": "Hi Jordan Spieth,
+
+You unlocked: Sub-80 Streak.
+Keep playing to unlock the next one.
+Open: https://app.example.com/achievements/sub-80
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > booking.cancelled → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Cancellation</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, your tee booking has been cancelled.</p><div style="…"> <table style="…"><tr><td style="…">Course</td><td style="…">Ocean Course</td></tr><tr><td style="…">Tee time</td><td style="…">08:40</td></tr><tr><td style="…">Reason</td><td style="…">Course closure</td></tr></table> </div><p style="…">If this wasn't you, please reach out to the pro shop right away.</p> <div style="…"><a href="https://app.example.com/portal/bookings/501" style="…">View booking</a></div> </div> <div style="…"> Notification: <code style="…">booking.cancelled</code> </div> </div>",
+  "key": "booking.cancelled",
+  "subject": "Booking cancelled — Ocean Course",
+  "text": "Hi Jordan Spieth,
+
+Your tee booking at Ocean Course was cancelled.
+View booking: https://app.example.com/portal/bookings/501
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > booking.confirmed → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Tee Time</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, your tee booking is locked in.</p><div style="…"> <table style="…"><tr><td style="…">Course</td><td style="…">Ocean Course</td></tr><tr><td style="…">Tee time</td><td style="…">08:40</td></tr><tr><td style="…">Party size</td><td style="…">4</td></tr></table> </div><p style="…">We'll send you a reminder closer to tee-off. Have a great round!</p> <div style="…"><a href="https://app.example.com/portal/bookings/501" style="…">View booking</a></div> </div> <div style="…"> Notification: <code style="…">booking.confirmed</code> </div> </div>",
+  "key": "booking.confirmed",
+  "subject": "Tee time confirmed — Ocean Course",
+  "text": "Hi Jordan Spieth,
+
+Your tee time at Ocean Course is confirmed for 08:40.
+View booking: https://app.example.com/portal/bookings/501
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > booking.reminder.2h → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">2h Reminder</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, you're up soon. Time to head over.</p><div style="…"> <table style="…"><tr><td style="…">Course</td><td style="…">Ocean Course</td></tr><tr><td style="…">Tee time</td><td style="…">08:40</td></tr></table> </div><p style="…">Aim to arrive 30 minutes early to warm up at the range.</p> <div style="…"><a href="https://app.example.com/portal/bookings/501" style="…">View booking</a></div> </div> <div style="…"> Notification: <code style="…">booking.reminder.2h</code> </div> </div>",
+  "key": "booking.reminder.2h",
+  "subject": "Tee off in 2 hours — Ocean Course",
+  "text": "Hi Jordan Spieth,
+
+Heads up: tee off 08:40 at Ocean Course.
+View booking: https://app.example.com/portal/bookings/501
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > booking.reminder.24h → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">24h Reminder</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, just a heads-up — you tee off tomorrow.</p><div style="…"> <table style="…"><tr><td style="…">Course</td><td style="…">Ocean Course</td></tr><tr><td style="…">Tee time</td><td style="…">08:40</td></tr></table> </div><p style="…">Pack your kit, check the weather, and we'll see you on the first tee.</p> <div style="…"><a href="https://app.example.com/portal/bookings/501" style="…">View booking</a></div> </div> <div style="…"> Notification: <code style="…">booking.reminder.24h</code> </div> </div>",
+  "key": "booking.reminder.24h",
+  "subject": "Reminder — your tee time at Ocean Course is tomorrow",
+  "text": "Hi Jordan Spieth,
+
+Reminder: your tee time at Ocean Course is 08:40.
+View booking: https://app.example.com/portal/bookings/501
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > booking.waitlist.promoted → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Waitlist Promoted</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, good news — a spot opened up and your booking is now confirmed.</p><div style="…"> <table style="…"><tr><td style="…">Course</td><td style="…">Ocean Course</td></tr><tr><td style="…">Tee time</td><td style="…">08:40</td></tr></table> </div><p style="…">Open the app to review the details. See you on the course!</p> <div style="…"><a href="https://app.example.com/portal/bookings/777" style="…">View booking</a></div> </div> <div style="…"> Notification: <code style="…">booking.waitlist.promoted</code> </div> </div>",
+  "key": "booking.waitlist.promoted",
+  "subject": "🎉 You're off the waitlist — Ocean Course",
+  "text": "Hi Jordan Spieth,
+
+Good news — your waitlist booking at Ocean Course is now confirmed.
+View booking: https://app.example.com/portal/bookings/777
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > caddie.mode.blocked → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Caddie Notice</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, your AI Caddie request couldn't be served.</p><div style="…"> <table style="…"><tr><td style="…">Reason</td><td style="…">Tournament round mode disables AI assistance</td></tr></table> </div><p style="…">This is usually because the round is in a competition mode that disables coaching aids. Reach out to your committee if you think this is a mistake.</p> <div style="…"><a href="https://app.example.com/portal/caddie/settings" style="…">Open settings</a></div> </div> <div style="…"> Notification: <code style="…">caddie.mode.blocked</code> </div> </div>",
+  "key": "caddie.mode.blocked",
+  "subject": "AI Caddie request was blocked",
+  "text": "Hi Jordan Spieth,
+
+An AI Caddie request was blocked. Reason: Tournament round mode disables AI assistance.
+Open: https://app.example.com/portal/caddie/settings
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > coach.review.delivered → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Coaching</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, <strong>Coach Lee</strong> just posted feedback on your most recent swing review.</p><p style="…">Tap below to watch the analysis with timestamped voice notes and drills.</p> <div style="…"><a href="https://app.example.com/reviews/9" style="…">Watch review</a></div> </div> <div style="…"> Notification: <code style="…">coach.review.delivered</code> </div> </div>",
+  "key": "coach.review.delivered",
+  "subject": "🎥 Coach Lee delivered your swing review",
+  "text": "Hi Jordan Spieth,
+
+Coach Lee delivered your swing review.
+Watch it: https://app.example.com/reviews/9
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > course.correction.resolved → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Course Correction</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, the Pebble Beach GC course team finished reviewing your reported correction.</p><div style="…"> <table style="…"><tr><td style="…">Field</td><td style="…">Hole 3 yardage</td></tr><tr><td style="…">Hole</td><td style="…">3</td></tr><tr><td style="…">Outcome</td><td style="…">accepted</td></tr></table> </div><p style="…"><em style="…">Reviewer note:</em> Verified by greenkeeper</p><p style="…">Thanks for helping us keep course data accurate.</p> <div style="…"><a href="https://app.example.com/portal/course-corrections/12" style="…">View correction</a></div> </div> <div style="…"> Notification: <code style="…">course.correction.resolved</code> </div> </div>",
+  "key": "course.correction.resolved",
+  "subject": "Your course correction was accepted",
+  "text": "Hi Jordan Spieth,
+
+Your reported correction to Hole 3 yardage on hole 3 was accepted.
+View details: https://app.example.com/portal/course-corrections/12
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > handicap.committee.changed → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Handicap</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, the handicap committee at Pebble Beach GC has adjusted your index.</p><div style="…"> <table style="…"><tr><td style="…">Previous index</td><td style="…">12.4</td></tr><tr><td style="…">New index</td><td style="…">11.8</td></tr><tr><td style="…">Reason</td><td style="…">Annual review adjustment</td></tr></table> </div><p style="…">Open your handicap profile to see the full reasoning and next-steps.</p> <div style="…"><a href="https://app.example.com/portal/handicap" style="…">View handicap</a></div> </div> <div style="…"> Notification: <code style="…">handicap.committee.changed</code> </div> </div>",
+  "key": "handicap.committee.changed",
+  "subject": "Handicap committee updated your index",
+  "text": "Hi Jordan Spieth,
+
+The handicap committee updated your index to 11.8.
+Reason: Annual review adjustment.
+View handicap: https://app.example.com/portal/handicap
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > handicap.exceptional.score → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Handicap</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, your last round produced an exceptional score, so the WHS engine applied an automatic adjustment.</p><div style="…"> <table style="…"><tr><td style="…">Differential</td><td style="…">an exceptional differential</td></tr><tr><td style="…">Adjustment</td><td style="…">0.4</td></tr></table> </div><p style="…">Open the handicap explainer to see the rolling-window calculation in detail.</p> <div style="…"><a href="https://app.example.com/portal/handicap" style="…">View handicap</a></div> </div> <div style="…"> Notification: <code style="…">handicap.exceptional.score</code> </div> </div>",
+  "key": "handicap.exceptional.score",
+  "subject": "Exceptional score reduction triggered",
+  "text": "Hi Jordan Spieth,
+
+An exceptional score reduction was applied (differential an exceptional differential, 0.4).
+View handicap: https://app.example.com/portal/handicap
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > highlight.ready → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Highlights</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, we just finished cutting your latest highlight reel.</p><p style="…">Watch, share, and save your best shots from this round.</p> <div style="…"><a href="https://app.example.com/h/abc" style="…">Watch highlight</a></div> </div> <div style="…"> Notification: <code style="…">highlight.ready</code> </div> </div>",
+  "key": "highlight.ready",
+  "subject": "🎬 Your highlight reel is ready",
+  "text": "Hi Jordan Spieth,
+
+Your highlight reel is ready.
+Watch: https://app.example.com/h/abc
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > interclub.qualified → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Inter-Club</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, congratulations — your form has earned you a spot in <strong>Coastal Inter-Club</strong>.</p><p style="…">Confirm your participation in the app so the captain can finalise the team.</p> <div style="…"><a href="https://app.example.com/events/interclub-2026" style="…">Confirm spot</a></div> </div> <div style="…"> Notification: <code style="…">interclub.qualified</code> </div> </div>",
+  "key": "interclub.qualified",
+  "subject": "🏌️ You qualified for Coastal Inter-Club",
+  "text": "Hi Jordan Spieth,
+
+You qualified for Coastal Inter-Club.
+Confirm spot: https://app.example.com/events/interclub-2026
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > leaderboard.position.change → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Leaderboard</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, you moved up on the leaderboard.</p><div style="…"> <table style="…"><tr><td style="…">Was</td><td style="…">T14</td></tr><tr><td style="…">Now</td><td style="…">T7</td></tr><tr><td style="…">Tournament</td><td style="…">Spring Open</td></tr></table> </div><p style="…">Tap into the app to see who else is moving and what's left to play.</p> <div style="…"><a href="https://app.example.com/leaderboard/55" style="…">View leaderboard</a></div> </div> <div style="…"> Notification: <code style="…">leaderboard.position.change</code> </div> </div>",
+  "key": "leaderboard.position.change",
+  "subject": "Moved up on Spring Open",
+  "text": "Hi Jordan Spieth,
+
+You moved up on Spring Open.
+View leaderboard: https://app.example.com/leaderboard/55
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > league.standings.updated → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">League</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, the standings for <strong>Tuesday Night League</strong> were just refreshed.</p><div style="…"> <table style="…"><tr><td style="…">Your position</td><td style="…">#3</td></tr></table> </div><p style="…">Open the standings to see the full table and upcoming fixtures.</p> <div style="…"><a href="https://app.example.com/leagues/3/standings" style="…">View standings</a></div> </div> <div style="…"> Notification: <code style="…">league.standings.updated</code> </div> </div>",
+  "key": "league.standings.updated",
+  "subject": "Tuesday Night League standings updated",
+  "text": "Hi Jordan Spieth,
+
+Tuesday Night League standings updated — you are now #3.
+View standings: https://app.example.com/leagues/3/standings
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > marker.share.requested → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Marker Request</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, <strong>Sam Cooke</strong> would like you to mark their card during today's round.</p><p style="…">Open the marker view to enter scores in real time.</p> <div style="…"><a href="https://app.example.com/marker/req/42" style="…">Open marker view</a></div> </div> <div style="…"> Notification: <code style="…">marker.share.requested</code> </div> </div>",
+  "key": "marker.share.requested",
+  "subject": "Sam Cooke asked you to mark their card",
+  "text": "Hi Jordan Spieth,
+
+Sam Cooke asked you to mark their card.
+Open: https://app.example.com/marker/req/42
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > match.result.recorded → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Match Result</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, the official result of your match has been posted.</p><div style="…"> <table style="…"><tr><td style="…">Opponent</td><td style="…">Alex Murray</td></tr><tr><td style="…">Result</td><td style="…">won</td></tr><tr><td style="…">Score</td><td style="…">3 &amp; 2</td></tr></table> </div><p style="…">If anything looks off, raise a query through the bracket page within 24 hours.</p> <div style="…"><a href="https://app.example.com/matches/91" style="…">View match</a></div> </div> <div style="…"> Notification: <code style="…">match.result.recorded</code> </div> </div>",
+  "key": "match.result.recorded",
+  "subject": "Match result recorded vs Alex Murray",
+  "text": "Hi Jordan Spieth,
+
+Match result vs Alex Murray: won (3 & 2).
+View match: https://app.example.com/matches/91
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > match.scheduled → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Match Play</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, your next match has been scheduled.</p><div style="…"> <table style="…"><tr><td style="…">Opponent</td><td style="…">Alex Murray</td></tr><tr><td style="…">Tee time</td><td style="…">TBC</td></tr><tr><td style="…">Course</td><td style="…">Ocean Course</td></tr></table> </div><p style="…">Confirm your availability in the app — no-shows count as a forfeit.</p> <div style="…"><a href="https://app.example.com/matches/91" style="…">View match</a></div> </div> <div style="…"> Notification: <code style="…">match.scheduled</code> </div> </div>",
+  "key": "match.scheduled",
+  "subject": "Match scheduled vs Alex Murray",
+  "text": "Hi Jordan Spieth,
+
+Match scheduled vs Alex Murray — tee off TBC.
+View match: https://app.example.com/matches/91
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > near.miss → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Near Miss</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, you came within 1 of unlocking <strong>10 Rounds Played</strong>.</p><p style="…">One more solid round and it's yours.</p> <div style="…"><a href="https://app.example.com/portal/profile/badges" style="…">View round</a></div> </div> <div style="…"> Notification: <code style="…">near.miss</code> </div> </div>",
+  "key": "near.miss",
+  "subject": "So close — 10 Rounds Played by 1",
+  "text": "Hi Jordan Spieth,
+
+Near miss on 10 Rounds Played (by 1).
+View round: https://app.example.com/portal/profile/badges
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > post.event.survey → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Post-Event Survey</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, thanks for playing <strong>Spring Open</strong>.</p><p style="…">We'd love a couple of minutes of feedback so the next event is even better.</p> <div style="…"><a href="https://app.example.com/surveys/123" style="…">Open survey</a></div> </div> <div style="…"> Notification: <code style="…">post.event.survey</code> </div> </div>",
+  "key": "post.event.survey",
+  "subject": "How was Spring Open? — Quick feedback",
+  "text": "Hi Jordan Spieth,
+
+Thanks for playing Spring Open.
+Open the survey: https://app.example.com/surveys/123
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > post.round.results → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Round Summary</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, here are your numbers from today's round.</p><div style="…"> <table style="…"><tr><td style="…">Course</td><td style="…">Ocean Course</td></tr><tr><td style="…">Gross</td><td style="…">82</td></tr><tr><td style="…">Net</td><td style="…">74</td></tr></table> </div><p style="…">Open the app for the full hole-by-hole breakdown, strokes-gained, and shot map.</p> <div style="…"><a href="https://app.example.com/rounds/2024" style="…">View round</a></div> </div> <div style="…"> Notification: <code style="…">post.round.results</code> </div> </div>",
+  "key": "post.round.results",
+  "subject": "Round complete — Ocean Course",
+  "text": "Hi Jordan Spieth,
+
+Round at Ocean Course — gross 82, net 74.
+View round: https://app.example.com/rounds/2024
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > recap.year.ready → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Year-in-Golf</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, your <strong>2025</strong> Year-in-Golf is wrapped and ready.</p><p style="…">Rounds played, lowest scores, longest drives, hot streaks — all in one shareable card.</p> <div style="…"><a href="https://app.example.com/recap/2025" style="…">Open recap</a></div> </div> <div style="…"> Notification: <code style="…">recap.year.ready</code> </div> </div>",
+  "key": "recap.year.ready",
+  "subject": "🎉 Your 2025 Year-in-Golf is ready",
+  "text": "Hi Jordan Spieth,
+
+Your 2025 Year-in-Golf is ready.
+Open: https://app.example.com/recap/2025
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > scoring.event.eagle → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Scoring Event</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, sensational play — you carded an eagle at Pebble Beach GC.</p><div style="…"> <table style="…"><tr><td style="…">Course</td><td style="…">Ocean Course</td></tr><tr><td style="…">Hole</td><td style="…">13</td></tr><tr><td style="…">Score</td><td style="…">an eagle</td></tr></table> </div><p style="…">This shot is now on your highlight reel. Want to share it? Open the app and tap the share icon.</p> <div style="…"><a href="https://app.example.com/highlights/eagle-13" style="…">View highlight</a></div> </div> <div style="…"> Notification: <code style="…">scoring.event.eagle</code> </div> </div>",
+  "key": "scoring.event.eagle",
+  "subject": "🦅 Eagle (or better) at Ocean Course",
+  "text": "Hi Jordan Spieth,
+
+Eagle (or better) at Ocean Course, hole 13.
+View highlight: https://app.example.com/highlights/eagle-13
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > scoring.event.hole_in_one → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Hole In One</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, congratulations — you just made an <strong>ace</strong>!</p><div style="…"> <table style="…"><tr><td style="…">Course</td><td style="…">Ocean Course</td></tr><tr><td style="…">Hole</td><td style="…">7</td></tr><tr><td style="…">Club</td><td style="…">7-iron</td></tr></table> </div><p style="…">It's officially logged in your record. Drinks at the 19th are on you.</p> <div style="…"><a href="https://app.example.com/highlights/ace-7" style="…">View highlight</a></div> </div> <div style="…"> Notification: <code style="…">scoring.event.hole_in_one</code> </div> </div>",
+  "key": "scoring.event.hole_in_one",
+  "subject": "🎯 HOLE-IN-ONE at Ocean Course!",
+  "text": "Hi Jordan Spieth,
+
+Hole-in-one at Ocean Course, hole 7!
+View highlight: https://app.example.com/highlights/ace-7
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > streak.milestone → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Streak</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, your streak is on fire.</p><div style="…"> <table style="…"><tr><td style="…">Streak</td><td style="…">10 sub-90 rounds</td></tr><tr><td style="…">Milestone</td><td style="…">30</td></tr></table> </div><p style="…">Keep it going — the next milestone will land in your inbox automatically.</p> <div style="…"><a href="https://app.example.com/portal/streaks" style="…">View streak</a></div> </div> <div style="…"> Notification: <code style="…">streak.milestone</code> </div> </div>",
+  "key": "streak.milestone",
+  "subject": "🔥 10 sub-90 rounds hit 30",
+  "text": "Hi Jordan Spieth,
+
+10 sub-90 rounds hit 30.
+View streak: https://app.example.com/portal/streaks
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > tournament.cut.applied → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Tournament Cut</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, the cut line for <strong>Spring Open</strong> has been set after round 2.</p><div style="…"> <table style="…"><tr><td style="…">Status</td><td style="…">MADE THE CUT</td></tr><tr><td style="…">Round</td><td style="…">Round 2</td></tr></table> </div><p style="…">Round 3 groupings are now published. Check the app for your tee time.</p> <div style="…"><a href="https://app.example.com/portal/tournaments/55/grouping" style="…">View grouping</a></div> </div> <div style="…"> Notification: <code style="…">tournament.cut.applied</code> </div> </div>",
+  "key": "tournament.cut.applied",
+  "subject": "Spring Open — Cut line applied after round 2",
+  "text": "Hi Jordan Spieth,
+
+Spring Open — cut line applied after round 2. (MADE THE CUT)
+View grouping: https://app.example.com/portal/tournaments/55/grouping
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > tournament.tee.published → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Tee Sheet</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, the tee sheet for <strong>Spring Open</strong> is live.</p><div style="…"> <table style="…"><tr><td style="…">Your tee time</td><td style="…">08:40</td></tr><tr><td style="…">Tournament</td><td style="…">Spring Open</td></tr></table> </div><p style="…">Open the app to see your group, starting hole, and pairings.</p> <div style="…"><a href="https://app.example.com/portal/tournaments/55/tee-sheet" style="…">View tee sheet</a></div> </div> <div style="…"> Notification: <code style="…">tournament.tee.published</code> </div> </div>",
+  "key": "tournament.tee.published",
+  "subject": "Spring Open — Tee sheet published",
+  "text": "Hi Jordan Spieth,
+
+Spring Open tee sheet is published — you tee off 08:40.
+View tee sheet: https://app.example.com/portal/tournaments/55/tee-sheet
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > verified.handicap.expiring → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Verification</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, your verified-handicap badge will expire on <strong>2026-06-01</strong>.</p><p style="…">Renew now to keep your verified status visible to other clubs and tournaments.</p> <div style="…"><a href="https://app.example.com/portal/handicap/renew" style="…">Renew now</a></div> </div> <div style="…"> Notification: <code style="…">verified.handicap.expiring</code> </div> </div>",
+  "key": "verified.handicap.expiring",
+  "subject": "Verified-handicap badge expiring 2026-06-01",
+  "text": "Hi Jordan Spieth,
+
+Your verified-handicap badge expires 2026-06-01.
+Renew: https://app.example.com/portal/handicap/renew
+
+— Pebble Beach GC",
+}
+`;
+
+exports[`notificationEmailTemplates — visual snapshots > wearable.reauth.required → matches snapshot 1`] = `
+{
+  "html": "<div style="…"> <div style="…"> <img src="https://cdn.example.com/pebble-logo.png" alt="Pebble Beach GC" style="…"/> <h1 style="…">Pebble Beach GC</h1> <p style="…">Wearable</p> </div> <div style="…"> <p style="…">Hi <strong>Jordan Spieth</strong>, the connection to <strong>Garmin Connect</strong> needs your attention.</p><p style="…">Open the app and re-link your account so we can keep syncing your shot data.</p> <div style="…"><a href="https://app.example.com/wearables" style="…">Re-authorise Garmin Connect</a></div> </div> <div style="…"> Notification: <code style="…">wearable.reauth.required</code> </div> </div>",
+  "key": "wearable.reauth.required",
+  "subject": "Re-authorise Garmin Connect",
+  "text": "Hi Jordan Spieth,
+
+Re-authorise Garmin Connect from the app to resume shot sync.
+Re-authorise: https://app.example.com/wearables
+
+— Pebble Beach GC",
+}
+`;

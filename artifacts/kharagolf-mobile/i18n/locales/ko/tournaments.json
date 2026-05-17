@@ -1,0 +1,18 @@
+{
+  "tournaments": "토너먼트",
+  "tournament": "토너먼트",
+  "register": "등록",
+  "registered": "등록됨",
+  "checkIn": "체크인",
+  "checkedIn": "체크인됨",
+  "leaderboard": "리더보드",
+  "teeTimes": "티 타임",
+  "results": "결과",
+  "round": "라운드",
+  "course": "코스",
+  "entryFee": "참가비",
+  "format": "형식",
+  "startDate": "시작일",
+  "status": "상태",
+  "noTournaments": "이용 가능한 대회가 없습니다"
+}

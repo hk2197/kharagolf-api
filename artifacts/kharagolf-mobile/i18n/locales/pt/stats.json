@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "De onde isto vem:",
+    "source_whs": "o seu handicap WHS em direto",
+    "source_history": "a sua volta publicada mais recente",
+    "source_profile": "o handicap do seu perfil",
+    "fix_whs": "Atualizar WHS",
+    "fix_history": "Publicar nova volta",
+    "fix_profile": "Editar handicap do perfil",
+    "fix_default": "Adicione o seu handicap",
+    "summary": "Handicap {{handicap}} a partir de {{source}}.",
+    "summaryWithAsOf": "Handicap {{handicap}} a partir de {{source}} ({{asOf}}).",
+    "noneAuto": "Ainda não há handicap registado — estamos a usar uma comparação predefinida.",
+    "nonePinned": "Ainda não há handicap registado.",
+    "asOfToday": "hoje",
+    "asOfYesterday": "ontem",
+    "asOfDays": "há {{count}} dias",
+    "asOfMonth": "há {{count}} mês",
+    "asOfMonths": "há {{count}} meses",
+    "asOfYear": "há {{count}} ano",
+    "asOfYears": "há {{count}} anos"
+  }
+}

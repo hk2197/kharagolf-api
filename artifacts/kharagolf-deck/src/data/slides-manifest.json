@@ -1,0 +1,98 @@
+[
+  {
+    "id": "a1b2c3d4-0001-0000-0000-000000000001",
+    "position": 1,
+    "filepath": "src/pages/slides/Slide01Title.tsx",
+    "title": "KHARAGOLF Platform Overview",
+    "description": "Title slide — hero golf course image, platform introduction for club admins and players",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0002-0000-0000-000000000002",
+    "position": 2,
+    "filepath": "src/pages/slides/Slide02AdminSection.tsx",
+    "title": "Club Admin Features — Section Header",
+    "description": "Section divider introducing club admin capabilities",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0003-0000-0000-000000000003",
+    "position": 3,
+    "filepath": "src/pages/slides/Slide03AdminTournaments.tsx",
+    "title": "Tournament Management",
+    "description": "14+ formats, draw tools, scorecards, and roadmap items",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0004-0000-0000-000000000004",
+    "position": 4,
+    "filepath": "src/pages/slides/Slide04AdminMembers.tsx",
+    "title": "Members & Club Operations",
+    "description": "Member management, tee bookings, finance, mobile club settings, and roadmap",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0005-0000-0000-000000000005",
+    "position": 5,
+    "filepath": "src/pages/slides/Slide05AdminComms.tsx",
+    "title": "Communications & Notifications",
+    "description": "21 languages, push/email, ops alerts, automation, and upcoming features",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0006-0000-0000-000000000006",
+    "position": 6,
+    "filepath": "src/pages/slides/Slide06AdminAnalytics.tsx",
+    "title": "Analytics & Intelligence",
+    "description": "Admin analytics, sponsor analytics, handicap committee, media, governance, AI caddie",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0007-0000-0000-000000000007",
+    "position": 7,
+    "filepath": "src/pages/slides/Slide07PlayerSection.tsx",
+    "title": "Player Features — Section Header",
+    "description": "Section divider introducing player-facing capabilities",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0008-0000-0000-000000000008",
+    "position": 8,
+    "filepath": "src/pages/slides/Slide08PlayerScoring.tsx",
+    "title": "Live Scoring & GPS",
+    "description": "Scorer kiosk, GPS/mapping, Apple Watch/Wear OS, offline scoring, shareable cards, upcoming",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0009-0000-0000-000000000009",
+    "position": 9,
+    "filepath": "src/pages/slides/Slide09PlayerStats.tsx",
+    "title": "Statistics & Handicap",
+    "description": "Strokes gained, WHS handicap, club distance, badges, wearables, wellness dashboard",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0010-0000-0000-000000000010",
+    "position": 10,
+    "filepath": "src/pages/slides/Slide10PlayerSocial.tsx",
+    "title": "Social & Community",
+    "description": "Activity feed, coaching/swing reviews, caddie marketplace, fantasy, ladders, highlights",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0011-0000-0000-000000000011",
+    "position": 11,
+    "filepath": "src/pages/slides/Slide11Roadmap.tsx",
+    "title": "Active Pipeline",
+    "description": "Pending and proposed tasks for both admin and player — current development roadmap",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0012-0000-0000-000000000012",
+    "position": 12,
+    "filepath": "src/pages/slides/Slide12Closing.tsx",
+    "title": "KHARAGOLF — The Platform",
+    "description": "Closing slide with brand lockup, platform summary, and contact",
+    "speakerNotes": ""
+  }
+]

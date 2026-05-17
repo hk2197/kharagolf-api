@@ -1,0 +1,18 @@
+{
+  "tournaments": "Mashindano",
+  "tournament": "Mashindano",
+  "register": "Jiandikishe",
+  "registered": "Imesajiliwa",
+  "checkIn": "Wasili",
+  "checkedIn": "Ameshawasili",
+  "leaderboard": "Orodha ya Viongozi",
+  "teeTimes": "Nyakati za kuanza",
+  "results": "Matokeo",
+  "round": "Raundi",
+  "course": "Kozi",
+  "entryFee": "Ada ya Kuingia",
+  "format": "Muundo",
+  "startDate": "Tarehe ya kuanza",
+  "status": "Hali",
+  "noTournaments": "Hakuna mashindano yanayopatikana"
+}

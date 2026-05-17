@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "यह कहाँ से आता है:",
+    "source_whs": "आपका लाइव WHS हैंडिकैप",
+    "source_history": "आपका सबसे हाल का दर्ज राउंड",
+    "source_profile": "आपकी प्रोफ़ाइल का हैंडिकैप",
+    "fix_whs": "WHS अपडेट करें",
+    "fix_history": "नया राउंड दर्ज करें",
+    "fix_profile": "प्रोफ़ाइल हैंडिकैप संपादित करें",
+    "fix_default": "अपना हैंडिकैप जोड़ें",
+    "summary": "{{handicap}} हैंडिकैप — स्रोत: {{source}}.",
+    "summaryWithAsOf": "{{handicap}} हैंडिकैप — स्रोत: {{source}} ({{asOf}}).",
+    "noneAuto": "अभी तक कोई हैंडिकैप दर्ज नहीं — हम डिफ़ॉल्ट तुलना का उपयोग कर रहे हैं।",
+    "nonePinned": "अभी तक कोई हैंडिकैप दर्ज नहीं।",
+    "asOfToday": "आज",
+    "asOfYesterday": "कल",
+    "asOfDays": "{{count}} दिन पहले",
+    "asOfMonth": "{{count}} माह पहले",
+    "asOfMonths": "{{count}} माह पहले",
+    "asOfYear": "{{count}} वर्ष पहले",
+    "asOfYears": "{{count}} वर्ष पहले"
+  }
+}

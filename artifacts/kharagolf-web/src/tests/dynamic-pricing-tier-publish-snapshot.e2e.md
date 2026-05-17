@@ -1,0 +1,287 @@
+# E2E: Tier "Last projection" badge opens the Forecast Accuracy tab
+
+Covers Task #1802. Canonical Playwright `runTest` plan that proves the
+"Last projection: ₹X over N days" badge added in Tasks #954 / #1258 on
+each pricing-tier card on the admin Dynamic Pricing page:
+
+1. Renders for a tier that has a recorded
+   `publish:tier-<id>` active-scenario forecast snapshot.
+2. When clicked, switches the page to the **Forecast Accuracy** tab so
+   admins land where they expect.
+
+This mirrors the demand-modifier sibling test added in Task #1469
+(`dynamic-pricing-modifier-publish-snapshot.e2e.md`). The two badges
+share the same accuracy-tab-switch flow, so without this plan a
+regression on the tier code path would still slip past CI.
+
+The supporting endpoint
+(`GET /api/organizations/:orgId/tee-pricing/tiers/publish-snapshots`,
+Task #1103) is already covered by a backend test. This e2e adds the
+missing user-facing coverage for the badge → fetch → tab-switch wiring
+on the tier card.
+
+Replay it from any agent notebook with
+`runTest({ testPlan, relevantTechnicalDocumentation })` using the
+bodies below.
+
+## Page under test
+
+- File: `artifacts/kharagolf-web/src/pages/dynamic-pricing.tsx`
+  (the Pricing Tiers list, lines ~1020–1080, mounted under the
+  `<TabsContent value="tiers">` block).
+- Mounted from: `artifacts/kharagolf-web/src/App.tsx`
+  (`<Route path="/dynamic-pricing">`).
+- Endpoints exercised:
+  - `POST /api/auth/player-login` (cookie session)
+  - `GET  /api/organizations/:orgId/tee-pricing/config`
+  - `GET  /api/organizations/:orgId/tee-pricing/tiers`
+  - `GET  /api/organizations/:orgId/tee-pricing/modifiers`
+  - `GET  /api/organizations/:orgId/tee-pricing/audit`
+  - `GET  /api/organizations/:orgId/courses`
+  - `GET  /api/organizations/:orgId/tee-pricing/rules`
+  - `GET  /api/organizations/:orgId`
+  - `GET  /api/organizations/:orgId/tee-pricing/tiers/publish-snapshots`
+    *(the Task #1103 endpoint that powers this badge)*
+  - `GET  /api/organizations/:orgId/tee-pricing/modifiers/publish-snapshots`
+  - `GET  /api/organizations/:orgId/tee-pricing/forecast-accuracy?…`
+    (fired when the badge click flips `activeTab` to `accuracy`)
+- Auth: `requireOrgAdmin` is enforced on every `tee-pricing/*` route,
+  so the seeded user MUST be `org_admin` in the same organization
+  that owns the seeded tier + forecast row. We seed in org 1
+  (the same org all the other admin-side e2e plans use).
+- Test ids exercised here:
+  - `tab-accuracy` — Forecast Accuracy tab trigger (used to assert the
+    active tab switched). Radix `<TabsTrigger>` exposes the active
+    state via `data-state="active"` on the trigger element.
+  - `tab-rules` — sibling tab trigger, used to confirm the strip
+    actually changed selection rather than mounting two active tabs.
+  - `tier-${TIER_ID}` — the pricing-tier card (asserts the row
+    rendered at all so a missing badge clearly indicates the badge
+    wiring is broken, not a missing tier).
+  - `tier-${TIER_ID}-publish-snapshot` — the badge button itself.
+
+## Test plan
+
+```text
+1. [New Context] Create a new browser context.
+
+2. [DB] Insert a verified org_admin test user in org 1. Generate a
+   fresh ${SUFFIX} as 6 LOWERCASE hex chars (e.g. nanoid(6).toLowerCase()
+   or hex(3)) — mixed-case suffixes will break login because the auth
+   endpoint lowercases the email before lookup. The bcryptjs hash below
+   corresponds to the literal password "TestPassword123!" at cost 10.
+   It is wrapped in a dollar-quoted SQL string ($pw$...$pw$) so the literal
+   '$' characters in the bcrypt hash are not mistaken for SQL placeholders.
+   The replit_user_id column is NOT NULL — populate it.
+
+   INSERT INTO app_users
+     (email, password_hash, role, organization_id, email_verified,
+      display_name, username, replit_user_id, created_at, updated_at)
+   VALUES
+     ('e2e-tiersnap-${SUFFIX}@kharagolf-test.local',
+      $pw$$2b$10$I1l/Lc1c228eC/w1nRz6H.OhGXfpVh6g8vgUWpJi4eKtLsc6vs8NO$pw$,
+      'org_admin', 1, true,
+      'E2E TierSnap Admin ${SUFFIX}',
+      'e2e_tiersnap_${SUFFIX}',
+      'e2e_tiersnap_${SUFFIX}',
+      NOW(), NOW())
+   RETURNING id;
+   -- record the returned id as ${TEST_USER_ID}
+
+   IMMEDIATELY verify the row is reachable by the lowercased email lookup
+   used by the API:
+     SELECT id FROM app_users
+      WHERE email = LOWER('e2e-tiersnap-${SUFFIX}@kharagolf-test.local');
+   This MUST return one row with id = ${TEST_USER_ID}. If empty, halt
+   and report — ${SUFFIX} contains uppercase characters.
+
+3. [DB] Insert a fresh active pricing tier in org 1. course_id is
+   left NULL on purpose so the badge-click handler reduces to the
+   "no course filter" path (t.courseId ?? "" → "") and the test does
+   not depend on any specific course existing in the dev DB.
+   days_of_week is a jsonb column — pass it as a JSON literal cast to
+   jsonb so the array is stored, not a Postgres int[].
+
+   INSERT INTO tee_dynamic_pricing_tiers
+     (organization_id, course_id, name, description,
+      days_of_week, start_time, end_time,
+      season_start, season_end,
+      member_type, member_rate, guest_rate,
+      priority, is_active, created_at, updated_at)
+   VALUES
+     (1, NULL, 'E2E TierSnap ${SUFFIX}', NULL,
+      '[0,1,2,3,4,5,6]'::jsonb, NULL, NULL,
+      NULL, NULL,
+      'any', '0', '0',
+      0, true, NOW(), NOW())
+   RETURNING id;
+   -- record the returned id as ${TIER_ID}
+
+4. [DB] Insert the matching `publish:tier-${TIER_ID}` snapshot row
+   into tee_pricing_forecasts. We seed this directly (rather than
+   relying on the route-side recordPublishForecast() that fires when
+   an active tier is created) so the snapshot row is deterministic
+   and present BEFORE the page's reload() request fires — the async
+   recordPublishForecast path can race with the page load and is
+   covered by its own backend test. Numbers are chosen so the
+   rendered text is predictable: ₹12,345 over 30 days.
+
+   INSERT INTO tee_pricing_forecasts
+     (organization_id, course_id, actor_user_id, scenario, label,
+      horizon_days, window_start, window_end,
+      projected_revenue, projected_avg_price,
+      projected_seats_booked, projected_seats_total,
+      created_at)
+   VALUES
+     (1, NULL, ${TEST_USER_ID}, 'active',
+      'publish:tier-' || ${TIER_ID},
+      30, CURRENT_DATE, CURRENT_DATE + INTERVAL '29 days',
+      '12345.00', '500.00', 25, 50,
+      NOW())
+   RETURNING id;
+   -- record the returned id as ${FORECAST_ID}
+
+5. [API] POST /api/auth/player-login with JSON body
+   { "email": "e2e-tiersnap-${SUFFIX}@kharagolf-test.local",
+     "password": "TestPassword123!" }
+   using credentials: 'include' so the session cookie is stored on the
+   browser context. Expect HTTP 200 and a JSON body whose
+   user.role === "org_admin" and user.organizationId === 1.
+
+6. [Browser] Navigate to /dynamic-pricing. Wait for the page to mount
+   — concretely, wait until the "Pricing Tiers" tab trigger
+   (TabsTrigger with visible text "Pricing Tiers") is visible.
+   Dismiss any Vite runtime overlay if present.
+
+7. [Browser] The Pricing Tiers tab is the default activeTab on mount,
+   but click the "Pricing Tiers" tab trigger anyway (the Radix
+   TabsTrigger whose value is "tiers" — its visible text is
+   "Pricing Tiers") to make the test independent of the default and
+   to flush any prior tab state. Wait until
+   data-testid="tier-${TIER_ID}" is visible — that confirms the
+   tiers list rendered AND our seeded tier is in it.
+
+8. [Verify] BADGE RENDERS for the seeded tier:
+   - data-testid="tier-${TIER_ID}-publish-snapshot" exists and is
+     visible inside data-testid="tier-${TIER_ID}".
+   - Its visible text contains the literal substring "Last projection:".
+   - Its visible text contains a rupee amount — the substring "₹12,345"
+     (Math.round(12345) → 12345 → toLocaleString() → "12,345").
+   - Its visible text contains the substring "30 days".
+   - Its `title` attribute contains "Snapshot taken " (the tooltip
+     copy that the badge surfaces on hover).
+
+9. [Verify] BASELINE — the Forecast Accuracy tab is NOT yet active.
+   The trigger data-testid="tab-accuracy" exists, and its
+   `data-state` attribute is NOT "active" (Radix TabsTrigger sets
+   `data-state="inactive"` when not selected).
+
+10. [Browser] Click data-testid="tier-${TIER_ID}-publish-snapshot".
+    This calls the inline onClick handler that sets accuracyLabel,
+    accuracyCourseId, accuracyScenario, accuracyIncludePending,
+    highlightForecastId=null, accuracyTabSeen, and flips activeTab
+    to "accuracy".
+
+11. [Verify] TAB SWITCHED to Forecast Accuracy:
+    - data-testid="tab-accuracy" now has `data-state="active"`.
+    - data-testid="tab-rules" (any sibling tab) has
+      `data-state` !== "active" — confirms the tab strip changed
+      selection rather than mounting two active tabs.
+    - The TabsContent for value="accuracy" is now rendered (use the
+      visible heading or any stable text that is unique to the
+      accuracy panel — e.g. the "Forecast Accuracy" filter
+      controls — to confirm the panel itself swapped in, not just
+      the trigger highlight).
+
+12. [DB] Cleanup (run regardless of pass/fail to keep the dev DB tidy.
+    Order matters: the forecast row references the tier's org but
+    not the tier itself, but doing the forecast first is safe and
+    keeps the cleanup self-contained even if the tier delete
+    cascades change in the future):
+    DELETE FROM tee_pricing_forecasts        WHERE id = ${FORECAST_ID};
+    DELETE FROM tee_dynamic_pricing_tiers    WHERE id = ${TIER_ID};
+    DELETE FROM app_users                     WHERE id = ${TEST_USER_ID};
+```
+
+## Technical documentation passed alongside the plan
+
+```text
+APP UNDER TEST
+- kharagolf-web mounted at "/"; the page is /dynamic-pricing.
+- api-server at /api/* with cookie sessions. POST /api/auth/player-login
+  takes { email, password } and sets the session cookie. The endpoint
+  lowercases the email before the DB lookup, so the seeded email row
+  MUST already be all-lowercase.
+
+PAGE BEHAVIOUR (artifacts/kharagolf-web/src/pages/dynamic-pricing.tsx)
+- DynamicPricingPage reads the active org from useGetMe()
+  (user.organizationId). Our seeded user is org 1 → orgId === 1.
+- activeTab defaults to "tiers", so the Pricing Tiers panel is
+  rendered on first paint without any tab click.
+- On mount it fires reload() which loads, in parallel:
+    /tee-pricing/{config,tiers,modifiers,audit,rules}
+    /courses, /organizations/${orgId}
+    /tee-pricing/tiers/publish-snapshots     ← the Task #1103 endpoint
+    /tee-pricing/modifiers/publish-snapshots
+- The tiers tab maps each tier row to a <Card data-testid=
+  "tier-${t.id}">. If publishSnapshots[String(t.id)] exists, a
+  <button data-testid="tier-${t.id}-publish-snapshot"> is rendered
+  next to the Active/Inactive/priority/memberType badges. Its visible
+  text is literally:
+    "Last projection: ₹{Math.round(projectedRevenue).toLocaleString()} over {horizonDays} days"
+  Its onClick handler sets accuracyLabel='publish:tier-${t.id}',
+  accuracyCourseId=(t.courseId ?? ""), accuracyScenario='active',
+  accuracyIncludePending=true, highlightForecastId=null,
+  accuracyTabSeen=true, and activeTab='accuracy' — i.e. it switches
+  tabs.
+
+TAB MARKUP
+- The tab strip is a Radix Tabs (`@/components/ui/tabs`). Each
+  TabsTrigger renders an element with data-testid set in source
+  (tab-rules, tab-forecast, tab-accuracy) and Radix sets
+  `data-state="active"` on the currently selected trigger
+  (and `data-state="inactive"` on the others). The Tabs root is
+  controlled (`value={activeTab}`), so flipping activeTab in the
+  onClick handler is what changes the active trigger.
+- Note: the "Pricing Tiers" and "Demand Modifiers" triggers do NOT
+  carry a data-testid in source, so target them by their visible
+  text ("Pricing Tiers" / "Demand Modifiers") rather than by id.
+
+ENDPOINT POWERING THIS BADGE (Task #1103)
+- GET /api/organizations/:orgId/tee-pricing/tiers/publish-snapshots
+    → { snapshots: { [tierIdAsString]: { tierId, label, scenario,
+        horizonDays, windowStart, windowEnd,
+        projectedRevenue, projectedAvgPrice,
+        projectedSeatsBooked, projectedSeatsTotal, createdAt } } }
+  Implementation (artifacts/api-server/src/routes/tee-pricing.ts ~227)
+  picks the latest active-scenario row per `publish:tier-<id>`
+  label via DISTINCT ON (label) … ORDER BY label, created_at DESC.
+  That is why the test's seed row is scenario='active' and label
+  exactly 'publish:tier-' || TIER_ID.
+
+DB SCHEMAS (lib/db/src/schema/golf.ts)
+- app_users(id, email, password_hash, role, organization_id,
+    email_verified, replit_user_id (NOT NULL), display_name,
+    username, ...)
+- tee_dynamic_pricing_tiers(id, organization_id, course_id NULL,
+    name, description, days_of_week jsonb default '[0,1,2,3,4,5,6]',
+    start_time, end_time, season_start, season_end,
+    member_type tee_pricing_tier_member_type default 'any',
+    member_rate numeric(10,2) default '0',
+    guest_rate numeric(10,2) default '0',
+    priority int default 0, is_active bool default true,
+    created_at, updated_at)
+- tee_pricing_forecasts(id, organization_id, course_id NULL,
+    actor_user_id, scenario text default 'active', label text NULL,
+    horizon_days int, window_start date, window_end date,
+    projected_revenue numeric(14,2), projected_avg_price numeric,
+    projected_seats_booked int, projected_seats_total int,
+    projected_revenue_by_day jsonb NULL, assumptions jsonb NULL,
+    created_at)
+
+ENVIRONMENT
+- The dev DB is shared with the user. NEVER assert absolute counts.
+  We assert only on rows we seeded ourselves, keyed by ${TIER_ID}.
+- Expected text inside the badge is computed from the seeded numbers
+  ("₹12,345" + "30 days") so it is independent of any prior data.
+```

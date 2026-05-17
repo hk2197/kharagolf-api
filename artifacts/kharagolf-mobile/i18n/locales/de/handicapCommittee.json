@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Zuweisen",
+    "invitePeer": "Kollegen einladen",
+    "recordDecision": "Entscheidung erfassen"
+  },
+  "assignModal": {
+    "title": "Fall zuweisen",
+    "subtitle": "Wählen Sie ein Komiteemitglied, das die Verantwortung übernimmt.",
+    "submit": "Zuweisen"
+  },
+  "peerModal": {
+    "title": "Peer-Reviewer einladen",
+    "subtitle": "Er erhält eine E-Mail und eine Push-Benachrichtigung.",
+    "submit": "Einladung senden"
+  },
+  "decideModal": {
+    "title": "Entscheidung erfassen",
+    "decisionLabel": "Entscheidung",
+    "rationaleLabel": "Begründung (erforderlich)",
+    "rationalePlaceholder": "Erläutern Sie die Begründung des Komitees",
+    "strokesLabel": "Anpassungsschläge",
+    "strokesPlaceholder": "z. B. 1.0",
+    "capLabel": "Cap-Wert (HI 0–54)",
+    "capPlaceholder": "z. B. 18.4",
+    "notesLabel": "Notizen (optional)",
+    "notesPlaceholder": "Interne Komitee-Notizen",
+    "applyToPlayerTitle": "Auf Spieler anwenden",
+    "applyToPlayerHelp": "Den resultierenden Handicap-Index auch in die Spielerakte eintragen.",
+    "submit": "Entscheidung erfassen"
+  },
+  "decisions": {
+    "no_action": "Keine Aktion",
+    "soft_cap": "Soft Cap",
+    "hard_cap": "Hard Cap",
+    "index_adjustment": "Index-Anpassung"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Begründung erforderlich",
+    "rationaleRequiredMessage": "Bitte erfassen Sie eine Begründung für diese Entscheidung.",
+    "invalidStrokesTitle": "Ungültige Schläge",
+    "invalidStrokesMessage": "Anpassungsschläge müssen eine positive Zahl sein.",
+    "invalidCapTitle": "Ungültiger Cap-Wert",
+    "invalidCapMessage": "Der Cap-Wert muss zwischen 0 und 54 liegen."
+  },
+  "errors": {
+    "assignFailed": "Zuweisung fehlgeschlagen",
+    "peerInviteFailed": "Peer-Einladung fehlgeschlagen",
+    "decisionFailed": "Entscheidung fehlgeschlagen",
+    "membersLoadFailed": "Mitglieder konnten nicht geladen werden",
+    "couldNotOpen": "Fall konnte nicht geöffnet werden",
+    "notFound": "Fall nicht gefunden",
+    "couldNotLoad": "Fall konnte nicht geladen werden.",
+    "missingOrgContext": "Organisationskontext für diesen Fall fehlt."
+  },
+  "memberPicker": {
+    "noMembers": "Keine geeigneten Komiteemitglieder gefunden.",
+    "cancel": "Abbrechen"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} von {{total}} geöffnet",
+    "badgeAccessibility": "{{opened}} von {{total}} Prüfern haben die Einladung geöffnet. Tippen Sie für Details.",
+    "sheetTitle": "Status der Peer-Reviewer",
+    "sheetSubtitle": "{{opened}} von {{total}} haben die Einladung geöffnet",
+    "openedHeading": "Geöffnet ({{count}})",
+    "notYetOpenedHeading": "Noch nicht geöffnet ({{count}})",
+    "everyoneOpened": "Alle haben die Einladung geöffnet.",
+    "noneOpened": "Noch kein Prüfer hat die Einladung geöffnet.",
+    "seenRelative": "Gesehen {{relative}}",
+    "invitedRelative": "Eingeladen {{relative}}",
+    "close": "Schließen"
+  },
+  "header": {
+    "caseNumber": "Fall #{{id}}",
+    "subtitle": "Handicap-Komitee-Prüfung",
+    "back": "Zurück"
+  },
+  "summary": {
+    "subject": "Betreff",
+    "period": "Zeitraum",
+    "details": "Details",
+    "decision": "Entscheidung",
+    "openedAt": "Eröffnet am {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Peer-Antworten",
+    "headingWithCount": "Peer-Antworten ({{count}})",
+    "empty": "Noch keine Peer-Antworten.",
+    "recommendations": {
+      "confirm": "Bestätigt",
+      "dispute": "Bestritten",
+      "insufficient_info": "Unzureichende Informationen",
+      "responded": "Geantwortet"
+    },
+    "reviewerFallback": "Prüfer",
+    "seenRelative": "Gesehen {{relative}}",
+    "notYetOpened": "Noch nicht geöffnet",
+    "respondedAt": "Geantwortet am {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Warten auf Antwort ({{count}})",
+    "filters": {
+      "all": "Alle ({{count}})",
+      "openedUnresponded": "Geöffnet, keine Antwort ({{count}})",
+      "unopened": "Noch nicht geöffnet ({{count}})"
+    },
+    "empty": "Keine Prüfer passen zu diesem Filter.",
+    "invited": "Eingeladen am {{date}}",
+    "invitedWithSeen": "Eingeladen am {{invited}} · gesehen {{seen}}"
+  },
+  "activity": {
+    "heading": "Aktivität"
+  },
+  "common": {
+    "close": "Schließen"
+  },
+  "events": {
+    "opened": "Fall eröffnet",
+    "decided": "Entscheidung erfasst",
+    "closed": "Fall geschlossen",
+    "reopened": "Fall wiedereröffnet",
+    "peer_responded": "Peer-Antwort"
+  },
+  "relative": {
+    "past": {
+      "second_one": "vor {{count}} Sekunde",
+      "second_other": "vor {{count}} Sekunden",
+      "minute_one": "vor {{count}} Minute",
+      "minute_other": "vor {{count}} Minuten",
+      "hour_one": "vor {{count}} Stunde",
+      "hour_other": "vor {{count}} Stunden",
+      "day_one": "vor {{count}} Tag",
+      "day_other": "vor {{count}} Tagen",
+      "month_one": "vor {{count}} Monat",
+      "month_other": "vor {{count}} Monaten",
+      "year_one": "vor {{count}} Jahr",
+      "year_other": "vor {{count}} Jahren"
+    },
+    "future": {
+      "second_one": "in {{count}} Sekunde",
+      "second_other": "in {{count}} Sekunden",
+      "minute_one": "in {{count}} Minute",
+      "minute_other": "in {{count}} Minuten",
+      "hour_one": "in {{count}} Stunde",
+      "hour_other": "in {{count}} Stunden",
+      "day_one": "in {{count}} Tag",
+      "day_other": "in {{count}} Tagen",
+      "month_one": "in {{count}} Monat",
+      "month_other": "in {{count}} Monaten",
+      "year_one": "in {{count}} Jahr",
+      "year_other": "in {{count}} Jahren"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "Saan nanggaling ito:",
+    "source_whs": "iyong live na WHS handicap",
+    "source_history": "iyong pinakabagong nai-post na round",
+    "source_profile": "handicap sa iyong profile",
+    "fix_whs": "I-update ang WHS",
+    "fix_history": "Mag-post ng bagong round",
+    "fix_profile": "I-edit ang handicap ng profile",
+    "fix_default": "Idagdag ang iyong handicap",
+    "summary": "Handicap na {{handicap}} mula sa {{source}}.",
+    "summaryWithAsOf": "Handicap na {{handicap}} mula sa {{source}} (mula {{asOf}}).",
+    "noneAuto": "Wala pang nakatakdang handicap — gumagamit kami ng default na paghahambing.",
+    "nonePinned": "Wala pang nakatakdang handicap.",
+    "asOfToday": "ngayon",
+    "asOfYesterday": "kahapon",
+    "asOfDays": "{{count}} araw na ang nakalipas",
+    "asOfMonth": "{{count}} buwan na ang nakalipas",
+    "asOfMonths": "{{count}} buwan na ang nakalipas",
+    "asOfYear": "{{count}} taon na ang nakalipas",
+    "asOfYears": "{{count}} taon na ang nakalipas"
+  }
+}

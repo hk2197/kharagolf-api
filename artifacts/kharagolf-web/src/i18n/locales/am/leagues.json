@@ -1,0 +1,31 @@
+{
+  "leagues": "ሊጎች",
+  "league": "League",
+  "newLeague": "New League",
+  "createLeague": "Create League",
+  "editLeague": "Edit League",
+  "leagueName": "League Name",
+  "leagueFormat": "Format",
+  "seasonStart": "Season Start",
+  "seasonEnd": "Season End",
+  "entryFee": "Entry Fee",
+  "maxMembers": "Max Members",
+  "members": "Members",
+  "status": "ሁኔታ",
+  "standings": "Standings",
+  "position": "Position",
+  "points": "Points",
+  "rounds": "Rounds Played",
+  "wins": "Wins",
+  "draws": "Draws",
+  "losses": "Losses",
+  "formats": {
+    "stableford": "Stableford",
+    "stroke_play": "Stroke Play",
+    "net_stroke": "Net Stroke",
+    "match_play": "Match Play"
+  },
+  "noLeagues": "No leagues found",
+  "join": "Join League",
+  "leave": "Leave League"
+}

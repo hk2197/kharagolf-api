@@ -1,0 +1,7 @@
+{
+  "title": "球会设置",
+  "subtitleWithClub": "{{club}} 的管理员控制",
+  "subtitleNoClub": "您球会的管理员控制",
+  "notAvailableTitle": "不可用",
+  "notAvailableText": "球会设置仅对球会管理员和赛事总监可见。"
+}

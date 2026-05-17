@@ -1,0 +1,105 @@
+{
+  "title": "Organization Overview",
+  "subtitle": "Analytics and active events for {{name}}",
+  "settingUp": "Setting Up Your Account",
+  "settingUpDesc": "Your profile is being linked to an organization.",
+  "refreshNow": "Refresh Now",
+  "signOut": "Jade",
+  "retrying": "Retrying automatically…",
+  "noDataYet": "No data yet",
+  "noTournamentsYet": "No tournaments yet",
+  "noActiveTournaments": "No active tournaments",
+  "noActiveTournamentsDesc": "Start a tournament to see live scoring here.",
+  "createTournament": "Create Tournament",
+  "viewAll": "View All",
+  "view": "View",
+  "live": "Live",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "Overview",
+    "clubStats": "Club Stats",
+    "analytics": "Analytics"
+  },
+  "stats": {
+    "activeEvents": "Active Events",
+    "totalPlayers": "Total Players",
+    "roundsPlayed": "Rounds Played",
+    "totalEvents": "Total Events",
+    "tournaments": "Awọn idije",
+    "players": "Players",
+    "roundsCompleted": "Rounds Completed",
+    "retentionRate": "Retention Rate",
+    "totalRounds": "Total Rounds",
+    "scoreRecords": "Total Score Records",
+    "scoreRecordsDesc": "Across all tournaments & rounds",
+    "retentionDesc": "Players who competed in 2+ events"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "Best Scoring Average",
+    "mostBirdies": "Most Birdies",
+    "mostEagles": "Most Eagles",
+    "mostConsistent": "Most Consistent (Rounds)",
+    "valueLabels": {
+      "avg": "avg",
+      "birdies": "birdies",
+      "eagles": "eagles",
+      "rounds": "rounds"
+    }
+  },
+  "charts": {
+    "formatPopularity": "Format Popularity",
+    "eventParticipationLast12": "Event Participation (Last 12)",
+    "eventParticipationLast8": "Event Participation (Last 8)",
+    "monthlyGrowth": "Monthly Player Growth (12 months)",
+    "revenueTrend": "Revenue Trend (Entry Fees)",
+    "participationRetention": "Participation & Retention",
+    "playerRetentionRate": "Player Retention Rate",
+    "seriesRegistered": "Registered",
+    "seriesPaid": "Paid",
+    "seriesPlayers": "Players",
+    "seriesNewPlayers": "New Players",
+    "seriesRevenue": "Revenue",
+    "seriesTournaments": "Tournaments"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "allTournaments": "All Tournaments",
+    "courses": "Courses",
+    "clubStats": "Club Stats"
+  },
+  "liveEvents": "Live & Upcoming Events",
+  "stuckReceipts": {
+    "title": "Awọn risiti side-game tí ó dí",
+    "summary": "{{exhausted}} tí àtúnbidi rẹ ti tán · {{skipped}} tí a fò kọjá ṣáájú ìfijíṣẹ́",
+    "truncation": " · ń fi {{shown}} ní {{total}} hàn",
+    "userFallback": "Olùmúlò #{{id}}",
+    "rowDetails": "{{game}} · ìparí #{{settlementId}} · {{payer}} sanwó",
+    "channelEmail": "Ímeèlì",
+    "channelPush": "Pọ́ọ̀ṣì",
+    "channelExhausted": "ti tán ({{count}})",
+    "channelSkipped": "fò kọjá",
+    "resendButton": "Tún fi ìfijíṣẹ́ sí ìlà",
+    "resending": "Tí ó wà ní ìlà…",
+    "loadMore": "Gbà síwájú síi (ó kù {{remaining}})",
+    "loading": "Ń gbà…",
+    "toast": {
+      "successTitle": "Risiti ti pada sí ìlà",
+      "successDescription": "Yóò gbìyànjú {{channels}} ní ìṣẹ̀lẹ̀ cron tó tẹ̀lé.",
+      "errorTitle": "Kò lè tún fi sí ìlà",
+      "channelEmail": "ímeèlì",
+      "channelPush": "pọ́ọ̀ṣì",
+      "channelDelivery": "ìfijíṣẹ́",
+      "channelSeparator": " àti "
+    },
+    "statuses": {
+      "skipped": "fò kọjá",
+      "no_address": "kò sí àdírẹ́sì",
+      "opted_out": "yọ kúrò",
+      "no_user": "kò sí àkáǹtì olùmúlò",
+      "failed": "kúna",
+      "pending": "ṣì ń dúró",
+      "queued": "ní ìlà",
+      "unknown": "àìmọ̀"
+    }
+  }
+}

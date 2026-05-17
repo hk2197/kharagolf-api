@@ -1,0 +1,31 @@
+{
+  "leagues": "लीग",
+  "league": "लीग",
+  "newLeague": "नई लीग",
+  "createLeague": "लीग बनाएं",
+  "editLeague": "लीग संपादित करें",
+  "leagueName": "लीग का नाम",
+  "leagueFormat": "प्रारूप",
+  "seasonStart": "सीजन शुरुआत",
+  "seasonEnd": "सीजन समाप्ति",
+  "entryFee": "प्रवेश शुल्क",
+  "maxMembers": "अधिकतम सदस्य",
+  "members": "सदस्य",
+  "status": "स्थिति",
+  "standings": "स्टैंडिंग",
+  "position": "स्थान",
+  "points": "अंक",
+  "rounds": "खेले गए राउंड",
+  "wins": "जीत",
+  "draws": "ड्रॉ",
+  "losses": "हार",
+  "formats": {
+    "stableford": "स्टेबलफोर्ड",
+    "stroke_play": "स्ट्रोक प्ले",
+    "net_stroke": "नेट स्ट्रोक",
+    "match_play": "मैच प्ले"
+  },
+  "noLeagues": "कोई लीग नहीं मिली",
+  "join": "लीग में शामिल हों",
+  "leave": "लीग छोड़ें"
+}

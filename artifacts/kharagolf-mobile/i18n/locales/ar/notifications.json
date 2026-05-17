@@ -1,0 +1,20 @@
+{
+  "title": "الإشعارات",
+  "subtitle": "تحديثات لجنة الإعاقة ومباريات التحدي",
+  "unreadBadge_one": "{{count}} جديد",
+  "unreadBadge_other": "{{count}} جديدة",
+  "markAll": "وضع علامة على الكل",
+  "markAllAccessibility": "وضع علامة على الكل كمقروء",
+  "markAllErrorTitle": "تعذر وضع علامة على الكل كمقروء",
+  "markAllErrorMessage": "يرجى المحاولة مرة أخرى.",
+  "emptyTitle": "لا توجد إشعارات",
+  "emptyText": "عندما يتم فتح قضية مراجعة الإعاقة، أو اتخاذ قرار بشأنها، أو إنشاء مباراة تحدي على سجلك، ستظهر هنا.",
+  "peerResponsesHeading": "ردود الزملاء الجديدة",
+  "peerResponsesUnread_one": "{{count}} غير مقروء",
+  "peerResponsesUnread_other": "{{count}} غير مقروءة",
+  "peerResponsesHint": "انقر لفتح القضية المتأثرة في أدوات اللجنة.",
+  "tieBreakLabel": "مباراة تحدي مطلوبة",
+  "tieBreakFallbackSubject": "مباراة تحدي للدوري الدائري مطلوبة",
+  "matchSuffix": "المباراة #{{id}}",
+  "caseSuffix": "القضية #{{id}}"
+}

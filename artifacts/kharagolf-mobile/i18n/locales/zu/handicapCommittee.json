@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Yabela",
+    "invitePeer": "Mema ozakwabo",
+    "recordDecision": "Rekhoda isinqumo"
+  },
+  "assignModal": {
+    "title": "Yabela icala",
+    "subtitle": "Khetha ilungu lekomidi ukuthi lithathe isikhundla.",
+    "submit": "Yabela"
+  },
+  "peerModal": {
+    "title": "Mema umbukezeli ozakwabo",
+    "subtitle": "Bazothola i-imeyili nesaziso esiphushwayo.",
+    "submit": "Thumela isimemo"
+  },
+  "decideModal": {
+    "title": "Rekhoda isinqumo",
+    "decisionLabel": "Isinqumo",
+    "rationaleLabel": "Isizathu (kuyadingeka)",
+    "rationalePlaceholder": "Chaza isizathu sekomidi",
+    "strokesLabel": "Amashaya okulungiswa",
+    "strokesPlaceholder": "isb. 1.0",
+    "capLabel": "Inani lomkhawulo (HI 0–54)",
+    "capPlaceholder": "isb. 18.4",
+    "notesLabel": "Amanothi (okuzikhethela)",
+    "notesPlaceholder": "Amanothi angaphakathi ekomidi",
+    "applyToPlayerTitle": "Sebenzisa kumdlali",
+    "applyToPlayerHelp": "Bhala futhi i-Handicap Index ephumayo erekhodini lomdlali.",
+    "submit": "Rekhoda isinqumo"
+  },
+  "decisions": {
+    "no_action": "Asikho isenzo",
+    "soft_cap": "Umkhawulo othambile",
+    "hard_cap": "Umkhawulo oqinile",
+    "index_adjustment": "Ukulungiswa kwenkomba"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Kudingeka isizathu",
+    "rationaleRequiredMessage": "Sicela urekhode isizathu salesi sinqumo.",
+    "invalidStrokesTitle": "Amashaya angalungile",
+    "invalidStrokesMessage": "Amashaya okulungiswa kufanele abe yinombolo evumelekile.",
+    "invalidCapTitle": "Umkhawulo ongalungile",
+    "invalidCapMessage": "Inani lomkhawulo kufanele libe phakathi kuka-0 no-54."
+  },
+  "errors": {
+    "assignFailed": "Ukwabela kuhlulekile",
+    "peerInviteFailed": "Isimemo sozakwabo sihlulekile",
+    "decisionFailed": "Isinqumo sihlulekile",
+    "membersLoadFailed": "Ayikwazanga ukulayisha amalungu",
+    "couldNotOpen": "Ayikwazanga ukuvula icala",
+    "notFound": "Icala alitholakali",
+    "couldNotLoad": "Ayikwazanga ukulayisha icala.",
+    "missingOrgContext": "Umongo wenhlangano awukho kuleli cala."
+  },
+  "memberPicker": {
+    "noMembers": "Awekho amalungu ekomidi afanelekile atholiwe.",
+    "cancel": "Khansela"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} kwa-{{total}} bavulile",
+    "badgeAccessibility": "Ababukezi aba-{{opened}} kwaba-{{total}} bavule isimemo. Thepha ukuze ubone imininingwane.",
+    "sheetTitle": "Isimo sombukezeli ozakwabo",
+    "sheetSubtitle": "{{opened}} kwa-{{total}} bavule isimemo",
+    "openedHeading": "Kuvuliwe ({{count}})",
+    "notYetOpenedHeading": "Akukavulwa ({{count}})",
+    "everyoneOpened": "Wonke umuntu uvule isimemo.",
+    "noneOpened": "Akukho mbukezeli osavule isimemo.",
+    "seenRelative": "Kubonwe {{relative}}",
+    "invitedRelative": "Kumenywe {{relative}}",
+    "close": "Vala"
+  },
+  "header": {
+    "caseNumber": "Icala #{{id}}",
+    "subtitle": "Ukubuyekezwa kwekomidi le-handicap",
+    "back": "Buyela"
+  },
+  "summary": {
+    "subject": "Isihloko",
+    "period": "Isikhathi",
+    "details": "Imininingwane",
+    "decision": "Isinqumo",
+    "openedAt": "Kuvulwe {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Izimpendulo zozakwabo",
+    "headingWithCount": "Izimpendulo zozakwabo ({{count}})",
+    "empty": "Akukabikho zimpendulo zozakwabo.",
+    "recommendations": {
+      "confirm": "Kuqinisekisiwe",
+      "dispute": "Kuphikisiwe",
+      "insufficient_info": "Ulwazi olunganele",
+      "responded": "Uphendulile"
+    },
+    "reviewerFallback": "Umbukezeli",
+    "seenRelative": "Kubonwe {{relative}}",
+    "notYetOpened": "Akukavulwa",
+    "respondedAt": "Uphendule {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Kulindelwe impendulo ({{count}})",
+    "filters": {
+      "all": "Konke ({{count}})",
+      "openedUnresponded": "Kuvuliwe, akukho mpendulo ({{count}})",
+      "unopened": "Akukavulwa ({{count}})"
+    },
+    "empty": "Awekho ababukezi abahambisana nalesi sihlungi.",
+    "invited": "Kumenywe {{date}}",
+    "invitedWithSeen": "Kumenywe {{invited}} · kubonwe {{seen}}"
+  },
+  "activity": {
+    "heading": "Umsebenzi"
+  },
+  "common": {
+    "close": "Vala"
+  },
+  "events": {
+    "opened": "Icala livuliwe",
+    "decided": "Isinqumo siqoshiwe",
+    "closed": "Icala livaliwe",
+    "reopened": "Icala livuliwe kabusha",
+    "peer_responded": "Impendulo yontanga"
+  },
+  "relative": {
+    "past": {
+      "second_one": "isekhondi {{count}} eledlule",
+      "second_other": "amasekhondi {{count}} edlule",
+      "minute_one": "umzuzu {{count}} odlule",
+      "minute_other": "imizuzu {{count}} edlule",
+      "hour_one": "ihora {{count}} eledlule",
+      "hour_other": "amahora {{count}} edlule",
+      "day_one": "usuku {{count}} oludlule",
+      "day_other": "izinsuku {{count}} ezedlule",
+      "month_one": "inyanga {{count}} edlule",
+      "month_other": "izinyanga {{count}} ezedlule",
+      "year_one": "unyaka {{count}} odlule",
+      "year_other": "iminyaka {{count}} edlule"
+    },
+    "future": {
+      "second_one": "kungo-{{count}} isekhondi osele",
+      "second_other": "kungo-{{count}} amasekhondi osele",
+      "minute_one": "kungo-{{count}} umzuzu osele",
+      "minute_other": "kungo-{{count}} imizuzu osele",
+      "hour_one": "kungo-{{count}} ihora osele",
+      "hour_other": "kungo-{{count}} amahora osele",
+      "day_one": "kungo-{{count}} usuku osele",
+      "day_other": "kungo-{{count}} izinsuku osele",
+      "month_one": "kungo-{{count}} inyanga osele",
+      "month_other": "kungo-{{count}} izinyanga osele",
+      "year_one": "kungo-{{count}} unyaka osele",
+      "year_other": "kungo-{{count}} iminyaka osele"
+    }
+  }
+}

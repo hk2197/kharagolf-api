@@ -1,0 +1,7 @@
+{
+  "title": "Pengaturan klub",
+  "subtitleWithClub": "Kontrol admin untuk {{club}}",
+  "subtitleNoClub": "Kontrol admin untuk klub Anda",
+  "notAvailableTitle": "Tidak tersedia",
+  "notAvailableText": "Pengaturan klub hanya terlihat oleh admin klub dan direktur turnamen."
+}

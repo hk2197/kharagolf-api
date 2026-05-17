@@ -1,0 +1,20 @@
+{
+  "title": "Awọn ifitonileti",
+  "subtitle": "Awọn imudojuiwọn igbimọ handicap ati ere-ifesilẹ",
+  "unreadBadge_one": "{{count}} tuntun",
+  "unreadBadge_other": "{{count}} tuntun",
+  "markAll": "Samisi gbogbo",
+  "markAllAccessibility": "Samisi gbogbo bi a ti ka",
+  "markAllErrorTitle": "Ko le samisi gbogbo bi a ti ka",
+  "markAllErrorMessage": "Jọwọ gbiyanju lẹẹkansi.",
+  "emptyTitle": "Ko si ifitonileti",
+  "emptyText": "Nigbati a ba ṣii ẹjọ atunyẹwo handicap, ti pinnu, tabi ti a ṣẹda ere-ifẹnukonu lori igbasilẹ rẹ, yoo farahan nibi.",
+  "peerResponsesHeading": "Awọn idahun ẹlẹgbẹ tuntun",
+  "peerResponsesUnread_one": "{{count}} ti ko ka",
+  "peerResponsesUnread_other": "{{count}} ti ko ka",
+  "peerResponsesHint": "Tẹ lati ṣi ẹjọ ti o kan ninu awọn irinṣẹ igbimọ.",
+  "tieBreakLabel": "A nilo ere-ifẹnukonu",
+  "tieBreakFallbackSubject": "A nilo ere-ifẹnukonu round-robin",
+  "matchSuffix": "Idije #{{id}}",
+  "caseSuffix": "Ẹjọ #{{id}}"
+}

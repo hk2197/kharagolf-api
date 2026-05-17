@@ -1,0 +1,20 @@
+{
+  "title": "Notifications",
+  "subtitle": "Mises à jour du comité de handicap et du match-play",
+  "unreadBadge_one": "{{count}} nouveau",
+  "unreadBadge_other": "{{count}} nouveaux",
+  "markAll": "Tout marquer",
+  "markAllAccessibility": "Tout marquer comme lu",
+  "markAllErrorTitle": "Impossible de tout marquer comme lu",
+  "markAllErrorMessage": "Veuillez réessayer.",
+  "emptyTitle": "Aucune notification",
+  "emptyText": "Lorsqu'un dossier de révision de handicap est ouvert, décidé ou qu'un match de barrage est créé sur votre profil, il apparaîtra ici.",
+  "peerResponsesHeading": "Nouvelles réponses des pairs",
+  "peerResponsesUnread_one": "{{count}} non lu",
+  "peerResponsesUnread_other": "{{count}} non lus",
+  "peerResponsesHint": "Touchez pour ouvrir le dossier concerné dans les outils du comité.",
+  "tieBreakLabel": "Match de barrage requis",
+  "tieBreakFallbackSubject": "Match de barrage en championnat round-robin requis",
+  "matchSuffix": "Match n°{{id}}",
+  "caseSuffix": "Dossier n°{{id}}"
+}

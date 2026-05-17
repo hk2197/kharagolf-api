@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Ba da",
+    "invitePeer": "Gayyaci abokin aiki",
+    "recordDecision": "Rubuta shawara"
+  },
+  "assignModal": {
+    "title": "Ba da shari'ar",
+    "subtitle": "Zaɓi memba na kwamiti don ya ɗauki nauyi.",
+    "submit": "Ba da"
+  },
+  "peerModal": {
+    "title": "Gayyaci mai bita abokin aiki",
+    "subtitle": "Za su karɓi imel da sanarwar tura.",
+    "submit": "Aika gayyata"
+  },
+  "decideModal": {
+    "title": "Rubuta shawara",
+    "decisionLabel": "Shawara",
+    "rationaleLabel": "Dalili (ana buƙata)",
+    "rationalePlaceholder": "Bayyana dalilin kwamitin",
+    "strokesLabel": "Bugun gyara",
+    "strokesPlaceholder": "misali 1.0",
+    "capLabel": "Ƙimar iyaka (HI 0–54)",
+    "capPlaceholder": "misali 18.4",
+    "notesLabel": "Bayanan kula (zaɓi)",
+    "notesPlaceholder": "Bayanan kula na ciki na kwamiti",
+    "applyToPlayerTitle": "Aiwatar wa ɗan wasa",
+    "applyToPlayerHelp": "Hakanan rubuta sakamakon Handicap Index zuwa rikodin ɗan wasan.",
+    "submit": "Rubuta shawara"
+  },
+  "decisions": {
+    "no_action": "Babu mataki",
+    "soft_cap": "Iyaka mai laushi",
+    "hard_cap": "Iyaka mai tsauri",
+    "index_adjustment": "Gyara index"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Ana buƙatar dalili",
+    "rationaleRequiredMessage": "Da fatan za a rubuta dalili don wannan shawarar.",
+    "invalidStrokesTitle": "Bugu mara inganci",
+    "invalidStrokesMessage": "Bugun gyara dole ne ya zama lamba mai kyau.",
+    "invalidCapTitle": "Iyaka mara inganci",
+    "invalidCapMessage": "Ƙimar iyaka dole ne ta kasance tsakanin 0 zuwa 54."
+  },
+  "errors": {
+    "assignFailed": "Ba da ya gaza",
+    "peerInviteFailed": "Gayyatar abokin aiki ta gaza",
+    "decisionFailed": "Shawara ta gaza",
+    "membersLoadFailed": "An kasa loda mambobi",
+    "couldNotOpen": "An kasa buɗe shari'ar",
+    "notFound": "Ba a sami shari'ar ba",
+    "couldNotLoad": "An kasa loda shari'ar.",
+    "missingOrgContext": "Mahallin ƙungiyar bai samu ba don wannan shari'ar."
+  },
+  "memberPicker": {
+    "noMembers": "Ba a sami mambobin kwamiti masu cancanta ba.",
+    "cancel": "Soke"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} daga cikin {{total}} sun bude",
+    "badgeAccessibility": "{{opened}} daga cikin {{total}} masu duba sun bude gayyatar. Danna don ganin cikakkun bayanai.",
+    "sheetTitle": "Matsayin mai duba takwarorinsu",
+    "sheetSubtitle": "{{opened}} daga cikin {{total}} sun bude gayyatar",
+    "openedHeading": "An bude ({{count}})",
+    "notYetOpenedHeading": "Ba a bude ba tukuna ({{count}})",
+    "everyoneOpened": "Kowa ya bude gayyatar.",
+    "noneOpened": "Babu mai duba da ya bude gayyatar tukuna.",
+    "seenRelative": "An gani {{relative}}",
+    "invitedRelative": "An aika gayyata {{relative}}",
+    "close": "Rufe"
+  },
+  "header": {
+    "caseNumber": "Shari'a #{{id}}",
+    "subtitle": "Bita na kwamitin handikap",
+    "back": "Komawa"
+  },
+  "summary": {
+    "subject": "Batun",
+    "period": "Lokaci",
+    "details": "Cikakkun bayanai",
+    "decision": "Shawara",
+    "openedAt": "An buɗe {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Amsoshin abokai",
+    "headingWithCount": "Amsoshin abokai ({{count}})",
+    "empty": "Babu amsoshin abokai tukuna.",
+    "recommendations": {
+      "confirm": "An tabbatar",
+      "dispute": "An yi jayayya",
+      "insufficient_info": "Bayanai ba su isa ba",
+      "responded": "Ya amsa"
+    },
+    "reviewerFallback": "Mai duba",
+    "seenRelative": "An gani {{relative}}",
+    "notYetOpened": "Ba a buɗe ba tukuna",
+    "respondedAt": "Ya amsa {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Ana jiran amsa ({{count}})",
+    "filters": {
+      "all": "Duka ({{count}})",
+      "openedUnresponded": "An buɗe, babu amsa ({{count}})",
+      "unopened": "Ba a buɗe ba tukuna ({{count}})"
+    },
+    "empty": "Babu masu duba da suka dace da wannan tace.",
+    "invited": "An aika gayyata {{date}}",
+    "invitedWithSeen": "An aika gayyata {{invited}} · an gani {{seen}}"
+  },
+  "activity": {
+    "heading": "Ayyuka"
+  },
+  "common": {
+    "close": "Rufe"
+  },
+  "events": {
+    "opened": "An buɗe shari'a",
+    "decided": "An rubuta hukunci",
+    "closed": "An rufe shari'a",
+    "reopened": "An sake buɗe shari'a",
+    "peer_responded": "Amsar abokin aiki"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}} daƙiƙa da suka wuce",
+      "second_other": "{{count}} daƙiƙoƙi da suka wuce",
+      "minute_one": "{{count}} minti da suka wuce",
+      "minute_other": "{{count}} mintoci da suka wuce",
+      "hour_one": "{{count}} awa da suka wuce",
+      "hour_other": "{{count}} awoyi da suka wuce",
+      "day_one": "{{count}} kwana da suka wuce",
+      "day_other": "{{count}} kwanaki da suka wuce",
+      "month_one": "{{count}} wata da suka wuce",
+      "month_other": "{{count}} watanni da suka wuce",
+      "year_one": "{{count}} shekara da suka wuce",
+      "year_other": "{{count}} shekaru da suka wuce"
+    },
+    "future": {
+      "second_one": "cikin {{count}} daƙiƙa",
+      "second_other": "cikin {{count}} daƙiƙoƙi",
+      "minute_one": "cikin {{count}} minti",
+      "minute_other": "cikin {{count}} mintoci",
+      "hour_one": "cikin {{count}} awa",
+      "hour_other": "cikin {{count}} awoyi",
+      "day_one": "cikin {{count}} kwana",
+      "day_other": "cikin {{count}} kwanaki",
+      "month_one": "cikin {{count}} wata",
+      "month_other": "cikin {{count}} watanni",
+      "year_one": "cikin {{count}} shekara",
+      "year_other": "cikin {{count}} shekaru"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "ማሳወቂያዎች",
+  "subtitle": "የሃንዲካፕ ኮሚቴ እና የጨዋታ ግጥሚያ ዝመናዎች",
+  "unreadBadge_one": "{{count}} አዲስ",
+  "unreadBadge_other": "{{count}} አዳዲስ",
+  "markAll": "ሁሉንም ምልክት አድርግ",
+  "markAllAccessibility": "ሁሉንም እንደተነበበ ምልክት አድርግ",
+  "markAllErrorTitle": "ሁሉንም እንደተነበበ ምልክት ማድረግ አልተቻለም",
+  "markAllErrorMessage": "እባክዎ እንደገና ይሞክሩ።",
+  "emptyTitle": "ምንም ማሳወቂያ የለም",
+  "emptyText": "የሃንዲካፕ ምርመራ ጉዳይ ሲከፈት፣ ሲወሰን ወይም በመዝገብዎ ላይ የእኩልነት መስበሪያ ግጥሚያ ሲፈጠር፣ እዚህ ይታያል።",
+  "peerResponsesHeading": "አዲስ የእኩል ምላሾች",
+  "peerResponsesUnread_one": "{{count}} ያልተነበበ",
+  "peerResponsesUnread_other": "{{count}} ያልተነበቡ",
+  "peerResponsesHint": "የተጎዳውን ጉዳይ በኮሚቴ መሳሪያዎች ውስጥ ለመክፈት ይንኩ።",
+  "tieBreakLabel": "የእኩልነት መስበሪያ ያስፈልጋል",
+  "tieBreakFallbackSubject": "የሮብን ሮቢን እኩልነት መስበሪያ ያስፈልጋል",
+  "matchSuffix": "ግጥሚያ #{{id}}",
+  "caseSuffix": "ጉዳይ #{{id}}"
+}

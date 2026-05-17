@@ -1,0 +1,23 @@
+{
+  "provenance": {
+    "label": "ይህ ከየት ነው የመጣው፦",
+    "source_whs": "የቀጥታ የWHS ሃንዲካፕዎ",
+    "source_history": "በቅርቡ ያስገቡት ዙር",
+    "source_profile": "የመገለጫዎ ሃንዲካፕ",
+    "fix_whs": "WHS አዘምን",
+    "fix_history": "አዲስ ዙር አስገባ",
+    "fix_profile": "የመገለጫ ሃንዲካፕ አርትዕ",
+    "fix_default": "ሃንዲካፕዎን ይጨምሩ",
+    "summary": "ሃንዲካፕ {{handicap}} ከ{{source}}።",
+    "summaryWithAsOf": "ሃንዲካፕ {{handicap}} ከ{{source}} ({{asOf}})።",
+    "noneAuto": "እስካሁን የተመዘገበ ሃንዲካፕ የለም — ነባሪ ንፅፅርን እየተጠቀምን ነው።",
+    "nonePinned": "እስካሁን የተመዘገበ ሃንዲካፕ የለም።",
+    "asOfToday": "ዛሬ",
+    "asOfYesterday": "ትናንት",
+    "asOfDays": "ከ{{count}} ቀናት በፊት",
+    "asOfMonth": "ከ{{count}} ወር በፊት",
+    "asOfMonths": "ከ{{count}} ወራት በፊት",
+    "asOfYear": "ከ{{count}} ዓመት በፊት",
+    "asOfYears": "ከ{{count}} ዓመታት በፊት"
+  }
+}

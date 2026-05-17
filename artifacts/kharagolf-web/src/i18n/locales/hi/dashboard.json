@@ -1,0 +1,105 @@
+{
+  "title": "संगठन अवलोकन",
+  "subtitle": "{{name}} के लिए एनालिटिक्स और सक्रिय इवेंट",
+  "settingUp": "आपका खाता सेट हो रहा है",
+  "settingUpDesc": "आपकी प्रोफ़ाइल किसी संगठन से लिंक की जा रही है। इसमें आमतौर पर कुछ ही पल लगते हैं।",
+  "refreshNow": "अभी रिफ्रेश करें",
+  "signOut": "साइन आउट करके वापस साइन इन करें",
+  "retrying": "स्वचालित रूप से पुनः प्रयास हो रहा है…",
+  "noDataYet": "अभी कोई डेटा नहीं",
+  "noTournamentsYet": "अभी कोई टूर्नामेंट नहीं",
+  "noActiveTournaments": "कोई सक्रिय टूर्नामेंट नहीं",
+  "noActiveTournamentsDesc": "लाइव स्कोरिंग देखने के लिए एक टूर्नामेंट शुरू करें।",
+  "createTournament": "टूर्नामेंट बनाएं",
+  "viewAll": "सभी देखें",
+  "view": "देखें",
+  "live": "लाइव",
+  "tbd": "TBD",
+  "tabs": {
+    "overview": "अवलोकन",
+    "clubStats": "क्लब आँकड़े",
+    "analytics": "एनालिटिक्स"
+  },
+  "stats": {
+    "activeEvents": "सक्रिय इवेंट",
+    "totalPlayers": "कुल खिलाड़ी",
+    "roundsPlayed": "खेले गए राउंड",
+    "totalEvents": "कुल इवेंट",
+    "tournaments": "टूर्नामेंट",
+    "players": "खिलाड़ी",
+    "roundsCompleted": "पूर्ण राउंड",
+    "retentionRate": "रिटेंशन दर",
+    "totalRounds": "कुल राउंड",
+    "scoreRecords": "कुल स्कोर रिकॉर्ड",
+    "scoreRecordsDesc": "सभी टूर्नामेंट और राउंड में",
+    "retentionDesc": "2+ इवेंट में भाग लेने वाले खिलाड़ी"
+  },
+  "leaderboards": {
+    "bestScoringAverage": "सर्वश्रेष्ठ स्कोरिंग औसत",
+    "mostBirdies": "सर्वाधिक बर्डी",
+    "mostEagles": "सर्वाधिक ईगल",
+    "mostConsistent": "सर्वाधिक सुसंगत (राउंड)",
+    "valueLabels": {
+      "avg": "औसत",
+      "birdies": "बर्डी",
+      "eagles": "ईगल",
+      "rounds": "राउंड"
+    }
+  },
+  "charts": {
+    "formatPopularity": "फॉर्मेट लोकप्रियता",
+    "eventParticipationLast12": "इवेंट भागीदारी (अंतिम 12)",
+    "eventParticipationLast8": "इवेंट भागीदारी (अंतिम 8)",
+    "monthlyGrowth": "मासिक खिलाड़ी वृद्धि (12 महीने)",
+    "revenueTrend": "राजस्व प्रवृत्ति (प्रवेश शुल्क)",
+    "participationRetention": "भागीदारी और प्रतिधारण",
+    "playerRetentionRate": "खिलाड़ी प्रतिधारण दर",
+    "seriesRegistered": "पंजीकृत",
+    "seriesPaid": "भुगतान किए",
+    "seriesPlayers": "खिलाड़ी",
+    "seriesNewPlayers": "नए खिलाड़ी",
+    "seriesRevenue": "राजस्व",
+    "seriesTournaments": "टूर्नामेंट"
+  },
+  "quickLinks": {
+    "title": "त्वरित लिंक",
+    "allTournaments": "सभी टूर्नामेंट",
+    "courses": "कोर्स",
+    "clubStats": "क्लब आँकड़े"
+  },
+  "liveEvents": "लाइव और आगामी इवेंट",
+  "stuckReceipts": {
+    "title": "अटकी हुई साइड-गेम रसीदें",
+    "summary": "{{exhausted}} पुनः-प्रयास समाप्त · {{skipped}} वितरण से पहले छोड़े गए",
+    "truncation": " · {{total}} में से {{shown}} दिखाए गए",
+    "userFallback": "उपयोगकर्ता #{{id}}",
+    "rowDetails": "{{game}} · सेटलमेंट #{{settlementId}} · {{payer}} द्वारा भुगतान",
+    "channelEmail": "ईमेल",
+    "channelPush": "पुश",
+    "channelExhausted": "समाप्त ({{count}})",
+    "channelSkipped": "छोड़ा गया",
+    "resendButton": "डिलीवरी पुनः-कतार",
+    "resending": "पुनः-कतार में…",
+    "loadMore": "और लोड करें (शेष {{remaining}})",
+    "loading": "लोड हो रहा है…",
+    "toast": {
+      "successTitle": "रसीद पुनः-कतार में",
+      "successDescription": "अगले क्रॉन टिक पर {{channels}} पुनः प्रयास करेगा।",
+      "errorTitle": "पुनः-कतार नहीं हो सकी",
+      "channelEmail": "ईमेल",
+      "channelPush": "पुश",
+      "channelDelivery": "डिलीवरी",
+      "channelSeparator": " और "
+    },
+    "statuses": {
+      "skipped": "छोड़ा गया",
+      "no_address": "पता उपलब्ध नहीं",
+      "opted_out": "ऑप्ट-आउट",
+      "no_user": "उपयोगकर्ता खाता नहीं",
+      "failed": "विफल",
+      "pending": "लंबित",
+      "queued": "कतार में",
+      "unknown": "अज्ञात"
+    }
+  }
+}

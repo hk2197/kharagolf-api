@@ -1,0 +1,18 @@
+{
+  "tournaments": "Mga Tournament",
+  "tournament": "Paligsahan",
+  "register": "Mag-register",
+  "registered": "Nakarehistro",
+  "checkIn": "Mag-check In",
+  "checkedIn": "Naka-check In",
+  "leaderboard": "Talaan ng Ranggo",
+  "teeTimes": "Mga Tee Time",
+  "results": "Mga Resulta",
+  "round": "Round",
+  "course": "Kurso",
+  "entryFee": "Bayad sa Paglahok",
+  "format": "Format",
+  "startDate": "Petsa ng Pagsisimula",
+  "status": "Status",
+  "noTournaments": "Walang available na torneo"
+}

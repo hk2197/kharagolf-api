@@ -1,0 +1,18 @@
+{
+  "tournaments": "ทัวร์นาเมนต์",
+  "tournament": "ทัวร์นาเมนต์",
+  "register": "ลงทะเบียน",
+  "registered": "ลงทะเบียนแล้ว",
+  "checkIn": "เช็กอิน",
+  "checkedIn": "เช็กอินแล้ว",
+  "leaderboard": "กระดานผู้นำ",
+  "teeTimes": "เวลาออกรอบ",
+  "results": "ผลลัพธ์",
+  "round": "รอบ",
+  "course": "สนาม",
+  "entryFee": "ค่าสมัคร",
+  "format": "รูปแบบ",
+  "startDate": "วันที่เริ่มต้น",
+  "status": "สถานะ",
+  "noTournaments": "ไม่มีทัวร์นาเมนต์"
+}

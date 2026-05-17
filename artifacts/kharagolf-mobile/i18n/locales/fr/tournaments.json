@@ -1,0 +1,18 @@
+{
+  "tournaments": "Tournois",
+  "tournament": "Tournoi",
+  "register": "S'inscrire",
+  "registered": "Inscrit",
+  "checkIn": "Enregistrer l'arrivée",
+  "checkedIn": "Enregistré",
+  "leaderboard": "Classement",
+  "teeTimes": "Départs",
+  "results": "Résultats",
+  "round": "Tour",
+  "course": "Parcours",
+  "entryFee": "Droit d'entrée",
+  "format": "Format",
+  "startDate": "Date de début",
+  "status": "Statut",
+  "noTournaments": "Aucun tournoi disponible"
+}

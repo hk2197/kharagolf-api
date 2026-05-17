@@ -1,0 +1,154 @@
+{
+  "actions": {
+    "assign": "Assign",
+    "invitePeer": "Invite peer",
+    "recordDecision": "Record decision"
+  },
+  "assignModal": {
+    "title": "Assign case",
+    "subtitle": "Pick a committee member to take ownership.",
+    "submit": "Assign"
+  },
+  "peerModal": {
+    "title": "Invite peer reviewer",
+    "subtitle": "They will receive an email and push notification.",
+    "submit": "Send invite"
+  },
+  "decideModal": {
+    "title": "Record decision",
+    "decisionLabel": "Decision",
+    "rationaleLabel": "Rationale (required)",
+    "rationalePlaceholder": "Explain the committee's reasoning",
+    "strokesLabel": "Adjustment strokes",
+    "strokesPlaceholder": "e.g. 1.0",
+    "capLabel": "Cap value (HI 0–54)",
+    "capPlaceholder": "e.g. 18.4",
+    "notesLabel": "Notes (optional)",
+    "notesPlaceholder": "Internal committee notes",
+    "applyToPlayerTitle": "Apply to player",
+    "applyToPlayerHelp": "Also write the resulting Handicap Index to the player's record.",
+    "submit": "Record decision"
+  },
+  "decisions": {
+    "no_action": "No action",
+    "soft_cap": "Soft cap",
+    "hard_cap": "Hard cap",
+    "index_adjustment": "Index adjustment"
+  },
+  "validation": {
+    "rationaleRequiredTitle": "Rationale required",
+    "rationaleRequiredMessage": "Please record a rationale for this decision.",
+    "invalidStrokesTitle": "Invalid strokes",
+    "invalidStrokesMessage": "Adjustment strokes must be a positive number.",
+    "invalidCapTitle": "Invalid cap",
+    "invalidCapMessage": "Cap value must be between 0 and 54."
+  },
+  "errors": {
+    "assignFailed": "Assign failed",
+    "peerInviteFailed": "Peer invite failed",
+    "decisionFailed": "Decision failed",
+    "membersLoadFailed": "Could not load members",
+    "couldNotOpen": "Could not open case",
+    "notFound": "Case not found",
+    "couldNotLoad": "Could not load case.",
+    "missingOrgContext": "Missing organization context for this case."
+  },
+  "memberPicker": {
+    "noMembers": "No eligible committee members found.",
+    "cancel": "Cancel"
+  },
+  "peerSummary": {
+    "badge": "{{opened}} of {{total}} opened",
+    "badgeAccessibility": "{{opened}} of {{total}} reviewers opened the invitation. Tap to see details.",
+    "sheetTitle": "Peer reviewer status",
+    "sheetSubtitle": "{{opened}} of {{total}} opened the invitation",
+    "openedHeading": "Opened ({{count}})",
+    "notYetOpenedHeading": "Not yet opened ({{count}})",
+    "everyoneOpened": "Everyone has opened the invitation.",
+    "noneOpened": "No reviewers have opened the invitation yet.",
+    "seenRelative": "Seen {{relative}}",
+    "invitedRelative": "Invited {{relative}}",
+    "close": "Close"
+  },
+  "header": {
+    "caseNumber": "Case #{{id}}",
+    "subtitle": "Handicap committee review",
+    "back": "Back"
+  },
+  "summary": {
+    "subject": "Subject",
+    "period": "Period",
+    "details": "Details",
+    "decision": "Decision",
+    "openedAt": "Opened {{date}}"
+  },
+  "peerResponses": {
+    "heading": "Peer responses",
+    "headingWithCount": "Peer responses ({{count}})",
+    "empty": "No peer responses yet.",
+    "recommendations": {
+      "confirm": "Confirmed",
+      "dispute": "Disputed",
+      "insufficient_info": "Insufficient info",
+      "responded": "Responded"
+    },
+    "reviewerFallback": "Reviewer",
+    "seenRelative": "Seen {{relative}}",
+    "notYetOpened": "Not yet opened",
+    "respondedAt": "Responded {{date}}"
+  },
+  "pendingPeer": {
+    "heading": "Awaiting response ({{count}})",
+    "filters": {
+      "all": "All ({{count}})",
+      "openedUnresponded": "Opened, no response ({{count}})",
+      "unopened": "Not yet opened ({{count}})"
+    },
+    "empty": "No reviewers match this filter.",
+    "invited": "Invited {{date}}",
+    "invitedWithSeen": "Invited {{invited}} · seen {{seen}}"
+  },
+  "activity": {
+    "heading": "Activity"
+  },
+  "events": {
+    "opened": "Case opened",
+    "decided": "Decision recorded",
+    "closed": "Case closed",
+    "reopened": "Case reopened",
+    "peer_responded": "Peer response"
+  },
+  "common": {
+    "close": "Close"
+  },
+  "relative": {
+    "past": {
+      "second_one": "{{count}} second ago",
+      "second_other": "{{count}} seconds ago",
+      "minute_one": "{{count}} minute ago",
+      "minute_other": "{{count}} minutes ago",
+      "hour_one": "{{count}} hour ago",
+      "hour_other": "{{count}} hours ago",
+      "day_one": "{{count}} day ago",
+      "day_other": "{{count}} days ago",
+      "month_one": "{{count}} month ago",
+      "month_other": "{{count}} months ago",
+      "year_one": "{{count}} year ago",
+      "year_other": "{{count}} years ago"
+    },
+    "future": {
+      "second_one": "in {{count}} second",
+      "second_other": "in {{count}} seconds",
+      "minute_one": "in {{count}} minute",
+      "minute_other": "in {{count}} minutes",
+      "hour_one": "in {{count}} hour",
+      "hour_other": "in {{count}} hours",
+      "day_one": "in {{count}} day",
+      "day_other": "in {{count}} days",
+      "month_one": "in {{count}} month",
+      "month_other": "in {{count}} months",
+      "year_one": "in {{count}} year",
+      "year_other": "in {{count}} years"
+    }
+  }
+}

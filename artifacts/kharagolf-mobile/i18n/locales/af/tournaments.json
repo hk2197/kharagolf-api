@@ -1,0 +1,18 @@
+{
+  "tournaments": "Toernooie",
+  "tournament": "Toernooi",
+  "register": "Registreer",
+  "registered": "Geregistreer",
+  "checkIn": "Meld aan",
+  "checkedIn": "Aangemeld",
+  "leaderboard": "Ranglys",
+  "teeTimes": "Afslaan-tye",
+  "results": "Uitslae",
+  "round": "Ronde",
+  "course": "Baan",
+  "entryFee": "Inskrywingsfooi",
+  "format": "Formaat",
+  "startDate": "Begindatum",
+  "status": "Status",
+  "noTournaments": "Geen toernooie beskikbaar nie"
+}

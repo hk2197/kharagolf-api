@@ -1,0 +1,20 @@
+{
+  "title": "การแจ้งเตือน",
+  "subtitle": "อัปเดตคณะกรรมการแฮนดิแคปและการแข่งขันแบบแมตช์เพลย์",
+  "unreadBadge_one": "ใหม่ {{count}} รายการ",
+  "unreadBadge_other": "ใหม่ {{count}} รายการ",
+  "markAll": "อ่านแล้วทั้งหมด",
+  "markAllAccessibility": "ทำเครื่องหมายว่าอ่านแล้วทั้งหมด",
+  "markAllErrorTitle": "ไม่สามารถทำเครื่องหมายว่าอ่านแล้วทั้งหมดได้",
+  "markAllErrorMessage": "โปรดลองอีกครั้ง",
+  "emptyTitle": "ไม่มีการแจ้งเตือน",
+  "emptyText": "เมื่อเคสตรวจสอบแฮนดิแคปถูกเปิด ตัดสิน หรือมีการสร้างแมตช์ตัดสินเสมอในประวัติของคุณ จะแสดงที่นี่",
+  "peerResponsesHeading": "การตอบกลับใหม่จากเพื่อน",
+  "peerResponsesUnread_one": "ยังไม่อ่าน {{count}} รายการ",
+  "peerResponsesUnread_other": "ยังไม่อ่าน {{count}} รายการ",
+  "peerResponsesHint": "แตะเพื่อเปิดเคสที่ได้รับผลกระทบในเครื่องมือคณะกรรมการ",
+  "tieBreakLabel": "ต้องการการตัดสินเสมอ",
+  "tieBreakFallbackSubject": "ต้องการการตัดสินเสมอแบบพบกันหมด",
+  "matchSuffix": "แมตช์ #{{id}}",
+  "caseSuffix": "เคส #{{id}}"
+}

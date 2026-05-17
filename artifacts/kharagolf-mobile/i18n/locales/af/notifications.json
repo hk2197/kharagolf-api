@@ -1,0 +1,20 @@
+{
+  "title": "Kennisgewings",
+  "subtitle": "Opdaterings van die handikap-komitee en wedstrydspel",
+  "unreadBadge_one": "{{count}} nuwe",
+  "unreadBadge_other": "{{count}} nuwes",
+  "markAll": "Merk alles",
+  "markAllAccessibility": "Merk alles as gelees",
+  "markAllErrorTitle": "Kon nie alles as gelees merk nie",
+  "markAllErrorMessage": "Probeer asseblief weer.",
+  "emptyTitle": "Geen kennisgewings",
+  "emptyText": "Wanneer 'n handikap-hersieningsaak geopen, beslis, of 'n gelykop-afslaan wedstryd in jou rekord geskep word, sal dit hier verskyn.",
+  "peerResponsesHeading": "Nuwe eweknieë antwoorde",
+  "peerResponsesUnread_one": "{{count}} ongelees",
+  "peerResponsesUnread_other": "{{count}} ongelese",
+  "peerResponsesHint": "Tik om die geaffekteerde saak in die komitee-gereedskap te open.",
+  "tieBreakLabel": "Gelykop-afslaan benodig",
+  "tieBreakFallbackSubject": "Gelykop-afslaan vir rondtoernooi benodig",
+  "matchSuffix": "Wedstryd #{{id}}",
+  "caseSuffix": "Saak #{{id}}"
+}
