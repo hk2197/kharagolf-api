@@ -7,7 +7,7 @@
     "dev": "export NODE_ENV=development && (fuser -k ${PORT}/tcp 2>/dev/null || true) && pnpm run build && pnpm run start",
     "prebuild": "node ../../scripts/check-sql-array-anti-patterns.mjs && bash ../../scripts/apply-prod-migrations.sh && bash ../../scripts/predeploy-db-drift.sh && bash ../../scripts/run-prod-backfills.sh",
     "build": "node ./build.mjs",
-    "start": "bash -c 'trap \"kill 0\" SIGINT SIGTERM EXIT; node --enable-source-maps ./dist/highlightWorker.mjs & node --enable-source-maps ./dist/swingFpsProbeWorker.mjs & node --enable-source-maps ./dist/index.mjs'",
+    "start": "bash -c 'trap \"kill 0\" SIGINT SIGTERM EXIT; node --max-old-space-size=100 --enable-source-maps ./dist/highlightWorker.mjs & node --max-old-space-size=100 --enable-source-maps ./dist/swingFpsProbeWorker.mjs & node --max-old-space-size=250 --enable-source-maps ./dist/index.mjs'",
     "start:api-only": "node --enable-source-maps ./dist/index.mjs",
     "worker:dev": "export NODE_ENV=development && pnpm run build && pnpm run worker:start",
     "worker:start": "node --enable-source-maps ./dist/highlightWorker.mjs",
