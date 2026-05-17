@@ -12,6 +12,7 @@ async function build() {
     format: 'esm',
     sourcemap: true,
     outdir: path.join(__dirname, 'dist'),
+    outExtension: { '.js': '.mjs' },
     external: [
       'pg-native',
       'mock-aws-s3',
