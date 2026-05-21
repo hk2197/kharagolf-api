@@ -64,7 +64,7 @@ import { ObjectStorageService, ObjectNotFoundError } from "../lib/objectStorage.
  */
 async function processOverdueAccountErasuresRowScoped(
   opts?: Parameters<typeof processOverdueAccountErasures>[0],
-): Promise<{ processed: number; failed: number }> {
+): Promise<{ processed: number; failed: number; batches: number }> {
   const beforeOpen = await db.select({ id: memberDataRequestsTable.id })
     .from(memberDataRequestsTable)
     .where(and(
@@ -72,9 +72,9 @@ async function processOverdueAccountErasuresRowScoped(
       eq(memberDataRequestsTable.requestType, "erasure"),
       sql`${memberDataRequestsTable.status} IN ('pending','approved')`,
     ));
-  await processOverdueAccountErasures(opts);
+  const cronResult = await processOverdueAccountErasures(opts);
   const ids = beforeOpen.map((r) => r.id);
-  if (ids.length === 0) return { processed: 0, failed: 0 };
+  if (ids.length === 0) return { processed: 0, failed: 0, batches: cronResult.batches };
   const after = await db.select({
     id: memberDataRequestsTable.id,
     status: memberDataRequestsTable.status,
@@ -86,6 +86,7 @@ async function processOverdueAccountErasuresRowScoped(
   return {
     processed: after.filter((r) => r.status === "completed").length,
     failed: after.filter((r) => r.status === "failed").length,
+    batches: cronResult.batches,
   };
 }
 

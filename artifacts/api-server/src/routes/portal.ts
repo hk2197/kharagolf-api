@@ -9512,6 +9512,9 @@ Guidelines:
       ...(Array.isArray(history) ? history.slice(-8) : []),
       { role: "user", content: question.trim() },
     ];
+    if (!openai) {
+      throw new Error("OpenAI integrations are not initialized (AI_INTEGRATIONS_OPENAI_API_KEY/BASE_URL missing)");
+    }
     const stream = await openai.chat.completions.create({
       model: "gpt-4o",
       max_completion_tokens: 8192,

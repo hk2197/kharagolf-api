@@ -60,7 +60,8 @@ describe("badgeOgSvg helpers — Task #924 card content", () => {
       badgeLabel: "First Tournament",
       badgeDescription: "Played your first tournament",
       name: "Unlocked Player",
-      earnedLine: "Earned January 1, 2026 · @og_unlocked",
+      earnedDateLine: "Earned January 1, 2026",
+      handleLine: "@og_unlocked",
       badgeUnlockedLabel: "BADGE UNLOCKED",
     });
     expect(svg).toContain("BADGE UNLOCKED");

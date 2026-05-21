@@ -1,22 +1,22 @@
 {
-    "buildCommand": "cd artifacts/kharagolf-web && pnpm run build",
-    "outputDirectory": "artifacts/kharagolf-web/dist/public",
-    "framework": "vite",
-    "ignoreCommand": "git diff --quiet HEAD^ HEAD ./",
-    "build": {
-          "env": {
-                  "PORT": "3000",
-                  "BASE_PATH": "/"
-          }
+  "buildCommand": "cd artifacts/kharagolf-web && pnpm run build",
+  "outputDirectory": "artifacts/kharagolf-web/dist/public",
+  "framework": "vite",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./",
+  "build": {
+    "env": {
+      "PORT": "3000",
+      "BASE_PATH": "/"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://kharagolf-api.onrender.com/api/$1"
     },
-    "rewrites": [
-          {
-                  "source": "/api/(.*)",
-                  "destination": "https://kharagolf-api.onrender.com/api/$1"
-          },
-          {
-                  "source": "/(.*)",
-                  "destination": "/index.html"
-          }
-    ]
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }

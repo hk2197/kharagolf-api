@@ -161,6 +161,9 @@ router.post("/rules/ask", async (req: Request, res: Response) => {
       { role: "user", content: question.trim() },
     ];
 
+    if (!openai) {
+      throw new Error("OpenAI integrations are not initialized (AI_INTEGRATIONS_OPENAI_API_KEY/BASE_URL missing)");
+    }
     const stream = await openai.chat.completions.create({
       model: "gpt-4o",
       max_completion_tokens: 8192,
